@@ -7,7 +7,7 @@
 	    <meta name="robots" content="index,follow"/>
 	    <meta name="description" content="I am an experienced Microsoft .Net C# developer with good knowledge about Object Oriented (OO) design. I put great effort in my code to ensure that it is always clean and readable. I am creative and am always thinking of innovative solutions. I consider myself a Software Craftsman and am a strong believer of continuous improvement and teaching."/>
 	    <meta name="keywords" content="Cre8iveThought, Cre8ive Thought, Software Craftsmanship, Microsoft .Net, C#, Object Oriented"/>
-		<link rel="stylesheet" type="text/css" media="all" href="/style-cards.css"/>
+		<link rel="stylesheet" type="text/css" media="all" href="/stylesheets/style-cards.css"/>
 		<link rel="shortcut icon" href="/favicon.ico" />
 		<link rel="icon" type="image/png" href="/images/favicon.png" />
 		
@@ -21,53 +21,34 @@
         <script type="text/javascript" src="/javascripts/sammy-0.5.4.min.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
-				enablePage();
+
+				$('#cards').click(function(){
+				  location.href = '#/Services'
+				});
 				var isAnimating = false;
+				var cardsShowing = false;
+				var frameShowing = false;
 				
 				var app = $.sammy(function() {
 
   				this.get('#/', function() { 
-  					startAnimation(gotoCards);
+  				  loaBigCards();
           });
 
-  				this.get('#/Home', function() { 
-              startAnimation(gotoContent(function() { loadServicesText(); }));
-          });
-          
   				this.get('#/Vision', function() { 
-  				  if ($('#cards').visible){
-              startAnimation(gotoContent(function() { loadVisionText(); }));
-  				  }
-  				  else {
-  					  startAnimation(loadVisionText);
-					  }
+  				  loadContent(loadVisionText);
           });
 
   				this.get('#/Services', function() { 
-  				  if ($('#cards').visible){
-              startAnimation(gotoContent(function() { loadServicesText(); }));
-  				  }
-  				  else {
-  					  startAnimation(loadServicesText);
-					  }
+  				  loadContent(loadServicesText);
           });
 
   				this.get('#/Speaking', function() { 
-  				  if ($('#cards').visible){
-              startAnimation(gotoContent(function() { loadSpeakingText(); }));
-  				  }
-  				  else {
-  					  startAnimation(loadSpeakingText);
-					  }
+  				  loadContent(loadSpeakingText);
           });
 
   				this.get('#/Contact', function() { 
-  				  if ($('#cards').visible){
-              startAnimation(gotoContent(function() { loadContactText(); }));
-  				  }
-  				  else {
-  					  startAnimation(loadContactText);
-					  }
+  				  loadContent(loadContactText);
           });
 				
         });
@@ -76,51 +57,106 @@
           app.run('#/');
         });
 				
-				function enablePage()
-				{
-					$('#cards').click(function(){
-					  location.href = '#/Home'
-					});
-					$('#cards').css({cursor: "pointer"});
+				function loadContent(content) {
+				  
+				  startAnimation(function(){
+
+            if (cardsShowing){
+  				    takeOutBigCards(function(){
+  				      bringInFrame(function(){
+  				        bringInCards(function(){
+    				        bringInMenu(function(){
+    				          content(stopAnimation);
+    				        });
+  				        });
+  				      });
+  				    });
+              return;
+            }
+
+            if (frameShowing){
+              clearPreviousText(function(){
+                content(stopAnimation);
+              });
+              return;
+            }
+            
+            bringInFrame(function(){
+			        bringInCards(function(){
+                bringInMenu(function(){
+                  content(stopAnimation);
+                });
+              });
+            });
+            
+				  });				  
 				}
 				
-				function startAnimation(callBack)
-				{
-					if (isAnimating) return;
+				function loaBigCards(){
+				  if (cardsShowing){
+				    return;
+			    }
+			    
+			    startAnimation(function(){
+  				  if (frameShowing){
+  				    clearPreviousText(function(){
+  				      takeOutMenu(function(){
+  				        takeOutCards(function(){
+  				          takeOutFrame(function(){
+  				            bringInBigCards(stopAnimation);
+  				          });
+  				        });
+  				      });
+  				    });
+  				    return;
+  			    }
+
+  				  bringInBigCards(stopAnimation);
+			    }); 
+				}
+				
+				
+				function startAnimation(callBack) {
+					if (isAnimating) {
+					  return;
+					}
 					
 					isAnimating = true;
-					
 					callBack();
 				}
 				
-				function gotoContent(content)
-				{
-					$('#cards').fadeOut(500, function(){
-						$('#frame').fadeIn(1000, function(){
-							bringInCards(function() {
-								$('#frame-menu').fadeIn(200, function(){
-									content();
-								});
-							});
-						});
-					});
+				function stopAnimation(callBack) {
+					isAnimating = false;
+					if (callBack != undefined){
+  					callBack();
+					}
 				}
 				
-				function gotoCards()
-				{
-					clearPreviousText(function(){
-						$('#frame-menu').fadeOut(200, function(){
-							takeOutCards(function(){
-								$('#frame').fadeOut(500, function(){
-									$('#cards').fadeIn(1000, function(){isAnimating = false;});
-								});
-							});
-						});
-					});
+				function takeOutFrame(callBack) {
+					$('#frame').fadeOut(500, function(){ frameShowing = false; callBack(); });
 				}
 				
-				function takeOutCards(callBack)
-				{
+				function bringInFrame(callBack) {
+          $('#frame').fadeIn(1000, function(){ frameShowing = true; callBack(); });
+				}
+				
+				function takeOutMenu(callBack) {
+					$('#frame-menu').fadeOut(200, function(){ callBack(); });
+				}
+				
+				function bringInMenu(callBack) {
+          $('#frame-menu').fadeIn(200, function(){ callBack(); });
+				}
+				
+				function takeOutBigCards(callBack){
+					$('#cards').fadeOut(500, function(){ cardsShowing = false; callBack(); });
+				}
+
+				function bringInBigCards(callBack){
+					$('#cards').fadeIn(1000, function(){ cardsShowing = true; callBack(); });
+				}
+				
+				function takeOutCards(callBack){
 					$('#card-back')
 						.animate({ left: '+=-300', top: '+=-430' }, 
 						500
@@ -139,8 +175,7 @@
 					}, 1000);
 				}
 				
-				function bringInCards(callBack)
-				{
+				function bringInCards(callBack){
 					$('#card-front').css({ left: -500, top: -80 });
 					$('#card-back').css({ left: -500, top: 150 });
 
@@ -162,40 +197,35 @@
 					}, 1000);
 				}
 				
-				function loadVisionText()
-				{
+				function loadVisionText(callBack){
 					clearPreviousText(function(){
-						loadText("#vision_template");
+						loadText("#vision_template", callBack);
 					});
 				}
 				
-				function loadServicesText()
-				{
+				function loadServicesText(callBack){
 					clearPreviousText(function(){
 						loadText("#development_template", function(){
 							setTimeout(function(){
-								loadText("#coaching_template");
+								loadText("#coaching_template", callBack);
 							}, 500);
 						});
 					});
 				}
 				
-				function loadSpeakingText()
-				{
+				function loadSpeakingText(callBack){
 					clearPreviousText(function(){
-						loadText("#speaking_template");
+						loadText("#speaking_template", callBack);
 					});
 				}
 				
-				function loadContactText()
-				{
+				function loadContactText(callBack){
 					clearPreviousText(function(){
-						loadText("#contact_template");
+						loadText("#contact_template", callBack);
 					});
 				}
 				
-				function clearPreviousText(callBack)
-				{
+				function clearPreviousText(callBack){
 					if (!$('#frame-content').is(':empty') && $('#frame-content').is(':visible')) { 
 						$("#frame-content")
 							.fadeOut("slow", function() {
@@ -204,18 +234,16 @@
 								callBack();
 							});
 					}
-					else
-					{
+					else {
 						$("#frame-content").html('');
 						callBack();
 					}
 				}
 				
-				function loadText(template, callBack)
-				{
+				function loadText(template, callBack){
 					var html = parseTemplate($(template).html(), {});
 					$(html)
-						.fadeIn("slow", function(){ if (callBack != undefined) callBack(); else isAnimating = false; })
+						.fadeIn("slow", function(){ callBack(); })
 						.appendTo("#frame-content");
 				}
 			});
