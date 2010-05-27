@@ -1,0 +1,322 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Cre8ive Thought</title>
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	    <meta name="language" content="en"/>
+	    <meta name="robots" content="index,follow"/>
+	    <meta name="description" content="I am an experienced Microsoft .Net C# developer with good knowledge about Object Oriented (OO) design. I put great effort in my code to ensure that it is always clean and readable. I am creative and am always thinking of innovative solutions. I consider myself a Software Craftsman and am a strong believer of continuous improvement and teaching."/>
+	    <meta name="keywords" content="Cre8iveThought, Cre8ive Thought, Software Craftsmanship, Microsoft .Net, C#, Object Oriented"/>
+		<link rel="stylesheet" type="text/css" media="all" href="/style-cards.css"/>
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="icon" type="image/png" href="/images/favicon.png" />
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+		<!--[if lt IE 7]>
+		        <script type="text/javascript" src="/javascripts/unitpngfix.js"></script>
+		<![endif]-->		
+        <script type="text/javascript" src="/javascripts/jquery.query-2.1.7.js"></script>
+        <script type="text/javascript" src="/javascripts/microTemplate.js"></script>
+        <script type="text/javascript" src="/javascripts/sammy-0.5.4.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				enablePage();
+				var isAnimating = false;
+				
+				var app = $.sammy(function() {
+
+  				this.get('#/', function() { 
+  					startAnimation(gotoCards);
+          });
+
+  				this.get('#/Home', function() { 
+              startAnimation(gotoContent(function() { loadServicesText(); }));
+          });
+          
+  				this.get('#/Vision', function() { 
+  				  if ($('#cards').visible){
+              startAnimation(gotoContent(function() { loadVisionText(); }));
+  				  }
+  				  else {
+  					  startAnimation(loadVisionText);
+					  }
+          });
+
+  				this.get('#/Services', function() { 
+  				  if ($('#cards').visible){
+              startAnimation(gotoContent(function() { loadServicesText(); }));
+  				  }
+  				  else {
+  					  startAnimation(loadServicesText);
+					  }
+          });
+
+  				this.get('#/Speaking', function() { 
+  				  if ($('#cards').visible){
+              startAnimation(gotoContent(function() { loadSpeakingText(); }));
+  				  }
+  				  else {
+  					  startAnimation(loadSpeakingText);
+					  }
+          });
+
+  				this.get('#/Contact', function() { 
+  				  if ($('#cards').visible){
+              startAnimation(gotoContent(function() { loadContactText(); }));
+  				  }
+  				  else {
+  					  startAnimation(loadContactText);
+					  }
+          });
+				
+        });
+        
+			  $(function() {
+          app.run('#/');
+        });
+				
+				function enablePage()
+				{
+					$('#cards').click(function(){
+					  location.href = '#/Home'
+					});
+					$('#cards').css({cursor: "pointer"});
+				}
+				
+				function startAnimation(callBack)
+				{
+					if (isAnimating) return;
+					
+					isAnimating = true;
+					
+					callBack();
+				}
+				
+				function gotoContent(content)
+				{
+					$('#cards').fadeOut(500, function(){
+						$('#frame').fadeIn(1000, function(){
+							bringInCards(function() {
+								$('#frame-menu').fadeIn(200, function(){
+									content();
+								});
+							});
+						});
+					});
+				}
+				
+				function gotoCards()
+				{
+					clearPreviousText(function(){
+						$('#frame-menu').fadeOut(200, function(){
+							takeOutCards(function(){
+								$('#frame').fadeOut(500, function(){
+									$('#cards').fadeIn(1000, function(){isAnimating = false;});
+								});
+							});
+						});
+					});
+				}
+				
+				function takeOutCards(callBack)
+				{
+					$('#card-back')
+						.animate({ left: '+=-300', top: '+=-430' }, 
+						500
+					);
+
+					$('#card-front')
+						.animate({ left: '+=-200', top: '+=-300' }, 
+						1000
+					);
+
+					if (callBack == undefined)
+						return;
+						
+					setTimeout(function(){
+						callBack();
+					}, 1000);
+				}
+				
+				function bringInCards(callBack)
+				{
+					$('#card-front').css({ left: -500, top: -80 });
+					$('#card-back').css({ left: -500, top: 150 });
+
+					$('#card-front')
+						.animate({ left: '+=400' }, 
+						300
+					);
+					$('#card-back')
+						.delay(400)
+						.animate({ left: '+=460' }, 
+						400
+					);
+
+					if (callBack == undefined)
+						return;
+
+					setTimeout(function(){
+						callBack();
+					}, 1000);
+				}
+				
+				function loadVisionText()
+				{
+					clearPreviousText(function(){
+						loadText("#vision_template");
+					});
+				}
+				
+				function loadServicesText()
+				{
+					clearPreviousText(function(){
+						loadText("#development_template", function(){
+							setTimeout(function(){
+								loadText("#coaching_template");
+							}, 500);
+						});
+					});
+				}
+				
+				function loadSpeakingText()
+				{
+					clearPreviousText(function(){
+						loadText("#speaking_template");
+					});
+				}
+				
+				function loadContactText()
+				{
+					clearPreviousText(function(){
+						loadText("#contact_template");
+					});
+				}
+				
+				function clearPreviousText(callBack)
+				{
+					if (!$('#frame-content').is(':empty') && $('#frame-content').is(':visible')) { 
+						$("#frame-content")
+							.fadeOut("slow", function() {
+								$("#frame-content").html('');
+								$("#frame-content").fadeIn(1);
+								callBack();
+							});
+					}
+					else
+					{
+						$("#frame-content").html('');
+						callBack();
+					}
+				}
+				
+				function loadText(template, callBack)
+				{
+					var html = parseTemplate($(template).html(), {});
+					$(html)
+						.fadeIn("slow", function(){ if (callBack != undefined) callBack(); else isAnimating = false; })
+						.appendTo("#frame-content");
+				}
+			});
+	 	</script>
+		<script type="text/html" id="vision_template"> 
+		<div class="textBlock">
+			<h1>Vision</h1>
+			<p>The vision of Cre8ive Thought is to help make the software industry more professional and focused on <b>quality</b>. We will do this by promoting and <b>teaching</b> the principles of <b>Software Craftsmanship</b> to developers and managers. We will work together with you to improve your software development process.</p> 
+		</div>
+		</script>
+		<script type="text/html" id="development_template"> 
+		<div class="textBlock">
+			<h1>Development</h1>
+			<p>Whether you need extra manpower to help deliver your software or a team lead to take responsibility for the entire project, I will use my <b>knowledge</b> and <b>experience</b> to make sure the result is <b>well-crafted software</b>.</p> 
+		</div>
+		</script>
+		<script type="text/html" id="coaching_template"> 
+		<div class="textBlock">
+			<h1>Coaching</h1>
+			<p>Need help <b>improving</b> your <b>team’s</b> software development practices and understanding, or want an <b>architectural review</b> of your code? I am available for coaching either through <b>design sessions</b> or working alongside the team using <b>pair programming</b>.</p> 
+		</div>
+		</script>
+		<script type="text/html" id="contact_template"> 
+		<div class="textBlock">
+			<h1>Contact</h1>
+			<p>If you have any questions or want to contact me about potential consulting or contracting work, then please don&#39;t hesitate use any one of the options listed below.</p> 
+			<h2>Mark Nijhof</h2>
+			<ul>
+				<li>Phone: 0047 95 00 99 37</li>
+				<li>Skype: marknijhof or Mark@Nijhof.com</li>
+				<li>E-mail: <a href="mailto:Mark.Nijhof@Cre8iveThought.com">Mark.Nijhof@Cre8iveThought.com</a></li>
+			</ul>
+			<br />
+			<ul>
+				<li>Twitter: <a href="http://twitter.com/MarkNijhof">@MarkNijhof</a></li>
+				<li>GTalk: Mark.Nijhof@Gmail.com</li>
+				<li>MSN: Mark@Nijhof.com</li>
+			</ul>
+			<br />
+			<ul>
+				<li>Address: Welhavensgate 49b, 5006 Bergen Norway</li>
+			</ul>
+		</div>
+		</script>
+		<script type="text/html" id="speaking_template"> 
+		<div class="textBlock">
+			<h1>Speaking</h1>
+			<p>I&#39;ll be speaking at the following events, come look me up.</p> 
+			<h2>XP 2010</h2>
+			<p>XP2010, is a leading international conference on agile methods in software and information systems development. I will be presenting a lightning talk. <br/><br/>Link: <a href="http://www.xp2010.org/">www.XP2010.org</a></p> 
+			<h2>NDC 2010</h2>
+			<p>NDC is Norway’s largest conference dedicated to agile program development. I will be presenting FubuMVC. <br/><br/>Link: <a href="http://www.ndc2010.no/">www.NDC2010.no</a></p> 
+		</div>
+		</script>
+	</head>
+	<body>
+		<div id="cards">
+			<img src="/images/Cre8iveBusinessCardsPresentation.png" alt="" class="BusineesCards">
+		</div>
+		
+		<div id="frame">
+			<div id="frame-background"></div>
+			<div id="card-front"></div>
+			<div id="card-back"></div>
+			<img src="/images/card-front.png" alt="" id="card-front" />
+			<img src="/images/card-back.png" alt="" id="card-back" />
+			<div id="frame-foreground"></div>
+			<div id="frame-content"></div>
+			<div id="frame-menu">
+				<ul>
+					<li id="menu-home"><a href='#/'>Home</a></li>
+					<li id="menu-services"><a href='#/Services'>Services</a></li>
+					<li id="menu-speaking"><a href='#/Speaking'>Speaking</a></li>
+					<li id="menu-vision"><a href='#/Vision'>Vision</a></li>
+					<li id="menu-contact"><a href='#/Contact'>Contact</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div id="noJScript">
+			<script type="text/javascript">
+				$('#noJScript').hide();
+			</script>
+			<h1>Vision</h1>
+			<p>The vision of Cre8ive Thought is to help make the software industry more professional and focused on <b>quality</b>. We will do this by promoting and <b>teaching</b> the principles of <b>Software Craftsmanship</b> to developers and managers. We will work together with you to improve your software development process.</p> 
+			<h1>Development</h1>
+			<p>Whether you need extra manpower to help deliver your software or a team lead to take responsibility for the entire project, I will use my <b>knowledge</b> and <b>experience</b> to make sure the result is <b>well-crafted software</b>.</p> 
+			<h1>Coaching</h1>
+			<p>Need help <b>improving</b> your <b>team’s</b> software development practices and understanding, or want an <b>architectural review</b> of your code? I am available for coaching either through <b>design sessions</b> or working alongside the team using <b>pair programming</b>.</p> 
+		</div>
+		
+		
+		<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+		try {
+		var pageTracker = _gat._getTracker("UA-116586-8");
+		pageTracker._setDomainName(".cre8ivethought.com");
+		pageTracker._trackPageview();
+		} catch(err) {}</script>
+	</body>
+</html>
