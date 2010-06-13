@@ -141,6 +141,10 @@ Then /(?:|I )should not see a button "(.*)"(?: within "([^\"]*)")?$/ do |text, s
   end
 end
 
+Then /^(?:|I )should see$/ do |text|
+  page.should have_xpath("#{not_in_script_and_not_hidden}[contains(normalize-space(.),#{Capybara::XPath.escape(text)})]")
+end
+
 Then /^(?:|I )should see "([^\"]*)"(?: within "([^\"]*)")?$/ do |text, selector|
   with_scope(selector) do
     page.should have_xpath("#{not_in_script_and_not_hidden}[contains(normalize-space(.),#{Capybara::XPath.escape(text)})]")
