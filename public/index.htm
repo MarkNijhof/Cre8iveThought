@@ -14,41 +14,46 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
 		<!--[if lt IE 7]>
-		        <script type="text/javascript" src="/javascripts/unitpngfix.js"></script>
+      <script type="text/javascript" src="/javascripts/lib/unitpngfix.js"></script>
 		<![endif]-->		
-        <script type="text/javascript" src="/javascripts/jquery.query-2.1.7.js"></script>
-        <script type="text/javascript" src="/javascripts/microTemplate.js"></script>
-        <script type="text/javascript" src="/javascripts/sammy-0.5.4.min.js"></script>
+    <script type="text/javascript" src="/javascripts/lib/jquery.query-2.1.7.js"></script>
+    <script type="text/javascript" src="/javascripts/lib/microTemplate.js"></script>
+    <script type="text/javascript" src="/javascripts/lib/sammy-0.5.4.min.js"></script>
+    
+    <script type="text/javascript" src="/javascripts/animations.js"></script>
+		
 		<script type="text/javascript">
 			$(document).ready(function() {
 
-				$('#cards').click(function(){
+    	  cards = $('#cards')
+    	  frame = $('#frame')
+    		animator = new Animator(cards, frame, '../')
+
+
+				cards.click(function(){
 				  location.href = '#/Services'
 				});
-				var isAnimating = false;
-				var cardsShowing = false;
-				var frameShowing = false;
 				
 				var app = $.sammy(function() {
 
   				this.get('#/', function() { 
-  				  loaBigCards();
+  				  animator.bringInBigCards();
           });
 
   				this.get('#/Vision', function() { 
-  				  loadContent(loadVisionText);
+  				  animator.loadContent(function(){ return loadText("#vision_template"); } );
           });
 
   				this.get('#/Services', function() { 
-  				  loadContent(loadServicesText);
+  				  animator.loadContent(function(){ return loadText("#development_template") + loadText("#coaching_template"); } );
           });
 
   				this.get('#/Speaking', function() { 
-  				  loadContent(loadSpeakingText);
+  				  animator.loadContent(function(){ return loadText("#speaking_template"); } );
           });
 
   				this.get('#/Contact', function() { 
-  				  loadContent(loadContactText);
+  				  animator.loadContent(function(){ return loadText("#contact_template"); } );
           });
 				
         });
@@ -56,195 +61,9 @@
 			  $(function() {
           app.run('#/');
         });
-				
-				function loadContent(content) {
-				  
-				  startAnimation(function(){
-
-            if (cardsShowing){
-  				    takeOutBigCards(function(){
-  				      bringInFrame(function(){
-  				        bringInCards(function(){
-    				        bringInMenu(function(){
-    				          content(stopAnimation);
-    				        });
-  				        });
-  				      });
-  				    });
-              return;
-            }
-
-            if (frameShowing){
-              clearPreviousText(function(){
-                content(stopAnimation);
-              });
-              return;
-            }
-            
-            bringInFrame(function(){
-			        bringInCards(function(){
-                bringInMenu(function(){
-                  content(stopAnimation);
-                });
-              });
-            });
-            
-				  });				  
-				}
-				
-				function loaBigCards(){
-				  if (cardsShowing){
-				    return;
-			    }
-			    
-			    startAnimation(function(){
-  				  if (frameShowing){
-  				    clearPreviousText(function(){
-  				      takeOutMenu(function(){
-  				        takeOutCards(function(){
-  				          takeOutFrame(function(){
-  				            bringInBigCards(stopAnimation);
-  				          });
-  				        });
-  				      });
-  				    });
-  				    return;
-  			    }
-
-  				  bringInBigCards(stopAnimation);
-			    }); 
-				}
-				
-				
-				function startAnimation(callBack) {
-					if (isAnimating) {
-					  return;
-					}
-					
-					isAnimating = true;
-					callBack();
-				}
-				
-				function stopAnimation(callBack) {
-					isAnimating = false;
-					if (callBack != undefined){
-  					callBack();
-					}
-				}
-				
-				function takeOutFrame(callBack) {
-					$('#frame').fadeOut(500, function(){ frameShowing = false; callBack(); });
-				}
-				
-				function bringInFrame(callBack) {
-          $('#frame').fadeIn(1000, function(){ frameShowing = true; callBack(); });
-				}
-				
-				function takeOutMenu(callBack) {
-					$('#frame-menu').fadeOut(200, function(){ callBack(); });
-				}
-				
-				function bringInMenu(callBack) {
-          $('#frame-menu').fadeIn(200, function(){ callBack(); });
-				}
-				
-				function takeOutBigCards(callBack){
-					$('#cards').fadeOut(500, function(){ cardsShowing = false; callBack(); });
-				}
-
-				function bringInBigCards(callBack){
-					$('#cards').fadeIn(1000, function(){ cardsShowing = true; callBack(); });
-				}
-				
-				function takeOutCards(callBack){
-					$('#card-back')
-						.animate({ left: '+=-300', top: '+=-430' }, 
-						500
-					);
-
-					$('#card-front')
-						.animate({ left: '+=-200', top: '+=-300' }, 
-						1000
-					);
-
-					if (callBack == undefined)
-						return;
-						
-					setTimeout(function(){
-						callBack();
-					}, 1000);
-				}
-				
-				function bringInCards(callBack){
-					$('#card-front').css({ left: -500, top: -80 });
-					$('#card-back').css({ left: -500, top: 150 });
-
-					$('#card-front')
-						.animate({ left: '+=400' }, 
-						300
-					);
-					$('#card-back')
-						.delay(400)
-						.animate({ left: '+=460' }, 
-						400
-					);
-
-					if (callBack == undefined)
-						return;
-
-					setTimeout(function(){
-						callBack();
-					}, 1000);
-				}
-				
-				function loadVisionText(callBack){
-					clearPreviousText(function(){
-						loadText("#vision_template", callBack);
-					});
-				}
-				
-				function loadServicesText(callBack){
-					clearPreviousText(function(){
-						loadText("#development_template", function(){
-							setTimeout(function(){
-								loadText("#coaching_template", callBack);
-							}, 500);
-						});
-					});
-				}
-				
-				function loadSpeakingText(callBack){
-					clearPreviousText(function(){
-						loadText("#speaking_template", callBack);
-					});
-				}
-				
-				function loadContactText(callBack){
-					clearPreviousText(function(){
-						loadText("#contact_template", callBack);
-					});
-				}
-				
-				function clearPreviousText(callBack){
-					if (!$('#frame-content').is(':empty') && $('#frame-content').is(':visible')) { 
-						$("#frame-content")
-							.fadeOut("slow", function() {
-								$("#frame-content").html('');
-								$("#frame-content").fadeIn(1);
-								callBack();
-							});
-					}
-					else {
-						$("#frame-content").html('');
-						callBack();
-					}
-				}
-				
-				function loadText(template, callBack){
-					var html = parseTemplate($(template).html(), {});
-					$(html)
-						.fadeIn("slow", function(){ callBack(); })
-						.appendTo("#frame-content");
+								
+				function loadText(template) {
+					return parseTemplate($(template).html(), {});
 				}
 			});
 	 	</script>
@@ -298,28 +117,8 @@
 		</script>
 	</head>
 	<body>
-		<div id="cards">
-			<img src="http://cre8ivethought.s3.amazonaws.com/images/Cre8iveBusinessCardsPresentation.png" alt="" class="BusineesCards">
-		</div>
-		
-		<div id="frame">
-			<div id="frame-background"></div>
-			<div id="card-front"></div>
-			<div id="card-back"></div>
-			<img src="http://cre8ivethought.s3.amazonaws.com/images/card-front.png" alt="" id="card-front" />
-			<img src="http://cre8ivethought.s3.amazonaws.com/images/card-back.png" alt="" id="card-back" />
-			<div id="frame-foreground"></div>
-			<div id="frame-content"></div>
-			<div id="frame-menu">
-				<ul>
-					<li id="menu-home"><a href='#/'>Home</a></li>
-					<li id="menu-services"><a href='#/Services'>Services</a></li>
-					<li id="menu-speaking"><a href='#/Speaking'>Speaking</a></li>
-					<li id="menu-vision"><a href='#/Vision'>Vision</a></li>
-					<li id="menu-contact"><a href='#/Contact'>Contact</a></li>
-				</ul>
-			</div>
-		</div>
+		<div id="cards"></div>
+		<div id="frame"></div>
 		
 		<div id="noJScript">
 			<script type="text/javascript">

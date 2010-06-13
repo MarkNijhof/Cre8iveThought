@@ -1,0 +1,104 @@
+
+describe 'Animator - Load content when Big Cards are visible'
+
+  before_each
+	  cards = elements('<div id="cards"/>')
+	  frame = elements('<div id="frame"/>')
+		animator = new Animator(cards, frame, '../')
+		animator.bringInBigCards()
+		Clock.tick(2000) // plenty of time for the cards animation
+    Clock.reset()
+  end
+
+  after_each
+    Clock.reset()
+    cards = null
+    frame = null
+		animator = null
+  end
+
+  describe 'loadContent()'
+	  it 'will first hide the Big Cards using an animation'
+			animator.loadContent(function(){return "test";})
+			cards.css('display').should.be "block"
+			Clock.tick(600)
+			cards.css('display').should.be "none"
+			frame.css('display').should.be "none"
+	  end
+
+	  it 'will display the frame placeholder using an animation'
+			animator.loadContent(function(){return "test";})
+			Clock.tick(500)  // taking out the Big Cards
+			frame.css('display').should.be "none"
+			Clock.tick(1000)
+			frame.css('display').should.be "block"
+	  end
+
+	  it 'will display the frame small front card using an animation'
+			animator.loadContent(function(){return "test";})
+			Clock.tick(500)  // taking out the Big Cards
+			Clock.tick(1000) // frame animation
+			
+			frame.find('#card-front').css('left').should.be "-500px"
+			frame.find('#card-front').css('top').should.be "-80px"
+
+			Clock.tick(300)
+
+			frame.find('#card-front').css('left').should.be "-100px"
+			frame.find('#card-front').css('top').should.be "-80px"
+	  end
+
+	  it 'will display the frame small back card using an animation'
+			animator.loadContent(function(){return "test";})
+			Clock.tick(500)  // taking out the Big Cards
+			Clock.tick(1000) // frame animation
+			
+			frame.find('#card-back').css('left').should.be "-500px"
+			frame.find('#card-back').css('top').should.be "150px"
+
+			Clock.tick(800)
+
+			frame.find('#card-back').css('left').should.be "-40px"
+			frame.find('#card-back').css('top').should.be "150px"
+	  end
+
+	  it 'will display the frame menu using an animation'
+			animator.loadContent(function(){return "test";})
+			Clock.tick(500)  // taking out the Big Cards
+			Clock.tick(1000) // frame animation
+			Clock.tick(1000) // cards animation
+			
+			frame.find('#frame-menu').css('display').should.be "none"
+
+			Clock.tick(200)
+
+			frame.find('#frame-menu').css('display').should.be "block"
+	  end
+
+	  it 'will display the content using an animation'
+			animator.loadContent(function(){return "test";})
+			Clock.tick(500)  // taking out the Big Cards
+			Clock.tick(1000) // frame animation
+			Clock.tick(1000) // cards animation
+			frame.find('#frame-content').html().should.be ''
+			
+			Clock.tick(400)
+			
+			frame.find('#frame-content').html().should.match /test/
+	  end
+
+	  it 'will call a callback function after the animation is finished'
+			var callback_called = false
+			animator.loadContent(function(){return "test";}, function(){ callback_called = true })
+			Clock.tick(500)  // taking out the Big Cards
+			Clock.tick(1000) // frame animation
+			Clock.tick(1000) // cards animation
+			callback_called.should.be false
+			
+			Clock.tick(600)  // content animation
+			
+			callback_called.should.be true
+	  end
+	end
+
+end
