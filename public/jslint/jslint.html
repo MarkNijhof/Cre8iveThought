@@ -11,15 +11,13 @@
       });
     </script>
 
-    <script src="http://local.17jobs.com:3000/javascripts/lib/json.js"></script>
-
     <script src="fulljslint.js"></script>
 		<script>
 			function runSuites() {
 
         function lintLoader(scriptUrl){
           $.ajax({
-            url: "http://local.17jobs.com:3000" + scriptUrl,
+            url: "http://local.cre8ivethought.com:3000" + scriptUrl,
             type: 'GET',
             dataType: 'text',
             //error: function(XMLHttpRequest, textStatus, errorThrown) {
@@ -33,11 +31,7 @@
           });
         }
         $('#jspec').html('');
-        lintLoader("/javascripts/hashmap.js");
-        lintLoader("/javascripts/feedback.js");
-        lintLoader("/javascripts/template_engine.js");
-        lintLoader("/javascripts/custom_events.js");
-        lintLoader("/javascripts/custom_controls.js");
+        lintLoader("/javascripts/animations.js?timestamp=" + new Date().now);
 			}
 		</script>
 	</head>

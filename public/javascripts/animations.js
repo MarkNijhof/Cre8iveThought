@@ -1,27 +1,48 @@
 
-Animator = function(cards, frame, image_location){
+var Animator = function(cards, frame, image_location){
 	
-	_cards = cards;
-	_frame = frame;
-	_image_location = image_location == undefined ? 'http://cre8ivethought.s3.amazonaws.com/' : image_location;
-	_big_cards_are_visible = false;
-	_frame_is_visible = false;
+	var _cards = cards;
+	var _frame = frame;
+	var _image_location = image_location === undefined ? 'http://cre8ivethought.s3.amazonaws.com/' : image_location;
+	var _big_cards_are_visible = false;
+	var _frame_is_visible = false;	
 	
+	function _setup_cards(cards, image_location){
+		cards.html('<img src="'+ image_location +'images/Cre8iveBusinessCardsPresentation.png" alt="" class="BusineesCards" />');
+	}
+	
+	function _setup_frame(frame, image_location){
+		frame.append('<div id="frame-background"></div>');
+		frame.append('<div id="card-front"></div>');
+		frame.append('<div id="card-back"></div>');
+		frame.append('<div id="frame-foreground"></div>');
+		frame.append('<div id="frame-content"></div>');
+		
+		var menu = $('<div id="frame-menu"><ul></ul></div>');
+		var ul = menu.find('ul');
+		ul.append('<li id="menu-home"><a href="#/">Home</a></li>');
+		ul.append('<li id="menu-services"><a href="#/Services">Services</a></li>');
+		ul.append('<li id="menu-speaking"><a href="#/Speaking">Speaking</a></li>');
+		ul.append('<li id="menu-vision"><a href="#/Vision">Vision</a></li>');
+		ul.append('<li id="menu-contact"><a href="#/Contact">Contact</a></li>');		
+		frame.append(menu);
+	}
+		
 	_setup_cards(_cards, _image_location);
 	_setup_frame(_frame, _image_location);
 	
 	this.bringInBigCards = function(callBack){		
 		if (_frame_is_visible){
 			this.takeOutFrame(function(){
-				_cards.fadeIn(1000, function(){ _big_cards_are_visible = true; if (callBack != undefined) { callBack(); } });		
+				_cards.fadeIn(1000, function(){ _big_cards_are_visible = true; if (callBack !== undefined) { callBack(); } });		
 			});
 		} else {
-			_cards.fadeIn(1000, function(){ _big_cards_are_visible = true; if (callBack != undefined) { callBack(); } });		
+			_cards.fadeIn(1000, function(){ _big_cards_are_visible = true; if (callBack !== undefined) { callBack(); } });		
 		}
 	};
 	
 	this.takeOutBigCards = function(callBack){
-		_cards.fadeOut(500, function(){ _big_cards_are_visible = false; if (callBack != undefined) { callBack(); } });
+		_cards.fadeOut(500, function(){ _big_cards_are_visible = false; if (callBack !== undefined) { callBack(); } });
 	};	
 	
 	this.bringInFrame = function(callBack){
@@ -67,15 +88,15 @@ Animator = function(cards, frame, image_location){
 				_loadContent(_frame, returnsContent, callBack);
 			});
 		}
-	}
+	};
 	
 	
 	function _bringInFrame(frame, callBack) {
-    frame.fadeIn(1000, function(){ _frame_is_visible = true; if (callBack != undefined) { callBack(); } });
+    frame.fadeIn(1000, function(){ _frame_is_visible = true; if (callBack !== undefined) { callBack(); } });
 	}
 				
 	function _takeOutFrame(frame, callBack) {
-		frame.fadeOut(500, function(){ _frame_is_visible = false; if (callBack != undefined) { callBack(); } });
+		frame.fadeOut(500, function(){ _frame_is_visible = false; if (callBack !== undefined) { callBack(); } });
 	}
 	
 	function _bringInCards(frame, callBack){
@@ -95,8 +116,9 @@ Animator = function(cards, frame, image_location){
 			400
 		);
 
-		if (callBack == undefined)
+		if (callBack === undefined){
 			return;
+		}
 
 		setTimeout(function(){
 			callBack();
@@ -117,7 +139,7 @@ Animator = function(cards, frame, image_location){
 			1000
 		);
 
-		if (callBack == undefined) {
+		if (callBack === undefined) {
 			return;
 		}
 			
@@ -127,11 +149,11 @@ Animator = function(cards, frame, image_location){
 	}
 	
 	function _bringInMenu(frame, callBack) {
-    frame.find('#frame-menu').fadeIn(200, function(){ if (callBack != undefined) { callBack(); } });
+    frame.find('#frame-menu').fadeIn(200, function(){ if (callBack !== undefined) { callBack(); } });
 	}
 	
 	function _takeOutMenu(frame, callBack) {
-		frame.find('#frame-menu').fadeOut(200, function(){ if (callBack != undefined) { callBack(); } });
+		frame.find('#frame-menu').fadeOut(200, function(){ if (callBack !== undefined) { callBack(); } });
 	}
 	
 	function _loadContent(frame, returnsContent, callBack){
@@ -142,7 +164,7 @@ Animator = function(cards, frame, image_location){
 			.find('#frame-content')
 			.append(item.fadeIn(350));
 		
-		if (callBack != undefined) { 
+		if (callBack !== undefined) { 
 			setTimeout(callBack, 400);
 		}
 	}
@@ -157,38 +179,16 @@ Animator = function(cards, frame, image_location){
 					frame_content.fadeIn(1);
 				});
 
-			if (callBack != undefined) { 
+			if (callBack !== undefined) { 
 				setTimeout(function(){ callBack(); }, 400);
 			}
 		}
 		else {
 			frame_content.html('');
-			if (callBack != undefined){
+			if (callBack !== undefined){
 				callBack();
 			}
 		}
 	}	
-	
-	
-	function _setup_cards(cards, image_location){
-		cards.html('<img src="'+ image_location +'images/Cre8iveBusinessCardsPresentation.png" alt="" class="BusineesCards" />');
-	}
-	
-	function _setup_frame(frame, image_location){
-		frame.append('<div id="frame-background"></div>');
-		frame.append('<div id="card-front"></div>');
-		frame.append('<div id="card-back"></div>');
-		frame.append('<div id="frame-foreground"></div>');
-		frame.append('<div id="frame-content"></div>');
 		
-		var menu = $('<div id="frame-menu"><ul></ul></div>');
-		var ul = menu.find('ul');
-		ul.append('<li id="menu-home"><a href="#/">Home</a></li>');
-		ul.append('<li id="menu-services"><a href="#/Services">Services</a></li>');
-		ul.append('<li id="menu-speaking"><a href="#/Speaking">Speaking</a></li>');
-		ul.append('<li id="menu-vision"><a href="#/Vision">Vision</a></li>');
-		ul.append('<li id="menu-contact"><a href="#/Contact">Contact</a></li>');		
-		frame.append(menu);
-	}
-	
 };

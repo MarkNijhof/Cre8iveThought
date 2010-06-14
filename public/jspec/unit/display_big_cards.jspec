@@ -18,7 +18,7 @@ describe 'Animator - Displaying Big Cards when Frame is not visible'
 	  it 'will display the cards placeholder using an animation'
 			animator.bringInBigCards()
 			Clock.tick(1000)
-			cards.css('display').should.be "block"
+			$(cards).css("display").should.be "block"
 	  end
 
 	  it 'will call a callback function after the animation is finished'
