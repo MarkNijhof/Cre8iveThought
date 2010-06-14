@@ -19,9 +19,9 @@ describe 'Animator - Hiding Big Cards'
   describe 'takeOutBigCards()'
 	  it 'will hide the cards placeholder using an animation'
 			animator.takeOutBigCards()
-			cards.css('display').should.be "block"
+			cards.should.be_visible
 			Clock.tick(500)
-			cards.css('display').should.be "none"
+			cards.should.be_hidden
 	  end
 
 	  it 'will call a callback function after the animation is finished'

@@ -18,7 +18,7 @@ describe 'Animator - Displaying Frame when Big Cards are not visible'
 	  it 'will display the frame placeholder using an animation'
 			animator.bringInFrame()
 			Clock.tick(1000)
-			frame.css('display').should.be "block"
+			frame.should.be_visible
 	  end
 
 	  it 'will display the frame small front card using an animation'
@@ -52,11 +52,11 @@ describe 'Animator - Displaying Frame when Big Cards are not visible'
 			Clock.tick(1000) // frame animation
 			Clock.tick(1000) // cards animation
 			
-			frame.find('#frame-menu').css('display').should.be "none"
+			frame.find('#frame-menu').should.be_hidden
 
 			Clock.tick(200)
 
-			frame.find('#frame-menu').css('display').should.be "block"
+			frame.find('#frame-menu').should.be_visible
 	  end
 
 	  it 'will call a callback function after the animation is finished'

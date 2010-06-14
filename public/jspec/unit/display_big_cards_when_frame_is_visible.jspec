@@ -20,23 +20,23 @@ describe 'Animator - Displaying Big Cards when Frame is visible'
   describe 'bringInBigCards()'
 	  it 'will first hide the Frame using an animation'
 			animator.bringInBigCards()
-			frame.css('display').should.be "block"
+			frame.should.be_visible
 			
 			Clock.tick(1700)
 			
-			frame.css('display').should.be "none"
-			cards.css('display').should.be "none"
+			frame.should.be_hidden
+			cards.should.be_hidden
 	  end
 
 	  it 'will display the cards placeholder using an animation'
 			animator.bringInBigCards()
 			Clock.tick(1700) // frame animation
 
-			cards.css('display').should.be "none"
+			cards.should.be_hidden
 			
 			Clock.tick(1000)
 			
-			cards.css('display').should.be "block"
+			cards.should.be_visible
 	  end
 
 	  it 'will call a callback function after the animation is finished'

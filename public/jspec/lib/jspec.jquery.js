@@ -45,7 +45,7 @@ JSpec
     },
     
     be_hidden : function(actual) {
-      return !JSpec.does(actual, 'be_visible')
+      return !JSpec.does(actual, 'be_visible') || jQuery(actual).css('display') == ''
     },
     
     have_classes : function(actual) {

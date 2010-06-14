@@ -20,11 +20,11 @@ describe 'Animator - Displaying Frame when Big Cards are not visible'
   describe 'takeOutFrame()'
 	  it 'will hide the frame menu using an animation'
 			animator.takeOutFrame()
-			frame.find('#frame-menu').css('display').should.be "block"
+			frame.find('#frame-menu').should.be_visible
 
 			Clock.tick(200)
 
-			frame.find('#frame-menu').css('display').should.be "none"
+			frame.find('#frame-menu').should.be_hidden
 	  end
 
 	  it 'will hide the frame small front card using an animation'
@@ -60,7 +60,7 @@ describe 'Animator - Displaying Frame when Big Cards are not visible'
 			Clock.tick(1000) // cards animation
 
 			Clock.tick(500)
-			frame.css('display').should.be "none"
+			frame.should.be_hidden
 	  end
 
 	  it 'will call a callback function after the animation is finished'

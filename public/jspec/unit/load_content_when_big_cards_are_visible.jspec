@@ -20,18 +20,18 @@ describe 'Animator - Load content when Big Cards are visible'
   describe 'loadContent()'
 	  it 'will first hide the Big Cards using an animation'
 			animator.loadContent(function(){return "test";})
-			cards.css('display').should.be "block"
+			cards.should.be_visible
 			Clock.tick(600)
-			cards.css('display').should.be "none"
-			frame.css('display').should.be "none"
+			cards.should.be_hidden
+			frame.should.be_hidden
 	  end
 
 	  it 'will display the frame placeholder using an animation'
 			animator.loadContent(function(){return "test";})
 			Clock.tick(500)  // taking out the Big Cards
-			frame.css('display').should.be "none"
+			frame.should.be_hidden
 			Clock.tick(1000)
-			frame.css('display').should.be "block"
+			frame.should.be_visible
 	  end
 
 	  it 'will display the frame small front card using an animation'
@@ -68,11 +68,11 @@ describe 'Animator - Load content when Big Cards are visible'
 			Clock.tick(1000) // frame animation
 			Clock.tick(1000) // cards animation
 			
-			frame.find('#frame-menu').css('display').should.be "none"
+			frame.find('#frame-menu').should.be_hidden
 
 			Clock.tick(200)
 
-			frame.find('#frame-menu').css('display').should.be "block"
+			frame.find('#frame-menu').should.be_visible
 	  end
 
 	  it 'will display the content using an animation'
