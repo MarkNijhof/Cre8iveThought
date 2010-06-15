@@ -80,8 +80,8 @@ describe 'Animator - Load content when Big Cards are visible'
 			Clock.tick(500)  // taking out the Big Cards
 			Clock.tick(1000) // frame animation
 			Clock.tick(1000) // cards animation
-			frame.find('#frame-content').html().should.be ''
-			
+			Clock.tick(200)  // menu animation
+
 			Clock.tick(400)
 			
 			frame.find('#frame-content').html().should.match /test/
@@ -93,9 +93,10 @@ describe 'Animator - Load content when Big Cards are visible'
 			Clock.tick(500)  // taking out the Big Cards
 			Clock.tick(1000) // frame animation
 			Clock.tick(1000) // cards animation
+			Clock.tick(200)  // menu animation
 			callback_called.should.be false
 			
-			Clock.tick(600)  // content animation
+			Clock.tick(400)  // content animation
 			
 			callback_called.should.be true
 	  end

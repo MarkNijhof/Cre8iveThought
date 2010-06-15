@@ -7,6 +7,7 @@ var Animator = function(cards, frame, image_location){
 	var _big_cards_are_visible = false;
 	var _frame_is_visible = false;	
 	
+	
 	function _setup_cards(cards, image_location){
 		cards.html('<img src="'+ image_location +'images/Cre8iveBusinessCardsPresentation.png" alt="" class="BusineesCards" />');
 	}
@@ -89,7 +90,6 @@ var Animator = function(cards, frame, image_location){
 			});
 		}
 	};
-	
 	
 	function _bringInFrame(frame, callBack) {
     frame.fadeIn(1000, function(){ _frame_is_visible = true; if (callBack !== undefined) { callBack(); } });

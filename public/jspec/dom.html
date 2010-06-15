@@ -48,6 +48,7 @@
           .exec('unit/load_content_when_nothing_is_visible.jspec')
           .exec('unit/load_content_when_frame_is_visible.jspec')
           .exec('unit/load_content_when_frame_is_visible_with_previous_content.jspec')
+          .exec('unit/add_ndc_message_before_content.jspec')
 				  .run({ failuresOnly: true, fixturePath: 'fixtures' })
 				  .report();
 			}
