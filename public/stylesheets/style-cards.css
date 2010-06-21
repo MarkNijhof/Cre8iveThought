@@ -70,7 +70,7 @@ html, body
 	width: 800px;
 	height: 600px;
 	z-index: 2;
-	background-image: url('http://cre8ivethought.s3.amazonaws.com/images/frame-back.png');
+	background-image: url('http://cre8ivethought.s3.amazonaws.com/images/frame-back-bekk.png');
 	background-repeat: none;
 }
 
@@ -125,7 +125,7 @@ html, body
 {
 	position: absolute; 
 	text-align: left;
-	top: 430px;
+	top: 410px;
 	left: 20px;
 	width: 300px;
 	height: 150px;

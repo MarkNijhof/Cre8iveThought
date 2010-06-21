@@ -31,7 +31,7 @@
 
 
 				cards.click(function(){
-				  location.href = '#/Services';
+				  location.href = '#/BEKK';
 				});
 				
 				var app = $.sammy(function() {
@@ -40,12 +40,8 @@
   				  animator.bringInBigCards();
           });
 
-  				this.get('#/Vision', function() { 
-  				  animator.loadContent(function(){ return loadText("#vision_template"); } );
-          });
-
-  				this.get('#/Services', function() { 
-  				  animator.loadContent(function(){ return loadText("#development_template") + loadText("#coaching_template"); } );
+  				this.get('#/BEKK', function() { 
+  				  animator.loadContent(function(){ return loadText("#bekk_template"); } );
           });
 
   				this.get('#/Speaking', function() { 
@@ -67,28 +63,10 @@
 				}
 			});
 	 	</script>
-		<script type="text/html" id="vision_template"> 
-		<div class="textBlock">
-			<h1>Vision</h1>
-			<p>The vision of Cre8ive Thought is to help make the software industry more professional and focused on <b>quality</b>. We will do this by promoting and <b>teaching</b> the principles of <b>Software Craftsmanship</b> to developers and managers. We will work together with you to improve your software development process.</p> 
-		</div>
-		</script>
-		<script type="text/html" id="development_template"> 
-		<div class="textBlock">
-			<h1>Development</h1>
-			<p>Whether you need extra manpower to help deliver your software or a team lead to take responsibility for the entire project, I will use my <b>knowledge</b> and <b>experience</b> to make sure the result is <b>well-crafted software</b>.</p> 
-		</div>
-		</script>
-		<script type="text/html" id="coaching_template"> 
-		<div class="textBlock">
-			<h1>Coaching</h1>
-			<p>Need help <b>improving</b> your <b>team’s</b> software development practices and understanding, or want an <b>architectural review</b> of your code? I am available for coaching either through <b>design sessions</b> or working alongside the team using <b>pair programming</b>.</p> 
-		</div>
-		</script>
 		<script type="text/html" id="contact_template"> 
 		<div class="textBlock">
 			<h1>Contact</h1>
-			<p>If you have any questions or want to contact me about potential consulting or contracting work, then please don&#39;t hesitate use any one of the options listed below.</p> 
+			<p>If you have any questions or want to contact me about potential consulting or coaching work, then please don&#39;t hesitate use any one of the options listed below.</p> 
 			<h2>Mark Nijhof</h2>
 			<ul>
 				<li>Phone: 0047 95 00 99 37</li>
@@ -101,10 +79,6 @@
 				<li>GTalk: Mark.Nijhof@Gmail.com</li>
 				<li>MSN: Mark@Nijhof.com</li>
 			</ul>
-			<br />
-			<ul>
-				<li>Address: Welhavensgate 49b, 5006 Bergen Norway</li>
-			</ul>
 		</div>
 		</script>
 		<script type="text/html" id="speaking_template"> 
@@ -113,6 +87,14 @@
 			<p>I&#39;ll be speaking at the following events, come look me up.</p> 
 			<h2>NDC 2010</h2>
 			<p>NDC is Norway’s largest conference dedicated to agile program development. I will be presenting about FubuMVC and about Test-Driven Javascript Development. <br/><br/>Link: <a href="http://www.ndc2010.no/">www.NDC2010.no</a></p> 
+		</div>
+		</script>
+		<script type="text/html" id="bekk_template"> 
+		<div class="textBlock">
+			<h1>BEKK</h1>
+			<p>I am happy to announce that from August 2010 I&#39;ll be working for <a href="http://www.bekk.no/">BEKK</a> in Oslo. Which means that I will not be doing any work through Cre8ive Thought anymore. But if there is anything that I can do for you then please contact me directly anyway.</p>
+			<h1>Oslo</h1>
+			<p>In the beginning I will be traveling between Bergen and Oslo, but as soon as we have found an appropriate place to live the family will move with me to Oslo as well. These are interesting times ahead of us!</p> 
 		</div>
 		</script>
 	</head>
