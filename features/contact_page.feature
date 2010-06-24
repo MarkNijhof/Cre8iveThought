@@ -14,5 +14,4 @@ Scenario: Visiting the contact page
   And I should see "Twitter: @MarkNijhof"
   And I should see "GTalk: Mark.Nijhof@Gmail.com"
   And I should see "MSN: Mark@Nijhof.com"
-  And I should see "Address: Welhavensgate 49b, 5006 Bergen Norway"
 
