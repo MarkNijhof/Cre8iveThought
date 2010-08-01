@@ -9,7 +9,7 @@ gem 'thin' # or mongrel
 gem 'haml'
 gem 'compass'
 gem 'rdiscount'
-gem 'toto'
+gem 'toto', :git => 'git://github.com/MarkNijhof/toto.git'
 
 # Test requirements
 if RUBY_PLATFORM =~ /darwin/
