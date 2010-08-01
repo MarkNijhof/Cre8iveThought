@@ -11,6 +11,7 @@ gem 'compass'
 gem 'rdiscount'
 gem 'toto', :git => 'git://github.com/MarkNijhof/toto.git'
 
+
 # Test requirements
 if RUBY_PLATFORM =~ /darwin/
   group :test do
