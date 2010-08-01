@@ -1,0 +1,167 @@
+html { margin: 20px }
+body {
+  margin: 0 auto;
+	color: #222222;
+	font-family: "Georgia","Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+	font-size: 1em;
+  line-height: 30px;
+  padding: 45px;
+  width: 800px;
+  background: #dfdfdf;
+
+}
+header, footer, section, article {
+	display: block;
+}
+
+#content_header {
+	position: relative;
+	height: 210px;
+  background: #ffffff;
+}
+
+#frame-foreground
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 800px;
+	height: 210px;
+	z-index: 5;
+	background-image: url('http://cre8ivethought.s3.amazonaws.com/images/frame-front.png');
+	background-repeat: none;
+}
+
+#card-front {
+	background-image: url("http://cre8ivethought.s3.amazonaws.com/images/card-front-cropped.png");
+	top: 0px;
+	left: 0px;
+	width: 365px;
+	height: 210px;
+	position: absolute;
+	z-index: 4;
+}
+
+#content_body {
+	padding: 20px;
+  background: #ffffff;
+	background-image: url('http://cre8ivethought.s3.amazonaws.com/images/frame-front-middle.png');	
+}
+
+#content_footer {
+	height: 40px;
+  background: #ffffff;
+	background-image: url('http://cre8ivethought.s3.amazonaws.com/images/frame-front.png');	
+	background-position: bottom;
+}
+
+#content {
+}
+#by {
+	font-style: italic;
+  margin-right: 5px;
+	font-size: 28px;
+}
+#caption {
+	position: absolute;
+	font-size: 24px;
+	margin: -135px 0 0 70px;
+}
+#path {
+	color: #b53131;
+}
+.date {
+  font-style: italic;
+  float: right;
+  line-height: 43px;
+  margin-right: 30px;
+}
+a {
+  color: #b83000;
+}
+h1 a {
+  color: #3B4A25;
+  text-decoration: none;
+}
+h1 a:hover {
+  color: #3B4A25;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+body > header > h1 {
+	border-left: 30px solid black;
+	padding-left: 30px;
+  font-size: 201px;
+  margin: 100px 0 15px 0;
+  font-weight: normal;
+}
+.post header {
+	margin-bottom: 10px;
+}
+.post .body p:first-child {
+	margin-top: 0;
+}
+.post .body p:last-child {
+	margin-bottom: 0;
+}
+.post {
+	margin-bottom: 30px;
+}
+.post:last-child {
+  margin-bottom: 10px;
+}
+.post p {
+  margin: 10px 0;
+}
+.post .more {
+  margin-top: -10px;
+  margin-right: 30px;
+  font-style: italic;
+  text-align: right;
+}
+.more a {
+  text-decoration: none;
+}
+.more a:hover { text-decoration: underline }
+body > header {
+	display: block;
+	padding-top: 30px;
+	line-height: 180px;
+	margin-bottom: 20px;
+}
+h1 {
+  color: #3B4A25;
+  display: inline;
+  margin: 0;
+  font-weight: 600;
+	font-size: 2.2em;
+}
+h2, h3, h4 {
+  color: #3B4A25;
+  display: inline;
+  margin: 0;
+  font-weight: 600;
+	font-size: 1.8em;
+}
+ul, li {
+  list-style-type: none;
+}
+code {
+  font-family: 'Anonymous Pro', 'Bitstream Vera Sans', 'Monaco', Courier, mono;
+}
+pre {
+  padding: 20px;
+}
+blockquote {
+  font-style: italic;
+}
+
+body > footer {
+  text-align: left;
+  margin-left: 10px;
+	font-style: italic;
+  font-size: 18px;
+  color: #888;
+}

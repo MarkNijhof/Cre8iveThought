@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="alternate" type="application/atom+xml" title="<%= title %> - feed" href="/index.xml" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+		<link rel="icon" type="image/png" href="http://cre8ivethought.s3.amazonaws.com/images/favicon.png" />
+    <title><%= title %></title>
+  </head>
+  <body>
+    <section>
+      <div id="content_header" >
+        <div id="frame-foreground"></div>
+        <div id="card-front"></div>
+      </div>
+      <div id="content_body">
+      <%= yield %> 
+      </div>
+      <div id="content_footer" ></div>
+    </section>
+    <footer>      
+    	<a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width: 0pt;" src="http://i.creativecommons.org/l/by/3.0/88x31.png"></a><br>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.
+    </footer>
+  </body>
+</html>
+

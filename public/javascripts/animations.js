@@ -22,14 +22,20 @@ var Animator = function(cards, frame, image_location){
 		var menu = $('<div id="frame-menu"><ul></ul></div>');
 		var ul = menu.find('ul');
 		ul.append('<li id="menu-home"><a href="#/">Home</a></li>');
+		ul.append('<li id="menu-blog"><a href="#/Blog">Blog</a></li>');
 		ul.append('<li id="menu-bekk"><a href="#/BEKK">BEKK</a></li>');
-		ul.append('<li id="menu-speaking"><a href="#/Speaking">Speaking</a></li>');
 		ul.append('<li id="menu-contact"><a href="#/Contact">Contact</a></li>');		
 		frame.append(menu);
 	}
 		
 	_setup_cards(_cards, _image_location);
 	_setup_frame(_frame, _image_location);
+	
+	this.gotoBlog = function(){
+		this.takeOutFrame(function(){
+			location.href = '/blog/index';
+		});
+	}
 	
 	this.bringInBigCards = function(callBack){		
 		if (_frame_is_visible){

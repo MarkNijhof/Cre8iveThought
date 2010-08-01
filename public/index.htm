@@ -8,7 +8,6 @@
 	    <meta name="description" content="I am an experienced Microsoft .Net C# developer with good knowledge about Object Oriented (OO) design. I put great effort in my code to ensure that it is always clean and readable. I am creative and am always thinking of innovative solutions. I consider myself a Software Craftsman and am a strong believer of continuous improvement and teaching."/>
 	    <meta name="keywords" content="Cre8iveThought, Cre8ive Thought, Software Craftsmanship, Microsoft .Net, C#, Object Oriented"/>
 		<link rel="stylesheet" type="text/css" media="all" href="/stylesheets/style-cards.css"/>
-		<link rel="shortcut icon" href="/favicon.ico" />
 		<link rel="icon" type="image/png" href="http://cre8ivethought.s3.amazonaws.com/images/favicon.png" />
 		
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
@@ -50,6 +49,10 @@
 
   				this.get('#/Contact', function() { 
   				  animator.loadContent(function(){ return loadText("#contact_template"); } );
+          });
+
+  				this.get('#/Blog', function() { 
+  				  animator.gotoBlog();
           });
 				
         });

@@ -8,6 +8,8 @@ gem 'thin' # or mongrel
 # Component requirements
 gem 'haml'
 gem 'compass'
+gem 'rdiscount'
+gem 'toto'
 
 # Test requirements
 if RUBY_PLATFORM =~ /darwin/
