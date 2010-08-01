@@ -11,22 +11,16 @@ if ENV['RACK_ENV'] == 'development'
   use Rack::ShowExceptions
 end
 
-#
-# Create and configure a toto instance
-#
-
-Toto::Paths = {
-    :templates => "blog/templates",
-    :pages => "blog/templates/pages",
-    :articles => "blog/articles"
-}
-
 toto = Toto::Server.new do
-  #
-  # Add your settings here
-  # set [:setting], [value]
-  # 
+  # Toto::Paths = {
+  #     :templates => "blog/templates",
+  #     :pages => "blog/templates/pages",
+  #     :articles => "blog/articles"
+  # }
   
+  Toto::Paths[:templates] = "blog/templates"
+  Toto::Paths[:pages] = "blog/templates/pages"
+  Toto::Paths[:articles] = "blog/articles"
   
   set :author,    "Mark Nijhof"
   set :title,     "Cre8ive Thought - Mark Nijhof"
