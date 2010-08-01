@@ -55,6 +55,40 @@ header, footer, section, article {
 	background-position: bottom;
 }
 
+#content_header #menu {
+	border:0 none;
+	display:inline-block;
+	float:left;
+	left:520px;
+	margin:0;
+	outline:0 none;
+	overflow:hidden;
+	padding:0;
+	position:relative;
+	top:22px;
+	width:400px;
+	z-index: 10;
+}
+
+#content_header #menu ul {
+	list-style-type:disc;
+}
+#content_header #menu ul, ol {
+	margin:0 1.5em 1.5em 0;
+	padding-left:3.333em;
+}
+
+#content_header #menu li {
+	display:inline;
+	float:left;
+	list-style-image:none;
+	list-style-type:none;
+	margin-left:0;
+	padding-left:10px;
+	padding-right:10px;
+	white-space:nowrap;
+}
+
 .gist {
   line-height: 1.2em;	
 }
@@ -92,6 +126,11 @@ header, footer, section, article {
 }
 a {
   color: #b83000;
+  text-decoration: none;
+}
+a:hover {
+  color: #b83000;
+  text-decoration: underline;
 }
 h1 a {
   color: #3B4A25;
@@ -100,9 +139,6 @@ h1 a {
 h1 a:hover {
   color: #3B4A25;
   text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
 }
 body > header > h1 {
 	border-left: 30px solid black;
