@@ -10,11 +10,11 @@ Greg however takes this same principle but he applies it to the whole architectu
 
 So lets take a quick look at the overall architecture before we dive into the details:
 
-![CQRS Overview](/images/CQRS/DDD-Overview.jpg)
+>>>![CQRS Overview](/images/CQRS/DDD-Overview.jpg)
 
 You have to excuse me for not using Visio to make this drawing, but I really didn’t feel like tackling yet an other layer of complexity tonight. At least I did the labels in typed text, so it is readable. I will discuss this architecture in 4 phases, the order I choose is what I believe is the natural way your would think about this. In the end you will see that the whole principle is rather simple. Really. 
 
-![CQRS Devision](/images/CQRS/DDD-Devision.jpg)
+>>>![CQRS Devision](/images/CQRS/DDD-Devision.jpg)
 
 1. Queries
 2. Commands
@@ -75,7 +75,7 @@ Now we are going to separate the domain behavior from the state changes resultin
 
 ##Internal Domain Event Handler##
 
-<script src="http://gist.github.com/503301.js?file=DomainRepositoryContract.cs"></script>
+<script src="http://gist.github.com/503301.js?file=InternalDomainEventHandler.cs"></script>
 
 The reason why we want these events is because they now become part of our persistence strategy, meaning that the only information we will be persisting of an Aggregate Root are the generated events. So if every state change is triggered by an event, and an internal event handler has no other logic then setting the correct state (and that means not even deriving other information from the data in the event), then what we can do then is load all historical events and have the Aggregate Root replay them all internally bringing back the original state of the Aggregate Root in exactly the same way it got there in the first place. It really is the same as replaying a tape.
 

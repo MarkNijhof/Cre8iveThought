@@ -1,0 +1,71 @@
+title: CQRS Trying to make it re-usable
+author: Mark Nijhof
+date: 28/11/2009
+
+If you have been following the source code changes on [GitHub](http://github.com/MarkNijhof/Fohjin)  you may have noticed that I renamed the folder Fohjin.DDD to Fohjin.DDD.Example, my intention is to not make anymore changes there. Instead I have created a new folder next to it and in there I am rebuilding the same components but now with re-use and ease-of-use in mind.
+
+The first thing that is very obvious in the example code is that the domain is not very persistence ignorant, something that is valued a lot in Domain-Driven Design. So this is something that I wanted to try to address first. I really like the way NHibernate makes our code persistence ignorant and am attempting to solve this in a similar manner, using [Castle DynamicProxy](http://www.castleproject.org/dynamicproxy/index.html).
+
+Since I am a complete Castle DynamicProxy noob I asked the help of [Krzysztof Koźmic](http://twitter.com/Kkozmic) who is an active committer on the Castle project. Krzysztof was gracias enough to get me through the basics in .Net proxy-ing. For those interested in this technology I would also recommend reading his excellent [blog series](http://kozmic.pl/archive/2009/04/27/castle-dynamic-proxy-tutorial.aspx) about the same topic.
+
+What I want to achieve is that you get back your poco and I am going to show you one suggestion that I have working now.
+
+For comparison I’ll show you here how an aggregate root looks like in my initial example code (it is stripped down to only contain one behavioral method):
+
+<script src="http://gist.github.com/503820.js?file=1.cs"></script>
+
+And here is the same aggregate root but now _more_ persistence ignorant:
+
+<script src="http://gist.github.com/503820.js?file=2.cs"></script>
+
+Ok this may seem a bit strange at first, I mean we are sending an event into nothing and we don’t set our state anymore. Let me try to explain :)
+
+##Convention over Configuration##
+
+Well in order to make this work I am going to insist on some conventions, in fact it is going to be very opinionated. If you want to learn more about convention over configuration then I would suggest reading [Jeremy Millers](http://codebetter.com/blogs/jeremy.miller/) article on [MSDN](http://msdn.microsoft.com/en-us/magazine/dd419655.aspx). Personally I am all in favor for some strong guidelines so lets just go over them and see if they make sense to you as well.
+
+###Mandatory methods###
+
+The protected virtual method Apply and the protected method RegisteredEvents are both mandatory if you want to instantiate the aggregate root using this approach.
+
+In the RegisteredEvents you return all the events that the aggregate root can publish, this is to let the persistence code know what it can expect. So when you add some new behavior that will publish a new event then you just add it to the list here. I think that you can sort of think about this as the mapping classes in NHibernate.
+
+The Apply method is used to publish the events from the domain behavior, but as you can see it has an empty method body, so nothing will happen, right? Here we use Castle DynamicProxy to intercept calls to this method and replace the behavior (non-existing) with our persistence logic. Where this logic comes from I’ll explain in a minute.
+
+###Internal state needs to be protected virtual properties###
+
+One other difference with this approach versus the example code is that instead of private fields or private properties for the internal state, it now needs to be in the form of protected virtual properties. The reason for this is because state will not be managed by the aggregate root anymore, but instead by something that we add using Castle DynamicProxy and we will be using interception to map the properties to the internal representation of the state. The code even throws an exception if the aggregate root tries to set the internal state directly.
+
+###The event store###
+
+I haven’t done anything with the event store yet, I don’t think the functionality will change much from the code in the example project. One thing that will remain the same is the dependency on interfaces, and not on specific implementations. This is obviously because it is good design practices. And it will enable us to mix this new approach and the approach using the BaseAggregateRoot class together with the same event store. The BaseAggregateRoot is discussed in detail [here](http://elegantcode.com/2009/11/20/cqrs-the-domain-events/).
+
+###Mix-in magic###
+
+So after reading the previous chapter you would probably say, but this aggregate root doesn’t implement anything? This is true, but when our repository is instantiating the aggregate root it is also adding or injecting two more classes into it. One class that implements the IEventProvider interface and an other class that implements the IOrginator interface. This is called mixing-in classes and by doing so the aggregate root will implement both these two interfaces and it will re-direct calls to it to the mix-in classes. So as far as our event store knows it just is a class that implements the needed interfaces.
+
+##Why have everything protected?##
+
+Well in order to be able to intercept members using Castle DynamicProxy these members need to be visible to the interceptor. The most private way that is available to us is protected, and the reason why I want this to be as private as possible is because this is not domain logic, and thus should not be visible to the users of the domain. For the same reason you may notice that for example the IEventProvider implementation has all the members implement the interface explicitly thus hiding them when the domain is used and only showing them when the domain is explicitly casted to the IEventProvider interface.
+
+I have been thinking about providing a basic interface that dictates that the Apply and RegisterEvents methods needs to be present, but I like this approach better as from the outside these implementation details would not be known, but I could imagine being able to support both approaches.
+
+##Reflect only once##
+
+There is quit a bit of reflection going on to discover and the properties of both the domain events and the aggregate root internal state. But once this is done once the results will be cached and re-used for each sequential need. But I am sure this can improve quit a bit :)
+
+##Conventional limits##
+
+So what if I run into the limits of this conventional approach? Well the Event Store only cares about that the different interfaces are implemented, so you will be able to switch back to the BaseAggregateRoot solution at any time. This does mean that you will have to do some more coding, but you will have all the freedom to do what ever you need to do. And the different approaches can be used side by side.
+
+One other limit is that if you instantiate the aggregate root yourself nothing will be intercepted and mixed-in so no state will change nor will the events be published.
+
+##Current state##
+
+Currently the code only supports very basic usages and there are some challenges ahead of it being truly useable. Think for example about other entities in the same aggregate managed by the aggregate root and collecting their events as well. Also think about adding and removing entities from a list which may need some configurable conventions so you can decide when something needs to be added or removed.
+
+I am thinking about the ability to provide adapters to be able to handle certain state changes differently from the conventional way. One that I see a need for already is the ability to set the aggregate root Id, since this is not managed by the aggregate root but by the event provider mix-in.
+
+##Finally##
+
+Currently the functionality is very limited but I have tests passing proving that this is working :) so what I would like is to get some feedback on this approach. And yes I realize that this is very opinionated, and will not fit everybody’s approach. Having said that, keep the suggestions coming anyway.

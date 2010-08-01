@@ -1,0 +1,21 @@
+title: Convention over Configuration
+author: Mark Nijhof
+date: 28/11/2009
+
+Just a quick note on Convention over Configuration, I believe this is one of the more useful practices that you can apply in your codebase. So what is this all about then? Well think of about everything you do in life; think for example about “opening a door” or “turning on the water” we all exactly know how to do those things, and because of that it is a fast action. It is something that we don’t have to figure out just before doing it, again and again. These are conventions.
+
+When we start applying these sorts of ideas to our code base this would mean that certain operations need far less thought as they will be the same each and every time. A good example here is mapping the controllers and view together and extracting the URL from the controller name in MVC. If you are a developer that knows these conventions then you know exactly where to look for the code of a certain URL. No need to figure this out each and every time.
+
+Conventions also bring an opportunity to automate things within your system, because you are following certain rules in your code, you can write some other code that does something accordingly to these same rules. Configuration is a area that greatly benefits from conventions. Instead of having to manually configure how each different part works together you can write some code that configures this for you. You can also write some tests that verify your conventions.
+
+##Configure your Conventions##
+
+Many frameworks apply conventional thinking in their code, making it easier for their users to use it. There are frameworks like Ruby on Rails that rely very much on conventions, the only thing here is that these conventions cannot be changed very easily. This makes the framework very opinionated. This is not necessarily a bad thing in fact this means that any Ruby on Rails developer can jump to any other Ruby on Rails project and start working on it (sort of).
+
+But frameworks that allow you to configure your own conventions are much more powerful, because not all conventions make sense in every scenario. FubuMVC is one such framework where we try not to be to opinionated (we are) so that you may configure your own conventions.
+
+##Not just for framework code##
+
+I try to figure out what conventions that are in a system that I am working on and make them explicit as soon as it makes sense. The benefits are clearly there in my eyes, being able to test them and apply them is great. This is not something you would only want to apply in framework code, for example the win forms application that I created in my CQRS example also uses conventions to hook up the views with the presenter. Very easy and I don’t have to configure it manually ever again.
+
+Now adding a new event to the application is like turning on the water or opening the door.

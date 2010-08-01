@@ -1,0 +1,90 @@
+title: From liquids to solids in baby steps
+author: Mark Nijhof
+date: 07/03/2009
+
+This post is about refactoring your legacy code towards better designed code, but first let’s define what I think legacy code is. For me legacy code is code that is not properly testable. I intentionally say testable instead of tested, because I believe that some code although testable does not necessarily need to be tested. Having said that, I am an opponent for having plenty of proper tests; they ensure proper design and enable change. One golden rule applies here; when in doubt write tests for it.
+
+I want to go over a few scenarios on how you can steadily improve legacy code to make the code more testable and improve the design. The biggest problem with legacy applications is that you cannot fix it all in one go; you will have to take baby steps in improving the code. And this can be quite daunting, so where do you start?
+
+##The Boy Scout rule##
+
+This is one that I got from Uncle Bob’s presentations; it basically means that when you work in some code you should leave it behind in a better state then how you found it. This is a very effective way of gradually improving the quality of you existing code base. Improvements can be anything, from renaming method names and variable names to completely refactoring classes.
+
+##Separate your Concerns##
+
+When you need to make a change in a class or method and you notice that it has multiple responsibilities; then separate them into different classes and or methods. This will greatly improve the readability and reuse of your code. Yes you will get more classes, but that is not a bad thing.
+
+##No more new keywords in the code##
+
+When you see a new instance being created in a class you should see warning lights and start to think what the reason is that is happens inside the class. Is it something that can be injected or is it some sort of factory (i.e. like the creation of entities or DTO’s). I have one basic rule; if it contains logic then it should be injected. So either inject the dependency or create a proper factory for it (and inject that into the class). So do I also have to change the calling code, because my code just news this up somewhere as well? Well that depends on the situation, but you can always use constructor overloading. Constructor overloading keeps your existing code working, but enables you to properly test your class without the dependencies. And when you have refactored a whole isolated part of the code you can easily introduce an Inversion of Control container.
+
+From:
+
+<script src="http://gist.github.com/503729.js?file=ClassToBeRefactored_1_from.cs"></script>
+
+To:
+
+<script src="http://gist.github.com/503729.js?file=ClassToBeRefactored_1_to.cs"></script>
+
+##Don’t Repeat Yourself##
+
+When you see or know that you are implementing something similar for the second time, go and look at the first time you did it and check if you would be able to reuse this functionality. If you can then you should; extract the functionality into a new class and use it in both places.
+
+##Write tests##
+
+<br/>
+
+###Changes###
+
+When changing code you should first write a test or multiple tests that verify the current behavior of the code, make sure they pass. Then decide what you want / need to change and change the tests accordingly. After that make you tests pass again by changing the code. The reason of first writing your verification tests is that you want to make sure that your change is not affecting any other execution paths that shouldn’t be affected by the change.
+
+###Bugs###
+
+When fixing a bug, first write a test to verify the bug, and then fix the bug and the test should pass. If the bug ever decides to come back you will be notified of it immediately.
+
+###Make it testable even if it is not###
+
+When you use some existing code that you cannot touch, this could be in the .Net Framework or another third party tool, and you cannot create a mock for it. Then you should wrap this functionality in a wrapper class so that you can mock this wrapper instead, this way you can test the class using the dependency in isolation from the dependency. A mock is basically an object that acts like it is the real thing, but in reality it is a fake. The Timer class in the .Net Framework could be an example of something you cannot mock and would want to create a wrapper for.
+
+##Show intend##
+
+Your code should be understandable without the need of comments, it should be self explanatory. So that means that it should be readable, use variable names, method names and class names that clearly describe the responsibility they represent. When you are browsing the code and you see something you don’t understand just by reading it, then you should rename it. There is nothing wrong with long names; that is why we have intellisence.
+
+From:
+
+<script src="http://gist.github.com/503729.js?file=naming_from.cs"></script>
+
+To:
+
+<script src="http://gist.github.com/503729.js?file=naming_to.cs"></script>
+
+##Abstract implementation details##
+
+When you see that a concrete class (actual implementation) is directly being used by another class or method you should refactor it to use an interface or abstract base class instead. You don’t need to replace every usage of this concrete class with the interface or abstract class, just the code that you are currently working in. Later when you see another occurrence then you can easily change it there and then. Keep this up and soon the concrete class won’t be referenced directly anymore, which means you can freely replace it by a different implementation.
+
+From:
+
+<script src="http://gist.github.com/503729.js?file=abstract_from.cs"></script>
+
+To:
+
+<script src="http://gist.github.com/503729.js?file=abstrac_to.cs"></script>
+
+##Use the right tools##
+
+Ok refactoring without the use of a tool like ReSharper is going to be painful. Imagine for example when creating an interface for an existing class would only take a few keystrokes. Renaming a method, class or variable name with one shortcut and all usages will be changed as well. I could fill several blog posts about all the refactoring options that these kinds of tools make possible, but I won’t, just click the link.
+
+##Don’t make it worse##
+
+Any addition that you make to the code should be accordingly the proper principles and practices, so do TDD, SOLID and the other principles, and do them well. There is no excuse for writing crap code! To quote Uncle Bob one more time:
+
+1. Bad schedules can be redone
+2. Bad requirements can be rewritten
+3. Bad teams can be reorganized
+4. Bad code stays
+
+##Keep thinking##
+
+Don’t just do something, know why you do something, only then you can decide to perhaps not to do it.
+
+So just do yourself a favor and stop writing bad code, start doing the right thing and you will get to enjoy it later on.
