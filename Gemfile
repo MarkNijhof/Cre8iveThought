@@ -12,21 +12,21 @@ gem 'rdiscount'
 gem 'toto', :git => 'git://github.com/MarkNijhof/toto.git'
 
 # Test requirements
-if RUBY_PLATFORM =~ /darwin/
-  group :test do
-    gem 'autotest'
-    gem 'autotest-growl'
-    gem 'autotest-fsevent'
-    gem 'redgreen'
-
-    gem 'mocha'
-    gem 'rspec', :require => "spec"
-    gem 'capybara'
-    gem 'cucumber'
-    gem 'cucumber-rails'
-    gem 'rack-test', :require => 'rack/test'
-  end
-end
+# if RUBY_PLATFORM =~ /darwin/
+#   group :test do
+#     gem 'autotest'
+#     gem 'autotest-growl'
+#     gem 'autotest-fsevent'
+#     gem 'redgreen'
+# 
+#     gem 'mocha'
+#     gem 'rspec', :require => "spec"
+#     gem 'capybara'
+#     gem 'cucumber'
+#     gem 'cucumber-rails'
+#     gem 'rack-test', :require => 'rack/test'
+#   end
+# end
 
 # Padrino
 gem 'padrino', "0.9.10"
