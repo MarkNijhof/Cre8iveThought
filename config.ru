@@ -1,6 +1,5 @@
 
 require 'toto'
-
 require ::File.dirname(__FILE__) + '/config/boot.rb'
 
 # Rack config
@@ -15,17 +14,19 @@ end
 #
 # Create and configure a toto instance
 #
+
+Toto::Paths = {
+    :templates => "blog/templates",
+    :pages => "blog/templates/pages",
+    :articles => "blog/articles"
+}
+
 toto = Toto::Server.new do
   #
   # Add your settings here
   # set [:setting], [value]
   # 
   
-  Toto::Paths = {
-      :templates => "blog/templates",
-      :pages => "blog/templates/pages",
-      :articles => "blog/articles"
-  }
   
   set :author,    "Mark Nijhof"
   set :title,     "Cre8ive Thought - Mark Nijhof"
