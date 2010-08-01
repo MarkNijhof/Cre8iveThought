@@ -6,6 +6,10 @@ task :run => [:set_development_environment] do
   sh "padrino start -h local.cre8ivethought.com"
 end
 
+task :thin => [] do
+  sh "thin start -R config.ru"
+end  
+
 task :test => [:set_test_environment] do
   sh "bundle exec autotest"
   # sh "/bin/sh lib/tools/nt AUTOFEATURE=true RSPEC=true autotest"
