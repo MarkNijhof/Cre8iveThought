@@ -55,6 +55,10 @@ header, footer, section, article {
 	background-position: bottom;
 }
 
+.gist {
+  line-height: 1.2em;	
+}
+
 #content {
 }
 #by {
