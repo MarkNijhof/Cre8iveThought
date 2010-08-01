@@ -1,42 +1,31 @@
-require 'toto'
-
-@config = Toto::Config::Defaults
-
-task :default => :new
-
-desc "Create a new article."
-task :new do
-  title = ask('Title: ')
-  slug = title.empty?? nil : title.strip.slugize
-
-  article = {'title' => title, 'date' => Time.now.strftime("%d/%m/%Y")}.to_yaml
-  article << "\n"
-  article << "Once upon a time...\n\n"
-
-  path = "#{Toto::Paths[:articles]}/#{Time.now.strftime("%Y-%m-%d")}#{'-' + slug if slug}.#{@config[:ext]}"
-
-  unless File.exist? path
-    File.open(path, "w") do |file|
-      file.write article
-    end
-    toto "an article was created for you at #{path}."
-  else
-    toto "I can't create the article, #{path} already exists."
-  end
+task :run_ie => [:set_development_environment] do
+  sh "padrino start -h mbpro.local"
 end
 
-desc "Publish my blog."
-task :publish do
-  toto "publishing your article(s)..."
-  `git push heroku master`
+task :run => [:set_development_environment] do
+  sh "padrino start -h local.cre8ivethought.com"
 end
 
-def toto msg
-  puts "\n  toto ~ #{msg}\n\n"
+task :test => [:set_test_environment] do
+  sh "bundle exec autotest"
+  # sh "/bin/sh lib/tools/nt AUTOFEATURE=true RSPEC=true autotest"
+  # /bin/sh lib/tools/nt 
 end
 
-def ask message
-  print message
-  STDIN.gets.chomp
+task :set_heroku_production_environment do
+  sh "heroku config:add RACK_ENV=production"
 end
 
+task :set_heroku_development_environment do
+  sh "heroku config:add RACK_ENV=production"
+end
+
+task :set_development_environment do
+  ENV['RACK_ENV'] = "production"
+end
+
+task :set_test_environment do
+  ENV['AUTOFEATURE'] = 'true' 
+  ENV['RSPEC'] = 'true'
+  ENV['RACK_ENV'] = "production"
+end
