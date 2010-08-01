@@ -59,7 +59,7 @@ header, footer, section, article {
 	border:0 none;
 	display:inline-block;
 	float:left;
-	left:520px;
+	left:500px;
 	margin:0;
 	outline:0 none;
 	overflow:hidden;
@@ -222,6 +222,7 @@ blockquote {
 body > footer {
   text-align: left;
   margin-left: 20px;
+	margin-bottom: 1000px;
 	font-style: italic;
   font-size: 18px;
   color: #888;
