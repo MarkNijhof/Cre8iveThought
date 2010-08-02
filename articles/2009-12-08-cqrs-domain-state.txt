@@ -1,4 +1,4 @@
-title: Convention over Configuration
+title: CQRS Domain State
 author: Mark Nijhof
 date: 08/12/2009
 
