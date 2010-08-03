@@ -10,7 +10,7 @@ So I setup a new blog under <http://Cre8iveThought.com/blog/index> and will be b
 
 So did you create a new blogging engine, well no, I grabbed [Toto](http://github.com/cloudhead/toto) and it is running on [Heroku](http://www.heroku.com) and that was done in 5 minutes, copying most of the previous content took a little bit longer tho. Now my blog posts are on GitHub and they are pushed to Heroku when-ever I have a new post (or change an existing one). The comments are now managed by [Disqus](http://disqus.com/) and the code examples are provided by [GitHubs Gists](http://gist.github.com/). And finally the layout was mostly copied from [Rob Conery's blog](http://blog.wekeroad.com/) as I think this is extremely well readable. 
 
-I only added by not adding, so I feel my blog is now super clean. There will be some small features added later I am sure, but content is what it is about.
+I only added by not adding, so I feel my blog is now super clean. There will be some small features added later I am sure, but content is what it is about. Please let me know what you think of the new style?
 
 My apologies to all of you who are still following my FeedBurner feed for all the duplicates, and for all of you on ElegantCode not following my personal feed here is the link: <http://feeds.feedburner.com/fohjin>, if you want to then please do.
 
