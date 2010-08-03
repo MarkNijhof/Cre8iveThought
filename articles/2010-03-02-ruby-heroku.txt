@@ -1,4 +1,4 @@
-title: Ruby Heruko
+title: Ruby Heroku
 author: Mark Nijhof
 date: 02/03/2010
 
