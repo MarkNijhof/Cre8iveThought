@@ -1,0 +1,17 @@
+title: Pair Programming Session
+author: Mark Nijhof
+date: 15/01/2010
+
+Today I had a really enjoyable pair programming session with my college [Øyvind](http://twitter.com/oyvindfanebust). It was quite some time ago since our last session, which was when we were both working at a customer together.
+
+We were there for a few months and during this time we experimented with different ways of pair programming. It was also the first time we where pairing together, and all do it went very well, and we both learned a lot from (and about) each others, by the different ways of working and thinking, it felt unnatural to me. Or perhaps I should say, not completely right.
+
+It was too much guided by rules, we for example tried ping pong; which means that you change from being a driver to a navigator between each and every test. But we tried other approaches as well to determine when to switch between roles.
+
+But today was different, completely different I have to say. Today we were not driver or navigator, today we were both at the same time and constantly. Sure only one of us had the keyboard at the same time, but the switching was so rapidly and irregular that there was no real pattern to discover (not that I was looking for one). One only had to give a slight hint that he wanted to try something and the switch was made, and the same applied to passing back the keyboard.
+
+If I had to compare it to something else I would say that it felt like we where both standing in front of a whiteboard heavily discussing the design and what the next steps to take would be. Both equally involved and drawing together to make the picture complete.
+
+Needless to say that I felt very energized during the session and drained from energy afterwards, in short this is for me what pair programming is about.
+
+I also recommend you to read this great explanation on [how pair programming really works](http://www.computer.org/cms/Computer.org/ComputingNow/homepage/2010/0110/W_SW_PairProgramming.pdf) (PDF).

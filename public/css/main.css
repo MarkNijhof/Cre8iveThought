@@ -3,7 +3,7 @@ body {
   margin: 0 auto;
 	color: #222222;
 	font-family: "Georgia","Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
-	font-size: 1em;
+	font-size: 1.1em;
   line-height: 1.6;
   padding: 45px;
   width: 800px;
@@ -16,7 +16,7 @@ header, footer, section, article {
 
 #content_header {
 	position: relative;
-	height: 210px;
+	height: 220px;
   background: #ffffff;
 }
 
@@ -26,7 +26,7 @@ header, footer, section, article {
 	top: 0px;
 	left: 0px;
 	width: 800px;
-	height: 210px;
+	height: 220px;
 	z-index: 5;
 	background-image: url('http://cre8ivethought.s3.amazonaws.com/images/frame-front.png');
 	background-repeat: none;
@@ -43,7 +43,7 @@ header, footer, section, article {
 }
 
 #content_body {
-	padding: 20px;
+	padding: 0px 30px 10px 30px;
   background: #ffffff;
 	background-image: url('http://cre8ivethought.s3.amazonaws.com/images/frame-front-middle.png');	
 }
@@ -59,7 +59,7 @@ header, footer, section, article {
 	border:0 none;
 	display:inline-block;
 	float:left;
-	left:500px;
+	left:470px;
 	margin:0;
 	outline:0 none;
 	overflow:hidden;
@@ -109,6 +109,13 @@ header, footer, section, article {
 	color: #b53131;
 }
 
+.devider {
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 0px;
+	padding: 0px;
+	width: 100%;
+}
 .date_post {
 	position: absolute;
   font-style: italic;
@@ -120,7 +127,6 @@ header, footer, section, article {
 .date_list {
   font-style: italic;
   float: right;
-  line-height: 43px;
   margin-right: 30px;
 	color: #cccccc;
 }
@@ -206,11 +212,9 @@ h3, h4 {
   font-weight: 600;
 	font-size: 1.4em;
 }
-ul, li {
-  list-style-type: none;
-}
 code {
   font-family: 'Anonymous Pro', 'Bitstream Vera Sans', 'Monaco', Courier, mono;
+	font-size: 1.0em;
 }
 pre {
   padding: 20px;

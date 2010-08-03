@@ -1,0 +1,23 @@
+title: You are responsible
+author: Mark Nijhof
+date: 14/01/2010
+
+Many have said it before, and I’ll repeat it once more; as a developer you, yourself are the main responsible person for your own education. So not your employer, your mentors or anybody else. You are. This is one of the principles that is central to the software craftsmanship ideas.
+
+So now we got that out of the way lets look at a particular way that I find very effective.
+
+##Software Conferences.##
+
+Software conferences offer the unique opportunity to first of all listen to some great people in the software industry talk about the topics that they are passionate about. Secondly you can have great discussion with the speakers, get more details about the topics that interested you.
+
+I think that this might be the best way of introducing new ideas, you won’t know all the ins and outs, but you will know enough to determine whether or not to continue investigating them.
+
+##But##
+
+Lets go back to that it is your responsibility to educate yourself; so you want to go to one of these great conferences like for example; QCon, NDC or Øredev. These conferences are very focused on software craftsmanship and learning, but when I look at the costs of these conferences then I realize that it is almost not possible to be responsible for going to these events yourself. It is easy to spend 1.500 to 2.000 Euro on a three day conference including travel and hotel.
+
+So these big conferences are really targeting companies, and they don’t really consider that there are many developers that cannot go because their employer is not willing to pay for their education.
+
+Now I completely realize that having these conferences costs a lot of money, and also that if they would give some sort of discount for developers that pay their own ticket it would be misused by more then a few companies.
+
+But honestly paying the 1.005 GBP for the QCon London event does hurt my wallet, I hope it is worth it :) Please note that this post has been tagged as a rant, but I hope it was an ok rant.

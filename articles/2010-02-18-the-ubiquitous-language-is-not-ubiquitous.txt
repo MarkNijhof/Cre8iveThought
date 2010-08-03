@@ -1,0 +1,19 @@
+title: The Ubiquitous Language is not Ubiquitous
+author: Mark Nijhof
+date: 18/02/2009
+
+I attended an interesting Domain-Driven Design talk today given by [Janniche Haugen](http://twitter.com/miss_haugen/) talking about why you would want to use Domain-Driven Design in a project, and this presentation is what triggered this post.
+
+My statement is that the Ubiquitous Language in Domain-Driven Design is not Ubiquitous.
+
+Lets first look at the definition of ubiquitous: [Being present everywhere at once](http://wordnetweb.princeton.edu/perl/webwn?s=ubiquitous). Hmm that sounds a bit vague; here is a definition of ubiquitous language: [A language structured around the domain model and used by all team members to connect all activities of the team with the software](http://domaindrivendesign.org/node/132). Ah that is better. So the ubiquitous language is a common language shared by the domain experts, developers and the code.
+
+But it is not a common language throughout all of the domain and code, this is one of the reasons why we have different [bounded contexts](http://domaindrivendesign.org/node/91). Because the same language may mean different things to different domain experts. Think for example about a shipping company, the meaning of the word ship is completely different when talking to accounting versus maintenance. For accounting a ship is an asset that degrades in value over time, but for maintenance a ship is an object that needs service every x nautical miles.
+
+The same word has a different meaning when used in a different context, that is not ubiquitous.
+
+Lets continue the small example, domain experts from maintenance also talk about an engine and rotor blades. But the domain expert in accounting don’t use these words at all, they have no meaning to them.
+
+Some words even have no meaning at all when used in a different context, this as well is not ubiquitous.
+
+So the Ubiquitous Language is only Ubiquitous within a given Context. What do you think?
