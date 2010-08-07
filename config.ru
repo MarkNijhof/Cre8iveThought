@@ -37,6 +37,12 @@ app = Rack::Builder.new do
 	use Rack::CommonLogger
 
 	map '/blog' do
+
+    if /^www/.match(request.host)
+      redirect request.scheme + '://' + request.host_with_port[4..-1] + request.path_info       
+      return
+    end
+
 		run toto
 	end
 
