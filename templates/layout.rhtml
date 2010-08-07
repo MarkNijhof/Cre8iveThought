@@ -6,6 +6,18 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
 		<link rel="icon" type="image/png" href="http://cre8ivethought.s3.amazonaws.com/images/favicon.png" />
     <title><%= title %></title>
+    <script type="text/javascript"> 
+      (function() { 
+        var links = document.getElementsByTagName('a'); 
+        var query = '?'; 
+        for(var i = 0; i < links.length; i++) { 
+          if(links[i].href.indexOf('#disqus_thread') >= 0) { 
+            query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&'; 
+          } 
+        } 
+        document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/ohu/get_num_replies.js' + query + '"></' + 'script>'); 
+      })(); 
+    </script>
   </head>
   <body>
     <section>
