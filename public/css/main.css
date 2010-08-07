@@ -12,6 +12,7 @@ body {
 }
 header, footer, section, article {
 	display: block;
+	text-align: justify;
 }
 
 #content_header {

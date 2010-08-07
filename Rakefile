@@ -2,12 +2,12 @@ task :run_ie => [:set_development_environment] do
   sh "padrino start -h mbpro.local"
 end
 
-task :run => [:set_development_environment] do
-  sh "padrino start -h local.cre8ivethought.com"
-end
+# task :run => [:set_development_environment] do
+#   sh "padrino start -h local.cre8ivethought.com"
+# end
 
-task :thin => [] do
-  sh "thin start -R config.ru"
+task :run => [] do
+  sh "thin start -R config.ru -a local.cre8ivethought.com"
 end  
 
 task :test => [:set_test_environment] do
