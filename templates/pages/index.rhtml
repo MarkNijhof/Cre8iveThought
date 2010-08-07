@@ -1,17 +1,5 @@
 <section id="articles">
   <div id="disqus_thread"></div>
-  <script type="text/javascript">
-    /**
-      * var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread] 
-      */
-    (function() {
-     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-     dsq.src = 'http://cre8ivethought.disqus.com/embed.js';
-     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=cre8ivethought">comments powered by Disqus.</a></noscript>
-  <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
   
   <% for article in articles[0...5] %>
     <article class="post">
@@ -27,15 +15,6 @@
     </article>
   <% end %>
 </section>
-
-<script type="text/javascript">
-var disqus_shortname = 'cre8ivethought';
-(function () {
-  var s = document.createElement('script'); s.async = true;
-  s.src = 'http://disqus.com/forums/cre8ivethought/count.js';
-  (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-}());
-</script>
 
 <section id="archives">
   <br/>
