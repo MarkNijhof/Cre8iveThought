@@ -6,18 +6,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
 		<link rel="icon" type="image/png" href="http://cre8ivethought.s3.amazonaws.com/images/favicon.png" />
     <title><%= title %></title>
-    <script type="text/javascript"> 
-      (function() { 
-        var links = document.getElementsByTagName('a'); 
-        var query = '?'; 
-        for(var i = 0; i < links.length; i++) { 
-          if(links[i].href.indexOf('#disqus_thread') >= 0) { 
-            query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&'; 
-          } 
-        } 
-        document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/ohu/get_num_replies.js' + query + '"></' + 'script>'); 
-      })(); 
-    </script>
   </head>
   <body>
     <section>
@@ -49,6 +37,18 @@
     <footer>      
     	<a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width: 0pt;" src="http://i.creativecommons.org/l/by/3.0/88x31.png"></a><br>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.
     </footer>
+    <script type="text/javascript"> 
+      (function() { 
+        var links = document.getElementsByTagName('a'); 
+        var query = '?'; 
+        for(var i = 0; i < links.length; i++) { 
+          if(links[i].href.indexOf('#disqus_thread') >= 0) { 
+            query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&'; 
+          } 
+        } 
+        document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/ohu/get_num_replies.js' + query + '"></' + 'script>'); 
+      })(); 
+    </script>
 		<script type="text/javascript">
 		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
