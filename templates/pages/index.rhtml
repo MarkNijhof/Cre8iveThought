@@ -1,6 +1,8 @@
 <section id="articles">
   <div id="disqus_thread"></div>
   
+  <script type="text/javascript"> //<![CDATA[ (function() { var links = document.getElementsByTagName('a'); var query = '?'; for(var i = 0; i < links.length; i++) { if(links[i].href.indexOf('#disqus_thread') >= 0) { query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&'; } } document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/ohu/get_num_replies.js' + query + '"></' + 'script>'); })(); //]]> </script>
+
   <% for article in articles[0...5] %>
     <article class="post">
       <header>
@@ -9,8 +11,8 @@
 
       <section class="content">
         <%= article.summary %>
-
         <span class="date_list"><%= article.date %></span><br />
+        <span class="date_list"><a href="<%= article.url %>#disqus_thread">Comments</a></span>
       </section>
     </article>
   <% end %>
