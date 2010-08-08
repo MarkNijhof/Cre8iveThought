@@ -22,7 +22,7 @@ toto = Toto::Server.new do
   if ENV['RACK_ENV'] != 'production'
     set :url, "http://localhost:3000/"
   else
-    set :url, "http://cre8ivethought.com/"
+    set :url, "http://www.cre8ivethought.com/"
   end
   # set :date,      lambda {|now| now.strftime("%d/%m/%Y") }  # date format for articles
   # set :markdown,  :smart                                    # use markdown + smart-mode
