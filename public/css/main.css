@@ -131,6 +131,18 @@ header, footer, section, article {
   margin-right: 30px;
 	color: #cccccc;
 }
+.comments_link {
+  font-style: italic;
+	font-size: 75%;
+	color: #cccccc;
+  text-decoration: none;
+}
+.comments_link:hover {
+  font-style: italic;
+	font-size: 75%;
+	color: #cccccc;
+  text-decoration: underline;
+}
 a {
   color: #b83000;
   text-decoration: none;
