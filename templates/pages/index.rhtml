@@ -27,7 +27,7 @@
     <% if archives.length > 0 %>
       <% for year in ['2010', '2009'] %>
         <li>
-          <a href="<%= @config[:url] + '/' + @config[:root] + '/' + year %>">Posts from <%= year %></a><br/>
+          <a href="<%= @config[:url] + @config[:root] + '/' + year %>">Posts from <%= year %></a><br/>
         </li>
       <% end %>
     <% end %>
