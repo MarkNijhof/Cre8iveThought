@@ -18,8 +18,20 @@
 </section>
 
 <section id="archives">
+  <h3>Previous posts</h3>
+  <%= archives[5...15] %>
   <br/>
-  <%= archives[5..-1] %>
+  <br/>
+  <h3>Archive</h3>
+  <ul>
+    <% if archives.length > 0 %>
+      <% for year in ['2010', '2009'] %>
+        <li>
+          <a href="<%= @config[:url] + '/' + @config[:root] + '/' + year %>">Posts from <%= year %></a><br/>
+        </li>
+      <% end %>
+    <% end %>
+  </ul>
   <br/>
   <br/>
 </section>

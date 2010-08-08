@@ -132,16 +132,19 @@ header, footer, section, article {
 	color: #cccccc;
 }
 .comments_link {
-  font-style: italic;
-	font-size: 75%;
 	color: #cccccc;
   text-decoration: none;
 }
 .comments_link:hover {
+	color: #cccccc;
+  text-decoration: underline;
+}
+.archive_info {
+	position: relative;
+	top: -10px;
   font-style: italic;
 	font-size: 75%;
 	color: #cccccc;
-  text-decoration: underline;
 }
 a {
   color: #b83000;
