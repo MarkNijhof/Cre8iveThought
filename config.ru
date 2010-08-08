@@ -20,7 +20,7 @@ toto = Toto::Server.new do
   set :prefix,    "blog"
   set :root,      "blog"
   if ENV['RACK_ENV'] != 'production'
-    set :url, "http://localhost:3000/"
+    set :url, "http://localhost.cre8ivethought.com:3000/"
   else
     set :url, "http://cre8ivethought.com/"
   end
