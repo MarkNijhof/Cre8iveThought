@@ -11,17 +11,6 @@ if ENV['RACK_ENV'] == 'development'
   use Rack::ShowExceptions
 end
 
-if ENV['RACK_ENV'] == 'production'
-  Proc.new {|rack_env|
-    request = Rack::Request.new(rack_env)
-    if /^www/.match(request.host)
-      redirect request.scheme + '://' + request.host_with_port[4..-1] + request.path_info       
-      return
-    end
-  }
-end
-
-
 toto = Toto::Server.new do  
   # Toto::Paths[:templates] = "blog/templates"
   # Toto::Paths[:pages] = "blog/templates/pages"
@@ -32,19 +21,13 @@ toto = Toto::Server.new do
   set :prefix,    "blog"
   set :root,      "blog"
   if ENV['RACK_ENV'] != 'production'
-    set :url, "http://localhost.cre8ivethought.com:3000/"
+    set :url,     "http://local.cre8ivethought.com:3000/"
+    set :cache,   0
   else
-    set :url, "http://cre8ivethought.com/"
+    set :url,     "http://cre8ivethought.com/"
   end
-  # set :date,      lambda {|now| now.strftime("%d/%m/%Y") }  # date format for articles
-  # set :markdown,  :smart                                    # use markdown + smart-mode
   set :disqus,    "cre8ivethought"
-  # set :summary,   :max => 150, :delim => /~/                # length of article summary and delimiter
-  # set :ext,       'txt'                                     # file extension for articles
-  if ENV['RACK_ENV'] != 'production'
-    set :cache,      0                                    # cache duration, in seconds
-  end
-  set :date, lambda {|now| now.strftime("%B #{now.day.ordinal} %Y") }
+  set :date,      lambda {|now| now.strftime("%B #{now.day.ordinal} %Y") }
 end
 
 app = Rack::Builder.new do
@@ -52,15 +35,11 @@ app = Rack::Builder.new do
 
   map '/blog' do
   
-    # run Proc.new { |env|
-    # 
-    #   raise env.inspect
-    #   request = Rack::Request.new(env)
-    #   if /^www/.match(request.host)
-    #     redirect request.scheme + '://' + request.host_with_port[4..-1] + request.path_info       
-    #     return
-    #   end
-    # }
+    # request = Rack::Request.new(env)
+    # if /^www/.match(request.host)
+    #   redirect request.scheme + '://' + request.host_with_port[4..-1] + request.path_info       
+    #   return
+    # end
 
     run toto
   end

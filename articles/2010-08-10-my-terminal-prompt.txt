@@ -1,0 +1,57 @@
+title: My Terminal Prompt
+author: Mark Nijhof
+date: 10/08/2010
+
+I want to share something that I learned from [Rolf Bjaanes](http://twitter.com/rolfb) not to long ago and that is that the Terminal command prompt can give me a lot of useful information. Below here is how my Terminal command prompt looks by default:
+
+>![Default Terminal Command Prompt](/images/general/TerminalDefault.png)
+
+Now my command prompt displays: [machine name]:[current folder] [user]$
+
+>![Fancy Terminal Command Prompt](/images/general/TerminalFancy.png)
+
+But when you look at the second screenshot you see much more useful information, it starts with the **user @ the machine** then follows the **complete path** instead of just the current folder. It will tell me that a folder is a **Git repository** including **which branch** I am currently working in. And finally it shows we which **Ruby version** I currently have selected using [RVM](http://rvm.beginrescueend.com/) (Ruby Version Manager, which is something cool as well). And, there is **color** :) I know color is not for everybody, but I like it, it clearly separates the different types of information for me.
+
+And finally instead of closing with a boring $ sign I now have a three dotted triangle ∴ how cool is that?
+
+So how did we get all of this added information? Well you need to tell the Terminal that you want this and for that you would use a profile, there are apparently multiple ways of defining a profile, but I did it by creating a **.bash_profile** file in the user root, just type **mate ~/.bash_profile** if it doesn't exists TextMate will create it else it will just open the existing file. Then near the end you add the following line:
+
+<script src="http://gist.github.com/518015.js?file=PS1.bash"></script>
+
+Excuse me!
+
+Yeah I said that as well when Rolf send me the string. So I went on and Googled the different parts, and really it isn't that hard. Lets go through the string and discover what is what:
+
+###export PS1=###
+
+This is the variable that the Terminal will use to build the command prompt, we are just going to assign a new value to it.
+
+###\\[$(tput setaf 2)\\]###
+
+Ok this is a bit special, the **\\[** and **\\]** indicate to the Terminal that between these brackets there is something that should not be displayed directly. Then we have the **$(** and **)** and this means that what ever in inside of this will be executed. Now finally we get to **tput setef 2** and what this does is tell the Terminal that from now on it should color the output green. The number corresponds with a color. I won't take away the fun you'll have discovering what it what.
+
+###\\u, \\h and \\w###
+
+These are commands to print certain system information, for example **\\u** is the current user, **\\h** is the machine name and **\\w** is the current path. But there are many more commands that you can use.
+
+###\`if [ "a" = "b" ]; then echo "A" ; else echo "B"; fi\`###
+
+Then we have two if statements inside the configuration string. Please note the weird **\`** single quote surrounding the if statement, without these it won't work! But assuming about everybody reading this blog will know what an if statement is I am not going to go deeper into this, except that you see **[ "$(vcprompt)" != "" ]** more specifically the variable (or for those paying attention this is actually a command) is enclosed with quotes as well, and this is because when they are not there and the variable is empty then the executed command would be **[  != "" ]** which would fail.
+
+Now the only reason that I have these two if statements is because I want to prefix the printed information with a white space if it is not empty, I could 'hard code' this but then when it is empty I would end-up with multiple spaces. Yeah call me crazy!
+
+###vcprompt###
+
+This is a [utility](http://github.com/xvzf/vcprompt) that provides you with version control information, and we use this to print the Git information. You can install this using for example [HomeBrew](http://mxcl.github.com/homebrew/).
+
+###~/.rvm/bin/rvm-prompt i v###
+
+And then finally this command will print the current version of Ruby that is selected by RVM. This script is installed when you install RVM so you don't need to worry about it too much.
+
+##.bash_profile##
+
+Below here is my complete .bash_profile file where you will also find two functions that are used to automatically resize the Terminal window. I just found that today, so I don't know if there is a better way to accomplish this.
+
+<script src="http://gist.github.com/518015.js?file=.bash_profile"></script>
+
+Here is also a [good blog post](http://maketecheasier.com/8-useful-and-interesting-bash-prompts/2009/09/04) about 8 different setups. Any feedback you may have is appreciated!
