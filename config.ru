@@ -1,5 +1,6 @@
 require 'toto'
 require ::File.dirname(__FILE__) + '/config/boot.rb'
+require 'rack-rewrite'
 
 # Rack config
 use Rack::Static, :urls => ['/css', '/js', '/images', '/favicon.ico'], :root => 'public'
@@ -9,6 +10,15 @@ use Rack::CommonLogger
 if ENV['RACK_ENV'] == 'development'
   use Rack::ShowExceptions
 end
+
+if ENV['RACK_ENV'] == 'production'
+  use Rack::Rewrite do
+    r301 %r{.*}, 'http://cre8ivethought.com$&amp;', :if => Proc.new {|rack_env|
+      rack_env['SERVER_NAME'] != 'cre8ivethought.com'
+    }
+  end
+end
+
 
 toto = Toto::Server.new do  
   # Toto::Paths[:templates] = "blog/templates"
@@ -36,24 +46,26 @@ toto = Toto::Server.new do
 end
 
 app = Rack::Builder.new do
-	use Rack::CommonLogger
+  use Rack::CommonLogger
 
-	map '/blog' do
-	
-		Proc.new do |env|
-	    request = Rack::Request.new(env)
-	    if /^www/.match(request.host)
-	      redirect request.scheme + '://' + request.host_with_port[4..-1] + request.path_info       
-	      return
-	    end
-		end
+  map '/blog' do
+  
+    # run Proc.new { |env|
+    # 
+    #   raise env.inspect
+    #   request = Rack::Request.new(env)
+    #   if /^www/.match(request.host)
+    #     redirect request.scheme + '://' + request.host_with_port[4..-1] + request.path_info       
+    #     return
+    #   end
+    # }
 
-		run toto
-	end
+    run toto
+  end
 
-	map '/' do
+  map '/' do
     run Padrino.application
-	end
+  end
 end.to_app
 
 run app

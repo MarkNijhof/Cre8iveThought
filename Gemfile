@@ -10,6 +10,7 @@ gem 'haml'
 gem 'compass'
 gem 'rdiscount'
 gem 'toto' #, :git => 'git://github.com/MarkNijhof/toto.git'
+gem 'rack-rewrite', '~> 0.2.1'
 
 # Test requirements
 # if RUBY_PLATFORM =~ /darwin/
