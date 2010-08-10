@@ -12,11 +12,13 @@ if ENV['RACK_ENV'] == 'development'
 end
 
 if ENV['RACK_ENV'] == 'production'
-  use Rack::Rewrite do
-    r301 %r{.*}, 'http://cre8ivethought.com$&amp;', :if => Proc.new {|rack_env|
-      rack_env['SERVER_NAME'] != 'cre8ivethought.com'
-    }
-  end
+  Proc.new {|rack_env|
+    request = Rack::Request.new(rack_env)
+    if /^www/.match(request.host)
+      redirect request.scheme + '://' + request.host_with_port[4..-1] + request.path_info       
+      return
+    end
+  }
 end
 
 
