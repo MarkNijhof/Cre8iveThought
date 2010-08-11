@@ -8,7 +8,7 @@ His solution to the problem is to use a object database or a document database f
 
 But I would like to talk about a different approach, which is called [Event Sourcing](http://martinfowler.com/eaaDev/EventSourcing.html); a pattern thought of by Martin Fowler that, “Captures all changes to an application state as a sequence of events.”
 
-chipperHey that is interesting, so instead of trying to store the object tree in a whole, we just store all the individual state changes that the object tree encapsulates; meaning all the state changes that have happened during the complete lifetime of the object tree. These state changes are being represented in the form of events. And such an event is nothing more then a [Plain Old CLR Object](http://en.wikipedia.org/wiki/Plain_Old_CLR_Object), so not an actual .Net event.
+Hey that is interesting, so instead of trying to store the object tree in a whole, we just store all the individual state changes that the object tree encapsulates; meaning all the state changes that have happened during the complete lifetime of the object tree. These state changes are being represented in the form of events. And such an event is nothing more then a [Plain Old CLR Object](http://en.wikipedia.org/wiki/Plain_Old_CLR_Object), so not an actual .Net event.
 
 And the objects are also re-constructed from the same events by applying all the state changes that they represent, and thus coming back to the previous state in the identical way that it came there originally.
 
