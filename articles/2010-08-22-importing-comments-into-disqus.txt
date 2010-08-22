@@ -1,0 +1,31 @@
+title: Importing Comments into Disqus
+author: Mark Nijhof
+date: 22/08/2010
+
+I [wrote before](http://cre8ivethought.com/blog/2010/08/04/blog-moved-once-again/) how I moved my blog to [Heroku](http://www.heroku.com) using [Toto](http://github.com/cloudhead/toto) for the blogging engine and [Disqus](http://disqus.com/) for providing the comments functionality. And I have to say so-far Disqus has been great, of-course I haven't received that many comments yet that I would have encountered problems ;) 
+
+But I already had a few comments on my previous two blogs; I did manage to port the posts without any problems, but I also would like to port these old comments. Thankfully both my custom solution and Wordpress offers full access to the comments, so I had all the data.
+
+##Importing into Disqus##
+
+So I looked at the different options Disqus offers to import existing comments and I went for the import using the **IntenseDebate** format. And this worked pretty well. Here is the format for the import file:
+
+<script src="http://gist.github.com/543727.js?file=Disqus_Import.xml"></script>
+
+- isAnon - I don't know the meaning but I can guess, an IntenseDebate thing
+- score - I don't know the meaning but I can guess, an IntenseDebate thing
+- url - can be left empty
+- ip - can be left empty
+
+Also note that the format of the comment is like plain text formatting, all html formatting is stripped. So you would want to convert your formatting to plain text formatting, like the example above here shows as well.
+
+##Issues##
+
+Well once I knew how to do it, not many actually. One problem I have is that you cannot override existing comments by re-importing them again, even not when you delete the wrong ones from the Disqus website. Disqus has some algorithm to determine if a comment already exists and if it does it won't re-import them. In my first try I messed up the date format (I had some whitespace before and after the date, silly me) which meant that they where all dated on import. I couldn't import these again without the white space. I only managed by actually changing the time of these posts. All second are now 00 :) So that was a bit weird and annoying. There are 4 comments I am not able to re-import, I even tried moving them one day ahead in time.
+
+Threads are not working either as this information does not exist in the import data, but I can live with that, order is preserved by comment data.
+
+##Suggestion##
+
+I would suggest to make one test post using a new **guid** when that all looks ok you change the guid to the one matching the actual post and import them again. That way you don't associate them with the actual post and if you messed up then no harm is done. You can even fake the test post, but that is just an easy way to access the comments.
+
