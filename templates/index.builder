@@ -18,7 +18,7 @@ xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
 
       no_script_html = ""
       if /<script src=\"http:\/\/gist.github.com/.match(article.body)
-        no_script_html = "<noscript><p><i>It looks like you are reading <a href='#{article.url}'>#{article.title}</a> in a RSS reader that doesn't support JavaScript; because of this you will not see the code examples I embedded using Github's Gists. Consider opening the <a href='#{article.url}'>post</a> in your browser instead to properly see the code gists.</i></p></noscript>"
+        no_script_html = "<noscript><p><i>( It looks like you are reading <a href='#{article.url}'>#{article.title}</a> in a RSS reader that doesn't support JavaScript; because of this you will not see the code examples I embedded using Github's Gists. Consider opening the <a href='#{article.url}'>post</a> in your browser instead to properly see the code gists. )</i></p></noscript>"
       end
 
       xml.content no_script_html + article.body, "type" => "html"
