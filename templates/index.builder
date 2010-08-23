@@ -1,3 +1,4 @@
+
 xml.instruct!
 xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
   xml.title @config[:title]
@@ -14,8 +15,13 @@ xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
       xml.updated article[:date].iso8601
       xml.author { xml.name @config[:author] }
       xml.summary article.summary, "type" => "html"
-      xml.content article.summary, "type" => "html"
-#      xml.content article.body, "type" => "html"
+
+      no_script_html = ""
+      if /<script src=\"http:\/\/gist.github.com/.match(article.body)
+        no_script_html = "<noscript><p><i>It looks like you are reading <a href='#{article.url}'>#{article.title}</a> in a RSS reader that doesn't support JavaScript; because of this you will not see the code examples I embedded using Github's Gists. Consider opening the <a href='#{article.url}'>post</a> in your browser instead to properly see the code gists.</i></p></noscript>"
+      end
+
+      xml.content no_script_html + article.body, "type" => "html"
     end
   end
 end
