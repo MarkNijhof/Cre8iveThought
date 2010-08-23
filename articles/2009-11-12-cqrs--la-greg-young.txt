@@ -10,11 +10,11 @@ Greg however takes this same principle but he applies it to the whole architectu
 
 So lets take a quick look at the overall architecture before we dive into the details:
 
->>>![CQRS Overview](/images/CQRS/DDD-Overview.jpg)
+>>>![CQRS Overview](http://cre8ivethought.com/images/CQRS/DDD-Overview.jpg)
 
 You have to excuse me for not using Visio to make this drawing, but I really didn’t feel like tackling yet an other layer of complexity tonight. At least I did the labels in typed text, so it is readable. I will discuss this architecture in 4 phases, the order I choose is what I believe is the natural way your would think about this. In the end you will see that the whole principle is rather simple. Really. 
 
->>>![CQRS Devision](/images/CQRS/DDD-Devision.jpg)
+>>>![CQRS Devision](http://cre8ivethought.com/images/CQRS/DDD-Devision.jpg)
 
 1. Queries
 2. Commands
