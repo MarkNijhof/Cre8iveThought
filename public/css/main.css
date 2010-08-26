@@ -12,6 +12,8 @@ body {
 }
 header, footer, section, article {
 	display: block;
+}
+P {
 	text-align: justify;
 }
 
@@ -60,7 +62,7 @@ header, footer, section, article {
 	border:0 none;
 	display:inline-block;
 	float:left;
-	left:470px;
+	left:425px;
 	margin:0;
 	outline:0 none;
 	overflow:hidden;
@@ -87,7 +89,7 @@ header, footer, section, article {
 	margin-left:0;
 	padding-left:10px;
 	padding-right:10px;
-	white-space:nowrap;
+	white-space: nowrap;
 }
 
 .gist {
@@ -213,6 +215,7 @@ h1 {
   margin: 0;
   font-weight: 600;
 	font-size: 2.2em;
+	text-align: right;
 }
 h2 {
   color: #3B4A25;
@@ -220,6 +223,7 @@ h2 {
   margin: 0;
   font-weight: 600;
 	font-size: 1.8em;
+	text-align: right;
 }
 h3, h4 {
   color: #3B4A25;
@@ -227,6 +231,7 @@ h3, h4 {
   margin: 0;
   font-weight: 600;
 	font-size: 1.4em;
+	text-align: right;
 }
 code {
   font-family: 'Anonymous Pro', 'Bitstream Vera Sans', 'Monaco', Courier, mono;

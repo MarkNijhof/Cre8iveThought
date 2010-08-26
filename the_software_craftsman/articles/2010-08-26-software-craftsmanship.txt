@@ -1,0 +1,72 @@
+title: Software Craftsmanship
+author: Mark Nijhof
+date: 26/08/2010
+updated: 27/08/2010
+
+The pure passion for the craft, the ever present need to expand his knowledge and improve his skills that is what sets apart a craftsman from the other professionals in his profession. This need has nothing to do with being better than his peers; it is about being better than yesterday and the ability to make increasingly better decisions. The craftsman takes great pride and pleasure in the work he does and the solutions he finds; continuously thriving for perfection. The craftsman always shares his knowledge and experience with others expecting them to benefit from his advice, and at the same time hoping to be challenged so he as well will learn something new.
+
+The software craftsman is like any other craftsman; he understands that writing software is a crafts and as such it deserves to be takes seriously. He always thrives to deliver software the best way he can, providing what is needed, and ensuring that it is created with the future in mind. The software craftsman will constantly try to increase his knowledge and skills, partly because of the great passion he has for the craft, but also because he knows that this will give him more possible solutions to future challenges. A software craftsman is a valuable asset in any software development team.
+
+##1.1	The Three Levels of Craftsmanship##
+
+Traditionally there are three levels of craftsmanship; the craftsman begins his journey as an apprentice from there he will grow towards becoming a journeyman, and finally after many years practicing the trade he will be regarded as a master craftsman.
+
+The farrier that took care of our horses hoofs always was accompanied by one of his apprentices, this apprentice would stay with his master for a couple years. In the beginning an apprentice would spend almost all his time watching the master craftsman working on the horses, but soon there-after they would be given small tasks to do them selfs. Trimming and balancing the horses hoofs is one of the first tasks that an apprentice is given, the master craftsman would guide the apprentice through this task by giving precise advice and showing by example. When the apprentice has a good handle on this he would be given the next task which would be forging and fitting the metal horse shoe to the horses hoof. And finally he would be given the task to actually nail the metal horse shoe to the horses hoof. This is of-course only a small subset of the skills that the master farrier possesses. But the key here is that the apprentice would be under close guidance from the master craftsman and that the master craftsman would decide when the apprentice is ready for the next task. Then after a while the apprentice would have progressed enough that he is trusted to fulfill a task without the master craftsman present, very soon after this the apprentice would actually be promoted to journeyman and would start his own practice. Often getting some of the clients from the master craftsman. Every now and then they would accompany the master craftsman on special cases, for a new teaching / learning opportunity.
+
+###1.1.1	The Apprentice###
+
+The apprentice software craftsman is a developer new to the trade, and he will stay at this level for about 2 to 4 years before he would be considered for promotion to journeyman. The apprentice is not expected to write quality production code all the time, he is at this level because he still needs to learn the tricks of the trade. The apprentice is under constant supervision of a journeyman who is teaching him all that he knows about the trade guiding him on his way to become a journeyman himself.
+
+###1.1.2	The Journeyman###
+
+Most apprentice will progress towards becoming a journeyman, others will find a different profession. When an apprentice becomes a journeyman he will probably switch between teams, and in this new team the master craftsman will become his new mentor. The journeyman will also get two or three apprentices assigned to whom he will be a mentor, responsible to teach them all the tricks of the trade, training them so they themselves can become journeyman as well. The journeyman also has more responsibilities within the projects and has earned more freedom to make design decisions.
+
+###1.1.3	The Master Craftsman###
+
+The master craftsman is a very passionate craftsman; he has been a journeyman for perhaps several decades and still he is extremely interested in the craft. He constantly learns new things and is constantly teaching his colleges these same new things. He has not changed direction to become a manager, he still codes each and every day. There are not many journeymen that progress towards becoming a master craftsman. The one single thing that sets apart the master craftsman from a journeyman is his extreme passion and pride towards the craft.
+
+!!!need a better transition to Kaizen!!!
+
+##1.2 Kaizen##
+
+Kaizen is an old Japanese philosophy for improvement, the word kaizen originates from the two Japanese words kai and zen. Kai means change or to correct and Zen means good. Kaizen focuses on small improvements in an existing process. It is mostly know in the western world from the way Toyota’s production got improved. Everybody in the production plant is responsible for improving the process, whenever they notice a problem; they do this by constantly applying kaizen. Currently kaizen stands for continuous improvement.
+The software craftsman applies the kaizen philosophy to his professional life, always improving in small steps, both in knowledge and skills, but also the code he creates or works on will be affected by this philosophy.
+
+##1.3 Responsibility##
+
+It is often expected from the employer to send his employees to courses and conferences in order for them to improve their knowledge and skills. This is a wrong expectation, the software craftsman is responsible himself for continuously increasing his knowledge and improving his skills. The software craftsman will spend time outside working hours studying and practicing his craft in order to become better at it. He does this because he is interested in becoming better, not because this is expected from him. He does this purely out of self-interest.
+
+##1.4 Commitment##
+
+The software craftsman needs to be committed to spend extra time and effort into his knowledge and skills. He will not be able to do all of this during working hours. This is not a problem for a truly passionate software craftsman, but for an apprentice craftsman who has not yet gotten the passion it may be quit a burden. Just remember; free things are not very valuable.
+
+##1.5	The Importance of Software Craftsmanship##
+
+ > Imagine that you have open-heart surgery and during this event you get an outer body experience watching the heart surgeon work on you. This man who is operating on you has a deadline, a very significant deadline in fact, if he leaves you on the bypass machine for to long then that will damage to many red blood cells and you
+will die. Now the clock is ticking towards this deadline; how do you want the surgeon to behave?
+
+ > Imagine how you behave when the deadline is approaching, imaging the shortcuts you may take, the mess you may build. Imagine your behavior determining that you are slinging code at three in the morning to get things done, than ask yourself; Is that the way you want this heart surgeon to behave while he is working inside your chest?
+
+ > Or would you rather want that the heart surgeon take his discipline serious, address the issues that come up in a calm and orderly fashion, paying no attention to the ticking clock, instead paying attentions to the job at hand? So he can get it done, done well and sow you up and get you of the table?
+
+ > If you think of it in this regard than the notion of becoming a professional takes on a whole different meaning. We are physicians operating on the body of the software from our company. We are professionals responsible for keeping this body well, healthy and alive.
+- Robert C. Martin [Martin, 2009]
+
+Currently our customers almost expect that there will be a delay in the delivery of the software that we produce, they also expect that there will be many bugs in the software when it gets delivered. How wrong can this picture be? In any other craft such complete lack of competence and discipline would not be tolerated. Imagine getting the keys to your new house and ones you open the front door you notice that the stairs to the second level is missing some random steps? This would not be acceptable. But as soon as we start talking about software development these sort of mistakes are alright. They will be fixed in the next version, or we tell the user to just jump over those few missing steps.
+So how did we get there? Well for one we have been building houses much longer then we have been building software. When we talk about a house we have well defined expectations of the quality and practices that went into building it. But the software industry has not evolved enough yet to have these well defined expectations. Sure they are mentioned in contracts and meetings, but the actual people doing the work, they have not yet come to a single conclusion about the practices within software development. One very important reason for this is because there is nobody to teach us these practices. The things we learn at school are only the basics, they are the initial steps that allow us to start working in this industry. But unlike with for example the carpenters we are thrown right into the deep-end.
+
+And this is where software craftsmanship comes in, instead of being thrown into the deep-end, a journeyman will take you under his wing and start teaching you the tricks of the trade. When and only when he knows that you can swim is he going to let you go into the deepend. Once we start learning from the craftsman in our industry, then our industry as a whole will improve, and this in return will improve the quality of the software that gets delivered, which in turn will higher the expectations of our clients. Then we are on the good path to successful software development.
+
+##1.6	Manifesto for Software Craftsmanship##
+
+!!!content!!!
+
+##1.7	History of Craftsmanship##
+
+Guilds and craftsmanship are no new concepts; they are all around us for example painters, carpenters and many other professions all have the notion of craftsmanship and guilds. And they have been around for a very long time, around AD 300 600 craftsmen formed the early guilds based on their trades each of whom controlled secrets of traditionally imparted technology, the ’arts’ or ’mysteries’ of their crafts. Usually the founders were free independent master craftsmen. Our profession should start embracing these centuries old ideas and apply it to our own trade, software development.
+
+##1.8 Summary##
+
+Being a Software Craftsman means that you have great passion for the craft of Software Development. This passion will guide you through your career towards becoming a Master Software Craftsman. Now lets take an actual look at some of the basic things that you should be starting to do. We will be starting with building up your Knowledge, then after that we will look at your three most important skills; Communication, Coding and Design skills.
+
+You should read the following books to learn more about software craftsmanship; Pragmatic Programmer [Hunt and Thomas, 1999], The Passionate Programmer [Fowler, 2009] and Apprenticeship Patterns [Dave and Adewale, 2009]. And for craftsmanship in general I recommend reading The Craftsman [Sennett, 2008].

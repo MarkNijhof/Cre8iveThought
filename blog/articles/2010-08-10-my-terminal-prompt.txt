@@ -4,11 +4,11 @@ date: 10/08/2010
 
 I want to share something that I learned from [Rolf Bjaanes](http://twitter.com/rolfb) not to long ago and that is that the Terminal command prompt can give me a lot of useful information. Below here is how my Terminal command prompt looks by default:
 
->![Default Terminal Command Prompt](http://cre8ivethought.com/images/general/TerminalDefault.png)
+<center><img src="http://cre8ivethought.com/images/general/TerminalDefault.png" alt="Default Terminal Command Prompt" /></center>
 
 Now my command prompt displays: [machine name]:[current folder] [user]$
 
->![Fancy Terminal Command Prompt](http://cre8ivethought.com/images/general/TerminalFancy.png)
+<center><img src="http://cre8ivethought.com/images/general/TerminalFancy.png" alt="Fancy Terminal Command Prompt" /></center>
 
 But when you look at the second screenshot you see much more useful information, it starts with the **user @ the machine** then follows the **complete path** instead of just the current folder. It will tell me that a folder is a **Git repository** including **which branch** I am currently working in. And finally it shows we which **Ruby version** I currently have selected using [RVM](http://rvm.beginrescueend.com/) (Ruby Version Manager, which is something cool as well). And, there is **color** :) I know color is not for everybody, but I like it, it clearly separates the different types of information for me.
 

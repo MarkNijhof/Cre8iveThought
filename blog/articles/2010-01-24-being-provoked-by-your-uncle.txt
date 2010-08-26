@@ -6,7 +6,7 @@ So there was a lot of commotion about two blog posts by Uncle Bob Martin; [Depen
 
 I would like to leave the discussion for what it is and focus on another aspect of the story. Apparently Uncle Bob was trying to provoke a reaction from his readers, but this was not very obvious in the blog posts themselves.
 
->>![Twitter Discussion](http://cre8ivethought.com/images/general/twitter_discussion.png)
+<center><img src="http://cre8ivethought.com/images/general/twitter_discussion.png" alt="Twitter Discussion" /></center>
 
 And that is something which I didn’t expect from my uncle. Usually my uncle is the one that provides very good insights and advice. Yes perhaps controversial and challenging but with a clear message. I mean normally it is the neighbor that is very provoking, I expect this from him so I read his posts in a completely different light.
 

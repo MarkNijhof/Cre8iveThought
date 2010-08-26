@@ -1,0 +1,11 @@
+<article class="post">
+  <header>
+    <span class="date_post">last updated: <%= @config[:date].call(Date.parse(article.updated.gsub('/', '-'))) %></span>
+    <h1><%= title %></h1>
+  </header>
+
+  <section class="content">
+    <%= body %>
+  </section>
+</article>
+

@@ -1,0 +1,21 @@
+title: Preface
+author: Mark Nijhof
+date: 25/08/2010
+updated: 26/08/2010
+
+ > I am a craftsman. I will do this well, I will not bow to the pressure of the schedule, I will write my tests, I will re-factor, I will follow all these rules and that is the only way I actually can do my job as well as it can be done.
+- Robert C. Martin
+
+The above quote from Robert C. Martin [Martin, 2009] is a perfect example of the mindset of the true software craftsman; clearly showing the passion he has for the trade, and the discipline to follow the path which he knows is best. Such a software craftsman takes great pride in his work, continuously striving to perfect it. This continuous urge for improvement or Kaizen is something the software craftsman takes very seriously; constantly expanding his knowledge and improving his skills. For a great part because of his passion towards the craft but also because he knows that when faced with a particular problem, the more possible solutions he has, the more likely it is that he chooses the correct one.
+
+When I was young I envisioned myself to be an architect (the one that designs buildings) or an inventor (doesn’t everyone?), I really enjoyed the creativity that could be put into practicing these professions, it was only later that I discovered that the same creativity could also be used in software development. During my study and my first job(s) I was proud of my accomplishments, but this pride was purely based on the functionality that it provided, not because I was creating a high quality product. My only care was about getting the job done, not about the way I got the job done; and nobody was
+
+complaining about this either. This changed when I started working together with a different type of developer, they showed me that there is a whole lot more to software development than just creating the needed functionality. Looking back at them I would call these developers software craftsman; they did not only care about their own code, but they where also passionate enough to guide me towards becoming a software craftsman myself. Working with these software craftsman was the single biggest step forward for me to become a software craftsman.
+
+Today I consider myself a software craftsman, I do not only care about the functionality I create but also that I create this functionality in the best way that I can. I have a great passion for the trade and I am continuously improving myself. I also really enjoy teaching other developers the tricks of the trade; and that is where this book comes into play.
+
+This book is intended for the beginning software craftsman who is mostly working in a Microsoft .Net environment; it focuses on practical ways to expand his knowledge and improve his communication, coding and design skills. It will also introduce several principles, patterns and practices which the software craftsman should understand and several frameworks which he should know about. My main area of expertise lies with the Microsoft .Net environment and that is why this book will also have a great focus on that, having said that I will take every opportunity to look outside these artificial boundaries to explore what other technologies can offer us.
+
+After reading this book you will have a greater understanding of what it means to be a software craftsman, and why it is so important to our profession. Expect to be intrigued to read more, other books and on-line material; this book is not the end, it is only the beginning of the journey. A journey that perhaps takes you all the way towards becoming a master software craftsman, but at a minimum it should provide you with alternatives for your day to day software development challenges.
+
+Mark A. Nijhof

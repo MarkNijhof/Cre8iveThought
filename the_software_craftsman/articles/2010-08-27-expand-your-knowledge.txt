@@ -1,0 +1,54 @@
+title: Expand Your Knowledge
+author: Mark Nijhof
+date: 27/08/2010
+updated: 27/08/2010
+
+Knowledge is one of the most valuable qualities of a software craftsman. Knowledge is about the ability to make informed choices when faced with a challenge. This knowledge can be split-up into two different main groups; business knowledge and technical knowledge. Both groups are equally important to the software craftsman.
+
+When we look at technical knowledge we can also divide that into two different groups; product specific and !!!!! knowledge. A software craftsman would value the software principles and practices higher then product specific knowledge. And as such he should be spending the majority of his time in increasing his ’reusable’ knowledge and when the need arrises learn the product specific things.
+
+This chapter focusses on different activities that you as a software craftsman should be doing. Similar as with a puzzle, the complete picture will only reveal itself when the individual activities are combined together.
+
+##2.1	Reading books##
+
+Reading books is one of the easiest things that you can do to increase your knowledge, and as a software craftsman you want to start with knowledge that is not product specific. You should be building-up knowledge that apply to your general programing skills independent of the project you will be working on. This is knowledge about different principles and practices that apply to the language you use and knowledge about the language itself. This is much more valuable then knowledge about a specific product; products come and go, the way you develop software remains the same.
+
+In this section there will only be one book recommendation, this is because throughout the book there are many references towards other books and there you will get a better understanding on why you should read them.
+
+The one book that every software craftsman should read is Clean Code [Martin, 2008], it will present you with many techniques to make your code better; better to understand and better functioning or in one word; clean.
+
+Even bad code can function. But if code isn't clean, it can bring a development organization to its knees. Every year, countless hours and significant resources are lost because of poorly written code. But it doesn't have to be that way. Noted software expert Robert C. Martin presents a revolutionary paradigm with Clean Code: A Handbook of Agile Software Craftsmanship. Martin has teamed up with his colleagues from Object Mentor to distill their best agile practice of cleaning code on the fly into a book that will instill within you the values of a software craftsman and make you a better programmer but only if you work at it.
+back-cover of Clean Code
+
+Books will unlike many of the other activities mentioned in this chapter give a more complete overview of the problem area they discuss.
+
+##2.2	Reading blogs##
+
+Reading blog posts is probably the easiest activity of them all, and in contrarily to most other things that are easy, this will actually bring great value. This is one of the best ways to stay in touch with the development community. Here you will read about interesting ideas and you will learn from other peoples mistakes.
+Almost every book author also writes very good blog posts, so when you have read a book that you likes go see if the author has a blog as well and subscribe to it. If you want a quick start for your reading list then find these people; Kent Beck, Martin Fowlers, Uncle Bob Martin, Michael Feathers, Dan North, Jeremy Miller and Ayende and add them to your list.
+
+Also know that there are some really good websites where multiple people blog on, take a look at; Code Better, Devlicio, Elegant Code and Los Techies. On these sites you will find many good developers that want to share their knowledge with you. Also take a look at InfoQ this is a news site that usually has very interesting topics for a software craftsman.
+
+##2.3	Listen to podcasts##
+
+Podcasts are a very good way to digest large amounts of information. Podcasts are very similar to blog posts as they are very good to introduce you to new ideas and technologies, they will however not go into all the details. And this makes them perfect to listen to on your way to and from work.
+
+##2.4	Watch recorded presentations##
+
+Watching presentations from some of the leaders in our community is a very good alternative to listening to podcasts, many recordings also show the slides so you get a better idea what the speaker is talking about. Most if not all developer conferences record and publish the different presentations nowadays. A good place to start is InfoQ they have very good speakers at their conferences and the recordings are freely available.
+
+##2.5 Go to software development conferences##
+
+.
+
+##2.6 Go to local user group meetings##
+
+.
+
+##2.7 Write to your own blog##
+
+.
+
+##2.8 Discuss ideas among peers##
+
+.

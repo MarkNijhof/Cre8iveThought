@@ -12,11 +12,11 @@ So this means that we can start composing our web pages out of multiple resource
 
 Let's take a quick look at one very well know website: Amazon.com
 
->![Amazon](http://cre8ivethought.com/images/general/The-Web-is-all-about-Composition-1-Amazon.jpg)
+<center><img src="http://cre8ivethought.com/images/general/The-Web-is-all-about-Composition-1-Amazon.jpg" alt="Amazon" /></center>
 
 On this page I count at least 11 different resources or components, each component has one single responsibility. And perhaps even more important, the different components on the page are not depending upon each other. I highlighted them for you:
 
->![Amazon](http://cre8ivethought.com/images/general/The-Web-is-all-about-Composition-2-Amazon.jpg)
+<center><img src="http://cre8ivethought.com/images/general/The-Web-is-all-about-Composition-2-Amazon.jpg" alt="Amazon" /></center>
 
 Now when we for example look at the "Inspired by Your Wish List" item and "Netbooks Resellers" item, these two different content items do not relate to each other, at least not directly. There may be different rules at play that do take into account what content you are looking at, but these rules would mostly be affected by the main component of the page i.e. what the visitor is actually interested in, and who the visitor is.
 
