@@ -1,4 +1,8 @@
-require 'toto'
+begin
+  require 'toto'
+rescue Gem::LoadError => ge
+  next
+end
 require ::File.dirname(__FILE__) + '/config/boot.rb'
 require 'rack-rewrite'
 
