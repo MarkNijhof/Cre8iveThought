@@ -1,8 +1,8 @@
-begin
-  require 'toto'
-rescue Gem::LoadError => ge
-  next
-end
+require "rubygems"
+require "bundler"
+Bundler.setup
+
+require 'toto'
 require ::File.dirname(__FILE__) + '/config/boot.rb'
 require 'rack-rewrite'
 

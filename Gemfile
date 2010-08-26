@@ -9,7 +9,7 @@ gem 'thin' # or mongrel
 gem 'haml'
 gem 'compass'
 gem 'rdiscount'
-gem 'toto', :git => 'git://github.com/MarkNijhof/toto.git'
+gem 'toto', '0.4.7', :git => 'git://github.com/MarkNijhof/toto.git'
 gem 'rack-rewrite', '~> 0.2.1'
 
 # Test requirements
