@@ -1,0 +1,26 @@
+title: In The Enterprise
+author: Mark Nijhof
+date: 30/08/2010
+
+I quit often see comments like; **"We are only allowed to use Microsoft Technologies"** and every-time I think **"Why?"**. What is the reason behind such a standpoint. What does this company or organization win by limiting their choices in such a radical way?
+
+##Customer Support##
+
+Support from Microsoft is often the reason that I hear when I ask these questions, but is this really that valuable? 
+
+It is true that when you are for example a gold partner or something like that that you can ask Microsoft questions and they will try to help you the best way they can. I am not sure if it goes much further then that actually, but lets assume that it actually entails more that that. Lets assume you are entitled for a Microsoft Developer to visit your office when you run into a big problem. 
+
+So what is he going to do? If it is a configuration issue he might be able to help you out in a proper way (often on Microsoft technologies configuration is an issue), so this could be valuable. But if it is a bug in one of Microsofts frameworks then he won't actually be able to fix this for you. He might know a work-around which you will have to double check on every next release. 
+
+Microsoft does not accept patches / bug fixes from their customers or anybody, not even from the "Sorta Open Sourced" frameworks Microsoft has!
+
+Now when we for example would look at something like NHibernate (just to stay on the Microsoft platform), there you will be able to actually fix the bug, and post a patch / bug fix to the team. The contributors would be happy with your contribution and when valid incorporate it in the next release. Releases are most often also more frequent so the wait won't be that long. 
+
+But you need help because well you don't know how to fix the bug; well most OSS communities are more then happy to help you out with any problem you may have. In my experience this help is actually very fast as well. Sure I can't just call someone and say, "Hey I have a problem", I actually need to help them to help me, but it is free and fast.
+
+And finally, the community actually cares about your input, if you have an issue with the framework and have a great idea on how to do something different then they are more then happy to listen to you. And if it makes sense then it will be incorporated as well.
+
+**So what did you really win here?**
+
+##Framework Support##
+
