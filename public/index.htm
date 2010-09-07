@@ -30,7 +30,7 @@
 
 
 				cards.click(function(){
-				  location.href = '#/BEKK';
+				  location.href = '#/MarkNijhof';
 				});
 				
 				var app = $.sammy(function() {
@@ -43,8 +43,8 @@
   				  animator.loadContent(function(){ return loadText("#bekk_template"); } );
           });
 
-  				this.get('#/Speaking', function() { 
-  				  animator.loadContent(function(){ return loadText("#speaking_template"); } );
+  				this.get('#/MarkNijhof', function() { 
+  				  animator.loadContent(function(){ return loadText("#about_template"); } );
           });
 
   				this.get('#/Contact', function() { 
@@ -84,43 +84,49 @@
 			</ul>
 		</div>
 		</script>
-		<script type="text/html" id="speaking_template"> 
+		<script type="text/html" id="about_template"> 
 		<div class="textBlock">
-			<h1>Speaking</h1>
-			<p>I&#39;ll be speaking at the following events, come look me up.</p> 
-			<h2>NDC 2010</h2>
-			<p>NDC is Norway’s largest conference dedicated to agile program development. I will be presenting about FubuMVC and about Test-Driven Javascript Development. <br/><br/>Link: <a href="http://www.ndc2010.no/">www.NDC2010.no</a></p> 
-		</div>
-		</script>
-		<script type="text/html" id="bekk_template"> 
-		<div class="textBlock">
-			<h1>BEKK</h1>
-			<p>I am happy to announce that from August 2010 I&#39;ll be working for <a href="http://www.bekk.no/">BEKK</a> in Oslo. Which means that I will not be doing any work through Cre8ive Thought anymore. But if there is anything that I can do for you then please contact me directly anyway.</p>
-			<h1>Oslo</h1>
-			<p>In the beginning I will be traveling between Bergen and Oslo, but as soon as we have found an appropriate place to live the family will move with me to Oslo as well. These are interesting times ahead of us!</p> 
+			<h1>Mark Nijhof</h1>
+      <p>Mark is a Software Developer experienced in the Microsoft .Net framework, he has developed / implemented a diverse range of Object-Oriented software solutions. Mark has been working closely with customers to achieve high quality solutions. Mark is always learning new technologies en theories to improve his programming skills; he is especially interested in all the different Object-Oriented design principles, and in languages like Ruby and Node.js.</p>
+      <h2>Specialties:</h2>
+      <p>Creative thinker, Team player, C#, .Net, Agile Software Development, TDD, DDD, Continuous Integration, Web Services, Windows Applications, Web Applications</p>
 		</div>
 		</script>
 	</head>
 	<body>
+		<noscript>
+  		<div class="textBlock">
+  			<h1>Mark Nijhof</h1>
+        <p>Mark is a Software Developer experienced in the Microsoft .Net framework, he has developed / implemented a diverse range of Object-Oriented software solutions. Mark has been working closely with customers to achieve high quality solutions. Mark is always learning new technologies en theories to improve his programming skills; he is especially interested in all the different Object-Oriented design principles, and in languages like Ruby and Node.js.</p>
+        <p>In August 2000 he started his career at CSC Computer Sciences BV working on different web based applications. In April 2004 he moved to Norway and started working for Vizrt joining an existing development team in product development of one of Vizrt’s product groups. Mark moved in March 2006 to Sydney Australia to start working for Vizrt as a Solution Architect and support person. In July 2007 Mark started working for his first employer again, joining the software factory in Agile SOA development. In July 2008 he moved back to Norway where he started working for Reaktor. Then in August 2010 Mark started working as a Developer for BEKK Consulting in Oslo.</p>
+        <h2>Specialties:</h2>
+        <p>Creative thinker, Team player, C#, .Net, Agile Software Development, TDD, DDD, Continuous Integration, Web Services, Windows Applications, Web Applications</p>
+  		</div>
+		  
+		  <div class="textBlock">
+  			<h1>Contact</h1>
+  			<p>If you have any questions or want to contact me about potential consulting or coaching work, then please don&#39;t hesitate use any one of the options listed below.</p> 
+  			<h2>Mark Nijhof</h2>
+  			<ul>
+  				<li>Phone: 0047 95 00 99 37</li>
+  				<li>Skype: marknijhof or Mark@Nijhof.com</li>
+  				<li>E-mail: <a href="mailto:Mark.Nijhof@Cre8iveThought.com">Mark.Nijhof@Cre8iveThought.com</a></li>
+  			</ul>
+  			<br />
+  			<ul>
+  				<li>Twitter: <a href="http://twitter.com/MarkNijhof">@MarkNijhof</a></li>
+  				<li>GTalk: Mark.Nijhof@Gmail.com</li>
+  				<li>MSN: Mark@Nijhof.com</li>
+  			</ul>
+  		</div>
+		</noscript>
 		<div id="cards"></div>
 		<div id="frame"></div>
 		
-		<div id="noJScript">
-			<script type="text/javascript">
-				$('#noJScript').hide();
-			</script>
-			<h1>Vision</h1>
-			<p>The vision of Cre8ive Thought is to help make the software industry more professional and focused on <b>quality</b>. We will do this by promoting and <b>teaching</b> the principles of <b>Software Craftsmanship</b> to developers and managers. We will work together with you to improve your software development process.</p> 
-			<h1>Development</h1>
-			<p>Whether you need extra manpower to help deliver your software or a team lead to take responsibility for the entire project, I will use my <b>knowledge</b> and <b>experience</b> to make sure the result is <b>well-crafted software</b>.</p> 
-			<h1>Coaching</h1>
-			<p>Need help <b>improving</b> your <b>team’s</b> software development practices and understanding, or want an <b>architectural review</b> of your code? I am available for coaching either through <b>design sessions</b> or working alongside the team using <b>pair programming</b>.</p> 
-			<img src="http://cre8ivethought.s3.amazonaws.com/images/frame-back.png" alt="" style="display: none">
-			<img src="http://cre8ivethought.s3.amazonaws.com/images/card-front.png" alt="" style="display: none">
-			<img src="http://cre8ivethought.s3.amazonaws.com/images/card-back.png" alt="" style="display: none">
-			<img src="http://cre8ivethought.s3.amazonaws.com/images/card-front.png" alt="" style="display: none">
-		</div>
-		
+		<img src="http://cre8ivethought.s3.amazonaws.com/images/frame-back.png" alt="" style="display: none">
+		<img src="http://cre8ivethought.s3.amazonaws.com/images/card-front.png" alt="" style="display: none">
+		<img src="http://cre8ivethought.s3.amazonaws.com/images/card-back.png" alt="" style="display: none">
+		<img src="http://cre8ivethought.s3.amazonaws.com/images/card-front.png" alt="" style="display: none">
 		
 		<script type="text/javascript">
 		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");

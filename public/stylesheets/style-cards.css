@@ -237,9 +237,11 @@ p
 {
 	margin: 0px;
 	margin-left: 10px;
+	margin-right: 10px;
 	font-family: Verdana, serif;
 	font-size: 14pt;
 	color: #414142;
+	text-align: justify;
 }
 
 p b
