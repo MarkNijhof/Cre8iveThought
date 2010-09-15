@@ -40,7 +40,7 @@ describe 'Animator - Initialization'
 	  end
 	  
 	  it 'will setup the frame placeholder to contain a frame menu element'
- 			frame.html().should.match /<div id=\"frame-menu\">.*<ul>.*<li id=\"menu-home\"><a href=\"#\/\">Home<\/a><\/li>.*<li id=\"menu-bekk\"><a href=\"#\/BEKK\">BEKK<\/a><\/li>.*<li id=\"menu-speaking\"><a href=\"#\/Speaking\">Speaking<\/a><\/li>.*<li id=\"menu-contact\"><a href=\"#\/Contact\">Contact<\/a><\/li>.*<\/ul>.*<\/div>/
+ 			frame.html().should.match /<div id=\"frame-menu\">.*<ul>.*<li id=\"menu-home\"><a href=\"#\/\">Home<\/a><\/li>.*<li id=\"menu-blog\"><a href=\"#\/Blog\">Blog<\/a><\/li>.*<li id=\"menu-bekk\"><a href=\"#\/MarkNijhof\">Mark Nijhof<\/a><\/li>.*<li id=\"menu-contact\"><a href=\"#\/Contact\">Contact<\/a><\/li>.*<\/ul>.*<\/div>/
 	  end
 	end
 
