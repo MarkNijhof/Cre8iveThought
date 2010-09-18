@@ -10,12 +10,12 @@ Greg however takes this same principle but he applies it to the whole architectu
 
 So lets take a quick look at the overall architecture before we dive into the details:
 
-<center><img src="http://cre8ivethought.com/images/CQRS/DDD-Overview.jpg" alt="CQRS Overview" /></center>
+<center><img src="http://cre8ivethought.s3.amazonaws.com/images/CQRS/DDD-Overview.jpg" alt="CQRS Overview" /></center>
 
 
 You have to excuse me for not using Visio to make this drawing, but I really didn’t feel like tackling yet an other layer of complexity tonight. At least I did the labels in typed text, so it is readable. I will discuss this architecture in 4 phases, the order I choose is what I believe is the natural way your would think about this. In the end you will see that the whole principle is rather simple. Really. 
 
-<center><img src="http://cre8ivethought.com/images/CQRS/DDD-Devision.jpg" alt="CQRS Devision" /></center>
+<center><img src="http://cre8ivethought.s3.amazonaws.com/images/CQRS/DDD-Devision.jpg" alt="CQRS Devision" /></center>
 
 1. Queries
 2. Commands
