@@ -2,8 +2,6 @@ title: In The Enterprise
 author: Mark Nijhof
 date: 01/09/2010
 
-<i>this post is now finished, the previous publish wasn't</i>
-
 I quite often see comments like; **"We are only allowed to use Microsoft Technologies"** and every-time I think **"Why?"**. What is the reason behind such a standpoint. What is won by limiting their choices in such a radical way?
 
 ##Customer Support##

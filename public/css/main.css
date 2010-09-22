@@ -62,14 +62,13 @@ P {
 	border:0 none;
 	display:inline-block;
 	float:left;
-	left:360px;
+	left:290px;
 	margin:0;
 	outline:0 none;
 	overflow:hidden;
 	padding:0;
 	position:relative;
 	top:22px;
-	width:450px;
 	z-index: 10;
 }
 
