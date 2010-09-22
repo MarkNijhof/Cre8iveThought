@@ -54,6 +54,8 @@ But realistically will they join such an endeavor? I think they will, it is goin
 
 [Kevlin Henney](http://twitter.com/kevlinhenney) said: _"That's insane! Which means that, with some ironing out of details, it could in theory work."_
 
+[Robert C. Martin](http://twitter.com/unclebobmartin) said: _"&lt;gasp&gt;  &lt;gulp&gt;  &lt;eye-bulge-choke&gt; If you think you can pull it off, I'm game"_
+
 ##But can it actually be done?##
 
 Yes!
