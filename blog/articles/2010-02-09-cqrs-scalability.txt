@@ -1,6 +1,6 @@
 title: CQRS Scalability
 author: Mark Nijhof
-date: 09/02/2009
+date: 09/02/2010
 
 Scalability is one of the several different benefits you gain from applying CQRS and Event Sourcing to your application architecture. And that is what I wanted to take a closer look at in this post.
 
