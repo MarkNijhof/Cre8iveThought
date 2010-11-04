@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/MarkNijhof/toto.git
-  revision: f8f72d9
+  revision: f8f72d930a03e151194b1f841222b0c3a6d3f15d
   specs:
     toto (0.4.7)
       builder
@@ -17,7 +17,7 @@ GEM
     daemons (1.1.0)
     eventmachine (0.12.10)
     fuzzyhash (0.0.11)
-    haml (3.0.17)
+    haml (3.0.21)
     i18n (0.4.1)
     padrino (0.9.10)
       padrino-admin (= 0.9.10)
@@ -55,7 +55,7 @@ GEM
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
       rack (>= 1.0.0)
-    thor (0.14.0)
+    thor (0.14.3)
     tmail (1.2.7.1)
     usher (0.8.3)
       fuzzyhash (>= 0.0.11)

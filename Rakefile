@@ -6,9 +6,13 @@ end
 #   sh "padrino start -h local.cre8ivethought.com"
 # end
 
-task :run => [] do
-  sh "thin start -R config.ru -a local.cre8ivethought.com"
+task :run => [:set_development_environment] do
+  sh "bundle exec thin start -R config.ru -a local.cre8ivethought.com"
 end  
+
+task :t => [:set_development_environment] do
+  sh "thin start -R config.ru"
+end
 
 task :test => [:set_test_environment] do
   sh "bundle exec autotest"
