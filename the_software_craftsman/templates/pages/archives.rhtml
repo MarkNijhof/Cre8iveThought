@@ -1,7 +1,7 @@
 <h1><%= @path %></h1>
 <ul>
   <% if archives.length > 0 %>
-    <% for entry in archives %>
+    <% for entry in archives.select{|item| item[:published] } %>
       <li>
         <a href="<%= entry.url %>"><%= entry.title %></a><br/>
         <span class="archive_info">Published on <%= entry.date %> and has <a class="comments_link" href="<%= entry.url %>#disqus_thread">Comments</a>.</span>

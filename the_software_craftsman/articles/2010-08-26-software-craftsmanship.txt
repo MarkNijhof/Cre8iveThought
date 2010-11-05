@@ -2,6 +2,7 @@ title: Software Craftsmanship
 author: Mark Nijhof
 date: 26/08/2010
 updated: 27/08/2010
+published: true
 
 The pure passion for the craft, the ever present need to expand his knowledge and improve his skills that is what sets apart a craftsman from the other professionals in his profession. This need has nothing to do with being better than his peers; it is about being better than yesterday and the ability to make increasingly better decisions. The craftsman takes great pride and pleasure in the work he does and the solutions he finds; continuously thriving for perfection. The craftsman always shares his knowledge and experience with others expecting them to benefit from his advice, and at the same time hoping to be challenged so he as well will learn something new.
 

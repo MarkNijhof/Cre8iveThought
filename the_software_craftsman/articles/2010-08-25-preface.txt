@@ -2,6 +2,7 @@ title: Preface
 author: Mark Nijhof
 date: 25/08/2010
 updated: 26/08/2010
+published: true
 
  > I am a craftsman. I will do this well, I will not bow to the pressure of the schedule, I will write my tests, I will re-factor, I will follow all these rules and that is the only way I actually can do my job as well as it can be done.
 - Robert C. Martin

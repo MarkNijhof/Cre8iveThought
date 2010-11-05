@@ -2,6 +2,7 @@ title: Expand Your Knowledge
 author: Mark Nijhof
 date: 27/08/2010
 updated: 27/08/2010
+published: true
 
 Knowledge is one of the most valuable qualities of a software craftsman. Knowledge is about the ability to make informed choices when faced with a challenge. This knowledge can be split-up into two different main groups; business knowledge and technical knowledge. Both groups are equally important to the software craftsman.
 
