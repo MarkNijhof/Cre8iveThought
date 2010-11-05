@@ -1,6 +1,7 @@
 title: I'll be BEKK
 author: Mark Nijhof
 date: 24/06/2010
+published: true
 
 Just a little note; I am very happy to announce that I’ll be joining [BEKK](http://www.bekk.no/) from August on, I’ll be working mostly on .Net projects I am sure, but I have the intention to squeeze some Ruby projects in there as well. And perhaps this can become the majority soon as well?
 

@@ -1,6 +1,7 @@
 title: CQRS à la Greg Young example code
 author: Mark Nijhof
 date: 03/11/2009
+published: true
 
 I have had the pleasure of spending a 2 day course and many geek beers with Greg Young talking about Domain-Driven Design specifically focussed on Command Query Responsibility Segregation (CQRS).
 

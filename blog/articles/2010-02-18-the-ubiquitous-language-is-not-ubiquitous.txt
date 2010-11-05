@@ -1,6 +1,7 @@
 title: The Ubiquitous Language is not Ubiquitous
 author: Mark Nijhof
 date: 18/02/2010
+published: true
 
 I attended an interesting Domain-Driven Design talk today given by [Janniche Haugen](http://twitter.com/miss_haugen/) talking about why you would want to use Domain-Driven Design in a project, and this presentation is what triggered this post.
 

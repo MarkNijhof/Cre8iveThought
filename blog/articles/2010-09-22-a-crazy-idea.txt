@@ -1,6 +1,7 @@
 title: A Crazy Idea
 author: Mark Nijhof
 date: 22/09/2010
+published: true
 
 Some time ago after the NNUG yearly meeting I was talking to [Sondre Bjellås](http://twitter.com/SondreB) and [Lisbeth Skogland](http://twitter.com/LizSkogland) and one thing led to another and suddenly we were talking about arranging a conference. 
 

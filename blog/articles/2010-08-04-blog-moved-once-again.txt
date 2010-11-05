@@ -1,6 +1,7 @@
 title: Blog moved, Once again...
 author: Mark Nijhof
 date: 04/08/2010
+published: true
 
 Ok it happened again; I started blogging on Blogger, then created my own blogging engine using FubuMVC and moved to the Fohjin domain. Then I got asked to join Elegant Code which I was very flattered by and accepted right away. But now I feel that this is maybe not the right place for me to blog after all. 
 

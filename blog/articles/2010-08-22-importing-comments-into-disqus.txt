@@ -1,6 +1,7 @@
 title: Importing Comments into Disqus
 author: Mark Nijhof
 date: 22/08/2010
+published: true
 
 I [wrote before](http://cre8ivethought.com/blog/2010/08/04/blog-moved-once-again/) how I moved my blog to [Heroku](http://www.heroku.com) using [Toto](http://github.com/cloudhead/toto) for the blogging engine and [Disqus](http://disqus.com/) for providing the comments functionality. And I have to say so-far Disqus has been great, of-course I haven't received that many comments yet that I would have encountered problems ;) 
 

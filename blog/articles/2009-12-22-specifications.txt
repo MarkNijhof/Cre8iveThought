@@ -1,6 +1,7 @@
 title: Specifications
 author: Mark Nijhof
 date: 22/12/2009
+published: true
 
 I received a couple questions about the Specification Framework that I use in the [CQRS example](http://github.com/MarkNijhof/Fohjin/tree/f85a25181b4fa382bd3afbbbbcb08da891cc8e45/Fohjin.DDD.Example)  and thought lets talk about that for a bit. The first thing that should be underlined is that this is _not_ a framework, they are a [few classes and extension methods](http://github.com/MarkNijhof/Fohjin/tree/f85a25181b4fa382bd3afbbbbcb08da891cc8e45/Fohjin.DDD.Example/Test.Fohjin.DDD) that rely on [NUnit](http://www.nunit.org/index.php) for the actual assertions and and [Moq](http://code.google.com/p/moq/) for mocking of the dependencies. I got the initial bits from Greg Young at his DDD course which I extended a little bit for my specific needs.
 

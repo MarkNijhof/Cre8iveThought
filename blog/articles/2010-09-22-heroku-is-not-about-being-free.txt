@@ -1,6 +1,6 @@
 title: Heroku Is Not About Being Free
 author: Mark Nijhof
 date: 22/09/2010
-skip: true
+published: false
 
-test
+That is right, Heroku biggest feature is not about it being free for small ussages, it is about how dead simple deployment is.

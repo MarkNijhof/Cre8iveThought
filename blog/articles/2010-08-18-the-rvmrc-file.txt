@@ -1,6 +1,7 @@
 title: The .rvmrc File
 author: Mark Nijhof
 date: 18/08/2010
+published: true
 
 So after you have read my [last post](http://cre8ivethought.com/blog/2010/08/10/my-terminal-prompt/) I am sure you have been looking into [RVM](http://rvm.beginrescueend.com/) and if you haven't perhaps you should. And you have seen how much power and simplicity RVM can bring to your development workflow. Take for example my current situation, I have some projects in Ruby 1.8.7 and also in JRuby 1.4.0. Now switching between these is still a little bit of a pain, because I have to remember to tell RVM that I need a different Ruby version depending on the project I am working in.
 

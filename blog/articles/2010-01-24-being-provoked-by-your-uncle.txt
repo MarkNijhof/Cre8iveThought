@@ -1,6 +1,7 @@
 title: Being provoked by your uncle
 author: Mark Nijhof
 date: 24/01/2010
+published: true
 
 So there was a lot of commotion about two blog posts by Uncle Bob Martin; [Dependency Injection Inversion](http://blog.objectmentor.com/articles/2010/01/17/dependency-injection-inversion) and [Mocking Mocking and Testing Outcomes](http://blog.objectmentor.com/articles/2010/01/23/mocking-mocking-and-testing-outcomes). With replies from people like Jimmy Bogard “[Poor use of DI versus need for DI](http://www.lostechies.com/blogs/jimmy_bogard/archive/2010/01/18/poor-use-of-di-versus-need-for-di.aspx)” and Ayende “[Rejecting Dependency Injection Inversion](http://ayende.com/Blog/archive/2010/01/22/rejecting-dependency-injection-inversion.aspx)”. And also on Twitter there were many discussions going back and forth about it.
 

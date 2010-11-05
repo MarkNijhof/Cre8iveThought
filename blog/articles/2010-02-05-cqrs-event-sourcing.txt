@@ -1,6 +1,7 @@
 title: CQRS Event Sourcing
 author: Mark Nijhof
 date: 05/02/2010
+published: true
 
 So after reading this blog post by Rob Conery about [Reporting In NoSQL](http://blog.wekeroad.com/2010/02/05/reporting-in-nosql) where he explains very well what the problem is when using a RDBMS for persisting the state of your domain, or really anything that is written with Object Orientation in mind.
 

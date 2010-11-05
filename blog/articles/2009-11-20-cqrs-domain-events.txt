@@ -1,6 +1,7 @@
 title: CQRS Domain Events
 author: Mark Nijhof
 date: 20/11/2009
+published: true
 
 As you may have seen in my previous post “[CQRS à la Greg Young](http://elegantcode.com/2009/11/11/cqrs-la-greg-young/)” now our domain aggregate root is responsible for publishing domain events indicating that some internal state has changed. In fact state changes within our aggregate root are _only_ allowed through such domain events. Secondly the internal event handlers are _not_ allowed to have any sort of business logic in them, they are _only_ supposed to set or update the internal state of the aggregate root directly from the data the event carries. Using these rules you completely separate the business logic from the state changes. This separation enables us to replay historical domain events without any business logic being triggered bringing it back to the same state as the original aggregate root.
 

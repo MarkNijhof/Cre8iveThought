@@ -1,0 +1,14 @@
+title: Sammy 
+author: Mark Nijhof
+date: 05/11/2010
+published: false
+
+If you have been doing some JavaScript development then you know how powerful is can be, JavaScript enables us to load additional content after the page has been loaded by the browser, either by a user action or perhaps triggered by a timeout. For example when the user clicks on a link we can trigger some JavaScript that request some JSON data from the server. On receiving the data we use some JavaScript templating engine to combine the JSON with HTML and place it in the appropriate HTML place holder. And this is absolutely great, now we don't need to reload the whole page just because a small part of it needs to be changed. 
+
+Think for example about a page that lists all your books. And when the user clicks on one of these books it will request the additional information and display it in a panel besides the list. This is a perfect problem to solve using JavaScript, we don't want to reload the whole page just because we want to see some details of a single book from the list. 
+
+But now it starts to become difficult because we want to be able to load the page with one particular book visible in the details panel, and we used to solve these things by adding some logic at the server that checks some url parameters or the specific route and based upon that decides to place the book information in the details panel before sending it to the browser. And this will work just fine, except that now we have two different ways of loading book details in the details panel. If we want to change this we need to change it at two different locations in the code base. Not a very elegant solution.
+
+And that is where Sammy comes into play, Sammy solves this by providing the ability to trigger JavaScript code in different HTML anchor bookmarks, you know when a URL contains a #some_name the browser automatically navigates to the location in the page that refers to some_name, now instead of that it will trigger a specific JavaScript function.
+
+Sammy is a very interesting JavaScript framework which is build on top of jQuery and it provides ReSTful Evented JavaScript. Which of-course sounds totally amazing, but what can you do with it? Lets take a look at some use-cases where we want to use JavaScript to load different content on the page avoiding a page reload. Usually this is something triggered by the user. Take for example a look at New Twitter or Google's Gmail, these are great examples of what you can achieve using this technology. Now you may think that this is just using Ajax to load new content on the page, and you are partly correct. The interesting part is that this technology for example works with the back and forward button of your browser. But you can also have visitors land at the correct position in the page depending on the Url. This is one of the big downsides of just using Ajax, because when the page loads you start at the beginning.
