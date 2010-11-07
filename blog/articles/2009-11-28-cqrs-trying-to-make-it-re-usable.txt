@@ -53,7 +53,7 @@ I have been thinking about providing a basic interface that dictates that the Ap
 
 ##Reflect only once##
 
-There is quit a bit of reflection going on to discover and the properties of both the domain events and the aggregate root internal state. But once this is done once the results will be cached and re-used for each sequential need. But I am sure this can improve quit a bit :)
+There is quite a bit of reflection going on to discover and the properties of both the domain events and the aggregate root internal state. But once this is done once the results will be cached and re-used for each sequential need. But I am sure this can improve quite a bit :)
 
 ##Conventional limits##
 
