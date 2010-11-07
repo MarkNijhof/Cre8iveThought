@@ -1,0 +1,35 @@
+title: Sammy.js
+slug: Sammy
+author: Mark Nijhof
+date: 08/11/2010
+published: true
+
+If you have some experience in JavaScript development then you know how powerful it can be; for example JavaScript enables us to load additional content after the page has already been loaded by the browser. This can happen either by an user action or perhaps triggered by a timeout. For example when an user clicks on a link we can trigger some JavaScript that requests some additional JSON data from the server. When the data is returned to the client we can use an JavaScript templating engine to combine the JSON with HTML and place it in the appropriate HTML place holder. 
+
+And this is absolutely great, now we don't need to reload the whole page just because a small part of it needs to be updated. 
+
+Let us take a look at a page that lists books, and when the user clicks on one of these books it will request the additional information and displays it in a panel besides the book list. This is a perfect problem to solve using JavaScript, we don't want to reload the whole page just because we want to show some additional details of a single book from the list. Using JavaScirpt and Ajax will significantly improve the user experience. 
+
+Now lets add one more requirement and that is that the user needs to be able to bookmark this particular book of which the details are being shown, a unique URL is needed.
+
+Now it becomes a bit more difficult, one very common way of solving this is to include the requested book information as optional route parameters. Then when the server gets a request with a specific book provided by the optional parameters it will fetch this books information and embed the information in the correct HTML place holder before returning the page to the client. 
+
+And this will work just fine, except that now we have introduced duplication. Duplication in the form of logic to retrieve the requested book (all tho this could be reused), the template for displaying the book and the knowledge where this needs to be displayed inside the page. Suddenly we need to make changes in two different places, we need to execute the same tests for two very similar behaviors but completely differently implemented. And this is not a very elegant way to deal with this.
+
+The easy answer is to get rid of the JavaScript loading and just live with the page reload, except that now I would like to introduce you to Sammy:
+
+##Sammy##
+
+Sammy is a small JavaScript framework build on top of jQuery and gives us ReSTful evented JavaScript. It is based on the same philosophy as Sinatra and allows us to create one page applications that respond well to the forward and back button of the browser and provides direct links within the application. Google's Gmail but also the latest version of Twitter are using the same technique to create a very nice user experience. 
+
+Sammy can solve our problem with the book list, it would do this by providing the ability to execute different JavaScript code triggered by HTML anchor bookmarks. You know when a URL contains a #some_name the browser automatically navigates to the location in the page that refers to some_name, now instead of that it will trigger a specified JavaScript function instead. We can now have the following URL's /book_list.html and /book_list.html#/Test_Driven_JavaScript or even /book_list.html#/Test_Driven_JavaScript/Details and Sammy will trigger the correct JavaScript function with the right parameters to load the correct book in the information panel.
+
+Take a look at the code below where we define the two different routes, home, and book details:
+
+<script src="https://gist.github.com/665870.js?file=Sammy.js"></script>
+
+As you may have noticed this looks an awful lot like how routes are defined in Sinatra. You can see that we have two GET requests here, but Sammy enables us to use the different ReST keywords GET, POST, PUT and DEL (delete is a reserved JavaScript keyword) in our page routes as well. So a form on the page (or a different page for that matter) that uses POST to /book_list.html#/Test_Driven_JavaScript/Details will result in different functionality being triggered then when you make a GET request to the same URL.
+
+So after we have implemented this logic for our book list we have solved the last requirement without having duplication on the client and server. The only thing that we now also want to do is change the way we used to have our book information loaded via JavaScript to just be a link with the correct hash route and then we are completely DRY again. 
+
+There are many more gems build into Sammy and some as extra libraries, like the eventing part which I'll discuss an other time. In the meantime take a look at the [Sammy website](http://code.quirkey.com/sammy/) and play with it. If you haven't already them you will soon discover the amazing power this little framework provides. My [own website](http://cre8ivethought.com/) is using Sammy as well to show the different information connected to the menu, just take a look at the source.
