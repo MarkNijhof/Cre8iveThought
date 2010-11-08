@@ -1,4 +1,4 @@
-title: Sammy.js
+title: Sammy
 slug: Sammy
 author: Mark Nijhof
 date: 08/11/2010
