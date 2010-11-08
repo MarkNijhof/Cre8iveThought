@@ -1,5 +1,5 @@
-title: Sammy
-slug: Sammy
+title: Sammy.js
+slug: sammy
 author: Mark Nijhof
 date: 08/11/2010
 published: true
