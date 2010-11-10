@@ -1,0 +1,10 @@
+title: Why Test Your JavaScript Code
+author: Mark Nijhof
+date: 17/11/2010
+published: false
+
+Since about 2004 when internet browsers started supporting JavaScript a lot has changed. JavaScript has gone from being something silly to something serious and currently web developers are really enjoying the power JavaScript offers. But with this great power comes great responsibility, and that is something that most web developers have forgotten a bit. It is true that testing and even test-driven development is growing in popularity. Ruby, Java and even .Net code is tested by automated tests quite often now, but for some reason this does not apply to JavaScript development.
+
+Here is a reminder why it is so important to also properly test JavaScript code:
+
+JavaScript is powerful, I mean you can pretty much do anything and it will say sure I can do that for you, and that is a very nice quality. No nagging  
