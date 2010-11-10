@@ -7,4 +7,35 @@ Since about 2004 when internet browsers started supporting JavaScript a lot has 
 
 Here is a reminder why it is so important to also properly test JavaScript code:
 
-JavaScript is powerful, I mean you can pretty much do anything and it will say sure I can do that for you, and that is a very nice quality. No nagging  
+JavaScript is powerful, I mean you can pretty much do anything and it will say sure I will do that for you, and that is a very nice quality. No nagging no nothing, but if you are being stupid then it will let you be stupid. 
+
+<script src="https://gist.github.com/671596.js?file=example_0.htm"></script>
+
+Yeah that is pretty obvious isn't it, but what about this one:
+
+<script src="https://gist.github.com/671596.js?file=example_1.htm"></script>
+
+Hmmm yeah that is a bit more difficult to say, well actually it is impossible to say because you would have to open the two files to see what the code does to determine whether or not they have side effects upon each other. Now I have seen this go wrong in small teams of only 4 developers, heck I have seen it go wrong in my own code when I was developing alone. Then there is also the odd chance that some third party library does something you didn't expect. So it is easy to be stupid, very easy indeed.
+
+Now take a look at this one:
+
+<script src="https://gist.github.com/671596.js?file=example_2.htm"></script>
+
+What would happen here? Which one of the two divs will be colored green?
+
+<script src="https://gist.github.com/671596.js?file=example_3.htm"></script>
+
+And this one then? Which one of the two divs will be colored green here? 
+
+And is this behavior consistent in each browser? Well the good news is that this is consistent behavior across the different browsers, actually it is how jQuery has implemented its selector logic. When you select a class you expect the behavior to apply on all objects that have this particular class applied, but when you select an object by its ID then you expect there to be only one. 
+
+And yes this is pretty stupid thing to do; having two different objects share the same ID, who would do this anyway? And again this is a very common mistake that I have seen. Not so much inside the same HTML file, but what happens when we load some extra HTML using a second AJAX request, or use some JavaScript templating to display some JSON? Then we start to lose some overview of what HTML is actually send to the browser. Then we get bug reports like; It works fine with only one item, but as soon as I have multiple items only the first one gets selected.
+
+Both these mistakes are rather easily made, especially if you are a fan of conventions and want to do similar things in a similar way. But the time lost in finding and fixing the cause of these bugs can be rather large. And think about refactoring your JavaScript code, would you just change the ID of an object in a partial HTML file because it better explains what it is? What is the risk of it having side effects when the partial is loaded in the page? Are you sure that you would manually test all scenario's? 
+
+And lets face it, this was only a minor refactoring, would you dare to refactor something major?
+
+I would!
+
+Because I have proper tests surrounding my JavaScript code, there are unit tests to verify proper behavior in an isolated environment and there are Cucumber tests to verify that my JavaScript is applied to the correct HTML objects. See the distinction? Unit tests verify behavior, Cucumber tests (or any other browser tests really) verify that the behavior is applied to the correct places. So these Cucumber tests don't need to verify all behavior, just that it happened at the right place. Where as the unit tests don't care about where it happens, only about what should happen.
+
