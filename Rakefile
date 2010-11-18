@@ -22,10 +22,12 @@ end
 
 task :set_heroku_production_environment do
   sh "heroku config:add RACK_ENV=production"
+  sh "heroku config:add BUNDLE_WITHOUT='test development'"
 end
 
 task :set_heroku_development_environment do
   sh "heroku config:add RACK_ENV=production"
+  sh "heroku config:add BUNDLE_WITHOUT='test development'"
 end
 
 task :set_development_environment do

@@ -3,7 +3,105 @@ author: Mark Nijhof
 date: 17/11/2010
 published: false
 
-Since about 2004 when internet browsers started supporting JavaScript a lot has changed. JavaScript has gone from being something silly to something serious and currently web developers are really enjoying the power JavaScript offers. But with this great power comes great responsibility, and that is something that most web developers have forgotten a bit. It is true that testing and even test-driven development is growing in popularity. Ruby, Java and even .Net code is tested by automated tests quite often now, but for some reason this does not apply to JavaScript development.
+#1
+Hi, My name is Mark Nijhof and I am working for BEKK consulting. I would like to take this opportunity to talk to you about why we should test our JavaScript code. Because even tho everybody is all Agile and we all agree that testing our production code is a good thing it sure seems like we think that testing JavaScript is not really necessary.
+
+#2
+In the early days of JavaScript it was only used for menu animations and other little silly things.
+
+#3
+But that is a long time ago, nowadays JavaScript is to be taken serious. It is taking more and more responsibilities away from the other languages and more and more logic is implemented on the client using JavaScript.
+
+#4
+The JavaScript engines in the different browser are also becoming faster and more powerful, there really isn't any reason for not fully utilizing the power that JavaScript offers. Hey you can now even use it on the server side.
+
+#5
+It is not just the JavaScript engines that are powerful, JavaScript as a language is very powerful as well. You can pretty much do anything and it will say; "sure I will do that for you". And that is a very nice quality. No nagging no nothing.
+
+#6
+But if you are being stupid then it will let you be stupid. 
+
+#7
+For example.
+
+#8
+Take a quick look at this simple HTML and JavaScript, which box do you think will be green after the JavaScript executes?
+
+#9
+This is just a simple jQuery selector
+
+#10
+And the jQuery selector assumes that ID's are unique on a page
+
+#11
+Are you sure that each ID exists only once?
+
+#12
+Here we have some more JavaScript; What would happen when we call the submit_form function?
+
+#13
+Well if you declare the same function multiple times on a page then the last declared function will be used, in other words functions can easily be overridden. So this would result in the submit-ion of the form "form_xyz"
+
+#14
+Yes I know this is an extremely simple example; but I have seen it happen in small teams of only 4 developer, heck I have seen it happen in my own code.
+
+#15
+Here is one more example of where things can go wrong. So what would happen here?
+
+#16
+Yeah I don't know, only way of finding out what would happen here is to open the two JavaScript files and look at their code. All includes are basically inserted on the same page and if you don't scope your JavaScript code properly then there will be a chance that you introduce side effects. And it is not just your code that you should worry about, what about third party libraries.
+
+#17
+So does all your code play nicely together? What about upgrading a third party library, will this still have the same expected behavior?
+
+#18
+Now you may think that this are all very simple problems and that it would be obvious when something like this happens, but unlike in the beginning of the internet, pages are not just constructed from one source anymore. A normal web page is build up from different sources. Be it different partial combined at the server or additional html being loaded via Ajax. And don't forget the different included JavaScript files. So the content that you are actually sending to the client comes from many different sources and at different times. It is like a puzzle, which is created by combining many different puzzle pieces.
+
+#19
+And each one of these different pieces can introduce side effects on the other pieces. Think for example about a partial containing a form which contains a placeholder called "#Results". This partial is later loaded on the page using Ajax. Now what would happen if on the main page you introduce an other placeholder called "#Results". 
+
+And when will you find out?
+
+#20
+Lets be honest, how many of you are comfortable refactoring JavaScript code, or even extending it with new behavior? 
+
+#21
+Well I DO!
+
+#22
+That is if this code has proper tests surrounding it, preferable created using Test-Driven Development cycles. 
+
+#23
+Unit Tests to verify the behavior of my JavaScript in isolation.
+
+#24
+Web Driven Tests to verify that the behavior is applied to the correct HTML elements. 
+
+Did you notice the distinction? Unit tests verify behavior and Web tests verify correct application of this behavior. So my Cucumber tests don't verify all the expected behavior, just that it happened at the right place. And my JSpec tests don't care about where something happens only about what should happen. This also minimizes the impact that renaming HTML element ID's have, and restructuring HTML all together.
+
+#25
+So Test-Driving your JavaScript Development will
+
+#26
+- Reduce the number of bugs
+- Reduce the time spend finding and fixing bugs, because there will be bugs
+- Reduce the time spend on manual testing
+- It will improve the design of your JavaScript code
+- And it will give you more confidence in the code
+
+#27
+But perhaps even as important, instead of being an unhappy developer
+
+#28
+You become a happy developer
+
+#29
+I know this is not really something new, but If there are any questions then please don't hesitate to contact me 
+
+---
+
+
+Since about 2004 when internet browsers started supporting JavaScript a lot has changed. JavaScript has gone from being something silly to something serious and currently web developers are really enjoying the power JavaScript offers. But with great power comes great responsibility, and that is something that most web developers seem to have forgotten a bit. It is true that testing and even test-driven development is growing in popularity. Ruby, Java and even .Net code is tested by automated tests quite often now, but for some reason this does not apply to JavaScript development.
 
 Here is a reminder why it is so important to also properly test JavaScript code:
 
@@ -37,5 +135,7 @@ And lets face it, this was only a minor refactoring, would you dare to refactor 
 
 I would!
 
-Because I have proper tests surrounding my JavaScript code, there are unit tests to verify proper behavior in an isolated environment and there are Cucumber tests to verify that my JavaScript is applied to the correct HTML objects. See the distinction? Unit tests verify behavior, Cucumber tests (or any other browser tests really) verify that the behavior is applied to the correct places. So these Cucumber tests don't need to verify all behavior, just that it happened at the right place. Where as the unit tests don't care about where it happens, only about what should happen.
+Because I have proper tests surrounding my JavaScript code, there are unit tests to verify proper behavior in an isolated environment and there are Cucumber tests to verify that my JavaScript is applied to the correct HTML objects. 
+
+Did you notice the distinction? Unit tests verify behavior, Cucumber tests (or any other browser tests really) verify that the behavior is applied to the correct places. So these Cucumber tests don't need to verify all behavior, just that it happened at the right place. Where as the unit tests don't care about where it happens, only about what should happen.
 
