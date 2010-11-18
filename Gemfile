@@ -12,6 +12,9 @@ gem 'rdiscount'
 gem 'toto', '0.4.7', :git => 'git://github.com/MarkNijhof/toto.git'
 gem 'rack-rewrite', '~> 0.2.1'
 
+#padrino
+gem 'padrino', "0.9.10"
+
 # Test requirements
 group :test do
   gem 'autotest'
@@ -27,5 +30,3 @@ group :test do
   gem 'rack-test', :require => 'rack/test'
 end
 
-# Padrino
-gem 'padrino', "0.9.10"
