@@ -10,7 +10,7 @@
 		<link rel="stylesheet" type="text/css" media="all" href="/stylesheets/style-cards.css"/>
 		<link rel="icon" type="image/png" href="http://cre8ivethought.s3.amazonaws.com/images/favicon.png" />
 		
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
 		<!--[if lt IE 7]>
       <script type="text/javascript" src="/javascripts/lib/unitpngfix.js"></script>
@@ -35,7 +35,7 @@
 				
 				var app = $.sammy(function() {
 
-  				this.get('#/', function() { 
+  				this.get('#/Home', function() { 
   				  animator.bringInBigCards();
           });
 
@@ -58,7 +58,7 @@
         });
         
 			  $(function() {
-          app.run('#/');
+          app.run('#/Home');
         });
 								
 				function loadText(template) {

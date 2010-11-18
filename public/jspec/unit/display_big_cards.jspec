@@ -8,7 +8,6 @@ describe 'Animator - Displaying Big Cards when Frame is not visible'
   end
 
   after_each
-    //resetTimers()
     cards = null
     frame = null
 		animator = null
@@ -17,14 +16,14 @@ describe 'Animator - Displaying Big Cards when Frame is not visible'
   describe 'bringInBigCards()'
 	  it 'will display the cards placeholder using an animation'
 			animator.bringInBigCards()
-			tick(1000)
+			Clock.tick(1000)
 			cards.should.be_visible
 	  end
 
 	  it 'will call a callback function after the animation is finished'
 			var callback_called = false
 			animator.bringInBigCards(function(){ callback_called = true })
-			tick(1000)
+			Clock.tick(1000)
 			callback_called.should.be true
 	  end
 	end

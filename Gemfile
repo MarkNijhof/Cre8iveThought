@@ -24,7 +24,7 @@ group :test do
   gem 'mocha'
   gem 'rspec', :require => "spec"
   gem 'capybara'
-  gem 'cucumber'
+  gem 'cucumber', '0.8.5'
   gem 'cucumber-rails'
   gem 'rack-test', :require => 'rack/test'
 end

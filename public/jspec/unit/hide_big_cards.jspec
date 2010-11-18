@@ -6,11 +6,10 @@ describe 'Animator - Hiding Big Cards'
 	  frame = elements('<div id="frame"/>')
 		animator = new Animator(cards, frame, '../')
 		animator.bringInBigCards()
-		tick(2000)
+		Clock.tick(2000)
   end
 
   after_each
-    //resetTimers()
     cards = null
     frame = null
 		animator = null
@@ -20,14 +19,14 @@ describe 'Animator - Hiding Big Cards'
 	  it 'will hide the cards placeholder using an animation'
 			animator.takeOutBigCards()
 			cards.should.be_visible
-			tick(500)
+			Clock.tick(500)
 			cards.should.be_hidden
 	  end
 
 	  it 'will call a callback function after the animation is finished'
 			var callback_called = false
 			animator.takeOutBigCards(function(){ callback_called = true })
-			tick(500)
+			Clock.tick(500)
 			callback_called.should.be true
 	  end
 	end

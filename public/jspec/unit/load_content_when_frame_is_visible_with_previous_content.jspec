@@ -6,12 +6,10 @@ describe 'Animator - Load content when frame is visible with previous content'
 	  frame = elements('<div id="frame"/>')
 		animator = new Animator(cards, frame, '../')
 		animator.loadContent(function(){return "test";})
-		tick(4000) // plenty of time for the cards animation
-    //resetTimers()
+		Clock.tick(4000) // plenty of time for the cards animation
   end
 
   after_each
-    //resetTimers()
     cards = null
     frame = null
 		animator = null
@@ -20,15 +18,15 @@ describe 'Animator - Load content when frame is visible with previous content'
   describe 'loadContent()'
 	  it 'will first hide the previous content using an animation'
 			animator.loadContent(function(){return "new content";})
-			tick(380)
+			Clock.tick(380)
 		
 			frame.find('#frame-content').html().should.be ''
 	  end
 
 	  it 'will display the content using an animation'
 			animator.loadContent(function(){return "new content";})
-			tick(400)  // remove content
-			tick(400)
+			Clock.tick(400)  // remove content
+			Clock.tick(400)
 			
 			frame.find('#frame-content').html().should.match /new content/
 	  end
@@ -36,10 +34,10 @@ describe 'Animator - Load content when frame is visible with previous content'
 	  it 'will call a callback function after the animation is finished'
 			var callback_called = false
 			animator.loadContent(function(){return "new content";}, function(){ callback_called = true })
-			tick(400)  // remove content
+			Clock.tick(400)  // remove content
 			callback_called.should.be false
 			
-			tick(400)  // content animation
+			Clock.tick(400)  // content animation
 			
 			callback_called.should.be true
 	  end

@@ -6,12 +6,10 @@ describe 'Animator - Displaying Frame when Big Cards are not visible'
 	  frame = elements('<div id="frame"/>')
 		animator = new Animator(cards, frame, '../')
 		animator.bringInFrame();
-		tick(4000) // plenty of time for the cards animation
-		////resetTimers();
+		Clock.tick(4000) // plenty of time for the cards animation
   end
 
   after_each
-    ////resetTimers()
     cards = null
     frame = null
 		animator = null
@@ -22,33 +20,33 @@ describe 'Animator - Displaying Frame when Big Cards are not visible'
 			animator.takeOutFrame()
 			frame.find('#frame-menu').should.be_visible
 
-			tick(200)
+			Clock.tick(200)
 
 			frame.find('#frame-menu').should.be_hidden
 	  end
 
 	  it 'will hide the frame small front card using an animation'
 			animator.takeOutFrame()
-			tick(200)  // menu animation
+			Clock.tick(200)  // menu animation
 			
 			frame.find('#card-front').css('left').should.be "-100px"
 			frame.find('#card-front').css('top').should.be "-80px"
 
-			tick(1000)
+			Clock.tick(1000)
 
 			frame.find('#card-front').css('left').should.be "-300px"
 			frame.find('#card-front').css('top').should.be "-380px"
-			tick(2000)
+			Clock.tick(2000)
 	  end
 
 	  it 'will hide the frame small back card using an animation'
 			animator.takeOutFrame()
-			tick(200)  // menu animation
+			Clock.tick(200)  // menu animation
 			
 			frame.find('#card-back').css('left').should.be "-40px"
 			frame.find('#card-back').css('top').should.be "150px"
 
-			tick(500)
+			Clock.tick(500)
 
 			frame.find('#card-back').css('left').should.be "-340px"
 			frame.find('#card-back').css('top').should.be "-280px"
@@ -56,19 +54,19 @@ describe 'Animator - Displaying Frame when Big Cards are not visible'
 
 	  it 'will hide the frame placeholder using an animation'
 			animator.takeOutFrame()
-			tick(200)  // menu animation
-			tick(1000) // cards animation
+			Clock.tick(200)  // menu animation
+			Clock.tick(1000) // cards animation
 
-			tick(500)
+			Clock.tick(500)
 			frame.should.be_hidden
 	  end
 
 	  it 'will call a callback function after the animation is finished'
 			var callback_called = false
 			animator.takeOutFrame(function(){ callback_called = true })
-			tick(200)  // menu animation
-			tick(1000) // cards animation
-			tick(500)  // frame animation
+			Clock.tick(200)  // menu animation
+			Clock.tick(1000) // cards animation
+			Clock.tick(500)  // frame animation
 			
 			callback_called.should.be true
 	  end

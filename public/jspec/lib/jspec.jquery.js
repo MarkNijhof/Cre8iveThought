@@ -36,7 +36,7 @@ JSpec
     have_value    : "jQuery(actual).val() === expected",
     be_enabled    : "!jQuery(actual).attr('disabled')",
     have_class    : "jQuery(actual).hasClass(expected)",
-    be_animated   : "jQuery(actual).queue().length > 0",        
+    be_animated   : "jQuery(actual).queue().length > 0",        	
         
     be_visible : function(actual) {
       return jQuery(actual).css('display') != 'none' &&
@@ -45,7 +45,7 @@ JSpec
     },
     
     be_hidden : function(actual) {
-      return !JSpec.does(actual, 'be_visible')
+      return !JSpec.does(actual, 'be_visible') || jQuery(actual).css('display') == ''
     },
     
     have_classes : function(actual) {

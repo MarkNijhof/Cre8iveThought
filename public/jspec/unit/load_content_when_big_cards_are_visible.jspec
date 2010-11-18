@@ -6,12 +6,10 @@ describe 'Animator - Load content when Big Cards are visible'
 	  frame = elements('<div id="frame"/>')
 		animator = new Animator(cards, frame, '../')
 		animator.bringInBigCards()
-		tick(2000) // plenty of time for the cards animation
-    //resetTimers()
+		Clock.tick(2000) // plenty of time for the cards animation
   end
 
   after_each
-    //resetTimers()
     cards = null
     frame = null
 		animator = null
@@ -21,28 +19,28 @@ describe 'Animator - Load content when Big Cards are visible'
 	  it 'will first hide the Big Cards using an animation'
 			animator.loadContent(function(){return "test";})
 			cards.should.be_visible
-			tick(600)
+			Clock.tick(500)
 			cards.should.be_hidden
 			frame.should.be_hidden
 	  end
 
 	  it 'will display the frame placeholder using an animation'
 			animator.loadContent(function(){return "test";})
-			tick(500)  // taking out the Big Cards
+			Clock.tick(500)  // taking out the Big Cards
 			frame.should.be_hidden
-			tick(1000)
+			Clock.tick(1000)
 			frame.should.be_visible
 	  end
 
 	  it 'will display the frame small front card using an animation'
 			animator.loadContent(function(){return "test";})
-			tick(500)  // taking out the Big Cards
-			tick(1000) // frame animation
+			Clock.tick(500)  // taking out the Big Cards
+			Clock.tick(1000) // frame animation
 			
 			frame.find('#card-front').css('left').should.be "-500px"
 			frame.find('#card-front').css('top').should.be "-80px"
 
-			tick(300)
+			Clock.tick(300)
 
 			frame.find('#card-front').css('left').should.be "-100px"
 			frame.find('#card-front').css('top').should.be "-80px"
@@ -50,13 +48,13 @@ describe 'Animator - Load content when Big Cards are visible'
 
 	  it 'will display the frame small back card using an animation'
 			animator.loadContent(function(){return "test";})
-			tick(500)  // taking out the Big Cards
-			tick(1000) // frame animation
+			Clock.tick(500)  // taking out the Big Cards
+			Clock.tick(1000) // frame animation
 			
 			frame.find('#card-back').css('left').should.be "-500px"
 			frame.find('#card-back').css('top').should.be "150px"
 
-			tick(800)
+			Clock.tick(800)
 
 			frame.find('#card-back').css('left').should.be "-40px"
 			frame.find('#card-back').css('top').should.be "150px"
@@ -64,25 +62,25 @@ describe 'Animator - Load content when Big Cards are visible'
 
 	  it 'will display the frame menu using an animation'
 			animator.loadContent(function(){return "test";})
-			tick(500)  // taking out the Big Cards
-			tick(1000) // frame animation
-			tick(1000) // cards animation
+			Clock.tick(500)  // taking out the Big Cards
+			Clock.tick(1000) // frame animation
+			Clock.tick(1000) // cards animation
 			
 			frame.find('#frame-menu').should.be_hidden
 
-			tick(200)
+			Clock.tick(200)
 
 			frame.find('#frame-menu').should.be_visible
 	  end
 
 	  it 'will display the content using an animation'
 			animator.loadContent(function(){return "test";})
-			tick(500)  // taking out the Big Cards
-			tick(1000) // frame animation
-			tick(1000) // cards animation
-			tick(200)  // menu animation
+			Clock.tick(500)  // taking out the Big Cards
+			Clock.tick(1000) // frame animation
+			Clock.tick(1000) // cards animation
+			Clock.tick(200)  // menu animation
 
-			tick(400)
+			Clock.tick(400)
 			
 			frame.find('#frame-content').html().should.match /test/
 	  end
@@ -90,13 +88,13 @@ describe 'Animator - Load content when Big Cards are visible'
 	  it 'will call a callback function after the animation is finished'
 			var callback_called = false
 			animator.loadContent(function(){return "test";}, function(){ callback_called = true })
-			tick(500)  // taking out the Big Cards
-			tick(1000) // frame animation
-			tick(1000) // cards animation
-			tick(200)  // menu animation
+			Clock.tick(500)  // taking out the Big Cards
+			Clock.tick(1000) // frame animation
+			Clock.tick(1000) // cards animation
+			Clock.tick(200)  // menu animation
 			callback_called.should.be false
 			
-			tick(400)  // content animation
+			Clock.tick(400)  // content animation
 			
 			callback_called.should.be true
 	  end

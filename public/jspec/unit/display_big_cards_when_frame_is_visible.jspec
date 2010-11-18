@@ -6,12 +6,11 @@ describe 'Animator - Displaying Big Cards when Frame is visible'
     frame = elements('<div id="frame"/>')
 		animator = new Animator(cards, frame, '../')
 		animator.bringInFrame()
-		tick(4000) // plenty of time for the cards animation
-		//resetTimers()
+		Clock.tick(4000) // plenty of time for the cards animation
   end
 
   after_each
-    //resetTimers()
+		Clock.reset()
     cards = null
     frame = null
 		animator = null
@@ -22,7 +21,7 @@ describe 'Animator - Displaying Big Cards when Frame is visible'
 			animator.bringInBigCards()
 			frame.should.be_visible
 			
-			tick(1700)
+			Clock.tick(1700)
 			
 			frame.should.be_hidden
 			cards.should.be_hidden
@@ -30,11 +29,11 @@ describe 'Animator - Displaying Big Cards when Frame is visible'
 
 	  it 'will display the cards placeholder using an animation'
 			animator.bringInBigCards()
-			tick(1700) // frame animation
+			Clock.tick(1700) // frame animation
 
 			cards.should.be_hidden
 			
-			tick(1000)
+			Clock.tick(1000)
 			
 			cards.should.be_visible
 	  end
@@ -42,10 +41,10 @@ describe 'Animator - Displaying Big Cards when Frame is visible'
 	  it 'will call a callback function after the animation is finished'
 			var callback_called = false
 			animator.bringInBigCards(function(){ callback_called = true })
-			tick(1700) // frame animation
+			Clock.tick(1700) // frame animation
 			callback_called.should.be false
 			
-			tick(1000) // cards animation
+			Clock.tick(1000) // cards animation
 
 			callback_called.should.be true
 	  end
