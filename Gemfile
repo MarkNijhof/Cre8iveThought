@@ -21,7 +21,6 @@ group :test do
   gem 'autotest-growl'
   gem 'autotest-fsevent'
   gem 'redgreen'
-
   gem 'mocha'
   gem 'rspec', :require => "spec"
   gem 'capybara'
