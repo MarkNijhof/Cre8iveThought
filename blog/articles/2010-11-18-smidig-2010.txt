@@ -1,0 +1,28 @@
+title: Smidig 2010
+author: Mark Nijhof
+date: 18/11/2010
+published: true 
+
+People that follow me on Twitter may have seen my tweets with the #smidig hashtag, so I thought to write a little bit about it so all my non-skandinavian followers also understand what this is all about.
+
+Smidig is the Norwegian word for Agile; and this is also the name of a [community arranged conference in Oslo](http://www.smidig2010.no/), the conference is 2 days and during these days you can enjoy **many lightning talks** in the morning, great food for lunch and **open spaces** in the afternoon. And there was even a 300 person dinner the first day as well.
+
+And unlike many other organized conferences at Smidig all speakers are from the community, so no **special invited hotshots**. And this big focus on the community makes this event so special, there was a huge amount of interaction going, and many lightning talks kicked-off an open space later.
+
+##Lightning talks##
+
+Both days there where 3 different tracks with all three time boxes each containing 4 lightning talks, so that made a total of [165 different lightning talks](http://www.smidig2010.no/program), and that is a lot. All sourced from the community, and they where all professionally done. 
+
+A lightning talk was only allowed to last 10 minutes, and this was enforced. But enforced in a good way, once the buzzer goes off you are being silenced by the enthusiastic audience which spontaneously begins to applaud. An other rule was that unless you absolutely didn't feel comfortable speaking in Norwegian (or a language Norwegians naturally understand like Swedish) that the talk should be held in Norwegian. I think I was the only one that spoke in English, my apologies for that. But what this does is it lowers the threshold for both speakers and attendees.
+
+Below here is my own lightning talk from Smidig, in English.
+
+<center><a href="http://streaming.java.no/tcs/?id=896453B7-7143-42A5-9E13-05C40DDD6DAC"><img src="http://cre8ivethought.s3.amazonaws.com/images/general/smidig-2010-presentation.png" alt="Smidig 2010 Presentation" /></a></center>
+
+##Open Spaces##
+
+Which topics to have at the open spaces was decided half an hour before they where supposed to start. Many of them where triggered by the topics seen at the lightning talks. It was setup in one large room where people could sit in small circles discussing the different topics. Maximum duration was 45 minutes and there where three different time slots. So here again lots of knowledge sharing, learning and discussions.
+
+##Thanks##
+
+Just wanted to thank the organizers of Smidig for this great experience, will be there next year again for sure!
