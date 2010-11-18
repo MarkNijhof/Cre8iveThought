@@ -4,7 +4,7 @@
 ;(function(){
 
   JSpec = {
-    version   : '4.3.2',
+    version   : '4.3.3',
     assert    : true,
     cache     : {},
     suites    : [],
@@ -1276,12 +1276,13 @@
      destub : function(object, method) {
        var captures
        if (method) {
-         if (object['__prototype__' + method])
+         if (object.hasOwnProperty('__prototype__' + method))
            delete object[method]
-         else
+         else if (object.hasOwnProperty('__original__' + method))
            object[method] = object['__original__' + method]
+
          delete object['__prototype__' + method]
-         delete object['__original____' + method]
+         delete object['__original__' + method]
        }
        else if (object) {
          for (var key in object)
@@ -1306,9 +1307,13 @@
      
      stub : function(object, method) {
        hook('stubbing', object, method)
+			 
+			 //unbind any stub already present on this method
+			 JSpec.destub(object, method);
        JSpec.stubbed.push(object)
        var type = object.hasOwnProperty(method) ? '__original__' : '__prototype__'
        object[type + method] = object[method]
+
        object[method] = function(){}
        return {
          and_return : function(value) {
@@ -1760,6 +1765,12 @@
     readFile = function(file){
       return fs.readFileSync(file).toString('utf8')
     }
+  }
+
+  // --- envjsrb / johnson support
+
+  if (typeof Johnson === 'object') {
+    quit = function () {}
   }
   
   // --- Utility functions

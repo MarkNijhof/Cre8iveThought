@@ -1,35 +1,32 @@
-.org_values{
-  width: 1008px;
-}
 body.jspec {
-  margin: 10px 0;
+  margin: 45px 0;
   font: 12px "Helvetica Neue Light", "Lucida Grande", "Calibri", "Arial", sans-serif;
   background: #efefef url(images/bg.png) top left repeat-x;
   text-align: center;
 }
 #jspec {
   margin: 0 auto;
-  padding-top: 10px;
-  width: 100%;
-  /*background: url(images/vr.png) top left repeat-y;*/
+  padding-top: 30px;
+  width: 1008px;
+  background: url(images/vr.png) top left repeat-y;
   text-align: left;
 }
 #jspec-top {
   position: relative;
   margin: 0 auto;
-  width: 100%;
+  width: 1008px;
   height: 40px;
-  /*background: url(images/sprites.bg.png) top left no-repeat;*/
+  background: url(images/sprites.bg.png) top left no-repeat;
 }
 #jspec-bottom {
   margin: 0 auto;
-  width: 100%;
+  width: 1008px;
   height: 15px;
-  /*background: url(images/sprites.bg.png) bottom left no-repeat;*/
+  background: url(images/sprites.bg.png) bottom left no-repeat;
 }
 #jspec .loading {
   margin-top: -45px;
-  width: 100%;
+  width: 1008px;
   height: 80px;
   background: url(images/loading.gif) 50% 50% no-repeat;
 }
@@ -40,7 +37,7 @@ body.jspec {
   width: 160px;
   font-size: 22px;
   font-weight: normal;
-  /*background: url(images/sprites.png) 0 -126px no-repeat;*/
+  background: url(images/sprites.png) 0 -126px no-repeat;
   text-align: center;
 }
 #jspec-title em {
@@ -149,44 +146,4 @@ body.jspec {
 }
 .jspec-sandbox {
   display: none;
-}
-
-
-/* lint */
-
-#errors {
-    margin: 1em;
-    border: 2px solid black;
-    padding: 1em;
-    background-color: mistyrose;
-    text-align: left;
-}
-#errors p {
-    margin-left: 2em;
-}
-#errors p.evidence {
-    margin-left: 0;
-    font-family: monospace;
-}
-
-#functions {
-    background-color: white;
-}
-#members {
-    background-color: peachpuff;
-}
-
-#functions, #members {
-    border: 2px solid black;
-    font-family: monospace;
-    margin: 1em;
-    padding: 1em;
-}
-#functions div {
-    margin-left: 10em;
-    text-indent: -5em;
-}
-#functions div.function {
-    margin-left: 0;
-    text-indent: 0;
 }

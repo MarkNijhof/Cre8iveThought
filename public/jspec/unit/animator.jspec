@@ -8,7 +8,7 @@ describe 'Animator - Initialization'
   end
 
   after_each
-    Clock.reset()
+    //resetTimers()
     cards = null
     frame = null
 		animator = null

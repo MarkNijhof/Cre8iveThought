@@ -6,12 +6,12 @@ describe 'Animator - Load content when frame is visible'
 	  frame = elements('<div id="frame"/>')
 		animator = new Animator(cards, frame, '../')
 		animator.bringInFrame()
-		Clock.tick(4000) // plenty of time for the cards animation
-    Clock.reset()
+		tick(4000) // plenty of time for the cards animation
+    //resetTimers()
   end
 
   after_each
-    Clock.reset()
+    //resetTimers()
     cards = null
     frame = null
 		animator = null
@@ -20,7 +20,7 @@ describe 'Animator - Load content when frame is visible'
   describe 'loadContent()'
 	  it 'will display the content using an animation'
 			animator.loadContent(function(){return "test";})
-			Clock.tick(400)
+			tick(400)
 			
 			frame.find('#frame-content').html().should.match /test/
 	  end
@@ -30,7 +30,7 @@ describe 'Animator - Load content when frame is visible'
 			animator.loadContent(function(){return "test";}, function(){ callback_called = true })
 			callback_called.should.be false
 			
-			Clock.tick(400)  // content animation
+			tick(400)  // content animation
 			
 			callback_called.should.be true
 	  end
