@@ -17,7 +17,7 @@ A lightning talk was only allowed to last 10 minutes, and this was enforced. But
 
 Below here is my own lightning talk from Smidig, in English.
 
-<center><a href="http://streaming.java.no/tcs/?id=896453B7-7143-42A5-9E13-05C40DDD6DAC"><img src="http://cre8ivethought.s3.amazonaws.com/images/general/smidig-2010-presentation.png" alt="Smidig 2010 Presentation" /></a></center>
+<center><a href="http://streaming.java.no/tcs/?id=896453B7-7143-42A5-9E13-05C40DDD6DAC"><img src="http://cre8ivethought.s3.amazonaws.com/images/general/smidig-2010-presentation.png" alt="Smidig 2010 Presentation" style="border: solid 1px black;" /></a></center>
 
 ##Open Spaces##
 

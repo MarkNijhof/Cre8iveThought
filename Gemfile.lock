@@ -11,7 +11,7 @@ GEM
   remote: http://rubygems.org/
   specs:
     activesupport (2.3.5)
-    autotest (4.4.4)
+    autotest (4.4.5)
     autotest-fsevent (0.2.3)
       sys-uname
     autotest-growl (0.2.6)
@@ -51,7 +51,7 @@ GEM
     i18n (0.4.2)
     json_pure (1.4.6)
     mime-types (1.16)
-    mocha (0.9.9)
+    mocha (0.9.10)
       rake
     nokogiri (1.4.4)
     padrino (0.9.10)
@@ -110,7 +110,7 @@ GEM
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
       rack (>= 1.0.0)
-    thor (0.14.4)
+    thor (0.14.6)
     tilt (1.1)
     tmail (1.2.7.1)
     trollop (1.16.2)
