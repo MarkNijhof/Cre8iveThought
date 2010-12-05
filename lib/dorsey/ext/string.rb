@@ -28,11 +28,7 @@ class Fixnum
 end
 
 class Date
-  # This check is for people running Toto with ActiveSupport, avoid a collision
-  unless respond_to? :iso8601
-    # Return the date as a String formatted according to ISO 8601.
-    def iso8601
-      ::Time.utc(year, month, day, 0, 0, 0, 0).iso8601
-    end
+  def iso8601
+    ::Time.utc(year, month, day, 0, 0, 0, 0).iso8601
   end
 end
