@@ -6,13 +6,26 @@
   %author 
     %name 
       Mark Nijhof
+  %link{:rel=>"self", :href=>"#{rss_url}"}
   %updated #{articles.first.date_as_date.iso8601}
   - for article in articles
     %entry
       %title 
         =article.title
       %link{:rel=>"alternate", :href=>"#{article.url}"}
-      %link{:rel=>"self", :href=>"#{rss_url}"}
+      %id 
+        =article.url
+      %published 
+        =article.date_as_date.iso8601
+      %updated 
+        =article.date_as_date.iso8601
+      %author 
+        %name 
+          Mark Nijhof
+    /
+      %title 
+        =article.title
+      %link{:rel=>"alternate", :href=>"#{article.url}"}
       %id 
         =article.url
       %published 
