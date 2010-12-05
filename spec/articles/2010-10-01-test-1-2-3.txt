@@ -1,0 +1,7 @@
+title: Test 1 2 3
+author: Mark Nijhof
+date: 01/10/2010
+published: true 
+slug: test_3_2_1
+
+This is the article text 1

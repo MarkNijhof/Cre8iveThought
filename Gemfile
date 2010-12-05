@@ -1,31 +1,15 @@
-source :rubygems
+source :gemcutter
 
-# Project requirements
-gem 'rake'
-gem 'rack-flash'
-gem 'thin' # or mongrel
+gem "sinatra", "1.1.0"
+gem "haml", "3.0.24"
+gem "compass", "0.10.6"
+gem "rdiscount", "1.6.5"
 
-# Component requirements
-gem 'haml'
-gem 'compass'
-gem 'rdiscount'
-gem 'toto', '0.4.7', :git => 'git://github.com/MarkNijhof/toto.git'
-gem 'rack-rewrite', '~> 0.2.1'
-
-#padrino
-gem 'padrino', "0.9.10"
-
-# Test requirements
 group :test do
-  gem 'autotest'
-  gem 'autotest-growl'
-  gem 'autotest-fsevent'
-  gem 'redgreen'
-  gem 'mocha'
-  gem 'rspec', :require => "spec"
-  gem 'capybara'
-  gem 'cucumber', '0.8.5'
-  gem 'cucumber-rails'
-  gem 'rack-test', :require => 'rack/test'
+  gem "shotgun", "0.8"
+  gem "rspec", "2.1.0", :require => "spec"
+  gem "autotest", "4.4.5"
+  gem "rack-test", "0.5.6", :require => "rack/test"
+  gem "rake", "0.8.7"
+  gem "thin"
 end
-

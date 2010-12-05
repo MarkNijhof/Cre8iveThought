@@ -1,0 +1,13 @@
+%article.post
+  %header
+    %h1
+      %a{:href=>"#{post.url}"}
+        #{post.title}
+
+  %section.content
+    #{post.summary}
+    %span.date_list 
+      Last updated: #{$book_dorsey.config[:date].call Date.parse(post.updated)}
+    %br
+    %br
+    %br

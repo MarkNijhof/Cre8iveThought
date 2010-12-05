@@ -1,6 +1,8 @@
-# Defines our constants
-PADRINO_ENV  = ENV["PADRINO_ENV"] ||= ENV["RACK_ENV"] ||= "development" unless defined?(PADRINO_ENV)
-PADRINO_ROOT = File.dirname(__FILE__) + '/..' unless defined? PADRINO_ROOT
+require 'rubygems'
+require 'bundler'
+
+SINATRA_ENV  = ENV["RACK_ENV"] ||= "development" unless defined? SINATRA_ENV
+SINATRA_ROOT = File.dirname(__FILE__) + '/..' unless defined? SINATRA_ROOT
 
 begin
   # Require the preresolved locked set of gems.
@@ -9,10 +11,12 @@ rescue LoadError
   # Fallback on doing the resolve at runtime.
   require 'rubygems'
   require 'bundler'
-  Bundler.setup
+  Bundler.setup()
 end
 
-Bundler.require(:default, PADRINO_ENV.to_sym)
-puts "=> Located #{Padrino.bundle} Gemfile for #{Padrino.env}"
+Bundler.require(:default, SINATRA_ENV.to_sym)
+puts "=> Located Gemfile for #{SINATRA_ENV}"
 
-Padrino.load!
+require 'haml'
+require './lib/dorsey'
+require './lib/web_application'

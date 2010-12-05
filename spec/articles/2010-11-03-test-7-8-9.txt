@@ -1,0 +1,6 @@
+title: Test 7 8 9
+author: Mark Nijhof
+date: 03/12/2010
+published: false 
+
+This is the article text 3

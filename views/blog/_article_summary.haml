@@ -1,0 +1,17 @@
+%article.post
+  %header
+    %h1
+      %a{:href=>"#{post.url}"}
+        #{post.title}
+
+  %section.content
+    #{post.summary}
+    %span.date_list 
+      #{post.date}
+    %br
+    %span.date_list 
+      %a.comments_link{:href=>"#{post.url}#disqus_thread"}
+        Comments
+    %br
+    %br
+    %br

@@ -1,3 +1,0 @@
-default: --tags ~@wip --strict features
-autotest: --color --format pretty
-html_report: --tags ~@wip --strict --format html --out=features_report.html features

@@ -1,0 +1,11 @@
+%section.archives
+  
+%h3 Archive
+%ul
+  - for year in ['2010', '2009']
+    %li
+      - url = "#{$book_dorsey.config[:host]}#{$book_dorsey.config[:article_prefix]}/#{year}"
+      %a{:href=>"#{url}"} 
+        Posts from #{year}
+      %br
+

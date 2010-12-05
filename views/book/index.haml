@@ -1,0 +1,4 @@
+%section.articles
+  - for post in articles.select{|item| item[:published] }
+    = haml(:'book/_article_summary', :layout => false, :locals => { :post => post } )
+

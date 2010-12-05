@@ -1,0 +1,34 @@
+!!! 5
+%html
+  %head
+    %title #{@title}
+
+    %link{:href=>"/stylesheets/screen.css", :media=>"screen, projection", :rel=>"stylesheet", :type=>"text/css"}
+    %link{:href=>"/stylesheets/print.css", :media=>"print", :rel=>"stylesheet", :type=>"text/css"}
+    /[if lt IE 8]
+      %link{:href=>"/stylesheets/ie.css", :media=>"screen, projectio", :rel=>"stylesheet", :type=>"text/css"}
+
+    %link{:rel=>"icon", :type=>"image/png", :href=>"http://cre8ivethought.s3.amazonaws.com/images/favicon.png"}
+  %body.three-col.bp
+    #container
+      #left-side
+        &nbsp;
+        
+      #main-area
+        #header
+          = haml :"_header_#{$header_for}", :layout => false
+      
+        #content
+          = yield
+          %br
+          %br
+          = haml :'_about', :layout => false
+
+        #footer
+          &nbsp;
+
+        = haml :'_license', :layout => false
+
+      #right-side
+        &nbsp;
+      

@@ -1,0 +1,9 @@
+
+%article.post
+  %header
+    %span{:class=>"date_post"} Last updated: #{$book_dorsey.config[:date].call Date.parse(post.updated)}
+    %h1 #{post.title}
+
+  %section.content
+    #{post.body}
+
