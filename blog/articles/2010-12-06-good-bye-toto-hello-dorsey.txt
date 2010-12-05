@@ -1,0 +1,8 @@
+title: Good-bye Toto, Hello Dorsey
+author: Mark Nijhof
+date: 06/12/2010
+published: false
+
+This post is about something that I hope you didn't even notice, but I re-wrote my blog engine. As you may have seen in an earlier post of mine, but I was using Toto as my blogging engine. And I was really happy with it, untill I wanted more control. I already had to make some changes in order to run two differnt blogs side by side, and now I was thinking about creating different versions of my blog, f.ex. one mobile version and one that acts more like an application. All for good fun of-course :)
+
+ 

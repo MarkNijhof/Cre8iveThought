@@ -1,4 +1,12 @@
 %section.articles
+  - if ENV["RACK_ENV"] == "development"
+    %h1 Un-published posts
+    %hr
+    - for post in articles.select{|item| !item[:published] }
+      = haml(:'blog/_article_summary', :layout => false, :locals => { :post => post } )
+    %h1 Published posts
+    %hr
+
   - for post in articles.select{|item| item[:published] }[0...5]
     = haml(:'blog/_article_summary', :layout => false, :locals => { :post => post } )
   
