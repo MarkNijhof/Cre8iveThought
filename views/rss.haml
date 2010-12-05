@@ -6,7 +6,8 @@
   %author 
     %name 
       Mark Nijhof
-
+  %updated
+    = articles.first.date_as_date.iso8601
   - for article in articles
     %entry
       %title 
