@@ -6,12 +6,11 @@
   %author 
     %name 
       Mark Nijhof
-  %updated
-    =articles.first.date_as_date.iso8601
+  %updated #{articles.first.date_as_date.iso8601}
   - for article in articles
     %entry
       %title 
-        = article.title
+        =article.title
       %link{:rel=>"alternate", :href=>"#{article.url}"}
       %id 
         =article.url
