@@ -40,6 +40,11 @@ class WebApplication < Sinatra::Base
     end
   end
 
+  get "/blog/index.123" do
+    $header_for = 'blog'
+    haml(:'rss', :layout=>false, :locals => { :blog_title => "Cre8ive Thought", :blog_url=>"#{$blog_dorsey.config[:host]}blog/index", :articles => $blog_dorsey.articles.select{ |item| item[:published] }[0...1]})
+  end
+
   get '/blog/*' do
     $header_for = 'blog'
     articles = $blog_dorsey.get_by_slug params[:splat][0]
