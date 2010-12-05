@@ -40,10 +40,10 @@ class WebApplication < Sinatra::Base
     end
   end
 
-  get "/blog/index.123" do
+  get "/blog/index.xml" do
     content_type :"application/atom+xml"
     $header_for = 'blog'
-    haml(:'rss', :layout=>false, :locals => { :blog_title => "Cre8ive Thought", :blog_url=>"#{$blog_dorsey.config[:host]}blog/index", :rss_url=>"#{$blog_dorsey.config[:host]}blog/index.xml", :articles => $blog_dorsey.articles.select{ |item| item[:published] }[0...1]})
+    haml(:'rss', :layout=>false, :locals => { :blog_title => "Cre8ive Thought", :blog_url=>"#{$blog_dorsey.config[:host]}blog/index", :rss_url=>"#{$blog_dorsey.config[:host]}blog/index.xml", :articles => $blog_dorsey.articles.select{ |item| item[:published] }})
   end
 
   get '/blog/*' do
