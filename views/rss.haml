@@ -13,12 +13,9 @@
       %title 
         =article.title
       <link href='#{article.url}' rel='alternate' />
-      %id 
-        =article.url
-      %published 
-        =article.date_as_date.iso8601
-      %updated 
-        =article.date_as_date.iso8601
+      <id>#{article.url}</id>
+      <published>#{article.date_as_date.iso8601}</published>
+      <updated>#{article.date_as_date.iso8601}</updated>
       %author 
         %name 
           Mark Nijhof
