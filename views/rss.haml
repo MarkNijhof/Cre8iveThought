@@ -12,6 +12,7 @@
       %title 
         =article.title
       %link{:rel=>"alternate", :href=>"#{article.url}"}
+      %link{:rel=>"self", :href=>"#{rss_url}"}
       %id 
         =article.url
       %published 
