@@ -85,6 +85,6 @@ describe "Dorsey" do
       set :article_path, './spec/articles'
     end
 
-    dorsey.articles[2][:url].should == 'http://localhost:3000/blog/2010/10/01/test_3_2_1'
+    dorsey.articles[2][:url].should == 'http://localhost:3000/blog/2010/10/01/test_3_2_1/'
   end
 end

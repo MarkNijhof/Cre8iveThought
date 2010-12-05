@@ -113,6 +113,8 @@ body.three-col #container .gist { line-height: 1.2em; }
 body.three-col #container .date_list { font-style: italic; float: right; margin-right: 30px; color: #cccccc; }
 body.three-col #container .date_post { position: absolute; font-style: italic; float: left; top: -45px; left: 3px; width: 350px; color: #cccccc; }
 body.three-col #container .archive_info { position: relative; top: -10px; font-style: italic; font-size: 75%; color: #cccccc; }
+body.three-col #container .comments_link { color: #cccccc; text-decoration: none; }
+body.three-col #container .comments_link:hover { color: #cccccc; text-decoration: underline; }
 body.three-col #left-side { display: inline; float: left; margin-right: 10px; width: 70.833px; }
 * html body.three-col #left-side { overflow-x: hidden; }
 body.three-col #main-area { display: inline; float: left; margin-right: 10px; width: 798.333px; }
