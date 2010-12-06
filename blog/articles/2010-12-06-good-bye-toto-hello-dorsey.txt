@@ -71,6 +71,6 @@ Now finally a bit more logic, lets look at the Article:
 
 A few interesting things here, the famous method_missing is used to enable accessing hash values via non-existing properties. F.ex. you can use post.title instead of having to do post[:title] which enhances readability. Also you may notice a file read, I wonder if I can pass in the stream when I parse the article directory. I am also thinking about making the way the URL (path method) gets build can be configurable. So more room for improvement here as well.
 
-Now all in all this is not a lot of code for a blog engine now is it? Of-course a lot is taken away by using Sinatra, but this just adds lots of flexibility.
+Now all in all this is not a lot of code for a blog engine now is it? Of-course a lot is taken away by using Sinatra, but this just adds lots of flexibility. You can follow the progress on Dorsey here: [https://github.com/MarkNijhof/Dorsey](https://github.com/MarkNijhof/Dorsey).
 
 I also want to thank Toto and the guys creating that, it has been a great source for inspiration, and if you just need a blog then that would be a very good option.
