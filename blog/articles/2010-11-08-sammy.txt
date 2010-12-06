@@ -1,7 +1,6 @@
 title: Sammy.js
 slug: sammy
 author: Mark Nijhof
-date: 08/11/2010
 published: true
 
 If you have some experience in JavaScript development then you know how powerful it can be; for example JavaScript enables us to load additional content after the page has already been loaded by the browser. This can happen either by an user action or perhaps triggered by a timeout. When an user clicks on a link we can trigger some JavaScript that requests some additional JSON data from the server. Then when the data is returned to the client we can use an JavaScript templating engine to combine the JSON with HTML and place it in the appropriate HTML place holder. 

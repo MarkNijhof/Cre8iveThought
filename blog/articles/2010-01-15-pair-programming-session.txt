@@ -1,6 +1,5 @@
 title: Pair Programming Session
 author: Mark Nijhof
-date: 15/01/2010
 published: true
 
 Today I had a really enjoyable pair programming session with my college [Øyvind](http://twitter.com/oyvindfanebust). It was quite some time ago since our last session, which was when we were both working at a customer together.

@@ -1,6 +1,5 @@
 title: Software Development for Dummies
 author: Mark Nijhof
-date: 14/02/2009
 published: true
 
 Why do so many people and even actual developers think Software Development is easy, something that everybody can do? Do we really have to look back and see how many projects have failed? Or how many are a maintenance nightmare? Let me tell you by approximation:”Way too many”.

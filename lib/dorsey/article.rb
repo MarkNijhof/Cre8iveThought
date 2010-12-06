@@ -43,9 +43,7 @@ module Dorsey
     end
 
     def load_article article_file
-      file = File.open(article_file, 'r')
-      self[:file_date] = file.mtime
-      raw_meta_data, body = file.read.split(/\n\n/, 2)
+      raw_meta_data, body = File.read(article_file).split(/\n\n/, 2)
       self[:body] = markdown body
       self[:summary] = markdown(get_summary(body))
       self.update abstract_meta_data(article_file, raw_meta_data)
@@ -60,6 +58,7 @@ module Dorsey
 
       meta_data[:date_as_date] = Date.parse(date.gsub('/', '-')) rescue Date.today 
       meta_data[:date] = @config[:date].call meta_data[:date_as_date]
+      meta_data[:updated] = meta_data[:updated] ? Date.parse(meta_data[:updated].gsub('/', '-')) : meta_data[:date_as_date]
       meta_data = rename_slug_key meta_data
       meta_data
     end

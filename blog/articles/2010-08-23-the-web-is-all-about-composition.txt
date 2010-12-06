@@ -1,6 +1,5 @@
 title: The Web is all about Composition
 author: Mark Nijhof
-date: 23/08/2010
 published: true
 
 With new technologies we also get new ways of solving problems, and of-course this very much applies to the web. In the good old days we had static web pages that contained all the information we wanted to display. Web browsers would do one request per page and several parallel or sequential requests for images and style sheets. But time has changed this. 

@@ -1,6 +1,5 @@
 title: Pair Programming Continued
 author: Mark Nijhof
-date: 16/01/2010
 published: true
 
 In my [previous post](http://elegantcode.com/2010/01/15/pair-programming-session/) I talked about how I experience a really good pairing session, and in this post I like to discuss what I believe is needed for this to succeed.

@@ -1,5 +1,4 @@
 title: Iterate versus Flow
 author: Mark Nijhof
-date: 10/11/2010
 published: false
 

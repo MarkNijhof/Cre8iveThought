@@ -1,5 +1,4 @@
 title: VIM
 author: Mark Nijhof
-date: 12/11/2010
 published: false
 

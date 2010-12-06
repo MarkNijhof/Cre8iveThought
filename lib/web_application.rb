@@ -43,8 +43,7 @@ class WebApplication < Sinatra::Base
   get "/blog/index.xml" do
     content_type :"application/atom+xml"
     $header_for = 'blog'
-    published_items =  $blog_dorsey.articles.select{ |item| item[:published] }
-    rss_updated = published_items.sort!{ |a,b| b.file_date <=> a.file_date }.first.file_date
+    rss_updated = $blog_dorsey.articles.first.updated 
     haml(:'rss', :layout=>false, :locals => { :blog_title => "Cre8ive Thought", :rss_updated => rss_updated, :blog_url => "#{$blog_dorsey.config[:host]}blog/index", :rss_url => "#{$blog_dorsey.config[:host]}blog/index.xml", :articles => $blog_dorsey.articles.select{ |item| item[:published] }})
   end
 

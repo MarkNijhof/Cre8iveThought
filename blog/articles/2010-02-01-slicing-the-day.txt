@@ -1,6 +1,5 @@
 title: Slicing the day
 author: Mark Nijhof
-date: 01/02/2010
 published: true
 
 I have noticed with myself (actually I know this for a very long time now already) that I am much more productive in the evenings then I am at the end of a working day. I also just finished reading [Programming is all Design](http://jockeholm.wordpress.com/2010/01/29/programming-is-all-design/) by Joakim Holman, [Why Design Cannot be Billed by the Hour](http://www.idapostle.com/design/why-design-cant-be-billed-by-the-hour/) by Steve Zelle, [Software on the Cheap](http://blog.objectmentor.com/articles/2010/02/01/software-on-the-cheap) by Uncle Bob Martin and [The Design Dilemma](http://www.threeriversinstitute.org/blog/?p=363) by Kent Beck which made me want to put my thoughts into writing.

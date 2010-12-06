@@ -1,6 +1,5 @@
 title: My Terminal Prompt
 author: Mark Nijhof
-date: 10/08/2010
 published: true
 
 I want to share something that I learned from [Rolf Bjaanes](http://twitter.com/rolfb) not to long ago and that is that the Terminal command prompt can give me a lot of useful information. Below here is how my Terminal command prompt looks by default:

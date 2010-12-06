@@ -1,6 +1,5 @@
 title: Using conventions with Passive View
 author: Mark Nijhof
-date: 19/12/2009
 published: true
 
 I was reading Ayende’s blog post about [building UI based on conventions](http://ayende.com/Blog/archive/2009/12/19/effectus-building-ui-based-on-conventions.aspx) and thought; hey I have something similar in my [CQRS example](http://github.com/MarkNijhof/Fohjin/tree/master/Fohjin.DDD.Example/). And since this is the least interesting part of the whole example I guess it will be missed by many, and I can’t let that happen.

@@ -1,6 +1,5 @@
 title: Why Test Your JavaScript Code
 author: Mark Nijhof
-date: 17/11/2010
 published: false
 
 #1
