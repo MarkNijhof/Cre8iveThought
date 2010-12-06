@@ -3,23 +3,39 @@ author: Mark Nijhof
 date: 06/12/2010
 published: false
 
-This post is about something that I hope you didn't even notice, but I re-wrote my blog engine. As you may have seen in an [earlier post](http://cre8ivethought.com/blog/2010/08/04/blog-moved-once-again/) of mine, but I have been using Toto as my blogging engine. 
+This post is about something that I hope you didn't even notice, but I just wrote my own blog engine (again, yes I know). As you may have seen in an [earlier post](http://cre8ivethought.com/blog/2010/08/04/blog-moved-once-again/) of mine, but lately I have been using [Toto](https://github.com/cloudhead/toto) as my blogging engine. 
 
 **And I was really happy with it, untill I wanted more control.** 
 
-I already had to make some changes in order to run two differnt blogs side by side. And now I am thinking about creating different versions of my blog, f.ex. one mobile version and one that acts more like an application. All for good fun of-course :) And I if I keep using Toto then I only see abstacles ahead of me.
+I already had to make some changes in order to run two different blogs side by side. And now I am thinking about adding different versions of my blog, f.ex. one mobile version and one that acts more like an application. All for good fun of-course :) And I figured that if I keep using Toto then I only see abstacles instead of fun ahead of me.
 
-One thing that makes Toto great is also the mayor thing that sits in my way, it is build straight on top of Rack and needs nearly no configuration to get boot-strapped. But because of this anything that is differnt from the default is hard to do. And I want to do something different then the default.
+Because the one thing that makes Toto so great is also the mayor thing that sits in my way; it is build straight on top of Rack and needs nearly no configuration to get boot-strapped. But because of this anything that is differnt from the default is hard to do. And that is exactly what I want to do, something differnet.
 
 ##Sinatra##
 
-I decided that in order for me to do what I want I needed easier access to routes and what content I wanted to serve on those routes, and for this Sinatra is ideal. So I started out with Sinatra as my base, then I extracted and re-wrote all the logic that Toto uses to serve content to be able to keep the same content files and structure. Because that is one other feature I really like about Toto, I just create a new text file write by blog post, push it via git to Heroku, and viola I published a new blog post.
+I figured that in order to do what I wanted I need more control over what content gets send to the browser and what routes are being used. Think f.ex. about content negosiation to determine wherther I need the post to be in HTML or in Json. So I thought of using [Sinatra](http://www.sinatrarb.com/); Sinatra is a great framework that pretty much doesn't enforce or prevent you to do something. It offers the ability to define routes and define what gets send back.
+
+If you haven't seen what Sinatra can do for you then I urge you to take a look, the power is in the simplicity.
 
 ##Dorsey##
 
-This content engine I re-created I call Dorsey, and will probably turn into a gem some day, but the beauty is that it is a completely from platform abstracted engine that can be used in different ways to access the content. So it takes more to get going but in the end it will save me a lot of time. And all in all it took me only about 10 hours to transform my blog from Toto to Sinatra + Dorsey.
+The other thing I really like about Toto is the workflow it gives me; I create a new txt file and start writing my blog post. I add this file to Git and commit when I feel I need to, so all my blog posts are version controlled. Then when I am happy with the post I push the post using git to Heroku and viola I published a post.
+
+And this feeling I didn't want to loose, neither did I want to again convert my existing blog posts, but that reason is secondary. 
+
+So with this in mind I started to create Dorsey, Dorsey is a blog engine that relies on an other framework to actually publish and drive the content. You basically point Dorsey at a folder and it will parse the content (txt files).
+
+<script src="https://gist.github.com/730334.js?file=Dorsey.rb"></script>
+
+Then I created two routes in SInatra that will be used to server the content, the first route here is to display the landing page of the blog. It will display the latest blog entries and links to archieves.
+
+<script src="https://gist.github.com/730334.js?file=index_route.rb"></script>
+
+Then the next route is retrieving the actual content. It uses the requested Url to search for the content. Then is checks how many posts are returned by Dorsey. When the Url is /blog/2010/ then it will return all posts from 2010, but if the Url is /blog/2010/11/08/sammy/ then it will return only a single post. Now depending on the number of returned posts I load a specific view.
+
+<script src="https://gist.github.com/730334.js?file=article_route.rb"></script>
 
 Btw the name Dorsey comes from the band Sinatra used to play in, together they had many great hits, that is also how I see this engine working.
 
 ##Haml & SASS##
-I also re-wrote all HTML and CSS using Haml and SASS, as I absolutely like that syntaxt a lot better. If you don't know this then take a look, absolutely wonderful (for the .Netters there are clones for you as well).
+I also re-wrote all HTML and CSS using Haml and SASS, as I absolutely like that syntaxt a lot better. If you don't know this then take a look, absolutely wonderful.
