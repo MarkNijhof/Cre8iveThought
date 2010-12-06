@@ -7,7 +7,7 @@
     %name 
       Mark Nijhof
   <link href='#{rss_url}' rel='self' />
-  %updated #{articles.first.date_as_date.iso8601}
+  %updated #{rss_updated.iso8601}
   - for article in articles
     %entry
       %title 
