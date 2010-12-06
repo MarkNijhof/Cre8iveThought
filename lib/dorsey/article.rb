@@ -43,7 +43,9 @@ module Dorsey
     end
 
     def load_article article_file
-      raw_meta_data, body = File.read(article_file).split(/\n\n/, 2)
+      file = File.open(article_file, 'r')
+      self[:file_date] = file.mtime
+      raw_meta_data, body = file.read.split(/\n\n/, 2)
       self[:body] = markdown body
       self[:summary] = markdown(get_summary(body))
       self.update abstract_meta_data(article_file, raw_meta_data)
