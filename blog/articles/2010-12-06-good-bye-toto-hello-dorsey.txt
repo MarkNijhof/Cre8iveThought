@@ -3,6 +3,23 @@ author: Mark Nijhof
 date: 06/12/2010
 published: false
 
-This post is about something that I hope you didn't even notice, but I re-wrote my blog engine. As you may have seen in an earlier post of mine, but I was using Toto as my blogging engine. And I was really happy with it, untill I wanted more control. I already had to make some changes in order to run two differnt blogs side by side, and now I was thinking about creating different versions of my blog, f.ex. one mobile version and one that acts more like an application. All for good fun of-course :)
+This post is about something that I hope you didn't even notice, but I re-wrote my blog engine. As you may have seen in an [earlier post](http://cre8ivethought.com/blog/2010/08/04/blog-moved-once-again/) of mine, but I have been using Toto as my blogging engine. 
 
- 
+**And I was really happy with it, untill I wanted more control.** 
+
+I already had to make some changes in order to run two differnt blogs side by side. And now I am thinking about creating different versions of my blog, f.ex. one mobile version and one that acts more like an application. All for good fun of-course :) And I if I keep using Toto then I only see abstacles ahead of me.
+
+One thing that makes Toto great is also the mayor thing that sits in my way, it is build straight on top of Rack and needs nearly no configuration to get boot-strapped. But because of this anything that is differnt from the default is hard to do. And I want to do something different then the default.
+
+##Sinatra##
+
+I decided that in order for me to do what I want I needed easier access to routes and what content I wanted to serve on those routes, and for this Sinatra is ideal. So I started out with Sinatra as my base, then I extracted and re-wrote all the logic that Toto uses to serve content to be able to keep the same content files and structure. Because that is one other feature I really like about Toto, I just create a new text file write by blog post, push it via git to Heroku, and viola I published a new blog post.
+
+##Dorsey##
+
+This content engine I re-created I call Dorsey, and will probably turn into a gem some day, but the beauty is that it is a completely from platform abstracted engine that can be used in different ways to access the content. So it takes more to get going but in the end it will save me a lot of time. And all in all it took me only about 10 hours to transform my blog from Toto to Sinatra + Dorsey.
+
+Btw the name Dorsey comes from the band Sinatra used to play in, together they had many great hits, that is also how I see this engine working.
+
+##Haml & SASS##
+I also re-wrote all HTML and CSS using Haml and SASS, as I absolutely like that syntaxt a lot better. If you don't know this then take a look, absolutely wonderful (for the .Netters there are clones for you as well).
