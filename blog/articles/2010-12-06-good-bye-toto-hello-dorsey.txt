@@ -3,39 +3,74 @@ author: Mark Nijhof
 date: 06/12/2010
 published: false
 
-This post is about something that I hope you didn't even notice, but I just wrote my own blog engine (again, yes I know). As you may have seen in an [earlier post](http://cre8ivethought.com/blog/2010/08/04/blog-moved-once-again/) of mine, but lately I have been using [Toto](https://github.com/cloudhead/toto) as my blogging engine. 
+This post is about something that I hope you didn't even notice, but I just wrote my own blog engine (again, yes I know...). As you may have seen in [an earlier post](http://cre8ivethought.com/blog/2010/08/04/blog-moved-once-again/), but lately I have been using [Toto](https://github.com/cloudhead/toto) as my blogging engine. 
 
 **And I was really happy with it, untill I wanted more control.** 
 
-I already had to make some changes in order to run two different blogs side by side. And now I am thinking about adding different versions of my blog, f.ex. one mobile version and one that acts more like an application. All for good fun of-course :) And I figured that if I keep using Toto then I only see abstacles instead of fun ahead of me.
+I already had to make some changes to Toto in order to run two different instances side by side. And now I am thinking about adding a few different versions of my blog; f.ex. one mobile version and one that acts more like an application. All for good fun of-course :) And I figured that if I keep using Toto then I will only see obstacles ahead instead of fun.
 
-Because the one thing that makes Toto so great is also the mayor thing that sits in my way; it is build straight on top of Rack and needs nearly no configuration to get boot-strapped. But because of this anything that is differnt from the default is hard to do. And that is exactly what I want to do, something differnet.
+Because the one thing that makes Toto so great is also the mayor thing that sits in my way; it is build straight on top of Rack and needs nearly no configuration to get boot-strapped. But because of this anything that is differnt from the default is hard to do. And that is exactly what I want to do, something different.
 
 ##Sinatra##
 
-I figured that in order to do what I wanted I need more control over what content gets send to the browser and what routes are being used. Think f.ex. about content negosiation to determine wherther I need the post to be in HTML or in Json. So I thought of using [Sinatra](http://www.sinatrarb.com/); Sinatra is a great framework that pretty much doesn't enforce or prevent you to do something. It offers the ability to define routes and define what gets send back.
+I figured that in order to do what I want I need more control over what content gets send to the browser and what routes are being used. Think f.ex. about content negosiation to determine wherther I need to send the post in HTML or in Json. I decided to use [Sinatra](http://www.sinatrarb.com/) as the base of my new blog engine. Sinatra is a great framework that pretty much doesn't enforce or prevent you to do anything. It offers the ability to define routes and specify what gets send back to the browser.
 
-If you haven't seen what Sinatra can do for you then I urge you to take a look, the power is in the simplicity.
+If you haven't seen what Sinatra can do for you then I urge you to [take a look](http://www.sinatrarb.com/), the power is in the simplicity.
 
 ##Dorsey##
 
-The other thing I really like about Toto is the workflow it gives me; I create a new txt file and start writing my blog post. I add this file to Git and commit when I feel I need to, so all my blog posts are version controlled. Then when I am happy with the post I push the post using git to Heroku and viola I published a post.
+The other thing I really like about Toto is the workflow it lets me use: 
 
-And this feeling I didn't want to loose, neither did I want to again convert my existing blog posts, but that reason is secondary. 
+* I create a new text file 
+* Start writing a new blog post 
+* I add this file to Git 
+* Commit when I feel I need to 
+* I push the post using git to Heroku
+* Viola I just published a new blog post
 
-So with this in mind I started to create Dorsey, Dorsey is a blog engine that relies on an other framework to actually publish and drive the content. You basically point Dorsey at a folder and it will parse the content (txt files).
+And I didn't want to loose this great way of working, neither did I want to convert my existing blog posts again, but that reason is secondary to the first. So with this in mind I started to create Dorsey. 
+
+Dorsey is a blog engine that relies on an-other framework to actually publish and drive the content. All Dorsey will do is manage the content, you basically point Dorsey at a folder and it will parse the content (.txt files). Take a look at the setup of Dorsey.
 
 <script src="https://gist.github.com/730334.js?file=Dorsey.rb"></script>
 
-Then I created two routes in SInatra that will be used to server the content, the first route here is to display the landing page of the blog. It will display the latest blog entries and links to archieves.
+Then I created two routes in Sinatra that will be used to server the content, the first route here is to display the landing page of the blog. It will display the latest blog entries and links to the archieves.
 
 <script src="https://gist.github.com/730334.js?file=index_route.rb"></script>
 
-Then the next route is retrieving the actual content. It uses the requested Url to search for the content. Then is checks how many posts are returned by Dorsey. When the Url is /blog/2010/ then it will return all posts from 2010, but if the Url is /blog/2010/11/08/sammy/ then it will return only a single post. Now depending on the number of returned posts I load a specific view.
+The next route is to retrieve the actual content. It uses the requested URL to search for the content. Then it will check how many posts are returned by Dorsey. F.ex. when the URL is /blog/2010/ then it will return all posts from 2010, but if the Url is /blog/2010/11/08/sammy/ then it will return only a single post. Now depending on the number of returned posts I load a specific view and pass in the resulting post(s).
 
 <script src="https://gist.github.com/730334.js?file=article_route.rb"></script>
 
-Btw the name Dorsey comes from the band Sinatra used to play in, together they had many great hits, that is also how I see this engine working.
+So now we have a blog up and running. I can assure you this is a whole lot easier then writing good blog posts :) 
 
-##Haml & SASS##
-I also re-wrote all HTML and CSS using Haml and SASS, as I absolutely like that syntaxt a lot better. If you don't know this then take a look, absolutely wonderful.
+Btw I choose the name Dorsey because it was the band Sinatra used to play in, together they had many great hits, that is also how I see this engine working; together with Sinatra.
+
+###Haml & SASS###
+I also re-wrote all HTML and CSS using Haml and SASS, as I absolutely like that syntaxt a lot better. If you don't know this then take a look, absolutely wonderful. More on that in an other post I am sure, but the short story is; Haml and SASS Rock!
+
+##Dorsey Internals##
+
+Lets take a look at the internals of Dorsey, those who know Toto will see quite a bit of familiarity as I wanted to preserve the workflow of Toto. First up is the Dorsey Server:
+
+<script src="https://gist.github.com/730334.js?file=server.rb"></script>
+
+Only two methods and two properties exposed, all are pretty self explaining. Now lets look at the configuration options of Dorsey:
+
+<script src="https://gist.github.com/730334.js?file=config.rb"></script>
+
+You can add different undefined options as well since it is just a hash. They will be accesible via <dorsey_server_variable>.config[:property_name] and this can be useful if you have some additional meta data that belongs to the blog. Next up is the articles collection:
+
+<script src="https://gist.github.com/730334.js?file=articles.rb"></script>
+
+As you can see this collection is actually initialized with the article path and will load the articles itself. I am not to happy with this responsibility here, I think I rather see that in the server instead. Refactoring coming up soon. And when we move that back into the server then articles is nothing more then an array. So most likely bye-bye Articles. 
+
+Now finally a bit more logic, lets look at the Article:
+
+<script src="https://gist.github.com/730334.js?file=article.rb"></script>
+
+A few interesting things here, the famous method_missing is used to enable accessing hash values via non-existing properties. F.ex. you can use post.title instead of having to do post[:title] which enhances readability. Also you may notice a file read, I wonder if I can pass in the stream when I parse the article directory. I am also thinking about making the way the URL (path method) gets build can be configurable. So more room for improvement here as well.
+
+Now all in all this is not a lot of code for a blog engine now is it? Of-course a lot is taken away by using Sinatra, but this justs adds lots of flexibility.
+
+I also want to thank Toto and the guys creating that, it has been a great source for inspiration, and if you just need a blog then that would be a very good option.
