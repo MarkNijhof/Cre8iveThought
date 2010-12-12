@@ -16,7 +16,7 @@
       s.src = 'http://widgets.digg.com/buttons.js';
       s1.parentNode.insertBefore(s, s1);
       })();
-    %a.DiggThisButton.DiggCompact
+    %a.DiggThisButton.DiggCompact{:href=>"http://digg.com/submit?related=no"}
 
     - if post.disqus
       #disqus_thread
