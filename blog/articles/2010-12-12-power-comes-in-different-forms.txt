@@ -1,0 +1,57 @@
+title: Power Comes In Different Forms
+author: Mark Nijhof
+updated: 12/12/2010
+published: true
+
+I think it is time we get a Noide movement, ahh darn it got my casing all mixed-up; I meant **NoIDE** of-course. I have been developing on the .Net platform since the first beta's where released and have been using Visual Studio.Net since it got first released as well (my first .Net coding was actually done in EditPlus). And the one thing that has been a constant during these last 10 years... 
+
+**Holy crap .Net is 10 years old already...** maybe that needs some more reflecting, later perhaps...
+
+Anyway the one constant thing has always been that I always wanted/needed faster and more powerful machines to run my software development environment on. And I am sure you may recognize yourself in this as well; that is why we get Tweets like the one down here:
+
+<center>
+<img src="http://cre8ivethought.s3.amazonaws.com/images/general/unclebobmartin-macbook-pro.png" style="border: 1px solid black;" alt="@unclebobmarting about his new MacBook Pro" />
+<sub>http://twitter.com/#!/unclebobmartin/status/6337116204179456</sub>
+<br />
+<br />
+</center>
+
+And where does this need come from? Well in my case the Microsoft IDE's got more and more power hungry with every release, we all know this, it is no secrete. Then we also open SQL Management Studio, which slows down the machine even more. And finally some silly developers will start adding plugins to Visual Studio as well, like ReSharper and TestDriven.Net which completely kills the machines performance. 
+
+But we say and believe it will speed up development, and I am one of those silly developers, or have been at least. And then there are people like Daniel Cazzuline (@kzu) saying ridiculous stuff like this:
+
+<center>
+<img src="http://cre8ivethought.s3.amazonaws.com/images/general/kzu-plugins.png" style="border: 1px solid black;" alt="@kzu about visual studio plugins" />
+<sub>http://twitter.com/#!/kzu/status/26143323184</sub>
+<br />
+<br />
+</center>
+
+And you know what, he is absolutely correct! Well let me rephrase that, this is absolutely correct besides perhaps for some people like [JP Boodhoo](http://www.jpboodhoo.com/) (who is amazingly crazy and you should watch him code, search his publications). If I look at how I use Visual Studio and ReSharper then it is really sad to think about all the wasted effort that was put in these products to create all that functionality that I don't use. I pretty much only use Visual Studio as a text editor and ReSharper for navigating and some smart code refactorings. 
+
+##My new girlfriend Ruby##
+
+It has been about 6 to 7 months since I have had Visual Studio open, I currently have no machine that has it installed and I truly hope it will be some-time before I have to get into that again (if ever, Hey one can dream). I have since then been working in Ruby and web based technologies, and I am extremely happy. 
+
+And please don't get me wrong, I **don't** hate .Net, I just really like working in Ruby. 
+
+I started programming Ruby in TextMate, but currently I am getting more and more profound using VIM. And even TextMate starts to feel a bit like a heavy IDE as well (god help me when I do return to .Net development). And you know what; VIM and Terminal are pretty much always really fast on any type of machine. So I started to realize that I stopped caring much about having a fast and powerful machine.
+
+<center>
+<img src="http://cre8ivethought.s3.amazonaws.com/images/general/dhh-macbook-air.png" style="border: 1px solid black;" alt="@dhh about his new macbook air" />
+<sub>hhttp://twitter.com/#!/dhh/status/826554137864192</sub>
+<br />
+<br />
+</center>
+
+Since a few weeks I got myself a MacBook Air 13" and even tho this is not a slow machine by any means, it won't stand a chance agains my work MacBook Pro that has the same specs as the machine in the first tweet. But it is my little 13" that I am bringing to work each day. Its faster and more powerful brother is quietly waiting for me to get a .Net project. And as long as I am working on these Ruby projects having this faster machine doesn't bring me anything extra except for some pounds that I have to carry around each day.
+
+##The Real Powerrr...##
+
+So the power that I rather have is in the tooling being simple and working fast, having a fast machine to counter a slow development environment is solving the wrong problem. This is inline with f.ex. adding SSD disks in your CI server because your tests are running slow, or whatever ... people are good at trying to solve the wrong problem, especially developers, just ask Scott Bellware. 
+
+So when the next .Net project calls I will have to find a way to get around those stupid project files (generate them) and avoid having to start Visual Studio. Just start coding .Net in VIM and have Mighty Moose, which I understand is a completely awesome auto test runner that also runs on Mono (well awesome except for the name perhaps, ask Greg Young about it). And push it to a CI server to validate it works on .Net as well. 
+
+Because the .Net/C# language isn't a bad place to be and if you need a statically typed language then this is probably one of your better choices. It is just that I really dislike the tooling for .Net, I have always felt it to be wrong, but now I can say with confidence that this is definitely one area where Ruby gives much less friction.
+
+Now after solving the tooling issue lets move on and solve the community issues as well... Ugh...
