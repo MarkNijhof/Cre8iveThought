@@ -17,6 +17,9 @@
       s1.parentNode.insertBefore(s, s1);
       })();
     %a.DiggThisButton.DiggCompact{:href=>"http://digg.com/submit?related=no"}
+    &nbsp;
+    %a{:href=>"http://reddit.com/r/postrock/submit", :onclick=>"window.location = 'http://reddit.com/r/postrock/submit?url=' + encodeURIComponent(window.location); return false"} 
+      %img{:src=>"http://reddit.com/static/spreddit7.gif", :alt=>"submit to reddit", :border=>"0", :style=>"position: relative; top: -1px;"}
 
     - if post.disqus
       #disqus_thread
