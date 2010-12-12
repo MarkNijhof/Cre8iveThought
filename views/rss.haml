@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--12b610c71aac434b84f213c537decf7b-->
 %feed{:xmlns=>"http://www.w3.org/2005/Atom"}
   %title 
     = blog_title
@@ -11,6 +10,7 @@
   %updated #{rss_updated.iso8601}
   - for article in articles
     %entry
+      <!--12b610c71aac434b84f213c537decf7b-->
       %title 
         =article.title
       <link href='#{article.url}' rel='alternate' />
