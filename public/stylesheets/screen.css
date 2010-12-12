@@ -106,8 +106,8 @@ body.three-col #container a:hover { color: #b83000; text-decoration: underline; 
 body.three-col #container h1 { color: #3B4A25; display: inline; margin: 0; font-weight: 600; font-size: 1.8em; text-align: right; }
 body.three-col #container h1 a { color: #3B4A25; text-decoration: none; }
 body.three-col #container h1 a:hover { color: #3B4A25; text-decoration: none; }
-body.three-col #container h2 { color: #3B4A25; display: inline; margin: 0; font-weight: 600; font-size: 1.6em; text-align: right; }
-body.three-col #container h3, body.three-col #container h4 { color: #3B4A25; display: inline; margin: 0; font-weight: 600; font-size: 1.4em; text-align: right; }
+body.three-col #container h2 { color: #3B4A25; display: inline; margin: 0; font-weight: 600; font-size: 1.4em; text-align: right; }
+body.three-col #container h3, body.three-col #container h4 { color: #3B4A25; display: inline; margin: 0; font-weight: 600; font-size: 1.2em; text-align: right; }
 body.three-col #container P { text-align: justify; font-size: 1.1em; }
 body.three-col #container .gist { line-height: 1.2em; }
 body.three-col #container .date_list { font-style: italic; float: right; margin-right: 30px; color: #cccccc; }

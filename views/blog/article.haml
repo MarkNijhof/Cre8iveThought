@@ -8,6 +8,16 @@
     #{post.body}
 
   %section.comments
+    %script{:type=>"text/javascript"}
+      (function() {
+      var s = document.createElement('SCRIPT'), s1 = document.getElementsByTagName('SCRIPT')[0];
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = 'http://widgets.digg.com/buttons.js';
+      s1.parentNode.insertBefore(s, s1);
+      })();
+    %a.DiggThisButton.DiggCompact
+
     - if post.disqus
       #disqus_thread
         %script{:type=>"text/javascript"} 	
