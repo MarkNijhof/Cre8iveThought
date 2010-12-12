@@ -7,7 +7,7 @@
     %name 
       Mark Nijhof
   <link href='#{rss_url}' rel='self' />
-  %updated #{rss_updated.iso8601}
+  %updated #{rss_updated}
   - for article in articles
     %entry
       <!--12b610c71aac434b84f213c537decf7b-->
@@ -15,8 +15,8 @@
         =article.title
       <link href='#{article.url}' rel='alternate' />
       <id>#{article.url}</id>
-      <published>#{article.date_as_date.iso8601}</published>
-      <updated>#{article.updated.iso8601}</updated>
+      <published>#{article.date_as_date}</published>
+      <updated>#{article.updated}</updated>
       %author 
         %name 
           Mark Nijhof
