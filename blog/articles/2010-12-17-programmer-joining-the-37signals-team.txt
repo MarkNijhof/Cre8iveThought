@@ -1,5 +1,5 @@
 title: '[programmer] joining the 37signals team'
-slug: programmer joining the 37signals team
+slug: programmer_joining_the_37signals_team
 author: Mark Nijhof
 published: false
 
