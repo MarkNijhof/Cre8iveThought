@@ -45,6 +45,7 @@ Rec: [http://tekpub.com/conferences/ndc2010/test-driven-javascript](http://tekpu
 The way I learn the best is by doing, and I don’t mean silly CD application projects because that never works. So when I started learning Ruby I wanted something that was serious, one thing lacking in Norway is a really good job site specifically for IT people. So I decided to create that. I have many ideas for this; something that enables more meta information about the companies and the people so that better choices can be made. I have only just started with this so there is not much to show yet. Technically I am using Padrino, Haml, SASS and MongoDB, but I am looking into moving to Rails actually. I started with Sinatra because I wanted less magic and more Ruby. Anyway if it works I make some money, and if it doesn’t I have learned Ruby. 
 
 Link: [http://test.17jobs.com/](http://test.17jobs.com/)
+<br/>
 GitHub: [https://github.com/MarkNijhof/17Jobs.com](https://github.com/MarkNijhof/17Jobs.com)
 
 I also presented at [Smidig 2010](http://www.smidig2010.no/) (Smidig stands for Agile) about why people should test their freaking JavaScript code. This was just a lightning talk.
@@ -54,6 +55,7 @@ Rec: [http://streaming.java.no/tcs/?id=896453B7-7143-42A5-9E13-05C40DDD6DAC](htt
 And finally I just re-wrote my blog engine, I was using Toto but that became a bit too limited for what I wanted to do so I decided to rewrite the same functionality but now on top of Sinatra. I blogged about it as well.
 
 Link: [http://cre8ivethought.com/blog/2010/12/06/good-bye-toto-hello-dorsey/](http://cre8ivethought.com/blog/2010/12/06/good-bye-toto-hello-dorsey/)
+<br/>
 GitHub: [https://github.com/MarkNijhof/Dorsey](https://github.com/MarkNijhof/Dorsey)
 
 ##Location##
