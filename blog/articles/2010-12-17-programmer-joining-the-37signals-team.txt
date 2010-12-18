@@ -2,15 +2,16 @@ title: '[programmer] joining the 37signals team'
 slug: programmer_joining_the_37signals_team
 author: Mark Nijhof
 published: false
+updated: 18/12/2010 15:08:00
 
-A small heads-up, what I am going to tell you may at first seem that I am not a good fit for your team, but I assure you I am. I am good at what I do and I get the job done!
+I would love to work for 37signals, I believe I would be a good fit within the team because I am good at what I do and I get the job done! I believe in continuous improvement and in delivering value. Working for 37signals would be a great opportunity which I'll grab with both hands.
 
 ##I create stuff##
 
 <img src="http://cre8ivethought.s3.amazonaws.com/images/general/MarkNijhof_Bridge.JPG" alt="Mark Nijhof" style="width: 150px; height: 150px; margin-left: 10px; padding: 1px; border: 1px solid black; float: right;" />
 My name is Mark Nijhof and I grew up on the country side in Holland and have always been solving problems; thinking about how to make things easier. Silly things like a special three part shovel to clean the outside drains or figuring out how to divide the stables so we could fit more horses in there. 
 
-But because of the great outdoors where I grew up I got introduced to computers fairly late. So I am not your geek that started hacking at a very young age, no instead I learned the basics of programming at school. But the real art of programming I learned later, sometime between my second job and where I am now. In fact I am still learning. And that is one part that attracts me so much to programming, the continues challenges and new things I can learn.
+But because of the great outdoors where I grew up I got introduced to computers fairly late. So I am not your geek that started hacking at a very young age, no instead I learned the basics of programming at school. But the real art of programming I learned later; sometime between my second job and where I am now. In fact I am still learning. And that is one part that attracts me so much to programming, the continues challenges and new things I can learn.
 
 The other part that makes programming so much fun is that I can put so much creativity into the process. Making things is just cool, but when people are happy with them it gives an absolute amazing feeling.
 
@@ -28,7 +29,7 @@ During my years as a programmer I always have had very a strong focus on web bas
 
 **And I love it!**
 
-And that is why I want to work at 37signals, I want to work with Ruby and Rails. I want to create great programs that change how people work, I want to work with great programmers and learn each day. I want to create things that come as natural to people as the iPad does for my four year old.
+And that is why I want to work at 37signals, I want to work with Ruby and Rails. I want to create great programs that change how people work, I want to work with great people and learn each day. I want to create things that come as natural to people as the iPad does for my four year old.
 
 ##Some history##
 
@@ -56,7 +57,7 @@ Link: [http://cre8ivethought.com/blog/2010/12/06/good-bye-toto-hello-dorsey/](ht
 
 ##Location##
 
-Currently we live in Oslo, and I hope to stay here for a little while longer, but in the future I see myself moving to Chicago and join the beautiful new offices you have created.
+Currently we live in Oslo, and I hope to stay here for a little while longer, but in the future I see myself moving to Chicago and work at the beautiful new offices you have created.
 
 ##Finally##
 
