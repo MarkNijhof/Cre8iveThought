@@ -58,7 +58,8 @@ module Dorsey
 
       meta_data[:date_as_date] = Date.parse(date.gsub('/', '-')) rescue Date.today 
       meta_data[:date] = @config[:date].call meta_data[:date_as_date]
-      meta_data[:updated] = meta_data[:updated] ? DateTime.parse(meta_data[:updated].gsub('/', '-')) : meta_data[:date_as_date]
+      meta_data[:updated_as_date] = meta_data[:updated] ? DateTime.parse(meta_data[:updated].gsub('/', '-')) : meta_data[:date_as_date]
+      meta_data[:updated] = @config[:date].call meta_data[:updated_as_date]
       meta_data = rename_slug_key meta_data
       meta_data
     end

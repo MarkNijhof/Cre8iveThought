@@ -7,7 +7,8 @@
   %section.content
     #{post.summary}
     %span.date_list 
-      Last updated: #{$book_dorsey.config[:date].call Date.parse(post.updated)}
+      #{post.date}
+      = " (last updated on #{post.updated})" unless post.updated == post.date
     %br
     %br
     %br

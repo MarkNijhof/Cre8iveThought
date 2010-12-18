@@ -8,6 +8,7 @@
     #{post.summary}
     %span.date_list 
       #{post.date}
+      = " (last updated on #{post.updated})" unless post.updated == post.date
     %br
     %span.date_list 
       %a.comments_link{:href=>"#{post.url}#disqus_thread"}

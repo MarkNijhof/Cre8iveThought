@@ -1,7 +1,9 @@
 
 %article.post
   %header
-    %span{:class=>"date_post"} #{post.date}
+    %span{:class=>"date_post"} 
+      #{post.date}
+      = "( last updated on #{post.updated})" unless post.updated == post.date
     %h1 #{post.title}
 
   %section.content

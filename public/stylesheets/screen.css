@@ -111,7 +111,7 @@ body.three-col #container h3, body.three-col #container h4 { color: #3B4A25; dis
 body.three-col #container P { text-align: justify; font-size: 1.1em; }
 body.three-col #container .gist { line-height: 1.2em; }
 body.three-col #container .date_list { font-style: italic; float: right; margin-right: 30px; color: #cccccc; }
-body.three-col #container .date_post { position: absolute; font-style: italic; float: left; top: -45px; left: 3px; width: 350px; color: #cccccc; }
+body.three-col #container .date_post { position: absolute; font-style: italic; float: left; top: -45px; left: 3px; width: 550px; color: #cccccc; }
 body.three-col #container .archive_info { position: relative; top: -10px; font-style: italic; font-size: 75%; color: #cccccc; }
 body.three-col #container .comments_link { color: #cccccc; text-decoration: none; }
 body.three-col #container .comments_link:hover { color: #cccccc; text-decoration: underline; }
