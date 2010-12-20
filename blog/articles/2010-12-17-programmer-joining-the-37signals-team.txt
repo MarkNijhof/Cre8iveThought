@@ -2,16 +2,16 @@ title: '[programmer] joining the 37signals team'
 slug: programmer_joining_the_37signals_team
 author: Mark Nijhof
 published: false
-updated: 18/12/2010 15:08:00
+updated: 20/12/2010 01:02:00
 
-I would love to work for 37signals, I believe I would be a good fit within the team because I am good at what I do and I get the job done! I believe in continuous improvement and in delivering value. Working for 37signals would be a great opportunity which I'll grab with both hands.
+I would love to work at 37signals and be part of the team, I believe that I would be a good fit. I am very passionate and good at what I do. I believe in continuous improvement and in delivering value. And I get the job done. Working for 37signals would be a great opportunity which I'll grab with both hands.
 
 ##I create stuff##
 
 <img src="http://cre8ivethought.s3.amazonaws.com/images/general/MarkNijhof_Bridge.JPG" alt="Mark Nijhof" style="width: 150px; height: 150px; margin-left: 10px; padding: 1px; border: 1px solid black; float: right;" />
 My name is Mark Nijhof and I grew up on the country side in Holland and have always been solving problems; thinking about how to make things easier. Silly things like a special three part shovel to clean the outside drains or figuring out how to divide the stables so we could fit more horses in there. 
 
-But because of the great outdoors where I grew up I got introduced to computers fairly late. So I am not your geek that started hacking at a very young age, no instead I learned the basics of programming at school. But the real art of programming I learned later; sometime between my second job and where I am now. In fact I am still learning. And that is one part that attracts me so much to programming, the continues challenges and new things I can learn.
+But because of the great outdoors where I grew up I got introduced to computers fairly late. So I am not your geek that started hacking at a very young age, no instead I learned the basics of programming at school. But the real art of programming I learned later; sometime between my second job and where I am now. In fact I am still learning each and every day. And that is one part that attracts me so much to programming, the continues challenges and new things I can learn.
 
 The other part that makes programming so much fun is that I can put so much creativity into the process. Making things is just cool, but when people are happy with them it gives an absolute amazing feeling.
 
@@ -39,15 +39,15 @@ Lately I have been using GitHub to store my code on and one of the things that h
 
 GitHub: [https://github.com/MarkNijhof/Fohjin/tree/master/Fohjin.DDD.Example](https://github.com/MarkNijhof/Fohjin/tree/master/Fohjin.DDD.Example)
 
-I have also presented at [NDC (Norwegian Developer Conference)](http://www.ndc2010.no) on Test-Driving your JavaScript code. I did some live coding using TDD to add some functionality to existing JavaScript functionality. This was a very exciting experience one that I like to repeat.
+I have also presented at [NDC (Norwegian Developer Conference)](http://www.ndc2010.no) on Test-Driving your JavaScript code. I did some live coding using TDD to add some functionality to existing JavaScript code. This was a very exciting experience one that I like to repeat.
 
 Rec: [http://tekpub.com/conferences/ndc2010/test-driven-javascript](http://tekpub.com/conferences/ndc2010/test-driven-javascript)
 
-The way I learn the best is by doing, and I don’t mean silly CD application projects because that never works. So when I started learning Ruby I wanted something that was serious, one thing lacking in Norway is a really good job site specifically for IT people. So I decided to create that. I have many ideas for this; something that enables more meta information about the companies and the people so that better choices can be made. I have only just started with this so there is not much to show yet. Technically I am using Padrino, Haml, SASS and MongoDB, but I am looking into moving to Rails actually. I started with Sinatra because I wanted less magic and more Ruby. Anyway if it works I make some money, and if it doesn’t I have learned Ruby. 
+The way I learn the best is by doing, and I don’t mean silly CD application projects because that never works. So when I started learning Ruby I wanted something that was serious, and one thing lacking in Norway is a really good job site specifically for IT people. So I decided to create that when I started learning Ruby. I have many ideas for this; something that enables more meta information about the companies and the people so that better choices can be made. I have only just started with this so there is not much to show yet. Technically I am using Padrino, Haml, SASS and MongoDB, but I am looking into moving to Rails actually. I started with Sinatra because I wanted less magic and more Ruby. Anyway if it works I make some money, and if it doesn’t I have learned Ruby. 
 
 Link: [http://test.17jobs.com/](http://test.17jobs.com/)<br/>GitHub: [https://github.com/MarkNijhof/17Jobs.com](https://github.com/MarkNijhof/17Jobs.com)
 
-I also presented at [Smidig 2010](http://www.smidig2010.no/) (Smidig stands for Agile) about why people should test their freaking JavaScript code. This was just a lightning talk.
+I also presented at [Smidig 2010](http://www.smidig2010.no/) (Smidig is Norwegian for Agile) about why people should test their freaking JavaScript code. This was just a lightning talk.
 
 Rec: [http://streaming.java.no/tcs/?id=896453B7-7143-42A5-9E13-05C40DDD6DAC](http://streaming.java.no/tcs/?id=896453B7-7143-42A5-9E13-05C40DDD6DAC)
 
@@ -61,7 +61,7 @@ Currently we live in Oslo, and I hope to stay here for a little while longer, bu
 
 ##Finally##
 
-I know this is not your typical profile, but I also know that I will need to make these things happen myself. I would be very happy to continue talking about the position in person.
+I have been in different places in the world because I initiate things myself and don't wait for others to hand it to me. So I know that my profile is not your typical 37signal profile technically speaking, but technical stuff is not hard to learn. Being a certain person you either are or are not. So with that in mind I hope to hear from you soon to continue talking about a new position at 37signals.
 
 Contact me at: Mark.Nijhof@Cre8iveThought.com or via Twitter [@MarkNijhof](http://twitter.com/#!/MarkNijhof) but if you rather speak instead of write then please call me on my mobile phone 0047 95 00 99 37. And my linkedIn profile shows a little bit more details: [http://no.linkedin.com/in/marknijhof](http://no.linkedin.com/in/marknijhof)
 
