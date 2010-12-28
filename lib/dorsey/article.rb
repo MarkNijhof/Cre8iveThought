@@ -9,12 +9,14 @@ module Dorsey
       :body => "",
       :summary => "",
       :file => "",
-      :url => ""
+      :url => "",
+      :css => ""
     }
 
     def initialize article_file, config
       self[:file] = article_file
       self[:disqus] = config[:disqus]
+      self.update Defaults
       @config = config
       load_article article_file
     end
@@ -48,6 +50,8 @@ module Dorsey
       self[:summary] = markdown(get_summary(body))
       self.update abstract_meta_data(article_file, raw_meta_data)
       generate_url
+      
+      self[:disqus] = '' if self[:hide_comments]
     end
     
     def abstract_meta_data article_file, raw_meta_data

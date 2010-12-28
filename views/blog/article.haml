@@ -1,4 +1,8 @@
 
+- if post.css
+  %style{:type=>'text/css'}
+    = post.css
+
 %article.post
   %header
     %span{:class=>"date_post"} 
@@ -9,21 +13,21 @@
   %section.content
     #{post.body}
 
-  %section.comments
-    %script{:type=>"text/javascript"}
-      (function() {
-      var s = document.createElement('SCRIPT'), s1 = document.getElementsByTagName('SCRIPT')[0];
-      s.type = 'text/javascript';
-      s.async = true;
-      s.src = 'http://widgets.digg.com/buttons.js';
-      s1.parentNode.insertBefore(s, s1);
-      })();
-    %a.DiggThisButton.DiggCompact{:href=>"http://digg.com/submit?related=no"}
-    &nbsp;
-    %a{:href=>"http://reddit.com/r/postrock/submit", :onclick=>"window.location = 'http://reddit.com/r/postrock/submit?url=' + encodeURIComponent(window.location); return false"} 
-      %img{:src=>"http://reddit.com/static/spreddit7.gif", :alt=>"submit to reddit", :border=>"0", :style=>"position: relative; top: -1px;"}
+  - if post.disqus != ''
+    %section.comments
+      %script{:type=>"text/javascript"}
+        (function() {
+        var s = document.createElement('SCRIPT'), s1 = document.getElementsByTagName('SCRIPT')[0];
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'http://widgets.digg.com/buttons.js';
+        s1.parentNode.insertBefore(s, s1);
+        })();
+      %a.DiggThisButton.DiggCompact{:href=>"http://digg.com/submit?related=no"}
+      &nbsp;
+      %a{:href=>"http://reddit.com/r/postrock/submit", :onclick=>"window.location = 'http://reddit.com/r/postrock/submit?url=' + encodeURIComponent(window.location); return false"} 
+        %img{:src=>"http://reddit.com/static/spreddit7.gif", :alt=>"submit to reddit", :border=>"0", :style=>"position: relative; top: -1px;"}
 
-    - if post.disqus
       #disqus_thread
         %script{:type=>"text/javascript"} 	
           var disqus_url = '#{post.url}';
