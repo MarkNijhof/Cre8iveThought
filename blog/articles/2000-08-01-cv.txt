@@ -4,7 +4,7 @@ author: Mark Nijhof
 published: false
 updated: 28/12/2010 11:13:00
 hide_comments: true
-css: "#license, #menu {visibility: hidden;}"
+css: "#license, #menu {visibility: hidden;} #information {visibility: hidden; height: 0px; display: block;}"
 
 Mark is an experienced software developer who has developed a diverse range of Object-Oriented software solutions, having either the role of an external consultant or working as an in-house developer. Independently of his role Mark has always been working closely with customers to achieve high quality solutions. Mark has been working with the Microsoft .Net framework since the first Beta's where released (from circa August 2000). But he has also been working with PHP, Perl and Delphi, and the last 7 to 8 months he has been developing in Ruby. Throughout this whole time he has always had a very strong focus on web-based applications making JavaScript an important language for him as well. 
 
@@ -114,3 +114,8 @@ References are available upon request
 [CQRS voorbeeld](https://github.com/MarkNijhof/Fohjin/tree/master/Fohjin.DDD.Example)<br />
 [Twitter](http://twitter.com/#!/MarkNijhof)<br />
 [About.me](http://about.me/MarkNijhof) (mainly for the bigger picture :): <br />
+
+##Contact information##
+<hr />
+E-mail: [Mark.Nijhof@Cre8iveThought.com](mailto:Mark.Nijhof@Cre8iveThought.com)<br />
+Mobile: 0047 95 00 99 37

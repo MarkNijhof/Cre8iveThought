@@ -3,6 +3,8 @@ slug: programmer_joining_the_37signals_team
 author: Mark Nijhof
 published: false
 updated: 21/12/2010 12:03:00
+hide_comments: true
+css: "#license, #menu {visibility: hidden;} #information {visibility: hidden; height: 0px; display: block;}"
 
 I would love to work at 37signals and be part of the team, I believe that I would be a good fit. I am very passionate and good at what I do. I believe in continuous improvement and in delivering value. And I get the job done. Working for 37signals would be a great opportunity which I'll grab with both hands.
 
