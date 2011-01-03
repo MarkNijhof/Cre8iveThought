@@ -61,8 +61,8 @@ Mark was a consultant at CSC Computer Sciences BV and was mostly working at clie
 [Test-Driven JavaScript @ NDC](http://streaming.ndc2010.no/tcs/?id=30DC4F1D-3867-41FD-944E-167872AE4EF2)<br />
 [FubuMVC @ NDC](http://streaming.ndc2010.no/tcs/?id=919676F9-9BEB-4370-B9CA-F7EADB515143)<br />
 [Software Craftsmanship discussion @ E-VAN](http://vimeo.com/10755891)<br />
-[FubuMVC @ E-VAN](http://vimeo.com/4534175)<br />
 [CQRS @ E-VAN](http://vimeo.com/7838858)<br />
+[FubuMVC @ E-VAN](http://vimeo.com/4534175)<br />
 [The principles of OOD with focus on SOLID @ NNUG](http://www.nnug.no/Avdelinger/Bergen/Moter/NNUG-Bergen---Februar-2009/)<br />
 [NHibernate & Fluent NHibernate @ NNUG](http://www.nnug.no/Avdelinger/Bergen/Moter/NNUG-Bergen---Januar-2009/)<br />
 [FubuMVC @ NNUG](http://www.nnug.no/Avdelinger/Bergen/Moter/NNUG-Bergen---Mai-2009/)<br />
