@@ -1,0 +1,46 @@
+
+describe 'Animator - Initialization'
+
+  before_each
+  	cards = elements('<div/>')
+    frame = elements('<div/>')
+		animator = new Animator(cards, frame, '../')
+  end
+
+  after_each
+    cards = null
+    frame = null
+		animator = null
+  end
+
+  describe 'constructor'
+	  it 'will setup the cards placeholder to contain all needed elements'
+			cards.html().should.match /<img src=".*images\/Cre8iveBusinessCardsPresentation.png" alt="" class="BusineesCards">/
+	  end
+
+	  it 'will setup the frame placeholder to contain a frame background element'
+			frame.html().should.match /<div id="frame-background"><\/div>/
+	  end
+
+	  it 'will setup the frame placeholder to contain a front card element'
+	  	frame.html().should.match /<div id="card-front"><\/div>/
+	  end
+	  
+	  it 'will setup the frame placeholder to contain a back card element'
+ 			frame.html().should.match /<div id="card-back"><\/div>/
+	  end
+	  
+	  it 'will setup the frame placeholder to contain a frame foreground element'
+ 			frame.html().should.match /<div id="frame-foreground"><\/div>/
+	  end
+	  
+	  it 'will setup the frame placeholder to contain a frame content element'
+ 			frame.html().should.match /<div id="frame-content"><\/div>/
+	  end
+	  
+	  it 'will setup the frame placeholder to contain a frame menu element'
+ 			frame.html().should.match /<div id=\"frame-menu\">.*<ul>.*<li id=\"menu-home\"><a href=\"#\/Home\">Home<\/a><\/li>.*<li id=\"menu-blog\"><a href=\"#\/Blog\">Blog<\/a><\/li>.*<li id=\"menu-bekk\"><a href=\"#\/MarkNijhof\">Mark Nijhof<\/a><\/li>.*<li id=\"menu-contact\"><a href=\"#\/Contact\">Contact<\/a><\/li>.*<\/ul>.*<\/div>/
+	  end
+	end
+
+end

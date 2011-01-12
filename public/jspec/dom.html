@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="lib/jspec.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="../stylesheets/style-cards.css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+    <script>
+      var ___setTimeout = setTimeout;
+      var ___clearTimeout = clearTimeout;
+      $(document).ready(function() {
+        var t = ___setTimeout(function(){location.reload();}, 3000);
+        $('#pauseButton').click(function(){
+          if ($('#pauseButton').val() == 'Faster Faster Faster'){
+            location.reload();
+            return;
+          }
+          ___clearTimeout(t);
+          t = ___setTimeout(function(){location.reload();}, 60000);
+          $('#pauseButton').val('Faster Faster Faster');
+        });
+      });
+    </script>
+
+		<script src="lib/jspec.js"></script>
+		<script src="lib/jspec.jquery.js"></script>
+    <script src="lib/jspec.clock.js"></script>
+    <script src="lib/jspec.xhr.js"></script>
+    <script src="lib/jspec.jquery.animations.js"></script>
+
+    <script type="text/javascript" src="/javascripts/lib/jquery.query-2.1.7.js"></script>
+    <script type="text/javascript" src="/javascripts/lib/microTemplate.js"></script>
+    <script type="text/javascript" src="/javascripts/lib/sammy-0.5.4.min.js"></script>
+
+    <script src="../javascripts/animations.js"></script>
+    <script src="../javascripts/demo.js"></script>
+
+		<script>
+			function runSuites() {
+			  JSpec
+			    .exec('unit/animator.jspec')
+          .exec('unit/display_big_cards.jspec')
+          .exec('unit/display_big_cards_when_frame_is_visible.jspec')
+          .exec('unit/hide_big_cards.jspec')
+          .exec('unit/display_frame.jspec')
+          .exec('unit/display_frame_when_big_cards_are_visible.jspec')
+          .exec('unit/hide_frame.jspec')
+          .exec('unit/hide_frame_with_content_present.jspec')
+          .exec('unit/load_content_when_big_cards_are_visible.jspec')
+          .exec('unit/load_content_when_nothing_is_visible.jspec')
+          .exec('unit/load_content_when_frame_is_visible.jspec')
+          .exec('unit/load_content_when_frame_is_visible_with_previous_content.jspec')
+				  .run({ failuresOnly: true, fixturePath: 'fixtures' })
+				  .report();
+			}
+		</script>
+	</head>
+	<body class="jspec" onLoad="runSuites();">
+		<div id="jspec-top"><h2 id="jspec-title">JSpec <em><script>document.write(JSpec.version)</script></em></h2><br /><input type="button" value="Slow Down Will You" id="pauseButton" /></div>
+		<div id="jspec"><div class="loading"></div></div>
+		<div id="jspec-bottom"></div>
+	</body>
+</html>

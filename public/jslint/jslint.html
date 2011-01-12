@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="jspec.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+    <script>
+      var ___setTimeout = setTimeout;
+      var ___clearTimeout = clearTimeout;
+      $(document).ready(function() {
+        var t = ___setTimeout(function(){location.reload();}, 60000);
+      });
+    </script>
+
+    <script src="fulljslint.js"></script>
+		<script>
+			function runSuites() {
+
+        function lintLoader(scriptUrl){
+          $.ajax({
+            url: "http://cre8ivethought.com" + scriptUrl,
+            type: 'GET',
+            dataType: 'text',
+            //error: function(XMLHttpRequest, textStatus, errorThrown) {
+                //console.log(errorThrown);
+            //},
+            success: function(data, response){
+              var result = JSLINT(data);
+              $('#jspec').append("<h3 style='margin-left: 25px;'>"+ scriptUrl +"</h3>");
+              $('#jspec').append(JSLINT.report(true));
+            }
+          });
+        }
+        $('#jspec').html('');
+        lintLoader("/javascripts/animations.js?timestamp=" + new Date().now);
+			}
+		</script>
+	</head>
+	<body class="jspec" onLoad="runSuites();">
+		<div id="jspec-top"><h2 id="jspec-title">JS Lint <em></em></h2><br /></div>
+		<div id="jspec"><div class="loading"></div></div>
+		<div id="jspec-bottom"></div>
+	</body>
+</html>
