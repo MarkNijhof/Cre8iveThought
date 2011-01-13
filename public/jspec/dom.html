@@ -36,20 +36,20 @@
 		<script>
 			function runSuites() {
 			  JSpec
-			    .exec('unit/animator.jspec')
-          .exec('unit/display_big_cards.jspec')
-          .exec('unit/display_big_cards_when_frame_is_visible.jspec')
-          .exec('unit/hide_big_cards.jspec')
-          .exec('unit/display_frame.jspec')
-          .exec('unit/display_frame_when_big_cards_are_visible.jspec')
-          .exec('unit/hide_frame.jspec')
-          .exec('unit/hide_frame_with_content_present.jspec')
-          .exec('unit/load_content_when_big_cards_are_visible.jspec')
-          .exec('unit/load_content_when_nothing_is_visible.jspec')
-          .exec('unit/load_content_when_frame_is_visible.jspec')
-          .exec('unit/load_content_when_frame_is_visible_with_previous_content.jspec')
-				  .run({ failuresOnly: true, fixturePath: 'fixtures' })
-				  .report();
+				.exec('unit/animator.spec.js')
+				.exec('unit/display_big_cards.spec.js')
+				.exec('unit/display_big_cards_when_frame_is_visible.spec.js')
+				.exec('unit/hide_big_cards.spec.js')
+				.exec('unit/display_frame.spec.js')
+				.exec('unit/display_frame_when_big_cards_are_visible.spec.js')
+				.exec('unit/hide_frame.spec.js')
+				.exec('unit/hide_frame_with_content_present.spec.js')
+				.exec('unit/load_content_when_big_cards_are_visible.spec.js')
+				.exec('unit/load_content_when_nothing_is_visible.spec.js')
+				.exec('unit/load_content_when_frame_is_visible.spec.js')
+				.exec('unit/load_content_when_frame_is_visible_with_previous_content.spec.js')
+				.run({ failuresOnly: true, fixturePath: 'fixtures' })
+				.report();
 			}
 		</script>
 	</head>
