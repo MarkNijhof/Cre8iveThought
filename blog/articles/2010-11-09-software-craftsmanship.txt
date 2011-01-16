@@ -1,4 +1,0 @@
-title: Software Craftsmanship
-author: Mark Nijhof
-published: false
-
