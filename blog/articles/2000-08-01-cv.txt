@@ -2,7 +2,7 @@ title: CV - Mark A. Nijhof
 slug: cv
 author: Mark Nijhof
 published: false
-updated: 28/12/2010 11:13:00
+updated: 17/01/2011 12:34:00
 hide_comments: true
 css: "#license, #menu {visibility: hidden;} #information {visibility: hidden; height: 0px; display: block;}"
 
@@ -69,6 +69,11 @@ Mark was a consultant at CSC Computer Sciences BV and was mostly working at clie
 
 ##Personal projects##
 <hr />
+
+###ITJo.bs###
+**Link:** [http://github.com/MarkNijhof/ITJobs](http://github.com/MarkNijhof/ITJobs)<br />
+**Description:**<br />
+Mark is creating a job site specialized for IT people, the reason to do this is to learn new technologies like Ruby, Rails, Many Ruby Gems, MongoDB, CouchDB and things like Heroku. You can check-out the site on [http://test.itjo.bs/](http://test.itjo.bs/) (cool domain or what?) or on [GitHub](http://github.com/MarkNijhof/ITJobs).
 
 ###OSS CQRS project###
 **Link:** [http://github.com/MarkNijhof/Fohjin](http://github.com/MarkNijhof/Fohjin)<br />
