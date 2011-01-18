@@ -16,50 +16,59 @@ body.three-col {
   font-family: "Georgia","Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
   font-size: 1.1em;
   line-height: 1.6;
-  background: #dfdfdf;
+  background: #24130b;
+  background-image: url('http://cre8ivethought.s3.amazonaws.com/images/layout/background.jpg');	
   padding-top: 40px;
 
   #container {
     @include container; 
     a {
-      color: #b83000;
+      color: #2a1911;
       text-decoration: none;
       }
     a:hover {
-      color: #b83000;
+      color: #2a1911;
       text-decoration: underline;
       }
 
     h1 { 
-      color: #3B4A25;
+      color: #3c2f26;
       display: inline;
       margin: 0;
       font-weight: 600;
     	font-size: 1.8em;
     	text-align: right;
       a {
-        color: #3B4A25;
+        color: #2a1911;
         text-decoration: none;
         }
       a:hover {
-        color: #3B4A25;
+        color: #2a1911;
         text-decoration: none;
         }
       }
     h2 {
-      color: #3B4A25;
+      color: #3c2f26;
       display: inline;
       margin: 0;
       font-weight: 600;
     	font-size: 1.4em;
     	text-align: right;
       }
-    h3, h4 {
-      color: #3B4A25;
+    h3 {
+      color: #3c2f26;
       display: inline;
       margin: 0;
       font-weight: 600;
     	font-size: 1.2em;
+    	text-align: right;
+      }
+    h4 {
+      color: #3c2f26;
+      display: inline;
+      margin: 0;
+      font-weight: 600;
+    	font-size: 1.1em;
     	text-align: right;
       }
     P {
@@ -73,7 +82,7 @@ body.three-col {
       font-style: italic;
       float: right;
       margin-right: 30px;
-      color: #cccccc;  
+      color: #bbbbbb;  
       }
     .date_post {
       position: absolute;
@@ -82,21 +91,21 @@ body.three-col {
       top: -45px;
       left: 3px;
       width: 550px;
-      color: #cccccc;
+      color: #bbbbbb;
       }
     .archive_info {
       position: relative;
       top: -10px;
       font-style: italic;
       font-size: 75%;
-      color: #cccccc;
+      color: #bbbbbb;
       }
     .comments_link {
-      color: #cccccc;
+      color: #bbbbbb;
       text-decoration: none;
       }
     .comments_link:hover {
-      color: #cccccc;
+      color: #bbbbbb;
       text-decoration: underline;
       }
     .db-compact {
@@ -111,8 +120,8 @@ body.three-col {
 
   #content {
     padding: 0px 30px 10px 30px;
-    background: #ffffff;
-    background-image: url('http://cre8ivethought.s3.amazonaws.com/images/frame-front-middle.png');	
+    background: #edeae1;
+    background-image: url('http://cre8ivethought.s3.amazonaws.com/images/layout/middle-frame-front.png');	
     .post {
       position: relative;
       }
@@ -120,19 +129,21 @@ body.three-col {
 
   #footer {
     height: 40px;
-    background: #ffffff;
-    background-image: url('http://cre8ivethought.s3.amazonaws.com/images/frame-front.png');	
-    background-position: bottom;
+    background: #edeae1;
+    background-image: url('http://cre8ivethought.s3.amazonaws.com/images/layout/frame-front.png');	
+    background-position: -2px bottom;
     margin-left: 2px;
+  	margin-bottom: 1000px;
     }
   
   #license {
+    background: #edeae1;
+    background-image: url('http://cre8ivethought.s3.amazonaws.com/images/layout/middle-frame-front.png');	
     text-align: left;
-    margin-left: 20px;
-  	margin-bottom: 1000px;
   	font-style: italic;
     font-size: 18px;
     color: #888;
+    padding: 0px 30px 10px 30px;
     }
 
   #right-side {
@@ -142,24 +153,24 @@ body.three-col {
 
 #header {
   position: relative;
-  height: 220px;
-  background: #ffffff;
+  height: 275px;
+  background: #edeae1;
   #frame-foreground {
   	position: absolute;
   	top: 0px;
   	left: 0px;
   	width: 800px;
-  	height: 220px;
+  	height: 275px;
   	z-index: 5;
-  	background-image: url('http://cre8ivethought.s3.amazonaws.com/images/frame-front.png');
+  	background-image: url('http://cre8ivethought.s3.amazonaws.com/images/layout/frame-front.png');
   	background-repeat: none;
     }
   #card-front {
-  	background-image: url("http://cre8ivethought.s3.amazonaws.com/images/card-front-cropped.png");
+  	background-image: url("http://cre8ivethought.s3.amazonaws.com/images/layout/profile-picture.png");
   	top: 0px;
   	left: 0px;
-  	width: 365px;
-  	height: 210px;
+  	width: 225px;
+  	height: 244px;
   	position: absolute;
   	z-index: 4;
   	}

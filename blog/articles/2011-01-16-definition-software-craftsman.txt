@@ -7,7 +7,7 @@ There is a lot of disagreement or at-least confusion going on about what Softwar
 
 ##My definition of: Software Craftsman##
 
-Software Craftsman: a person who is working in the software industry and his main concern/responsibility is to deliver the highest possible value to his stakeholders. 
+Software Craftsman: "a person who is working in the software industry and his main concern/responsibility is to deliver the highest possible value to his stakeholders". 
 
 ###value###
 
