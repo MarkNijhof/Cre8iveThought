@@ -1,0 +1,51 @@
+title: Change
+author: Mark Nijhof
+published: false
+
+Change by definition will take you out of your comfort zone, it is hard to know up-front whether or not it is a change for the better or for the worse. This uncertainty is stopping many people from initiating change and that is a real shame because they are missing out on some potentially great opportunities because of that. 
+
+I always look at change as something positive, and whenever I hear that someone initiated change I congratulate them for it. I even try to encourage change when I notice that people are intimidated by it. 
+
+One great way of dealing with the fear is to focus on what is coming instead of focussing on what has been. I am usually really good at that, when switching jobs or countries I an able to very quickly get rid of the fear by imagining all the great things that I am going to experience in this 'new' life. So change has always been a pleasant experience for me. And when it goes wrong, then that just indicates that it is time to change again.
+
+An other good motivator is to know that each change brings an opportunity to learn something new.
+
+Anyway that is all good and well, but
+
+###Oh Crap!###
+
+Yeah there is a but, there always is. Change has always been initiated by myself with the positive idea that the next things was going to be better, but this time we will be moving away from something amazing. This time it won't be so easy to imagine all the new great things in our 'new' life and forget about our previous life. We have a great place to live in Oslo, I have got a great job and I have met some great people as well.
+
+####Oslo####
+No matter what those crazy Bergenser say, Oslo is a pretty cool city to live. It has most of the large city benefits but remains rather small. And especially for geeks this is like mecca, there are so many communities here, its crazy: 
+
+Oslo XP Meetup, Node.js Oslo, Oslo Coding Dojo, framsia, Ruby Fools Oslo, javaBin, The Oslo Lean Meetup, NNUG, CacoaHeads, Oslo Startup Weekend, EPiServer, Oslo Python, Oslo Deplhi Club, Oslo C++ Users Group, Geek Beer, Oslo GTD gathering, Oslo Entrepreneur Meetup Group, scalaBin. 
+
+####Holy Crap!####
+
+So yeah if you want to hangout with other geeks no matter what taste then you can do that in Oslo. 
+
+###BEKK###
+
+Working at BEKK has been an amazing experience, even tho it has only been a few months it has left a big impression on me and any future company will be compared too it. The whole culture is great, people here really want to excel, improve and deliver great software/services to our customers. Also one of the biggest issues that consultancies deal with is virtually none existing at BEKK, a feeling of belonging. Everybody has a strong sense of 'we are BEKK'. The company is actively working on keeping that feeling and so is everybody else. BEKK also encourages/helps you to improve, and not only on the technical side, but also on the consultancy side. This is about how to read people, how to give better presentations and other wisdoms that normally is not thought at all.
+
+So yeah I like working at BEKK, it has been the best work place I have ever worked at!
+
+###What about the but?###
+
+Yeah, today I did something stupid! 
+
+Today I quit! We have decided to move back to Holland.
+
+###Why?###
+
+Because as some of you may know, we have been struggling a bit with Neo's health. He is having trouble coming-up in weight, several weeks actually loosing weight instead of gaining weight. So we decided that we wanted to be closer to family, family that would be able to helps us out when needed. Now the good thing is that Neo is not feeling sick, he infect is incredibly happy and very attend to the things happening around him. He also does all the things that you would expect from an 8 month old, so that is good. But the fact remains that in those 8 months he only gained about 2 kilo which is about half of what he should have gained. We are going to the hospital with him and they are trying to figure out what is going wrong, but so far we don't know.
+
+###And Now?###
+
+Well we will move back to Holland in the end of April, until that time I have parental leave starting in February. In Holland we will be renting a house from my mom (yeah that was easy) and I am currently looking for work. There are a few things here that I want to finish, like for example the ROOTS conference and I want to keep helping with the community stuff while I am still in Oslo.
+
+So yeah, again a change initiated by me, but this time not for the normal reasons, this time I also don't really know what lies ahead of me. So this time is a bit more scary then the previous times. But as I always say "It will always go alright with bad people" so I am not worried too much.
+
+p.s. talking about change so much, what do you think about the new design of my blog?
+
