@@ -128,9 +128,9 @@ body.three-col #right-side { display: inline; float: left; margin-right: 0; widt
 
 #about p { width: 500px; }
 
-#profile-picture { background-image: url("http://cre8ivethought.s3.amazonaws.com/images/layout/profile-picture.png"); background-position: right bottom; top: 15px; left: 10px; width: 222px; height: 268px; position: absolute; z-index: 300; }
+#profile-picture { background-image: url("http://cre8ivethought.s3.amazonaws.com/images/layout/profile-picture.png"); background-position: right bottom; top: 20px; left: 10px; width: 222px; height: 260px; position: absolute; z-index: 300; }
 
-#profile-picture-about { background-image: url("http://cre8ivethought.s3.amazonaws.com/images/layout/profile-picture-about.png"); background-position: left bottom; top: 15px; left: 21px; width: 222px; height: 268px; position: relative; z-index: 300; float: right; }
+#profile-picture-about { background-image: url("http://cre8ivethought.s3.amazonaws.com/images/layout/profile-picture-about.png"); background-position: left bottom; top: 15px; left: 21px; width: 222px; height: 260px; position: relative; z-index: 300; float: right; }
 
 #header { position: fixed; background: #edeae1; }
 
