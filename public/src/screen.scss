@@ -18,7 +18,8 @@ body.three-col {
   line-height: 1.6;
   background: #24130b;
   background-image: url('http://cre8ivethought.s3.amazonaws.com/images/layout/background.jpg');	
-  padding-top: 40px;
+  background-position: 0 0;
+  background-attachment: fixed;
 
   #container {
     @include container; 
@@ -119,26 +120,22 @@ body.three-col {
   @include column(20); }
 
   #content {
-    padding: 0px 30px 10px 30px;
-    background: #edeae1;
-    background-image: url('http://cre8ivethought.s3.amazonaws.com/images/layout/middle-frame-front.png');	
-    .post {
-      position: relative;
-      }
+    padding: 325px 30px 10px 30px;
+    background-color: #edeae1;
+    background-image: url('http://cre8ivethought.s3.amazonaws.com/images/layout/middle-frame-front.png');
+    position: relative;
     }
 
   #footer {
-    height: 40px;
+    height: 10px;
     background: #edeae1;
-    background-image: url('http://cre8ivethought.s3.amazonaws.com/images/layout/frame-front.png');	
-    background-position: -2px bottom;
+    background-image: url('http://cre8ivethought.s3.amazonaws.com/images/layout/frame-bottom.png');	
+    background-position: -2px top;
     margin-left: 2px;
   	margin-bottom: 1000px;
     }
   
   #license {
-    background: #edeae1;
-    background-image: url('http://cre8ivethought.s3.amazonaws.com/images/layout/middle-frame-front.png');	
     text-align: left;
   	font-style: italic;
     font-size: 18px;
@@ -151,58 +148,86 @@ body.three-col {
   
   }
 
-#header {
+#about {
+  p {
+    width: 500px;
+  }
+}
+
+#profile-picture {
+  background-image: url("http://cre8ivethought.s3.amazonaws.com/images/layout/profile-picture.png");
+  background-position: right bottom;
+  top: 15px;
+  left: 10px;
+  width: 222px;
+  height: 268px;
+  position: absolute;
+  z-index: 300;
+  }
+
+#profile-picture-about {
+  background-image: url("http://cre8ivethought.s3.amazonaws.com/images/layout/profile-picture-about.png");
+  background-position: left bottom;
+  top: 15px;
+  left: 21px;
+  width: 222px;
+  height: 268px;
   position: relative;
-  height: 275px;
+  z-index: 300;
+  float: right;
+  }
+
+#header {
+  position: fixed;
   background: #edeae1;
-  #frame-foreground {
-  	position: absolute;
-  	top: 0px;
-  	left: 0px;
-  	width: 800px;
-  	height: 275px;
-  	z-index: 5;
-  	background-image: url('http://cre8ivethought.s3.amazonaws.com/images/layout/frame-front.png');
-  	background-repeat: none;
+  }
+
+#frame-foreground {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 800px;
+  height: 22px;
+  z-index: 400;
+  background-image: url('http://cre8ivethought.s3.amazonaws.com/images/layout/frame-top.png');
+  background-repeat: none;
+  }
+
+#menu {
+  background-image: url("http://cre8ivethought.s3.amazonaws.com/images/layout/light-top.png");
+  background-position: bottom;
+  border:0 none;
+  display:inline-block;
+  float:left;
+  left:10px;
+  margin:0;
+  outline:0 none;
+  overflow:hidden;
+  padding:0;
+  position:relative;
+  top:10px;
+  z-index: 200;
+  width: 780px;
+  height: 60px;
+  ul {
+    position: relative;
+  	list-style-type:disc;
+    left: 310px;
     }
-  #card-front {
-  	background-image: url("http://cre8ivethought.s3.amazonaws.com/images/layout/profile-picture.png");
-  	top: 0px;
-  	left: 0px;
-  	width: 225px;
-  	height: 244px;
-  	position: absolute;
-  	z-index: 4;
-  	}
-  #menu {
-  	border:0 none;
-  	display:inline-block;
+  ul, ol {
+  	margin:0 1.5em 1.5em 0;
+  	padding-left:3.333em;
+    }
+  li {
+  	display:inline;
   	float:left;
-  	left:290px;
-  	margin:0;
-  	outline:0 none;
-  	overflow:hidden;
-  	padding:0;
-  	position:relative;
-  	top:22px;
-  	z-index: 10;
-    ul {
-    	list-style-type:disc;
-      }
-    ul, ol {
-    	margin:0 1.5em 1.5em 0;
-    	padding-left:3.333em;
-      }
-    li {
-    	display:inline;
-    	float:left;
-    	list-style-image:none;
-    	list-style-type:none;
-    	margin-left:0;
-    	padding-left:10px;
-    	padding-right:10px;
-    	white-space: nowrap;
-      }
+  	list-style-image:none;
+  	list-style-type:none;
+  	margin-left:0;
+    padding-top: 10px;
+  	padding-left:10px;
+  	padding-right:10px;
+  	white-space: nowrap;
     }
   }
   

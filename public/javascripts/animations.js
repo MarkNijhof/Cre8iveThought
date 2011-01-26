@@ -197,3 +197,4 @@ var Animator = function(cards, frame, image_location){
 	}	
 		
 };
+

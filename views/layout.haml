@@ -9,6 +9,11 @@
       %link{:href=>"/stylesheets/ie.css", :media=>"screen, projectio", :rel=>"stylesheet", :type=>"text/css"}
 
     %link{:rel=>"icon", :type=>"image/png", :href=>"http://cre8ivethought.s3.amazonaws.com/images/favicon.png"}
+
+    %script{:src=>"http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"}
+    %script{:src=>"http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"}
+    %script{:src=>"/javascripts/blog.js"}
+
   %body.three-col.bp
     #container
       #left-side
@@ -24,7 +29,7 @@
           %br
           = haml :'_about', :layout => false
 
-        = haml :'_license', :layout => false
+          = haml :'_license', :layout => false
 
         #footer
 
