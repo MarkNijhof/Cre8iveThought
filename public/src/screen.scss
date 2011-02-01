@@ -24,7 +24,7 @@ body.three-col {
   #container {
     @include container; 
     a {
-      color: #2a1911;
+      color: gray;
       text-decoration: none;
       }
     a:hover {
