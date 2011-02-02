@@ -1,0 +1,8 @@
+title: Blog Design Considerations
+author: Mark Nijhof
+published: false
+
+I have changed my blog design as you may have seen already, well a better way would be saying that I have changed it again :) And I thought that I would just write something about why I made certain things the way they are, and other considerations. 
+
+Now lets get one thing straight; I am not a designer
+
