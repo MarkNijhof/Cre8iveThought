@@ -109,7 +109,7 @@ body.three-col #container h1 a:hover { color: #2a1911; text-decoration: none; }
 body.three-col #container h2 { color: #3c2f26; display: inline; margin: 0; font-weight: 600; font-size: 1.4em; text-align: right; }
 body.three-col #container h3 { color: #3c2f26; display: inline; margin: 0; font-weight: 600; font-size: 1.2em; text-align: right; }
 body.three-col #container h4 { color: #3c2f26; display: inline; margin: 0; font-weight: 600; font-size: 1.1em; text-align: right; }
-body.three-col #container P { text-align: justify; font-size: 1.1em; }
+body.three-col #container P { text-align: justify; font-size: 1.2em; }
 body.three-col #container .gist { line-height: 1.2em; }
 body.three-col #container .date_list { font-style: italic; float: right; margin-right: 30px; color: #bbbbbb; }
 body.three-col #container .date_post { position: absolute; font-style: italic; float: left; top: -45px; left: 3px; width: 550px; color: #bbbbbb; }
@@ -120,7 +120,7 @@ body.three-col #left-side { display: inline; float: left; margin-right: 10px; wi
 * html body.three-col #left-side { overflow-x: hidden; }
 body.three-col #main-area { display: inline; float: left; margin-right: 10px; width: 798.333px; }
 * html body.three-col #main-area { overflow-x: hidden; }
-body.three-col #content { padding: 325px 30px 10px 30px; background-color: #edeae1; background-image: url("http://cre8ivethought.s3.amazonaws.com/images/layout/middle-frame-front.png"); position: relative; }
+body.three-col #content { padding: 325px 50px 10px 40px; background-color: #edeae1; background-image: url("http://cre8ivethought.s3.amazonaws.com/images/layout/middle-frame-front.png"); position: relative; }
 body.three-col #footer { height: 10px; background: #edeae1; background-image: url("http://cre8ivethought.s3.amazonaws.com/images/layout/frame-bottom.png"); background-position: -2px top; margin-left: 2px; margin-bottom: 1000px; }
 body.three-col #license { text-align: left; font-style: italic; font-size: 18px; color: #888; padding: 0px 30px 10px 30px; }
 body.three-col #right-side { display: inline; float: left; margin-right: 0; width: 70.833px; }

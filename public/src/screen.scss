@@ -74,7 +74,7 @@ body.three-col {
       }
     P {
       text-align: justify;
-      font-size: 1.1em;
+      font-size: 1.2em;
       }
     .gist {
       line-height: 1.2em;	
@@ -120,7 +120,7 @@ body.three-col {
   @include column(20); }
 
   #content {
-    padding: 325px 30px 10px 30px;
+    padding: 325px 50px 10px 40px;
     background-color: #edeae1;
     background-image: url('http://cre8ivethought.s3.amazonaws.com/images/layout/middle-frame-front.png');
     position: relative;
