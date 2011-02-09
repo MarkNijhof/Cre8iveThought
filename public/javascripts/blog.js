@@ -28,5 +28,5 @@ function is_currently_below_scroll_top(){
 }
 
 $(document).ready(function(){
-	$('#footer').css('margin-bottom', $(window).height() - 500 + 'px');
+	$('#footer').css('margin-bottom', $(window).height() - 550 + 'px');
 });

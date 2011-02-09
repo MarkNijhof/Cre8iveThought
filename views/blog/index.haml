@@ -1,17 +1,23 @@
-%section.articles
-  - if ENV["RACK_ENV"] == "development"
-    %h1 Un-published posts
-    %hr
-    - for post in articles.select{|item| !item[:published] }
-      = haml(:'blog/_article_summary', :layout => false, :locals => { :post => post } )
-    %h1 Published posts
-    %hr
 
+%section
+  .articles
+    - if ENV["RACK_ENV"] == "development"
+      %h1 Un-published posts
+      %hr
+      - for post in articles.select{|item| !item[:published] }
+        = haml(:'blog/_article_summary', :layout => false, :locals => { :post => post } )
+      %h1 Published posts
+      %hr
+
+
+%section
   - for post in articles.select{|item| item[:published] }[0...5]
     = haml(:'blog/_article_summary', :layout => false, :locals => { :post => post } )
   
+%section
   = haml(:'blog/_recent_posts', :layout => false, :locals => { :posts => articles.select{|item| item[:published] }[5...15] })
 
+%section
   %br
   %br
   = haml(:'blog/_archives', :layout => false)

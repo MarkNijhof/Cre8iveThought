@@ -34,11 +34,10 @@ body.three-col {
 
     h1 { 
       color: #3c2f26;
-      display: inline;
       margin: 0;
+      padding-bottom: 20px;
       font-weight: 600;
-    	font-size: 1.8em;
-    	text-align: right;
+      font-size: 1.8em;
       a {
         color: #2a1911;
         text-decoration: none;
@@ -52,6 +51,7 @@ body.three-col {
       color: #3c2f26;
       display: inline;
       margin: 0;
+      padding-bottom: 10px;
       font-weight: 600;
     	font-size: 1.4em;
     	text-align: right;
@@ -60,6 +60,7 @@ body.three-col {
       color: #3c2f26;
       display: inline;
       margin: 0;
+      padding-bottom: 10px;
       font-weight: 600;
     	font-size: 1.2em;
     	text-align: right;
@@ -68,6 +69,7 @@ body.three-col {
       color: #3c2f26;
       display: inline;
       margin: 0;
+      padding-bottom: 10px;
       font-weight: 600;
     	font-size: 1.1em;
     	text-align: right;
@@ -75,6 +77,7 @@ body.three-col {
     P {
       text-align: justify;
       font-size: 1.2em;
+      padding: 0px 30px 0px 20px;
       }
     .gist {
       line-height: 1.2em;	
@@ -86,13 +89,14 @@ body.three-col {
       color: #bbbbbb;  
       }
     .date_post {
-      position: absolute;
+      position: relative;
       font-style: italic;
       float: left;
-      top: -45px;
+      top: -15px;
       left: 3px;
       width: 550px;
       color: #bbbbbb;
+      margin: 0px;
       }
     .archive_info {
       position: relative;
@@ -141,6 +145,7 @@ body.three-col {
     font-size: 18px;
     color: #888;
     padding: 0px 30px 10px 30px;
+    margin: 0px -30px 0px -20px;
     }
 
   #right-side {
@@ -151,6 +156,7 @@ body.three-col {
 #about {
   p {
     width: 500px;
+    margin: 0px -30px 0px -20px;
   }
 }
 
@@ -169,7 +175,7 @@ body.three-col {
   background-image: url("http://cre8ivethought.s3.amazonaws.com/images/layout/profile-picture-about.png");
   background-position: left bottom;
   top: 15px;
-  left: 22px;
+  left: 42px;
   width: 222px;
   height: 260px;
   position: relative;
@@ -202,7 +208,7 @@ body.three-col {
   ul {
     position: relative;
   	list-style-type:disc;
-    left: 310px;
+    left: 370px;
     }
   ul, ol {
   	margin:0 1.5em 1.5em 0;
