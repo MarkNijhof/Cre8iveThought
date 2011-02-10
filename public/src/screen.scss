@@ -194,21 +194,19 @@ body.three-col {
   }
 
 #menu {
-  border:0 none;
-  display:inline-block;
-  float:right;
-  margin: 15px 10px 0px 0px;
+  border: 0 none;
+  display: inline-block;
+  float: right;
+  margin: 15px 0px 0px 0px;
   outline:0 none;
-  overflow:hidden;
-  padding:0;
-  position:relative;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
   z-index: 500;
-  width: 780px;
   height: 60px;
   ul {
     position: relative;
   	list-style-type:disc;
-    left: 370px;
     }
   ul, ol {
   	margin:0 1.5em 1.5em 0;
