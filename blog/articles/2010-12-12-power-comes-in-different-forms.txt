@@ -39,7 +39,7 @@ I started programming Ruby in TextMate, but currently I am getting more and more
 
 <center>
 <img src="http://cre8ivethought.s3.amazonaws.com/images/general/dhh-macbook-air.png" style="border: 1px solid black;" alt="@dhh about his new macbook air" />
-<sub>hhttp://twitter.com/#!/dhh/status/826554137864192</sub>
+<sub>http://twitter.com/#!/dhh/status/826554137864192</sub>
 <br />
 <br />
 </center>
