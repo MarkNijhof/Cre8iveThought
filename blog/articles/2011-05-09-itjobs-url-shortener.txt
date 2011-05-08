@@ -53,7 +53,7 @@ And in the mean-time I hope this service is catching on a little bit so that whe
 
 So the longer story is that you can find the code on GitHub: [https://github.com/MarkNijhof/itjobs-urlshortener](https://github.com/MarkNijhof/itjobs-urlshortener) 
 
-The short answer is that I am using [Sinatra](http://www.sinatrarb.com) on [Heroku](http://www.heroku.com/) and using [Redis](http://www.redis.io/) for data storage. 
+The short answer is that I am using [Sinatra](http://www.sinatrarb.com) on [Heroku](http://www.heroku.com/) and using [Redis](http://www.redistogo.com/) for data storage. 
 
 ##Finally##
 
