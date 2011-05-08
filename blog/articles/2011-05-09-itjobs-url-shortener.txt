@@ -57,7 +57,7 @@ The short answer is that I am using [Sinatra](http://www.sinatrarb.com) on [Hero
 
 ##Finally##
 
-ATM running the site is not costing me anything, but I sincerely hope that that will be changing soon. So please use [the service](http://itjo.bs/) and tell me what you think. Also if you have things that you have always wanted on a job board (be it as an employee or employer) then let me know.
+ATM running the site is not costing me anything, but I sincerely hope that that will be changing soon (because of increased traffic). So please use [the service](http://itjo.bs/) and tell me what you think. Also if you have things that you have always wanted on a job board (be it as an employee or employer) then let me know.
 
 So just go to: [http://itjo.bs/](http://itjo.bs/)
 
