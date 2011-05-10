@@ -1,9 +1,9 @@
-title: ITJo.bs - Url Shortener
+title: IT Jobs - Url Shortener
 author: Mark Nijhof
 published: true
 slug: itjobs-url-shortener
 
-The birth of the [ITJo.bs Url Shortener](http://itjo.bs/); whenever I try to teach myself a new technology or technique I need to **just do it** or **just use it** because just reading about it or even creating a practice application doesn't work for me. I never seem to run into the real problems or issues by doing so. The best and fastest learning goes through actual projects.
+The birth of the [IT Jobs Url Shortener](http://itjo.bs/); whenever I try to teach myself a new technology or technique I need to **just do it** or **just use it** because just reading about it or even creating a practice application doesn't work for me. I never seem to run into the real problems or issues by doing so. The best and fastest learning goes through actual projects.
 
 > No real problems, no real learning. 
 
@@ -33,7 +33,7 @@ But the project didn't move forward very much, this has many reasons and many of
 
 So I started thinking what would be the easiest and quickest thing I could release as a stand-alone service (i.e. valuable thing on its own). 
 
-##ITJo.bs Url Shortener##
+##IT Jobs Url Shortener##
 
 I figured an Url Shortener service would fit that description. It was something that was in the pipe-line anyway, I mean the domain itself is ideal for it. 
 
