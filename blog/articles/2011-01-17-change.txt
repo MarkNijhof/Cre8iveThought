@@ -1,6 +1,7 @@
 title: Change
 author: Mark Nijhof
 published: false
+add_trailing_slash_for_disqus: true
 
 Change by definition will take you out of your comfort zone, it is hard to know up-front whether or not it is a change for the better or for the worse. This uncertainty is stopping many people from initiating change and that is a real shame because they are missing out on some potentially great opportunities because of that. 
 

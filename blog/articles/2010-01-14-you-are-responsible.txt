@@ -1,6 +1,7 @@
 title: You are responsible
 author: Mark Nijhof
 published: true
+add_trailing_slash_for_disqus: true
 
 Many have said it before, and I’ll repeat it once more; as a developer you, yourself are the main responsible person for your own education. So not your employer, your mentors or anybody else. You are. This is one of the principles that is central to the software craftsmanship ideas.
 

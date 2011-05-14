@@ -1,6 +1,7 @@
 title: Like Superman, a Hero in Disguise
 author: Mark Nijhof
 published: true
+add_trailing_slash_for_disqus: true
 
 When you run into him on the street you wouldn't know it; he looks be like any other person, perhaps a bit geeky tho. Craftsman is just like Superman, he is a hero in disguise. 
 

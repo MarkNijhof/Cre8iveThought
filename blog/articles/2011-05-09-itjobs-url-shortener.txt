@@ -2,6 +2,7 @@ title: IT Jobs - Url Shortener
 author: Mark Nijhof
 published: true
 slug: itjobs-url-shortener
+add_trailing_slash_for_disqus: true
 
 The birth of the [IT Jobs Url Shortener](http://itjo.bs/); whenever I try to teach myself a new technology or technique I need to **just do it** or **just use it** because just reading about it or even creating a practice application doesn't work for me. I never seem to run into the real problems or issues by doing so. The best and fastest learning goes through actual projects.
 

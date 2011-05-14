@@ -1,6 +1,7 @@
 title: Why Why Why Why Why
 author: Mark Nijhof
 published: true
+add_trailing_slash_for_disqus: true
 
 > One of my kids: "Why are you going outside?"
 

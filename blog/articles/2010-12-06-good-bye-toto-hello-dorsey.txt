@@ -2,6 +2,7 @@ title: Good-bye Toto, Hello Dorsey
 author: Mark Nijhof
 updated: 06/12/2010
 published: true
+add_trailing_slash_for_disqus: true
 
 This post is about something that I hope you didn't even notice, but I just wrote my own blog engine (again, yes I know...). As you may have seen in [an earlier post](http://cre8ivethought.com/blog/2010/08/04/blog-moved-once-again/), but lately I have been using [Toto](https://github.com/cloudhead/toto) as my blogging engine. 
 

@@ -1,6 +1,7 @@
 title: Ruby Heroku
 author: Mark Nijhof
 published: true
+add_trailing_slash_for_disqus: true
 
 When I started looking into Ruby more seriously I wanted to have an actual hosting provider that would host the site that I am working on. A friend of mine recommended me to look into [Heroku](http://www.heroku.com/) and I have to say that I am very happy that he did.
 

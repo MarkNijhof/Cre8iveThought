@@ -1,6 +1,7 @@
 title: Smidig 2010
 author: Mark Nijhof
 published: true 
+add_trailing_slash_for_disqus: true
 
 People that follow me on Twitter may have seen my tweets with the #smidig hashtag, so I thought to write a little bit about it so all my non-skandinavian followers also understand what this is all about.
 

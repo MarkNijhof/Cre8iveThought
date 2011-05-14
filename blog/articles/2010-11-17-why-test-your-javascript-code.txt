@@ -1,6 +1,7 @@
 title: Why Test Your JavaScript Code
 author: Mark Nijhof
 published: false
+add_trailing_slash_for_disqus: true
 
 #1
 Hi, My name is Mark Nijhof and I am working for BEKK consulting. I would like to take this opportunity to talk to you about why we should test our JavaScript code. Because even tho everybody is all Agile and we all agree that testing our production code is a good thing it sure seems like we think that testing JavaScript is not really necessary.
