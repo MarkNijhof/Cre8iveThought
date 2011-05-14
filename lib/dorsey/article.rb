@@ -80,7 +80,7 @@ module Dorsey
     end
     
     def path
-      "/#{self[:date_as_date].strftime("%Y/%m/%d/#{self[:slug]}")}/"
+      "/#{self[:date_as_date].strftime("%Y/%m/%d/#{self[:slug]}")}"
     end
 
   end

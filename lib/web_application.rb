@@ -1,6 +1,6 @@
 
 class WebApplication < Sinatra::Base
-  
+    
   configure do
     set :public, './public'
     set :haml, :format => :html5

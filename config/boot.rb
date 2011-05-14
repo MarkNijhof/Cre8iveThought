@@ -17,6 +17,7 @@ end
 Bundler.require(:default, SINATRA_ENV.to_sym)
 puts "=> Located Gemfile for #{SINATRA_ENV}"
 
+require 'rack-rewrite'
 require 'haml'
 require './lib/dorsey'
 require './lib/web_application'
