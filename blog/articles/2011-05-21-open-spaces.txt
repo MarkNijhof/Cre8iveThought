@@ -1,6 +1,6 @@
 title: Open Spaces
 author: Mark Nijhof
-published: false
+published: true
 
 I am helping organizing [ROOTS](http://rootsconf.no/) this year and part of this years conference is that we will have two sessions with Open Spaces right after a few sessions with lightning talks. And I will be facilitating that; doing my best to make it a highly interesting experience. 
 
@@ -23,7 +23,7 @@ The market place is exactly what it sounds like; this is the place where you try
 Ok ok we will be a bit more disciplined and give you an opportunity to introduce the group with the topic that you would like to discuss. This is after you have written it down on a post-it and told the facilitator that you want to sell something. Then finally after your introduction you place the post-it on the board.
 
 ####The topic####
-It is important to know that the topic can truly be anything that you want to discuss, be it technical, about processes, managerial or spiritual (all tho we don't see many of these on IT conferences to be honest) it's all is good. So if you want to validate a technical idea that you have or perhaps want to hear different approaches on how to deal with specific behavior of people everything is allowed and all you need to do is write it on a post-it and introduce it to the group. 
+It is important to know that the topic can truly be anything that you want to discuss; a help request, something you want to learn about, something you want to discuss, something you want to share or everything else. So if you want to validate a technical idea that you have or perhaps want to hear different approaches on how to deal with specific behavior of people everything is allowed and all you need to do is write it on a post-it and introduce it to the group. 
 
 You will be the facilitator of your own topic discussion and it is expected that you are passioned enough about it to be able to start the discussion.
 
