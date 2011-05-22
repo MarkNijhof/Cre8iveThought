@@ -51,7 +51,7 @@ If the circle you are sitting in feel to big or small then change it, don't keep
 
 There is one law and four guiding principles that help you getting the most out of the Open Spaces experience. 
 
-<sup>The amazing hand drawn graphics are done by [Claudio Personne](http://www.agilesensei.com/blog/articles/2011/05/14/open-space-cartoons/) further I am taking much reference material from Harrison Owen's website about [Open Spaces Technology](http://www.openspaceworld.com/brief_history.htm).</sup>
+<sup>The amazing hand drawn graphics are done by [Claudio Perrone](http://www.agilesensei.com/blog/articles/2011/05/14/open-space-cartoons/) further I am taking much reference material from Harrison Owen's website about [Open Spaces Technology](http://www.openspaceworld.com/brief_history.htm).</sup>
 
 ####Law - The law of two feet####
 
