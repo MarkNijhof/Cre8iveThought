@@ -64,7 +64,7 @@ SQL Server.
 ##Personal projects##
 <hr />
 
-###client.express.js###
+###OSS client.express.js###
 **Link:** [http://github.com/MarkNijhof/client.express.js](http://github.com/MarkNijhof/client.express.js)<br />
 **Description:**<br />
 Mark is duplicating the API that Node.js Express.js offers but for use on the client (read browser) this library will be using PushState and PopState to enhance the browsing experience by handling certain requests on the client instead of placing these on the server. And because the API is the same as that of Express.js you will be able to copy/re-use most of the functionality from the server to the client. This is inspired by Davis.js and Express.js.
