@@ -1,0 +1,48 @@
+title: Client Express
+author: Mark Nijhof
+published: true
+
+I have been very intrigued by [Node.js](http://nodejs.org/) since I heard about; just think about it, using JavaScript on the client and on the server as well. How cool is that. But I have never really done anything with it, that is until [Heroku](http://www.heroku.com/) announced their Node.js support. I know it is a weak excuse but I just can't see myself maintain an other server. I have had my own server from about 2000 till about 2009 which is when I got into Ruby and Heroku. Since then I just don't see the benefit of doing it myself for my own projects (different for big production systems). It means less freedom but also less headaches.
+
+So Node.js, well it's freaking awesome I can tell you. In Ruby land I have really enjoyed working with [Sinatra](http://www.sinatrarb.com/), now in Node.js land this is [Express](http://expressjs.com/). Not very surprising but Express is heavily influenced by Sinatra. Both a real pleasure to work with.
+
+I mentioned [Sammy.js](http://cre8ivethought.com/blog/2010/11/08/sammy) before and how cool that was, well there is one problem, you absolutely need JavaScript and while this is pretty ok for most usage's I still wonder why the h Twitter decided that this was ok. Anyway there is a nicer way and that is called pushState. Not too long ago I found [Davis.js](davisjs.com/) which is sort of a copy of Sammy.js but instead of using onHashChange it uses pushState and onPopChange to enhance the user experience. 
+
+So the idea is that you implement all client routes on the server as well, then when a route is triggered directly (i.e. not after having loaded the JavaScript code) then the server responds, but when the JavaScript is loaded then the request is being handled on the client instead. But the key is that all routes that are visible to the client are accessible on the server as well. Then you can progressively enhance the user experience using JavaScript.
+
+So I wanted this as well, but I did not want to copy the routes from the server then go and change a whole bunch of stuff in order to make it work in Davis.js, no instead I want something like this: [Client Express (http://clientexpressjs.com/)](http://clientexpressjs.com/).
+
+###Server.js###
+
+Below here is a very simple server implementation using Node.js and Express:
+<script src="https://gist.github.com/1045870.js?file=server_short.js"></script>
+
+###Client.js###
+
+And here is the same implementation on the client but now using Client Express:
+<script src="https://gist.github.com/1045870.js?file=client_short.js"></script>
+
+##Client Express##
+
+Now that looks pretty cool doesn't it? I decided to duplicate the Express API for use on the client and also using the pushState stuff. This enables me to re-use much of the same logic that I use on the server on the client as well. Currently it means actual duplication the code, this is until I find or need a better way fine by me. Once thing is clear, I can duplicate it faster now then I could before ;-)
+
+Let's take a look at a more complicated example, in fact this is the code that is running on [http://clientexpressjs.com/](http://clientexpressjs.com/).
+
+###Server.js###
+<script src="https://gist.github.com/1045870.js?file=server.js"></script>
+
+###Client.js###
+<script src="https://gist.github.com/1045870.js?file=client.js"></script>
+
+###Server_processing_url_and_post_parameters.js###
+<script src="https://gist.github.com/1045870.js?file=server_processing_url_and_post_parameters.js"></script>
+
+###Client_processing_url_and_post_parameters.js###
+<script src="https://gist.github.com/1045870.js?file=client_processing_url_and_post_parameters.js"></script>
+
+I hope you will take look and provide me with some feedback. This is only a few days of work so there is going to be some code clean-up and making the API more complete, but so far this is working very nicely.
+
+For more details and working examples go to [http://clientexpressjs.com/](http://clientexpressjs.com/) and browse around (you might notice a big similarity with the design of my blog). Note the upper left corner where it states where the request was being handled.
+
+Hmmm I feel a blog engine rewrite coming up :P
+
