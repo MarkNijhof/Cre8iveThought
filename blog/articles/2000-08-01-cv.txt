@@ -2,7 +2,7 @@ title: CV - Mark A. Nijhof
 slug: cv
 author: Mark Nijhof
 published: false
-updated: 18/06/2011 21:50:00
+updated: 28/06/2011 16:19:00
 hide_comments: true
 add_trailing_slash_for_disqus: true
 css: "#license, #menu {visibility: hidden;} #information {visibility: hidden; height: 0px; display: block;}"
@@ -64,8 +64,8 @@ SQL Server.
 ##Personal projects##
 <hr />
 
-###OSS client.express.js###
-**Link:** [http://github.com/MarkNijhof/client.express.js](http://github.com/MarkNijhof/client.express.js)<br />
+###OSS Client Express JS###
+**Link:** [http://clientexpressjs.com/](http://clientexpressjs.com/)<br />
 **Description:**<br />
 Mark is duplicating the API that Node.js Express.js offers but for use on the client (read browser) this library will be using PushState and PopState to enhance the browsing experience by handling certain requests on the client instead of placing these on the server. And because the API is the same as that of Express.js you will be able to copy/re-use most of the functionality from the server to the client. This is inspired by Davis.js and Express.js.
 
