@@ -1,0 +1,40 @@
+title: Keystoning Features
+author: Mark Nijhof
+published: false
+
+Today I wanted to explain someone what I learned a while back on a course "Software G Forces" with Kent Beck in Bergen Norway about deploying software. Going from yearly to monthly to weekly to daily and finally to hourly and perhaps even continuous deployment of software takes a lot of discipline and good techniques to get right. One of the difficulties is that when you deploy your software very often you will possibly have features that are not yet completed in each deployment. 
+
+<sup>I wanted to send a link, but no such link could be found, so here we go.</sup>
+
+##Incomplete Features##
+
+We can all agree that we do not want to confront our users with incomplete features, this will only confuse and annoy them. So how do we build our new features without our users becoming annoyed, because annoyed your users is a bad thing (just so we are clear).
+
+###Feature Branches###
+
+One way to accomplish this is to use [feature branches](http://martinfowler.com/bliki/FeatureBranch.html), this means that each new feature is build and completed in a separate branch. Once it is completed the feature branch will be merged with the mainline/trunk/master and the whole things is deployed to production. Of-course after passing all the tests. 
+
+Now it turns out that this is a very difficult process to get right; [Sarah Taraporewalla coincidentally wrote a really good post about that yesterday](http://sarahtaraporewalla.com/design/experience-report-branch-by-feature/) (also read the comments). 
+
+What it basically comes down to is that because the longer the code is away from the source of truth (mainline/trunk/master) the more risk you carrie of getting merge conflicts and thus the loss of time. 
+
+Sarah then also mentions the term [feature toggles](http://martinfowler.com/bliki/FeatureToggle.html) which is a way to "hide" functionality from your users by a toggle, so when it is disabled the user just doesn't know it is there. But feature toggling does actually not say anything about where the code lives while it is being build.
+
+###Keystoning###
+
+<img src="http://cre8ivethought.com/images/general/keystone.jpeg" alt="Keystone Features" style="border: 1px solid black; margin: 8px 10px 10px 0px; float: left;" />
+An other way of building new features in your software is to build them right into the mainline/trunk/master, but use the principle of keystoning to only expose this new feature at the last moment when it is done. 
+
+A keystone is the final top stone in an ark keeping both sides from collapsing. Once an ark is created it should be self supporting i.e. done.
+
+So lets project this idea to our world of software development. Imagine that you are building this new feature, stone after stone you are building this ark. Each stone added is in the code and will potentially be deployed, so you are making sure it does not break any existing functionality. When you are done implementing your two sides of the ark then you place the final stone, the keystone, completing the ark and exposing it to the user.
+
+So until you place the keystone all functionality you have created is invisible to the user, as if it is not even there, but it is and that is the secrete, no more merge conflicts. All code ships.
+
+So keystoning is basically the same as feature toggling? Well I would say yes, except that feature toggles can be used for different purposes. You may use it to do A/B testing or to temporarily disable some functionality. 
+
+Keystoning is all about how you add new features to your code, once a keystone is set you won't remove it to disable the functionality temporarily because this would collapse your ark. So if you want that then you will need a feature toggle as well. 
+
+
+
+
