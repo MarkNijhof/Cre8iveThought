@@ -1,0 +1,42 @@
+title: Client Express - Require and Exports
+author: Mark Nijhof
+published: false
+
+I recently [introduced](http://cre8ivethought.com/blog/2011/06/25/client-express) you to [Client Express](http://clientexpressjs.com/) where I explained that the goal is to copy the API of [Express](http://expressjs.com/) ([Node.js](http://nodejs.org/)) but for use on the client. This will enable you to share code between the server and the client, specifically the routing.
+
+And I got a pretty decent part done when I blogged about it, but that was one major difference and that was that on the server you use **require** to include different JavaScript libraries and within these libraries you would use **exports** to export your functionality to the application.
+
+##require('...')##
+
+Below here you see two common uses of **require**, the first one **require('express')** is to add the Express module and the second one **require(__dirname + '/examples/server_routing' ).example_routing()** is to load a local JavaScript file and execute the function **example_routing()** which is defined inside this JavaScript file.
+
+<script src="https://gist.github.com/1074797.js?file=server.js"></script>
+
+##exports....##
+
+Here we see the local JavaScript file that was loaded using **require** in the above example. Important to note here is that we see how **exports** is used to expose the function **example_routing()** to the user of the library.
+
+<script src="https://gist.github.com/1074797.js?file=server_routing.js"></script>
+
+##And now in the browser##
+
+Well both **require** and **exports** do not exist in the browser, so we need to add them. There are already different approaches that enable you to use **require** I believe all of them are an implementation of [CommonJS](http://www.commonjs.org/) so I added my own implementation for that to Client Express and after some tuning and a pull request I got that to work nicely. 
+
+The thing I didn't see was how people solved the **exports** problem. And because I didn't want to stop halfway I started thinking and came up with the following solution. My **require** will try to download the requested JavaScript file if it cannot find the module in the registered modules. When it is downloaded it will then do something **EVIL** it will do the following:
+
+<script src="https://gist.github.com/1074797.js?file=eval.js"></script>
+
+That's right I am using **eval** to evaluate the JavaScript text found in the downloaded JavaScript file and attach the exported functions to my exports object. After the **eval** my exports object is then placed in the registered modules so this process only happens once. After that the **exports** object is returned from the **require** function exposing the functions defined in the just downloaded JavaScript file.
+
+This enables me to use the exact same syntax on the server as on the client for both **require** and **exports**. See below here the full implementation:
+
+<script src="https://gist.github.com/1074797.js?file=client.express.require.js"></script>
+
+Now as you can see I am always defining these functions even if an other library has defined them already, but I do copy the registered modules from those other libraries. 
+
+One problem is when my CommonJS implementation is overwritten by some library loaded after my Client Express because then I would loose the download and eval capabilities. So for the time being my library needs to either be loaded last, or the other libraries should check for existence of the **require** functionality and if it exists don't overwrite it.
+
+I am however thinking about a way that overwrites it again after the Client Express server has started ensuring it will work when during runtime the code requires additional libraries. 
+
+Please let me know what you think.
+
