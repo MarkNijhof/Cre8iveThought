@@ -1,6 +1,6 @@
 title: Client Express - Require and Exports
 author: Mark Nijhof
-published: false
+published: true
 
 I recently [introduced](http://cre8ivethought.com/blog/2011/06/25/client-express) you to [Client Express](http://clientexpressjs.com/) where I explained that the goal is to copy the API of [Express](http://expressjs.com/) ([Node.js](http://nodejs.org/)) but for use on the client. This will enable you to share code between the server and the client, specifically the routing.
 
