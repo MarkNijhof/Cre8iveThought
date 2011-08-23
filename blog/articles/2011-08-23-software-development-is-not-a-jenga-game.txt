@@ -1,0 +1,137 @@
+title: Software Development is not a Jenga game
+author: Mark Nijhof
+published: true
+
+This is an extract from the talk "Software Development is not a Jenga game" <i>Republished from 16 May 2009 because I had some requests for it</i>.
+<center>
+<a href="http://cre8ivethought.com/images/PP/big/Slide2.JPG"><img src="http://cre8ivethought.com/images/PP/Slide2.png" alt="FubuMVC" style="position:relative; margin: 2px 10px 10px 10px;"></a>
+</center>
+Does developing software feel like you are playing a game of Jenga? Is making a change to your code very complicated? Are you afraid that making this change in your code will break something unexpected elsewhere in the code? If so then that is a clear sign of bad code, bad code will slow you down, not only months from now, but even days from now, have you ever written code that you didn't understand the next day? I have been watching many presentations by Uncle Bob and I really like the part where he asks his audience if they have ever been significantly slowdown by bad code, and after everybody sticks up their hand he asks "So why did you write it?".
+<center>
+<a href="http://cre8ivethought.com/images/PP/big/Slide3.JPG"><img src="http://cre8ivethought.com/images/PP/Slide3.png" alt="FubuMVC" style="position:relative; margin: 2px 10px 10px 10px;"></a>
+</center>
+To address these issues we have to change the way we write code, we have to think ahead and write code that not only allows change, but we have to write code that expects change. Write it like you will change it again tomorrow. And to help the developer write such code there are several different patterns and principles available; SOLID is an acronym for 5 different principles which are very important to design code that greatly improves the ability of your software to cope with change. 
+<center>
+<a href="http://cre8ivethought.com/images/PP/big/Slide4.JPG"><img src="http://cre8ivethought.com/images/PP/Slide4.png" alt="FubuMVC" style="position:relative; margin: 2px 10px 10px 10px;"></a>
+</center>
+Apparently Uncle Bob felt to strong about the order of the principles that he didn't see the SOLID acronym himself, Michael Feathers was the one actually proposing it.
+<center>
+<a href="http://cre8ivethought.com/images/PP/big/Slide5.JPG"><img src="http://cre8ivethought.com/images/PP/Slide5.png" alt="FubuMVC" style="position:relative; margin: 2px 10px 10px 10px;"></a>
+<br />
+<i>Quote from <a href="http://devlicio.us/blogs/tim_barcz/archive/2009/01/05/real-life-single-responsibility-principle.aspx">Tim Barcz</a></i>
+</center>
+<br />
+<center>
+<a href="http://cre8ivethought.com/images/PP/big/Slide6.JPG"><img src="http://cre8ivethought.com/images/PP/Slide6.png" alt="FubuMVC" style="position:relative; margin: 2px 10px 10px 10px;"></a>
+</center>
+I feel that this is the best order in which to explain the different SOLID principles, mostly because the principles are so integrated with each other. I have been doing the presentation a few times internally and each time I struggled with the SOLID order. So here we go S DOLI
+<center>
+<a href="http://cre8ivethought.com/images/PP/big/Slide7.JPG"><img src="http://cre8ivethought.com/images/PP/Slide7.png" alt="FubuMVC" style="position:relative; margin: 2px 10px 10px 10px;"></a>
+<br />
+<i>Look at the beautiful knife that can do it all, until one item breaks and you will need to replace the whole knife, one broken part affects the whole module.</i>
+</center>
+<br />
+Single Responsibility Principle is the first principle in SOLID and states that <b>"There should never be more than one reason for a class to change"</b>. Something with one purpose, one responsibility is always going to be easier to change, purely because you can much clearer see what it does and what it does not. Also because there is only one responsibility there is no chance that the change in the code will affect other code, behavior perhaps, code no. And it greatly improves reuse of code. Finally it makes you code so much easier to test, since you can test one responsibility in isolation of the rest. 
+<center>
+<a href="http://cre8ivethought.com/images/PP/big/Slide9.JPG"><img src="http://cre8ivethought.com/images/PP/Slide9.png" alt="FubuMVC" style="position:relative; margin: 2px 10px 10px 10px;"></a>
+</center>
+Look at the different responsibilities in the OrderProcessor class, there is: Composition of the order process, saving the order to the database and sending a confirmation message. So quickly these are three different responsibilities. So there are three different reasons why this class could change.
+<center>
+<a href="http://cre8ivethought.com/images/PP/big/Slide10.JPG"><img src="http://cre8ivethought.com/images/PP/Slide10.png" alt="FubuMVC" style="position:relative; margin: 2px 10px 10px 10px;"></a>
+</center>
+As you can see we have been able to separate the different responsibilities into three different classes. One look upon each class clearly identifies what the class should be doing; it also enables reuse of the different responsibilities.
+<center>
+<a href="http://cre8ivethought.com/images/PP/big/Slide11.JPG"><img src="http://cre8ivethought.com/images/PP/Slide11.png" alt="FubuMVC" style="position:relative; margin: 2px 10px 10px 10px;"></a>
+<br />
+<i>Not as painful as it looks, not even close</i>
+</center>
+<br />
+Dependency Inversion Principle is the fifth and last SOLID principle and states that <b>"High level modules should not depend upon low level modules, both should depend upon abstractions"</b> and <b>"Abstractions should not depend upon details, details should depend upon abstractions"</b>. Wow, well basically this means is that nowhere in you code you should depend upon an actual implementation; instead you should only depend upon interfaces or abstract classes. And why you should do this is because this enables you to just change any actual implementation with another implementation and none of the other code knows or cares about it. Yes sir, your other code does not care.
+<center>
+<a href="http://cre8ivethought.com/images/PP/big/Slide12.JPG"><img src="http://cre8ivethought.com/images/PP/Slide12.png" alt="FubuMVC" style="position:relative; margin: 2px 10px 10px 10px;"></a>
+</center>
+In this example you can see that my OrderProcessor is depending upon actual implementations (details) of the Repository and MailSender. So if I would like to change the way I send notifications to the client I would create another class SmsSender and I would have to change the OrderProcessor as well to be able to use it, which is bad, because I suddenly made the OrderProcessor aware of how it should send messages. 
+<center>
+<a href="http://cre8ivethought.com/images/PP/big/Slide13.JPG"><img src="http://cre8ivethought.com/images/PP/Slide13.png" alt="FubuMVC" style="position:relative; margin: 2px 10px 10px 10px;"></a>
+</center>
+Now the OrderProcessor has no dependencies upon actual implementations anymore, it only relies on interfaces; IRepository and IMailSender. So if I now want to change the way notifications are send I only have to create a new implementation of IMailSender and provide that implementation to the OrderProcessor, OrderProcessor would simply continue to work as it is, its behavior has change, but it doesn't care about that, it only cares about its own specific logic.
+<center>
+<a href="http://cre8ivethought.com/images/PP/big/Slide14.JPG"><img src="http://cre8ivethought.com/images/PP/Slide14.png" alt="FubuMVC" style="position:relative; margin: 2px 10px 10px 10px;"></a>
+<br />
+<i>For a hairdresser she is pretty much closed for modification but you can give her a wick which makes her open for extension.</i>
+<br /><br />
+</center>
+The second SOLID principle is the Open Closed Principle which states that <b>"Software entities should be open for extensions but closed for modifications"</b>. This basically means that you should be able to change the external behavior or external dependencies of a class without having to physically change the class itself. You would want this kind of behavior because this enables you to make a change in one part of the code without you having to change other parts of the code as well as long as you can work within the boundaries of the existing contract.
+<center>
+<a href="http://cre8ivethought.com/images/PP/big/Slide15.JPG"><img src="http://cre8ivethought.com/images/PP/Slide15.png" alt="FubuMVC" style="position:relative; margin: 2px 10px 10px 10px;"></a>
+</center>
+You would recognize this class, it is the result of the Dependency Inversion Principle, and this class is already adhering to the Open Closed Principle, if you want to see a class that doesn't go back to the start of the Dependency Inversion Principle. So does that mean that the Open Closed Principle can be achieved with Dependency Inversion? Yes that is correct, but that is not the only way you can make a class extendable.
+<center>
+<a href="http://cre8ivethought.com/images/PP/big/Slide16.JPG"><img src="http://cre8ivethought.com/images/PP/Slide16.png" alt="FubuMVC" style="position:relative; margin: 2px 10px 10px 10px;"></a>
+</center>
+As you may have seen in the previous slide I added an interface on top of the OrderProcessor, the reason for this is that I can now easily create another implementation with the same contract. Then I created a decorator class DecoratedOrderProcessor which adds behavior to my original class without having to modify the code of OrderProcessor. I can even add this behavior during runtime to my class. Another great example of a similar construct is how behaviors work in FubuMVC.
+<center>
+<a href="http://cre8ivethought.com/images/PP/big/Slide17.JPG"><img src="http://cre8ivethought.com/images/PP/Slide17.png" alt="FubuMVC" style="position:relative; margin: 2px 10px 10px 10px;"></a>
+<br />
+<i>The garbage truck doesn't care about the color of the containers, as long as they all are opening from the top and not from the bottom.</i>
+</center>
+<br />
+The third SOLID principle is the Liskov Substitution Principle which is described as <b>"Functions that use pointers or references to base classes must be able to use objects or derived classes without knowing it"</b>. That means that when our code uses a specific class or interface it should be able to use a derived class or different implementation of the interface without having to change its internal behavior. This again is to minimize the impact change will have on your code, it feels like DÈj‡ Vu.
+<center>
+<a href="http://cre8ivethought.com/images/PP/big/Slide18.JPG"><img src="http://cre8ivethought.com/images/PP/Slide18.png" alt="FubuMVC" style="position:relative; margin: 2px 10px 10px 10px;"></a>
+</center>
+Look at how PriorityOrder is violating the Liskov Substitution Principle because when a client of Order is checking IsValid it expects a Boolean, but when a PriorityOrder is passed to the client suddenly the client needs to try and catch the potential exception that is thrown when the order is not valid. So suddenly the client needs to know with which specific type it is dealing, i.e. Order or PriorityOrder, which is violating the Liskov Substitution Principle.
+<center>
+<a href="http://cre8ivethought.com/images/PP/big/Slide19.JPG"><img src="http://cre8ivethought.com/images/PP/Slide19.png" alt="FubuMVC" style="position:relative; margin: 2px 10px 10px 10px;"></a>
+</center>
+This is an example that Uncle Bob uses himself, and as you can see that the Square class is providing a completely different implementation to setting the Height and thus all clients of Rectangle that assume the surface is calculated by multiplying the Width times the Height are in for a nasty surprise.
+<center>
+<a href="http://cre8ivethought.com/images/PP/big/Slide20.JPG"><img src="http://cre8ivethought.com/images/PP/Slide20.png" alt="FubuMVC" style="position:relative; margin: 2px 10px 10px 10px;"></a>
+<br />
+<i>Don't tell the doctor everything only that what he needs to help you feel better, hmm depending on the doctor that could include telling him your live story</i>
+</center>
+<br />
+Interface Segregation Principle is the fourth SOLID principle and states that <b>"Clients should not be forced to depend upon interfaces that they do not use"</b>. Which means that when an object has different usages, not to confuse with different responsibilities, then there should be a specific interface for each of these usages? And I am not going to repeat myself by saying that this is to minimize the impact change will have on your code.
+<center>
+<a href="http://cre8ivethought.com/images/PP/big/Slide21.JPG"><img src="http://cre8ivethought.com/images/PP/Slide21.png" alt="FubuMVC" style="position:relative; margin: 2px 10px 10px 10px;"></a>
+</center>
+Consider a simple web shop where customers can add and remove items out of their shopping cart and of course inspect the item currently in there. After that they go to check-out and are asked to fill out their personal details, and the final step is a review of the complete order and personal details on which they can submit the order. Now here are three different usages of the order, not every step needs to have or want to have all the information the Order can provide. 
+<center>
+<a href="http://cre8ivethought.com/images/PP/big/Slide22.JPG"><img src="http://cre8ivethought.com/images/PP/Slide22.png" alt="FubuMVC" style="position:relative; margin: 2px 10px 10px 10px;"></a>
+</center>
+Now we have created specific interfaces for the specific steps in the order process. The Order object still looks exactly the same as it did in code, but the different clients have a completely different view on it. This enables you to also create different objects one for each step implementing only the needed interface.
+<center>
+<a href="http://cre8ivethought.com/images/PP/big/Slide23.JPG"><img src="http://cre8ivethought.com/images/PP/Slide23.png" alt="FubuMVC" style="position:relative; margin: 2px 10px 10px 10px;"></a>
+<br />
+<i>The programmer's magic hat</i>
+</center>
+<br />
+Doing Dependency Inversion without an Inversion of Control container is going to be a pain. You will end up with actual dependencies in your code be it not in the injected classes but then at a higher level in the code. So you are still in a bad place, this is where Inversion of Control containers come into place.
+<center>
+<a href="http://cre8ivethought.com/images/PP/big/Slide24.JPG"><img src="http://cre8ivethought.com/images/PP/Slide24.png" alt="FubuMVC" style="position:relative; margin: 2px 10px 10px 10px;"></a>
+</center>
+Just take a look at this code, as you can see the different new statements are still needed at this level. BrrrrÖ
+<center>
+<a href="http://cre8ivethought.com/images/PP/big/Slide25.JPG"><img src="http://cre8ivethought.com/images/PP/Slide25.png" alt="FubuMVC" style="position:relative; margin: 2px 10px 10px 10px;"></a>
+</center>
+Hey that looks much cleaner, and I mean much cleaner. What I show you here is the usage of the Common Service Locator which is a common interface that all the different Inversion of Control containers support. So here is also no dependency upon a specific Inversion of Control container. A proper Inversion of Control container can automatically resolve any dependencies a requested class has and inject them in the newly created class. In other words it automatically does what I just did manually.
+<center>
+<a href="http://cre8ivethought.com/images/PP/big/Slide26.JPG"><img src="http://cre8ivethought.com/images/PP/Slide26.png" alt="FubuMVC" style="position:relative; margin: 2px 10px 10px 10px;"></a>
+</center>
+It would not be fair to leave you hanging there; you will have to actually configure your Inversion of Control container. And this is specific for the Inversion of Control container that you use. In this example I am using StructureMap. The beauty is that this configuration is the only place in your code where you define your actual dependencies; this is the only place in your code where you have to know about the different implementations. Most Inversion of Control containers also support configuration via Xml but I would advise against that as you would lose your type safety and refactoring support.
+<center>
+<a href="http://cre8ivethought.com/images/PP/big/Slide27.JPG"><img src="http://cre8ivethought.com/images/PP/Slide27.png" alt="FubuMVC" style="position:relative; margin: 2px 10px 10px 10px;"></a>
+</center>
+Test Driven Development or Test Driven Design is a technique that really enforces you to do proper design. Writing your tests up front is really helping you think about your design and about what you want to accomplish, so any "lost" time in creating these tests are surely won back by the better design that you get from it. Oh yeah besides the fact that your code is being tested of course which in case will help you deal with change more easily in the future. There really is no good excuse for not doing proper testing. Testing is done in any other industry, so why not in Software Development?
+<center>
+<a href="http://cre8ivethought.com/images/PP/big/Slide28.JPG"><img src="http://cre8ivethought.com/images/PP/Slide28.png" alt="FubuMVC" style="position:relative; margin: 2px 10px 10px 10px;"></a>
+</center>
+Don't Repeat Yourself, I have said it many times before but when you have the same functionality multiple times in your code, then you are risking that when change comes you forget something. And it is not just that code that you have duplicated, you also have duplicate tests; it makes your code fragile. Don't Repeat Yourself, damn just did it again!
+<center>
+<a href="http://cre8ivethought.com/images/PP/big/Slide29.JPG"><img src="http://cre8ivethought.com/images/PP/Slide29.png" alt="FubuMVC" style="position:relative; margin: 2px 10px 10px 10px;"></a>
+</center>
+You Ain't Gonne Need It, it happens so often, you are working on some code and think, hey this is something they want need later on; I'll just add it now since I am working on it anyway. Then when you get to the point that you have a better understanding of what they actually need you'll realize that what you had created is not it. So instead of saving the time by doing it when you were working in the same context, you lost the time because you have to do it over again. When you have designed your code properly, adding the functionality is not going to be a problem anyway. Expect Change right!
+<center>
+<a href="http://cre8ivethought.com/images/PP/big/Slide30.JPG"><img src="http://cre8ivethought.com/images/PP/Slide30.png" alt="FubuMVC" style="position:relative; margin: 2px 10px 10px 10px;"></a>
+</center>
+This is so true, and even truer is the fact that you will probably be your own Psychopath. So be kind to yourself and start producing quality code.
