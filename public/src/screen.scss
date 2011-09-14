@@ -22,76 +22,95 @@ body.three-col {
 
   #container {
     @include container; 
+  }
+  a {
+    color: gray;
+    text-decoration: none;
+    }
+  a:hover {
+    color: #2a1911;
+    text-decoration: underline;
+    }
+
+  h1, h2, h3, h4 { 
+    color: #424242;
+    margin: 0px 0px 0px -65px;
+    padding-bottom: 20px;
+    font-weight: 600;
+    font-size: 1.2em;
+    background:url('http://cre8ivethought.s3.amazonaws.com/images/layout/h1.png') no-repeat -12px 10px;
+    text-indent: 62px;
     a {
-      color: gray;
+      color: #424242;
       text-decoration: none;
       }
     a:hover {
       color: #2a1911;
-      text-decoration: underline;
+      text-decoration: none;
       }
-
-    h1, h2, h3, h4 { 
+    }
+  h2 {
+    background:url('http://cre8ivethought.s3.amazonaws.com/images/layout/h2.png') no-repeat -12px 10px;
+    }
+  h3 {
+    background:url('http://cre8ivethought.s3.amazonaws.com/images/layout/h3.png') no-repeat -12px 10px;
+    }
+  h4 {
+    background:url('http://cre8ivethought.s3.amazonaws.com/images/layout/h4.png') no-repeat -12px 10px;
+    }
+  ul {
+    position: relative;
+  	list-style-type:none;
+    }
+  ul, ol {
+  	margin:0;
+    }
+  li {
+  	list-style-image:none;
+  	list-style-type:none;
+    }
+  P {
+    text-align: justify;
+    font-size: 1.2em;
+    padding: 20px 30px 20px 0px;
+    }
+  .gist {
+    line-height: 1.2em;	
+    background: #FFFFFF;
+    background-image: url('http://cre8ivethought.s3.amazonaws.com/images/layout/background.jpg');	
+    background-attachment: repeat;
+    }
+  .date_list {
+    font-style: italic;
+    float: right;
+    margin-right: 30px;
+    color: #bbbbbb;  
+    }
+  .date_post {
+    position: relative;
+    font-style: italic;
+    float: left;
+    top: -15px;
+    left: 3px;
+    width: 550px;
+    color: #bbbbbb;
+    margin: 0px;
+    }
+  .archive_info {
+    position: relative;
+    top: -10px;
+    font-style: italic;
+    font-size: 75%;
+    color: #bbbbbb;
+    }
+  .comments{
+    h1, h2, h3, h4 {
       color: #424242;
       margin: 0;
-      margin-left: -65px;
       padding-bottom: 20px;
       font-weight: 600;
       font-size: 1.2em;
-      background:url('http://cre8ivethought.s3.amazonaws.com/images/layout/h1.png') no-repeat 0px 7px;
-      text-indent: 65px;
-      a {
-        color: #424242;
-        text-decoration: none;
-        }
-      a:hover {
-        color: #2a1911;
-        text-decoration: none;
-        }
-      }
-    h2 {
-      background:url('http://cre8ivethought.s3.amazonaws.com/images/layout/h2.png') no-repeat 0px 7px;
-      }
-    h3 {
-      background:url('http://cre8ivethought.s3.amazonaws.com/images/layout/h3.png') no-repeat 0px 7px;
-      }
-    h4 {
-      background:url('http://cre8ivethought.s3.amazonaws.com/images/layout/h4.png') no-repeat 0px 7px;
-      }
-    P {
-      text-align: justify;
-      font-size: 1.2em;
-      padding: 0px 30px 0px 0px;
-      }
-    .gist {
-      line-height: 1.2em;	
-	  background: #FFFFFF;
-	  background-image: url('http://cre8ivethought.s3.amazonaws.com/images/layout/background.jpg');	
-	  background-attachment: repeat;
-      }
-    .date_list {
-      font-style: italic;
-      float: right;
-      margin-right: 30px;
-      color: #bbbbbb;  
-      }
-    .date_post {
-      position: relative;
-      font-style: italic;
-      float: left;
-      top: -15px;
-      left: 3px;
-      width: 550px;
-      color: #bbbbbb;
-      margin: 0px;
-      }
-    .archive_info {
-      position: relative;
-      top: -10px;
-      font-style: italic;
-      font-size: 75%;
-      color: #bbbbbb;
-      }
+    }
     .comments_link {
       color: #bbbbbb;
       text-decoration: none;
@@ -134,13 +153,6 @@ body.three-col {
     @include column(1, true); }
   
   }
-
-#about {
-  p {
-    width: 500px;
-    margin: 0px -30px 0px -20px;
-  }
-}
 
 #profile-picture-1 {
   background-image: url("http://cre8ivethought.s3.amazonaws.com/images/layout/profile-picture.png");

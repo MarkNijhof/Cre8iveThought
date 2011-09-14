@@ -520,71 +520,84 @@ body.three-col #container {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 25, ../src/screen.scss */
-body.three-col #container a {
+/* line 26, ../src/screen.scss */
+body.three-col a {
   color: gray;
   text-decoration: none;
 }
-/* line 29, ../src/screen.scss */
-body.three-col #container a:hover {
+/* line 30, ../src/screen.scss */
+body.three-col a:hover {
   color: #2a1911;
   text-decoration: underline;
 }
-/* line 34, ../src/screen.scss */
-body.three-col #container h1, body.three-col #container h2, body.three-col #container h3, body.three-col #container h4 {
+/* line 35, ../src/screen.scss */
+body.three-col h1, body.three-col h2, body.three-col h3, body.three-col h4 {
   color: #424242;
-  margin: 0;
-  margin-left: -65px;
+  margin: 0px 0px 0px -65px;
   padding-bottom: 20px;
   font-weight: 600;
   font-size: 1.2em;
-  background: url("http://cre8ivethought.s3.amazonaws.com/images/layout/h1.png") no-repeat 0px 7px;
-  text-indent: 65px;
+  background: url("http://cre8ivethought.s3.amazonaws.com/images/layout/h1.png") no-repeat -12px 10px;
+  text-indent: 62px;
 }
 /* line 43, ../src/screen.scss */
-body.three-col #container h1 a, body.three-col #container h2 a, body.three-col #container h3 a, body.three-col #container h4 a {
+body.three-col h1 a, body.three-col h2 a, body.three-col h3 a, body.three-col h4 a {
   color: #424242;
   text-decoration: none;
 }
 /* line 47, ../src/screen.scss */
-body.three-col #container h1 a:hover, body.three-col #container h2 a:hover, body.three-col #container h3 a:hover, body.three-col #container h4 a:hover {
+body.three-col h1 a:hover, body.three-col h2 a:hover, body.three-col h3 a:hover, body.three-col h4 a:hover {
   color: #2a1911;
   text-decoration: none;
 }
 /* line 52, ../src/screen.scss */
-body.three-col #container h2 {
-  background: url("http://cre8ivethought.s3.amazonaws.com/images/layout/h2.png") no-repeat 0px 7px;
+body.three-col h2 {
+  background: url("http://cre8ivethought.s3.amazonaws.com/images/layout/h2.png") no-repeat -12px 10px;
 }
 /* line 55, ../src/screen.scss */
-body.three-col #container h3 {
-  background: url("http://cre8ivethought.s3.amazonaws.com/images/layout/h3.png") no-repeat 0px 7px;
+body.three-col h3 {
+  background: url("http://cre8ivethought.s3.amazonaws.com/images/layout/h3.png") no-repeat -12px 10px;
 }
 /* line 58, ../src/screen.scss */
-body.three-col #container h4 {
-  background: url("http://cre8ivethought.s3.amazonaws.com/images/layout/h4.png") no-repeat 0px 7px;
+body.three-col h4 {
+  background: url("http://cre8ivethought.s3.amazonaws.com/images/layout/h4.png") no-repeat -12px 10px;
 }
 /* line 61, ../src/screen.scss */
-body.three-col #container P {
+body.three-col ul {
+  position: relative;
+  list-style-type: none;
+}
+/* line 65, ../src/screen.scss */
+body.three-col ul, body.three-col ol {
+  margin: 0;
+}
+/* line 68, ../src/screen.scss */
+body.three-col li {
+  list-style-image: none;
+  list-style-type: none;
+}
+/* line 72, ../src/screen.scss */
+body.three-col P {
   text-align: justify;
   font-size: 1.2em;
-  padding: 0px 30px 0px 0px;
+  padding: 20px 30px 20px 0px;
 }
-/* line 66, ../src/screen.scss */
-body.three-col #container .gist {
+/* line 77, ../src/screen.scss */
+body.three-col .gist {
   line-height: 1.2em;
   background: #FFFFFF;
   background-image: url("http://cre8ivethought.s3.amazonaws.com/images/layout/background.jpg");
   background-attachment: repeat;
 }
-/* line 72, ../src/screen.scss */
-body.three-col #container .date_list {
+/* line 83, ../src/screen.scss */
+body.three-col .date_list {
   font-style: italic;
   float: right;
   margin-right: 30px;
   color: #bbbbbb;
 }
-/* line 78, ../src/screen.scss */
-body.three-col #container .date_post {
+/* line 89, ../src/screen.scss */
+body.three-col .date_post {
   position: relative;
   font-style: italic;
   float: left;
@@ -594,25 +607,33 @@ body.three-col #container .date_post {
   color: #bbbbbb;
   margin: 0px;
 }
-/* line 88, ../src/screen.scss */
-body.three-col #container .archive_info {
+/* line 99, ../src/screen.scss */
+body.three-col .archive_info {
   position: relative;
   top: -10px;
   font-style: italic;
   font-size: 75%;
   color: #bbbbbb;
 }
-/* line 95, ../src/screen.scss */
-body.three-col #container .comments_link {
+/* line 107, ../src/screen.scss */
+body.three-col .comments h1, body.three-col .comments h2, body.three-col .comments h3, body.three-col .comments h4 {
+  color: #424242;
+  margin: 0;
+  padding-bottom: 20px;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+/* line 114, ../src/screen.scss */
+body.three-col .comments .comments_link {
   color: #bbbbbb;
   text-decoration: none;
 }
-/* line 99, ../src/screen.scss */
-body.three-col #container .comments_link:hover {
+/* line 118, ../src/screen.scss */
+body.three-col .comments .comments_link:hover {
   color: #bbbbbb;
   text-decoration: underline;
 }
-/* line 107, ../src/screen.scss */
+/* line 126, ../src/screen.scss */
 body.three-col #left-side {
   display: inline;
   float: left;
@@ -623,7 +644,7 @@ body.three-col #left-side {
 * html body.three-col #left-side {
   overflow-x: hidden;
 }
-/* line 110, ../src/screen.scss */
+/* line 129, ../src/screen.scss */
 body.three-col #main-area {
   display: inline;
   float: left;
@@ -634,18 +655,18 @@ body.three-col #main-area {
 * html body.three-col #main-area {
   overflow-x: hidden;
 }
-/* line 113, ../src/screen.scss */
+/* line 132, ../src/screen.scss */
 body.three-col #content {
   padding: 90px 50px 10px 40px;
   position: relative;
 }
-/* line 118, ../src/screen.scss */
+/* line 137, ../src/screen.scss */
 body.three-col #footer {
   height: 10px;
   margin-left: 2px;
   margin-bottom: 1000px;
 }
-/* line 124, ../src/screen.scss */
+/* line 143, ../src/screen.scss */
 body.three-col #license {
   text-align: left;
   font-style: italic;
@@ -654,7 +675,7 @@ body.three-col #license {
   padding: 0px 30px 10px 30px;
   margin: 0px -30px 0px -20px;
 }
-/* line 133, ../src/screen.scss */
+/* line 152, ../src/screen.scss */
 body.three-col #right-side {
   display: inline;
   float: left;
@@ -666,13 +687,7 @@ body.three-col #right-side {
   overflow-x: hidden;
 }
 
-/* line 139, ../src/screen.scss */
-#about p {
-  width: 500px;
-  margin: 0px -30px 0px -20px;
-}
-
-/* line 145, ../src/screen.scss */
+/* line 157, ../src/screen.scss */
 #profile-picture-1 {
   background-image: url("http://cre8ivethought.s3.amazonaws.com/images/layout/profile-picture.png");
   background-position: right bottom;
@@ -684,7 +699,7 @@ body.three-col #right-side {
   z-index: 600;
 }
 
-/* line 156, ../src/screen.scss */
+/* line 168, ../src/screen.scss */
 #profile-picture-about-1 {
   background-image: url("http://cre8ivethought.s3.amazonaws.com/images/layout/profile-picture-about.png");
   background-position: left bottom;
@@ -697,7 +712,7 @@ body.three-col #right-side {
   float: right;
 }
 
-/* line 168, ../src/screen.scss */
+/* line 180, ../src/screen.scss */
 #header {
   position: fixed;
   margin: 0 auto;
@@ -708,7 +723,7 @@ body.three-col #right-side {
   background-repeat: repeat;
 }
 
-/* line 178, ../src/screen.scss */
+/* line 190, ../src/screen.scss */
 #menu {
   border: 0 none;
   display: inline-block;
@@ -721,17 +736,17 @@ body.three-col #right-side {
   z-index: 500;
   height: 60px;
 }
-/* line 189, ../src/screen.scss */
+/* line 201, ../src/screen.scss */
 #menu ul {
   position: relative;
   list-style-type: disc;
 }
-/* line 193, ../src/screen.scss */
+/* line 205, ../src/screen.scss */
 #menu ul, #menu ol {
   margin: 0 1.5em 1.5em 0;
   padding-left: 3.333em;
 }
-/* line 197, ../src/screen.scss */
+/* line 209, ../src/screen.scss */
 #menu li {
   display: inline;
   float: left;
