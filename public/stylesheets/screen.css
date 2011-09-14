@@ -580,7 +580,7 @@ body.three-col li {
 body.three-col P {
   text-align: justify;
   font-size: 1.2em;
-  padding: 20px 30px 40px 0px;
+  padding: 20px 30px 50px 0px;
 }
 /* line 77, ../src/screen.scss */
 body.three-col .gist {
@@ -615,7 +615,11 @@ body.three-col .archive_info {
   font-size: 75%;
   color: #bbbbbb;
 }
-/* line 107, ../src/screen.scss */
+/* line 106, ../src/screen.scss */
+body.three-col #dsq-content {
+  padding: 90px 50px 10px 40px;
+}
+/* line 108, ../src/screen.scss */
 body.three-col #dsq-content h1, body.three-col #dsq-content h2, body.three-col #dsq-content h3, body.three-col #dsq-content h4 {
   color: #424242;
   margin: 0px;
@@ -625,17 +629,17 @@ body.three-col #dsq-content h1, body.three-col #dsq-content h2, body.three-col #
   background: url("");
   text-indent: 0px;
 }
-/* line 116, ../src/screen.scss */
+/* line 117, ../src/screen.scss */
 body.three-col #dsq-content .comments_link {
   color: #bbbbbb;
   text-decoration: none;
 }
-/* line 120, ../src/screen.scss */
+/* line 121, ../src/screen.scss */
 body.three-col #dsq-content .comments_link:hover {
   color: #bbbbbb;
   text-decoration: underline;
 }
-/* line 128, ../src/screen.scss */
+/* line 129, ../src/screen.scss */
 body.three-col #left-side {
   display: inline;
   float: left;
@@ -646,7 +650,7 @@ body.three-col #left-side {
 * html body.three-col #left-side {
   overflow-x: hidden;
 }
-/* line 131, ../src/screen.scss */
+/* line 132, ../src/screen.scss */
 body.three-col #main-area {
   display: inline;
   float: left;
@@ -657,18 +661,18 @@ body.three-col #main-area {
 * html body.three-col #main-area {
   overflow-x: hidden;
 }
-/* line 134, ../src/screen.scss */
+/* line 135, ../src/screen.scss */
 body.three-col #content {
   padding: 90px 50px 10px 40px;
   position: relative;
 }
-/* line 139, ../src/screen.scss */
+/* line 140, ../src/screen.scss */
 body.three-col #footer {
   height: 10px;
   margin-left: 2px;
   margin-bottom: 1000px;
 }
-/* line 145, ../src/screen.scss */
+/* line 146, ../src/screen.scss */
 body.three-col #license {
   text-align: left;
   font-style: italic;
@@ -677,7 +681,7 @@ body.three-col #license {
   padding: 0px 30px 10px 30px;
   margin: 0px -30px 0px -20px;
 }
-/* line 154, ../src/screen.scss */
+/* line 155, ../src/screen.scss */
 body.three-col #right-side {
   display: inline;
   float: left;
@@ -689,7 +693,7 @@ body.three-col #right-side {
   overflow-x: hidden;
 }
 
-/* line 159, ../src/screen.scss */
+/* line 160, ../src/screen.scss */
 #profile-picture-1 {
   background-image: url("http://cre8ivethought.s3.amazonaws.com/images/layout/profile-picture.png");
   background-position: right bottom;
@@ -701,7 +705,7 @@ body.three-col #right-side {
   z-index: 600;
 }
 
-/* line 170, ../src/screen.scss */
+/* line 171, ../src/screen.scss */
 #profile-picture-about-1 {
   background-image: url("http://cre8ivethought.s3.amazonaws.com/images/layout/profile-picture-about.png");
   background-position: left bottom;
@@ -714,7 +718,7 @@ body.three-col #right-side {
   float: right;
 }
 
-/* line 182, ../src/screen.scss */
+/* line 183, ../src/screen.scss */
 #header {
   position: fixed;
   margin: 0 auto;
@@ -725,7 +729,7 @@ body.three-col #right-side {
   background-repeat: repeat;
 }
 
-/* line 192, ../src/screen.scss */
+/* line 193, ../src/screen.scss */
 #menu {
   border: 0 none;
   display: inline-block;
@@ -738,17 +742,17 @@ body.three-col #right-side {
   z-index: 500;
   height: 60px;
 }
-/* line 203, ../src/screen.scss */
+/* line 204, ../src/screen.scss */
 #menu ul {
   position: relative;
   list-style-type: disc;
 }
-/* line 207, ../src/screen.scss */
+/* line 208, ../src/screen.scss */
 #menu ul, #menu ol {
   margin: 0 1.5em 1.5em 0;
   padding-left: 3.333em;
 }
-/* line 211, ../src/screen.scss */
+/* line 212, ../src/screen.scss */
 #menu li {
   display: inline;
   float: left;
