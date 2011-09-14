@@ -617,7 +617,7 @@ body.three-col .archive_info {
 }
 /* line 106, ../src/screen.scss */
 body.three-col #dsq-content {
-  padding: 90px 50px 10px 40px;
+  padding: 0px 50px 0px 0px;
 }
 /* line 108, ../src/screen.scss */
 body.three-col #dsq-content h1, body.three-col #dsq-content h2, body.three-col #dsq-content h3, body.three-col #dsq-content h4 {
