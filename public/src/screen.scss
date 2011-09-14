@@ -35,7 +35,7 @@ body.three-col {
   h1, h2, h3, h4 { 
     color: #424242;
     margin: 0px 0px 0px -65px;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
     font-weight: 600;
     font-size: 1.2em;
     background:url('http://cre8ivethought.s3.amazonaws.com/images/layout/h1.png') no-repeat -12px 10px;
@@ -61,11 +61,16 @@ body.three-col {
   P {
     text-align: justify;
     font-size: 1.2em;
-    padding: 20px 30px 50px 0px;
+    padding: 0px 30px 30px 0px;
     }
   ul, ol {
 	margin-top: 0px;
 	margin-bottom: 20px;
+  }
+  sup {
+    text-align: justify;
+    font-size: 0.8em;
+    padding: 0px 30px 30px 0px;
   }
   .gist {
     line-height: 1.2em;	
@@ -146,9 +151,11 @@ body.three-col {
     }
 
   #right-side {
-    @include column(1, true); }
-  
+    @include column(1, true); 
+    background:url('/images/layout/face.jpg') 0 0;
   }
+  
+}
 
 .nobullets {
   ul {
