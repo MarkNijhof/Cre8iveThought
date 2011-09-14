@@ -10,14 +10,12 @@
       %hr
 
 
-%p
-  - for post in articles.select{|item| item[:published] }[0...5]
-    = haml(:'blog/_article_summary', :layout => false, :locals => { :post => post } )
 
-%p  
+- for post in articles.select{|item| item[:published] }[0...5]
+  = haml(:'blog/_article_summary', :layout => false, :locals => { :post => post } )
+
+.nobullets  
   = haml(:'blog/_recent_posts', :layout => false, :locals => { :posts => articles.select{|item| item[:published] }[5...15] })
 
-%p
-  %br
-  %br
+.nobullets
   = haml(:'blog/_archives', :layout => false)

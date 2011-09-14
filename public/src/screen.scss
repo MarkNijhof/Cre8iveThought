@@ -58,22 +58,15 @@ body.three-col {
   h4 {
     background:url('http://cre8ivethought.s3.amazonaws.com/images/layout/h4.png') no-repeat -12px 10px;
     }
-  ul {
-    position: relative;
-  	list-style-type:none;
-    }
-  ul, ol {
-  	margin:0;
-    }
-  li {
-  	list-style-image:none;
-  	list-style-type:none;
-    }
   P {
     text-align: justify;
     font-size: 1.2em;
     padding: 20px 30px 50px 0px;
     }
+  ul, ol {
+	margin-top: 0px;
+	margin-bottom: 20px;
+  }
   .gist {
     line-height: 1.2em;	
     background: #FFFFFF;
@@ -157,6 +150,21 @@ body.three-col {
   
   }
 
+.nobullets {
+  ul {
+    position: relative;
+	list-style-type:none;
+  }
+  ul, ol {
+	margin:0;
+	margin-bottom: 20px;
+  }
+  li {
+    list-style-image:none;
+    list-style-type:none;
+    }
+  }
+
 #profile-picture-1 {
   background-image: url("http://cre8ivethought.s3.amazonaws.com/images/layout/profile-picture.png");
   background-position: right bottom;
@@ -194,7 +202,7 @@ body.three-col {
   border: 0 none;
   display: inline-block;
   float: right;
-  margin: 15px 0px 0px 0px;
+  margin: 5px 0px 0px 0px;
   outline:0 none;
   overflow: hidden;
   padding: 0;

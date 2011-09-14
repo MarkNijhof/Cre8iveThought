@@ -563,40 +563,31 @@ body.three-col h4 {
   background: url("http://cre8ivethought.s3.amazonaws.com/images/layout/h4.png") no-repeat -12px 10px;
 }
 /* line 61, ../src/screen.scss */
-body.three-col ul {
-  position: relative;
-  list-style-type: none;
-}
-/* line 65, ../src/screen.scss */
-body.three-col ul, body.three-col ol {
-  margin: 0;
-}
-/* line 68, ../src/screen.scss */
-body.three-col li {
-  list-style-image: none;
-  list-style-type: none;
-}
-/* line 72, ../src/screen.scss */
 body.three-col P {
   text-align: justify;
   font-size: 1.2em;
   padding: 20px 30px 50px 0px;
 }
-/* line 77, ../src/screen.scss */
+/* line 66, ../src/screen.scss */
+body.three-col ul, body.three-col ol {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+/* line 70, ../src/screen.scss */
 body.three-col .gist {
   line-height: 1.2em;
   background: #FFFFFF;
   background-image: url("http://cre8ivethought.s3.amazonaws.com/images/layout/background.jpg");
   background-attachment: repeat;
 }
-/* line 83, ../src/screen.scss */
+/* line 76, ../src/screen.scss */
 body.three-col .date_list {
   font-style: italic;
   float: right;
   margin-right: 30px;
   color: #bbbbbb;
 }
-/* line 89, ../src/screen.scss */
+/* line 82, ../src/screen.scss */
 body.three-col .date_post {
   position: relative;
   font-style: italic;
@@ -607,7 +598,7 @@ body.three-col .date_post {
   color: #bbbbbb;
   margin: 0px;
 }
-/* line 99, ../src/screen.scss */
+/* line 92, ../src/screen.scss */
 body.three-col .archive_info {
   position: relative;
   top: -10px;
@@ -615,11 +606,11 @@ body.three-col .archive_info {
   font-size: 75%;
   color: #bbbbbb;
 }
-/* line 106, ../src/screen.scss */
+/* line 99, ../src/screen.scss */
 body.three-col #dsq-content {
   padding: 0px 50px 0px 0px;
 }
-/* line 108, ../src/screen.scss */
+/* line 101, ../src/screen.scss */
 body.three-col #dsq-content h1, body.three-col #dsq-content h2, body.three-col #dsq-content h3, body.three-col #dsq-content h4 {
   color: #424242;
   margin: 0px;
@@ -629,17 +620,17 @@ body.three-col #dsq-content h1, body.three-col #dsq-content h2, body.three-col #
   background: url("");
   text-indent: 0px;
 }
-/* line 117, ../src/screen.scss */
+/* line 110, ../src/screen.scss */
 body.three-col #dsq-content .comments_link {
   color: #bbbbbb;
   text-decoration: none;
 }
-/* line 121, ../src/screen.scss */
+/* line 114, ../src/screen.scss */
 body.three-col #dsq-content .comments_link:hover {
   color: #bbbbbb;
   text-decoration: underline;
 }
-/* line 129, ../src/screen.scss */
+/* line 122, ../src/screen.scss */
 body.three-col #left-side {
   display: inline;
   float: left;
@@ -650,7 +641,7 @@ body.three-col #left-side {
 * html body.three-col #left-side {
   overflow-x: hidden;
 }
-/* line 132, ../src/screen.scss */
+/* line 125, ../src/screen.scss */
 body.three-col #main-area {
   display: inline;
   float: left;
@@ -661,18 +652,18 @@ body.three-col #main-area {
 * html body.three-col #main-area {
   overflow-x: hidden;
 }
-/* line 135, ../src/screen.scss */
+/* line 128, ../src/screen.scss */
 body.three-col #content {
   padding: 90px 50px 10px 40px;
   position: relative;
 }
-/* line 140, ../src/screen.scss */
+/* line 133, ../src/screen.scss */
 body.three-col #footer {
   height: 10px;
   margin-left: 2px;
   margin-bottom: 1000px;
 }
-/* line 146, ../src/screen.scss */
+/* line 139, ../src/screen.scss */
 body.three-col #license {
   text-align: left;
   font-style: italic;
@@ -681,7 +672,7 @@ body.three-col #license {
   padding: 0px 30px 10px 30px;
   margin: 0px -30px 0px -20px;
 }
-/* line 155, ../src/screen.scss */
+/* line 148, ../src/screen.scss */
 body.three-col #right-side {
   display: inline;
   float: left;
@@ -693,7 +684,23 @@ body.three-col #right-side {
   overflow-x: hidden;
 }
 
-/* line 160, ../src/screen.scss */
+/* line 154, ../src/screen.scss */
+.nobullets ul {
+  position: relative;
+  list-style-type: none;
+}
+/* line 158, ../src/screen.scss */
+.nobullets ul, .nobullets ol {
+  margin: 0;
+  margin-bottom: 20px;
+}
+/* line 162, ../src/screen.scss */
+.nobullets li {
+  list-style-image: none;
+  list-style-type: none;
+}
+
+/* line 168, ../src/screen.scss */
 #profile-picture-1 {
   background-image: url("http://cre8ivethought.s3.amazonaws.com/images/layout/profile-picture.png");
   background-position: right bottom;
@@ -705,7 +712,7 @@ body.three-col #right-side {
   z-index: 600;
 }
 
-/* line 171, ../src/screen.scss */
+/* line 179, ../src/screen.scss */
 #profile-picture-about-1 {
   background-image: url("http://cre8ivethought.s3.amazonaws.com/images/layout/profile-picture-about.png");
   background-position: left bottom;
@@ -718,7 +725,7 @@ body.three-col #right-side {
   float: right;
 }
 
-/* line 183, ../src/screen.scss */
+/* line 191, ../src/screen.scss */
 #header {
   position: fixed;
   margin: 0 auto;
@@ -729,12 +736,12 @@ body.three-col #right-side {
   background-repeat: repeat;
 }
 
-/* line 193, ../src/screen.scss */
+/* line 201, ../src/screen.scss */
 #menu {
   border: 0 none;
   display: inline-block;
   float: right;
-  margin: 15px 0px 0px 0px;
+  margin: 5px 0px 0px 0px;
   outline: 0 none;
   overflow: hidden;
   padding: 0;
@@ -742,17 +749,17 @@ body.three-col #right-side {
   z-index: 500;
   height: 60px;
 }
-/* line 204, ../src/screen.scss */
+/* line 212, ../src/screen.scss */
 #menu ul {
   position: relative;
   list-style-type: disc;
 }
-/* line 208, ../src/screen.scss */
+/* line 216, ../src/screen.scss */
 #menu ul, #menu ol {
   margin: 0 1.5em 1.5em 0;
   padding-left: 3.333em;
 }
-/* line 212, ../src/screen.scss */
+/* line 220, ../src/screen.scss */
 #menu li {
   display: inline;
   float: left;
