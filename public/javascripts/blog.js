@@ -4,7 +4,7 @@ var to_show_the_profile_picture = true;
 var to_hide_the_profile_picture = false;
 
 $(window).scroll(function () {
-	annimate();
+	//annimate();
 });
 
 var isHiding = false;
@@ -52,5 +52,5 @@ var show_logo = function() {
 };
 
 $(document).ready(function(){
-	$('#footer').css('margin-bottom', $(window).height() - 550 + 'px');
+	//$('#footer').css('margin-bottom', $(window).height() - 550 + 'px');
 });

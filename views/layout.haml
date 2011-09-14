@@ -35,11 +35,25 @@
             %br
 
             = haml :'_license', :layout => false
-
-        #footer
+            %br
+            %br
 
       #right-side
         &nbsp;
+
+    #footer
+      - if $show_stats && post.has_key?(:words)
+        #stats
+          %ul
+            %li
+              = post.words
+              Words
+            %li
+              = post.characters
+              Characters
+            %li
+              = post.readingTime
+              Reading Time
 
     :javascript
       (function() {

@@ -1,6 +1,9 @@
 title: Software Development is not a Jenga game
 author: Mark Nijhof
 published: true
+words: 3.127
+characters: 18.712
+readingTime: 00:15:38
 
 This is an extract from the talk "Software Development is not a Jenga game" <i>Republished from 16 May 2009 because I had some requests for it</i>.
 <center>

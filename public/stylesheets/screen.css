@@ -668,12 +668,6 @@ body.three-col #content {
   position: relative;
 }
 /* line 141, ../src/screen.scss */
-body.three-col #footer {
-  height: 10px;
-  margin-left: 2px;
-  margin-bottom: 1000px;
-}
-/* line 147, ../src/screen.scss */
 body.three-col #license {
   text-align: left;
   font-style: italic;
@@ -682,7 +676,7 @@ body.three-col #license {
   padding: 0px 30px 10px 30px;
   margin: 0px -30px 0px -20px;
 }
-/* line 156, ../src/screen.scss */
+/* line 150, ../src/screen.scss */
 body.three-col #right-side {
   display: inline;
   float: left;
@@ -694,23 +688,23 @@ body.three-col #right-side {
   overflow-x: hidden;
 }
 
-/* line 163, ../src/screen.scss */
+/* line 157, ../src/screen.scss */
 .nobullets ul {
   position: relative;
   list-style-type: none;
 }
-/* line 167, ../src/screen.scss */
+/* line 161, ../src/screen.scss */
 .nobullets ul, .nobullets ol {
   margin: 0;
   margin-bottom: 20px;
 }
-/* line 171, ../src/screen.scss */
+/* line 165, ../src/screen.scss */
 .nobullets li {
   list-style-image: none;
   list-style-type: none;
 }
 
-/* line 177, ../src/screen.scss */
+/* line 171, ../src/screen.scss */
 #profile-picture-1 {
   background-image: url("http://cre8ivethought.s3.amazonaws.com/images/layout/profile-picture.png");
   background-position: right bottom;
@@ -722,7 +716,7 @@ body.three-col #right-side {
   z-index: 600;
 }
 
-/* line 188, ../src/screen.scss */
+/* line 182, ../src/screen.scss */
 #profile-picture-about-1 {
   background-image: url("http://cre8ivethought.s3.amazonaws.com/images/layout/profile-picture-about.png");
   background-position: left bottom;
@@ -735,18 +729,58 @@ body.three-col #right-side {
   float: right;
 }
 
-/* line 200, ../src/screen.scss */
+/* line 194, ../src/screen.scss */
 #header {
   position: fixed;
   margin: 0 auto;
   width: 100%;
   height: 80px;
   z-index: 400;
-  background-image: url("/images/layout/frame-top.png");
+  background-image: url("http://cre8ivethought.s3.amazonaws.com/images/layout/frame-top.png");
   background-repeat: repeat;
 }
 
-/* line 210, ../src/screen.scss */
+/* line 204, ../src/screen.scss */
+#footer {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  z-index: 400;
+  bottom: 0px;
+  left: 0px;
+  background: url("http://cre8ivethought.s3.amazonaws.com/images/layout/frame-bottom.png") repeat;
+}
+/* line 212, ../src/screen.scss */
+#footer #stats {
+  color: gray;
+  font-size: 0.8em;
+  float: right;
+  padding: 28px 0px 0px 0px;
+}
+/* line 217, ../src/screen.scss */
+#footer #stats ul {
+  position: relative;
+  list-style-type: disc;
+}
+/* line 221, ../src/screen.scss */
+#footer #stats ul, #footer #stats ol {
+  margin: 0 1.5em 1.5em 0;
+  padding-left: 3.333em;
+}
+/* line 225, ../src/screen.scss */
+#footer #stats li {
+  display: inline;
+  float: left;
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  padding-top: 00px;
+  padding-left: 10px;
+  padding-right: 10px;
+  white-space: nowrap;
+}
+
+/* line 239, ../src/screen.scss */
 #menu {
   border: 0 none;
   display: inline-block;
@@ -759,17 +793,17 @@ body.three-col #right-side {
   z-index: 500;
   height: 60px;
 }
-/* line 221, ../src/screen.scss */
+/* line 250, ../src/screen.scss */
 #menu ul {
   position: relative;
   list-style-type: disc;
 }
-/* line 225, ../src/screen.scss */
+/* line 254, ../src/screen.scss */
 #menu ul, #menu ol {
   margin: 0 1.5em 1.5em 0;
   padding-left: 3.333em;
 }
-/* line 229, ../src/screen.scss */
+/* line 258, ../src/screen.scss */
 #menu li {
   display: inline;
   float: left;

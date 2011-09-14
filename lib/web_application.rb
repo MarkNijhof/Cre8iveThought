@@ -30,11 +30,13 @@ class WebApplication < Sinatra::Base
   end
   
   get '/' do
+    $show_stats = false
     File.read(File.join('public', 'index.html'))
   end
  
   ["/blog/?", "/blog/index/?"].each do |route|
     get route do
+      $show_stats = false
       $header_for = 'blog'
       haml(:'blog/index', :locals => { :title => "Cre8ive Thought", :articles => $blog_dorsey.articles})
     end
@@ -42,6 +44,7 @@ class WebApplication < Sinatra::Base
 
   get "/blog/index.xml" do
     content_type :"application/atom+xml"
+    $show_stats = false
     $header_for = 'blog'
     rss_updated = $blog_dorsey.articles.first.updated_as_date 
     haml(:'rss', :layout=>false, :locals => { :blog_title => "Cre8ive Thought", :rss_updated => rss_updated, :blog_url => "#{$blog_dorsey.config[:host]}blog/index", :rss_url => "#{$blog_dorsey.config[:host]}blog/index.xml", :articles => $blog_dorsey.articles.select{ |item| item[:published] }})
@@ -49,10 +52,13 @@ class WebApplication < Sinatra::Base
 
   get '/blog/*' do
     $header_for = 'blog'
+    $show_stats = false
     articles = $blog_dorsey.get_by_slug params[:splat][0]
 
+    $show_stats = true
     return haml(:'blog/article', :locals => { :title => "Cre8ive Thought - #{articles[0].title}", :post => articles[0]} ) if articles.count == 1
 
+    $show_stats = false
     return haml(:'blog/archive', :locals => { :title => "Cre8ive Thought - #{params[:splat][0]}", :posts => articles, :slug => params[:splat][0] } ) if articles.count > 1
 
     haml(:'404', :locals => { :title => "Cre8ive Thought - Not Found", :slug => params[:splat][0] } )
@@ -60,12 +66,14 @@ class WebApplication < Sinatra::Base
   
   ["/the_software_craftsman/?", "/the_software_craftsman/index/?"].each do |route|
     get route do
+      $show_stats = false
       $header_for = 'book'
       haml(:'book/index', :locals => { :title => "The Software Craftsman", :articles => $book_dorsey.articles})
     end
   end
 
   get '/the_software_craftsman/*' do
+    $show_stats = false
     $header_for = 'book'
     articles = $book_dorsey.get_by_slug params[:splat][0]
 
