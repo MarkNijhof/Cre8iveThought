@@ -538,12 +538,12 @@ body.three-col #container h1, body.three-col #container h2, body.three-col #cont
   padding-bottom: 20px;
   font-weight: 600;
   font-size: 1.2em;
-  background: url("http://cre8ivethought.s3.amazonaws.com/images/layout/h1.png") no-repeat;
+  background: url("http://cre8ivethought.s3.amazonaws.com/images/layout/h1.png") no-repeat 0px 7px;
   text-indent: 65px;
 }
 /* line 43, ../src/screen.scss */
 body.three-col #container h1 a, body.three-col #container h2 a, body.three-col #container h3 a, body.three-col #container h4 a {
-  color: #2a1911;
+  color: #424242;
   text-decoration: none;
 }
 /* line 47, ../src/screen.scss */
@@ -553,15 +553,15 @@ body.three-col #container h1 a:hover, body.three-col #container h2 a:hover, body
 }
 /* line 52, ../src/screen.scss */
 body.three-col #container h2 {
-  background: url("http://cre8ivethought.s3.amazonaws.com/images/layout/h2.png") no-repeat;
+  background: url("http://cre8ivethought.s3.amazonaws.com/images/layout/h2.png") no-repeat 0px 7px;
 }
 /* line 55, ../src/screen.scss */
 body.three-col #container h3 {
-  background: url("http://cre8ivethought.s3.amazonaws.com/images/layout/h3.png") no-repeat;
+  background: url("http://cre8ivethought.s3.amazonaws.com/images/layout/h3.png") no-repeat 0px 7px;
 }
 /* line 58, ../src/screen.scss */
 body.three-col #container h4 {
-  background: url("http://cre8ivethought.s3.amazonaws.com/images/layout/h4.png") no-repeat;
+  background: url("http://cre8ivethought.s3.amazonaws.com/images/layout/h4.png") no-repeat 0px 7px;
 }
 /* line 61, ../src/screen.scss */
 body.three-col #container P {

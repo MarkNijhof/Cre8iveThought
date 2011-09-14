@@ -10,14 +10,11 @@
       %hr
 
 
-%section
-  - for post in articles.select{|item| item[:published] }[0...5]
-    = haml(:'blog/_article_summary', :layout => false, :locals => { :post => post } )
+- for post in articles.select{|item| item[:published] }[0...5]
+  = haml(:'blog/_article_summary', :layout => false, :locals => { :post => post } )
   
-%section
-  = haml(:'blog/_recent_posts', :layout => false, :locals => { :posts => articles.select{|item| item[:published] }[5...15] })
+= haml(:'blog/_recent_posts', :layout => false, :locals => { :posts => articles.select{|item| item[:published] }[5...15] })
 
-%section
-  %br
-  %br
-  = haml(:'blog/_archives', :layout => false)
+%br
+%br
+= haml(:'blog/_archives', :layout => false)
