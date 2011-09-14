@@ -15,13 +15,14 @@
     %script{:src=>"/javascripts/blog.js"}
 
   %body.three-col
+    %header
+      = haml :"_header_#{$header_for}", :layout => false
+
     #container
       #left-side
         &nbsp;
         
       #main-area
-        %header
-          = haml :"_header_#{$header_for}", :layout => false
       
         #content
           = yield

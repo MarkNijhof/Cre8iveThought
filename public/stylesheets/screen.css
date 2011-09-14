@@ -722,7 +722,7 @@ body.three-col #right-side {
 #header {
   position: fixed;
   margin: 0 auto;
-  width: 800px;
+  width: 100%;
   height: 80px;
   z-index: 400;
   background-image: url("/images/layout/frame-top.png");
