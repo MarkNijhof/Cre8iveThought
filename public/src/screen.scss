@@ -13,8 +13,8 @@
 
 body.three-col {
   color: #424242;
-  font-family: "Georgia","Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
-  font-size: 1.1em;
+  font-family: Verdana,"Georgia","Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+  font-size: 1.2em;
   line-height: 1.6;
   background: #FFFFFF;
   background-image: url('http://cre8ivethought.s3.amazonaws.com/images/layout/background.jpg');	
@@ -31,12 +31,15 @@ body.three-col {
       text-decoration: underline;
       }
 
-    h1 { 
+    h1, h2, h3, h4 { 
       color: #424242;
       margin: 0;
+      margin-left: -65px;
       padding-bottom: 20px;
       font-weight: 600;
-      font-size: 1.8em;
+      font-size: 1.2em;
+      background:url('/images/layout/h1.png') no-repeat;
+      text-indent: 65px;
       a {
         color: #2a1911;
         text-decoration: none;
@@ -47,31 +50,13 @@ body.three-col {
         }
       }
     h2 {
-      color: #3c2f26;
-      display: inline;
-      margin: 0;
-      padding-bottom: 10px;
-      font-weight: 600;
-    	font-size: 1.4em;
-    	text-align: right;
+      background:url('/images/layout/h2.png') no-repeat;
       }
     h3 {
-      color: #3c2f26;
-      display: inline;
-      margin: 0;
-      padding-bottom: 10px;
-      font-weight: 600;
-    	font-size: 1.2em;
-    	text-align: right;
+      background:url('/images/layout/h3.png') no-repeat;
       }
     h4 {
-      color: #3c2f26;
-      display: inline;
-      margin: 0;
-      padding-bottom: 10px;
-      font-weight: 600;
-    	font-size: 1.1em;
-    	text-align: right;
+      background:url('/images/layout/h4.png') no-repeat;
       }
     P {
       text-align: justify;
@@ -120,10 +105,10 @@ body.three-col {
     }
 
   #left-side {
-    @include column(2); }
+    @include column(1); }
 
   #main-area {
-  @include column(20); }
+  @include column(22); }
 
   #content {
     padding: 90px 50px 10px 40px;
@@ -146,7 +131,7 @@ body.three-col {
     }
 
   #right-side {
-    @include column(2, true); }
+    @include column(1, true); }
   
   }
 

@@ -506,8 +506,8 @@ form.bp textarea {
 /* line 14, ../src/screen.scss */
 body.three-col {
   color: #424242;
-  font-family: "Georgia","Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
-  font-size: 1.1em;
+  font-family: Verdana,"Georgia","Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+  font-size: 1.2em;
   line-height: 1.6;
   background: #FFFFFF;
   background-image: url("http://cre8ivethought.s3.amazonaws.com/images/layout/background.jpg");
@@ -531,74 +531,59 @@ body.three-col #container a:hover {
   text-decoration: underline;
 }
 /* line 34, ../src/screen.scss */
-body.three-col #container h1 {
+body.three-col #container h1, body.three-col #container h2, body.three-col #container h3, body.three-col #container h4 {
   color: #424242;
   margin: 0;
+  margin-left: -65px;
   padding-bottom: 20px;
   font-weight: 600;
-  font-size: 1.8em;
+  font-size: 1.2em;
+  background: url("/images/layout/h1.png") no-repeat;
+  text-indent: 65px;
 }
-/* line 40, ../src/screen.scss */
-body.three-col #container h1 a {
+/* line 43, ../src/screen.scss */
+body.three-col #container h1 a, body.three-col #container h2 a, body.three-col #container h3 a, body.three-col #container h4 a {
   color: #2a1911;
   text-decoration: none;
 }
-/* line 44, ../src/screen.scss */
-body.three-col #container h1 a:hover {
+/* line 47, ../src/screen.scss */
+body.three-col #container h1 a:hover, body.three-col #container h2 a:hover, body.three-col #container h3 a:hover, body.three-col #container h4 a:hover {
   color: #2a1911;
   text-decoration: none;
 }
-/* line 49, ../src/screen.scss */
+/* line 52, ../src/screen.scss */
 body.three-col #container h2 {
-  color: #3c2f26;
-  display: inline;
-  margin: 0;
-  padding-bottom: 10px;
-  font-weight: 600;
-  font-size: 1.4em;
-  text-align: right;
+  background: url("/images/layout/h2.png") no-repeat;
+}
+/* line 55, ../src/screen.scss */
+body.three-col #container h3 {
+  background: url("/images/layout/h3.png") no-repeat;
 }
 /* line 58, ../src/screen.scss */
-body.three-col #container h3 {
-  color: #3c2f26;
-  display: inline;
-  margin: 0;
-  padding-bottom: 10px;
-  font-weight: 600;
-  font-size: 1.2em;
-  text-align: right;
-}
-/* line 67, ../src/screen.scss */
 body.three-col #container h4 {
-  color: #3c2f26;
-  display: inline;
-  margin: 0;
-  padding-bottom: 10px;
-  font-weight: 600;
-  font-size: 1.1em;
-  text-align: right;
+  background: url("/images/layout/h4.png") no-repeat;
 }
-/* line 76, ../src/screen.scss */
+/* line 61, ../src/screen.scss */
 body.three-col #container P {
   text-align: justify;
   font-size: 1.2em;
   padding: 0px 30px 0px 0px;
 }
-/* line 81, ../src/screen.scss */
+/* line 66, ../src/screen.scss */
 body.three-col #container .gist {
   line-height: 1.2em;
   background: #FFFFFF;
   background-image: url("http://cre8ivethought.s3.amazonaws.com/images/layout/background.jpg");
   background-attachment: repeat;
 }
-/* line 87, ../src/screen.scss */
+/* line 72, ../src/screen.scss */
 body.three-col #container .date_list {
   font-style: italic;
   float: right;
   margin-right: 30px;
   color: #bbbbbb;
 }
-/* line 93, ../src/screen.scss */
+/* line 78, ../src/screen.scss */
 body.three-col #container .date_post {
   position: relative;
   font-style: italic;
@@ -609,7 +594,7 @@ body.three-col #container .date_post {
   color: #bbbbbb;
   margin: 0px;
 }
-/* line 103, ../src/screen.scss */
+/* line 88, ../src/screen.scss */
 body.three-col #container .archive_info {
   position: relative;
   top: -10px;
@@ -617,50 +602,50 @@ body.three-col #container .archive_info {
   font-size: 75%;
   color: #bbbbbb;
 }
-/* line 110, ../src/screen.scss */
+/* line 95, ../src/screen.scss */
 body.three-col #container .comments_link {
   color: #bbbbbb;
   text-decoration: none;
 }
-/* line 114, ../src/screen.scss */
+/* line 99, ../src/screen.scss */
 body.three-col #container .comments_link:hover {
   color: #bbbbbb;
   text-decoration: underline;
 }
-/* line 122, ../src/screen.scss */
+/* line 107, ../src/screen.scss */
 body.three-col #left-side {
   display: inline;
   float: left;
   margin-right: 10px;
-  width: 70.833px;
+  width: 30.417px;
 }
 /* line 138, ../../../../../.rvm/gems/ruby-1.9.2-p290@cre8ivethought/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.three-col #left-side {
   overflow-x: hidden;
 }
-/* line 125, ../src/screen.scss */
+/* line 110, ../src/screen.scss */
 body.three-col #main-area {
   display: inline;
   float: left;
   margin-right: 10px;
-  width: 798.333px;
+  width: 879.167px;
 }
 /* line 138, ../../../../../.rvm/gems/ruby-1.9.2-p290@cre8ivethought/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.three-col #main-area {
   overflow-x: hidden;
 }
-/* line 128, ../src/screen.scss */
+/* line 113, ../src/screen.scss */
 body.three-col #content {
   padding: 90px 50px 10px 40px;
   position: relative;
 }
-/* line 133, ../src/screen.scss */
+/* line 118, ../src/screen.scss */
 body.three-col #footer {
   height: 10px;
   margin-left: 2px;
   margin-bottom: 1000px;
 }
-/* line 139, ../src/screen.scss */
+/* line 124, ../src/screen.scss */
 body.three-col #license {
   text-align: left;
   font-style: italic;
@@ -669,25 +654,25 @@ body.three-col #license {
   padding: 0px 30px 10px 30px;
   margin: 0px -30px 0px -20px;
 }
-/* line 148, ../src/screen.scss */
+/* line 133, ../src/screen.scss */
 body.three-col #right-side {
   display: inline;
   float: left;
   margin-right: 0;
-  width: 70.833px;
+  width: 30.417px;
 }
 /* line 138, ../../../../../.rvm/gems/ruby-1.9.2-p290@cre8ivethought/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.three-col #right-side {
   overflow-x: hidden;
 }
 
-/* line 154, ../src/screen.scss */
+/* line 139, ../src/screen.scss */
 #about p {
   width: 500px;
   margin: 0px -30px 0px -20px;
 }
 
-/* line 160, ../src/screen.scss */
+/* line 145, ../src/screen.scss */
 #profile-picture-1 {
   background-image: url("http://cre8ivethought.s3.amazonaws.com/images/layout/profile-picture.png");
   background-position: right bottom;
@@ -699,7 +684,7 @@ body.three-col #right-side {
   z-index: 600;
 }
 
-/* line 171, ../src/screen.scss */
+/* line 156, ../src/screen.scss */
 #profile-picture-about-1 {
   background-image: url("http://cre8ivethought.s3.amazonaws.com/images/layout/profile-picture-about.png");
   background-position: left bottom;
@@ -712,7 +697,7 @@ body.three-col #right-side {
   float: right;
 }
 
-/* line 183, ../src/screen.scss */
+/* line 168, ../src/screen.scss */
 #header {
   position: fixed;
   margin: 0 auto;
@@ -723,7 +708,7 @@ body.three-col #right-side {
   background-repeat: repeat;
 }
 
-/* line 193, ../src/screen.scss */
+/* line 178, ../src/screen.scss */
 #menu {
   border: 0 none;
   display: inline-block;
@@ -736,17 +721,17 @@ body.three-col #right-side {
   z-index: 500;
   height: 60px;
 }
-/* line 204, ../src/screen.scss */
+/* line 189, ../src/screen.scss */
 #menu ul {
   position: relative;
   list-style-type: disc;
 }
-/* line 208, ../src/screen.scss */
+/* line 193, ../src/screen.scss */
 #menu ul, #menu ol {
   margin: 0 1.5em 1.5em 0;
   padding-left: 3.333em;
 }
-/* line 212, ../src/screen.scss */
+/* line 197, ../src/screen.scss */
 #menu li {
   display: inline;
   float: left;
