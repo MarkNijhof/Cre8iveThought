@@ -3,7 +3,7 @@ author: Mark Nijhof
 published: true
 words: 623
 characters: 3.793
-readingTime: 00:03:06
+readingTime: '00:03:06'
 
 I recently [introduced](http://cre8ivethought.com/blog/2011/06/25/client-express) you to [Client Express](http://clientexpressjs.com/) where I explained that the goal is to copy the API of [Express](http://expressjs.com/) ([Node.js](http://nodejs.org/)) but for use on the client. This will enable you to share code between the server and the client, specifically the routing.
 
