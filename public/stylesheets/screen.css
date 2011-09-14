@@ -688,30 +688,29 @@ body.three-col #right-side {
   float: left;
   margin-right: 0;
   width: 30.417px;
-  background: url("/images/layout/face.jpg") 0 0;
 }
 /* line 138, ../../../../../.rvm/gems/ruby-1.9.2-p290@cre8ivethought/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.three-col #right-side {
   overflow-x: hidden;
 }
 
-/* line 164, ../src/screen.scss */
+/* line 163, ../src/screen.scss */
 .nobullets ul {
   position: relative;
   list-style-type: none;
 }
-/* line 168, ../src/screen.scss */
+/* line 167, ../src/screen.scss */
 .nobullets ul, .nobullets ol {
   margin: 0;
   margin-bottom: 20px;
 }
-/* line 172, ../src/screen.scss */
+/* line 171, ../src/screen.scss */
 .nobullets li {
   list-style-image: none;
   list-style-type: none;
 }
 
-/* line 178, ../src/screen.scss */
+/* line 177, ../src/screen.scss */
 #profile-picture-1 {
   background-image: url("http://cre8ivethought.s3.amazonaws.com/images/layout/profile-picture.png");
   background-position: right bottom;
@@ -723,7 +722,7 @@ body.three-col #right-side {
   z-index: 600;
 }
 
-/* line 189, ../src/screen.scss */
+/* line 188, ../src/screen.scss */
 #profile-picture-about-1 {
   background-image: url("http://cre8ivethought.s3.amazonaws.com/images/layout/profile-picture-about.png");
   background-position: left bottom;
@@ -736,7 +735,7 @@ body.three-col #right-side {
   float: right;
 }
 
-/* line 201, ../src/screen.scss */
+/* line 200, ../src/screen.scss */
 #header {
   position: fixed;
   margin: 0 auto;
@@ -747,7 +746,7 @@ body.three-col #right-side {
   background-repeat: repeat;
 }
 
-/* line 211, ../src/screen.scss */
+/* line 210, ../src/screen.scss */
 #menu {
   border: 0 none;
   display: inline-block;
@@ -760,17 +759,17 @@ body.three-col #right-side {
   z-index: 500;
   height: 60px;
 }
-/* line 222, ../src/screen.scss */
+/* line 221, ../src/screen.scss */
 #menu ul {
   position: relative;
   list-style-type: disc;
 }
-/* line 226, ../src/screen.scss */
+/* line 225, ../src/screen.scss */
 #menu ul, #menu ol {
   margin: 0 1.5em 1.5em 0;
   padding-left: 3.333em;
 }
-/* line 230, ../src/screen.scss */
+/* line 229, ../src/screen.scss */
 #menu li {
   display: inline;
   float: left;

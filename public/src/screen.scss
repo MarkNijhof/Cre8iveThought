@@ -155,7 +155,6 @@ body.three-col {
 
   #right-side {
     @include column(1, true); 
-    background:url('/images/layout/face.jpg') 0 0;
   }
   
 }
