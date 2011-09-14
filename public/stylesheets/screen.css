@@ -616,7 +616,7 @@ body.three-col .archive_info {
   color: #bbbbbb;
 }
 /* line 107, ../src/screen.scss */
-body.three-col .comments h1, body.three-col .comments h2, body.three-col .comments h3, body.three-col .comments h4 {
+body.three-col #dsq-content h1, body.three-col #dsq-content h2, body.three-col #dsq-content h3, body.three-col #dsq-content h4 {
   color: #424242;
   margin: 0;
   padding-bottom: 20px;
@@ -624,12 +624,12 @@ body.three-col .comments h1, body.three-col .comments h2, body.three-col .commen
   font-size: 1.2em;
 }
 /* line 114, ../src/screen.scss */
-body.three-col .comments .comments_link {
+body.three-col #dsq-content .comments_link {
   color: #bbbbbb;
   text-decoration: none;
 }
 /* line 118, ../src/screen.scss */
-body.three-col .comments .comments_link:hover {
+body.three-col #dsq-content .comments_link:hover {
   color: #bbbbbb;
   text-decoration: underline;
 }
