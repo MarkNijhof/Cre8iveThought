@@ -538,7 +538,7 @@ body.three-col #container h1, body.three-col #container h2, body.three-col #cont
   padding-bottom: 20px;
   font-weight: 600;
   font-size: 1.2em;
-  background: url("/images/layout/h1.png") no-repeat;
+  background: url("http://cre8ivethought.s3.amazonaws.com/images/layout/h1.png") no-repeat;
   text-indent: 65px;
 }
 /* line 43, ../src/screen.scss */
@@ -553,15 +553,15 @@ body.three-col #container h1 a:hover, body.three-col #container h2 a:hover, body
 }
 /* line 52, ../src/screen.scss */
 body.three-col #container h2 {
-  background: url("/images/layout/h2.png") no-repeat;
+  background: url("http://cre8ivethought.s3.amazonaws.com/images/layout/h2.png") no-repeat;
 }
 /* line 55, ../src/screen.scss */
 body.three-col #container h3 {
-  background: url("/images/layout/h3.png") no-repeat;
+  background: url("http://cre8ivethought.s3.amazonaws.com/images/layout/h3.png") no-repeat;
 }
 /* line 58, ../src/screen.scss */
 body.three-col #container h4 {
-  background: url("/images/layout/h4.png") no-repeat;
+  background: url("http://cre8ivethought.s3.amazonaws.com/images/layout/h4.png") no-repeat;
 }
 /* line 61, ../src/screen.scss */
 body.three-col #container P {
