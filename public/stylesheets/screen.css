@@ -580,7 +580,7 @@ body.three-col li {
 body.three-col P {
   text-align: justify;
   font-size: 1.2em;
-  padding: 20px 30px 20px 0px;
+  padding: 20px 30px 40px 0px;
 }
 /* line 77, ../src/screen.scss */
 body.three-col .gist {
