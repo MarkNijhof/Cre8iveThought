@@ -1,0 +1,44 @@
+title: Reflection
+author: Mark Nijhof
+published: false
+words: 852
+characters: 4.595
+readingTime: '00:04:15'
+
+Kent Beck recently published a blog post where he describes his ideal job and I think it is a great exercise to self reflect on your current situation. So I decided to do the exercise myself as well. And I found that I want to work with smart people on interesting problems in a relaxed environment, where on the large majority of the days I can enjoy the good weather together with my family doing fun stuff. No big surprise here but still good to have done the exercise.
+
+## What is important to me (professionally)?
+I suppose I am not going to be any different then the next guy, but I like a challenge. I used to think that this challenge came from working with new technologies. And technology can be challenging in it self but I find that people challenge me much more. I want to be confronted by the people around me, with their different ideas, views and experiences. I want to learn from it and hopefully teach some things as well.
+
+**People are important to me, more so then technology.**
+
+Figuring out the correct solution to a problem is also something that I really enjoy. It is hard to get right and requires lots of creativity, but when you do come-up with a solution that makes people go like; "naturally that is how it should have been", is one of the most satisfying feelings. And you know what, using a particular technology hardly ever is the solution to someone's problem. Understanding what people are doing and why they are doing these things will help you make the software they use or will use more user-friendly and natural. This is often what makes a real difference.
+
+The fact that my kids can basically do anything they want on the iPad without any trouble or instructions is an example of this. It really doesn't matter that the iPad is nicely shaped and light to carry, the biggest impact comes from how natural the software feels when you use the iPad.
+
+**Interesting problems are important to me, more so then technology.**
+
+So you know may get the impression that technology is not important to me, and that is not correct either. I do get great pleasure out of coding in Node and Ruby, technologies that are relatively new to me. I am just saying that these are less important too me then the previous mentioned things. Now different technologies often brings the above things together, a new technology means different people with different ideas. A new technology may also open up a whole new set of solutions. 
+
+**Technology is still very important to me.**
+
+## What is important to me (personally)?
+It is funny, this is in fact more important to me then the previous chapter so it should be listed first, but since this is mostly a technical blog I thought I would have lost you all if I did. 
+
+Family
+
+Family and having time with them is hugely important, I don't want to be a father that only sees his kids in the weekends. I have not seen my dad much as he was working so much and I don't want to make the same mistakes he did. I know why he did so; he wanted to provide for his family, making sure they had a good life. And this is on top of my priority list as well, I want my kids (Milo, Thalia, Neo plus one on the way) to have all they need (perhaps not all they want). And I like for Mona to have the flexibility to do what she really likes to do. So I'll need to work hard as well, and I like working hard, when I am into the zone hours just fly by, but I like my family even more.
+
+**Family is important to me, more so then (interesting) work.**
+
+I have lived in a few different places in the world and I like to think they went from one (almost) extreme to one other (almost) extreme. I lived in Norway for a total of five years, both in Bergen where it rains more then anywhere else on earth (I am convinced of this) and Oslo where it got minus 20 degrees celcius in the winter. And I have also lived in Sydney Australia for about one year where the summer was nice dry and warm. I even worked near the beach with my laptop, it was truly great. 
+
+I get depressed / annoyed by bad weather, it really brings my mood down, this affects all aspects of my life, both personal and professional. 
+
+**Good weather / climate is important to me, more so then (interesting) work.**
+
+## Lets re-cap
+People and interesting problems are more important to me then new technologies, but if I can choose I rather work with an exciting technology then not. The good weather positively affects my happiness levels, so I rather have that then rain or cold. And above this all stands my family.
+
+## Am I there yet?
+No, not yet, but I am getting closer.
