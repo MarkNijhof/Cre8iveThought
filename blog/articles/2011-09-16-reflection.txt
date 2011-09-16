@@ -5,7 +5,7 @@ words: 852
 characters: 4.595
 readingTime: '00:04:15'
 
-Kent Beck recently published a blog post where he describes his ideal job and I think it is a great exercise to self reflect on your current situation. So I decided to do the exercise myself as well. And I found that I want to work with smart people on interesting problems in a relaxed environment, where on the large majority of the days I can enjoy the good weather together with my family doing fun stuff. No big surprise here but still good to have done the exercise.
+Kent Beck recently published <a href="http://www.threeriversinstitute.org/blog/?p=590">a blog post</a> where he describes his ideal job and I think that that is a great self reflection exercise on someones current situation. So I decided to do the exercise myself as well. And I found that I want to work with smart people on interesting problems in a relaxed environment, where on the large majority of the days I can enjoy the good weather together with my family doing fun stuff. No big surprise here but still good to have done the exercise.
 
 ## What is important to me (professionally)?
 I suppose I am not going to be any different then the next guy, but I like a challenge. I used to think that this challenge came from working with new technologies. And technology can be challenging in it self but I find that people challenge me much more. I want to be confronted by the people around me, with their different ideas, views and experiences. I want to learn from it and hopefully teach some things as well.
@@ -31,11 +31,15 @@ Family and having time with them is hugely important, I don't want to be a fathe
 
 **Family is important to me, more so then (interesting) work.**
 
-I have lived in a few different places in the world and I like to think they went from one (almost) extreme to one other (almost) extreme. I lived in Norway for a total of five years, both in Bergen where it rains more then anywhere else on earth (I am convinced of this) and Oslo where it got minus 20 degrees celcius in the winter. And I have also lived in Sydney Australia for about one year where the summer was nice dry and warm. I even worked near the beach with my laptop, it was truly great. 
+I have lived in a few different places in the world and I like to think they went from one (almost) extreme to one other (almost) extreme. I lived in Norway for a total of five years, both in Bergen where it rains more then anywhere else on earth (I am convinced of this) and Oslo where it got minus 20 degrees Celsius in the winter. And I have also lived in Sydney Australia for about one year where the summer was nice dry and warm. I even worked near the beach with my laptop, it was truly great. 
 
 I get depressed / annoyed by bad weather, it really brings my mood down, this affects all aspects of my life, both personal and professional. 
 
 **Good weather / climate is important to me, more so then (interesting) work.**
+
+Developing is fun, but there is a lot more out there that is fun as well. I like going to the movies, going out to eat, playing with the kids, visiting different cities / countries, taking pictures and lots and lots more other things. Also I like to eat good food, not just when we go out to eat but also at home. The simple things is what do it for me.
+
+**Regularly being able to do something fun is important to me, more so then f.ex. a yearly vacation.**
 
 ## Lets re-cap
 People and interesting problems are more important to me then new technologies, but if I can choose I rather work with an exciting technology then not. The good weather positively affects my happiness levels, so I rather have that then rain or cold. And above this all stands my family.
