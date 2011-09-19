@@ -616,11 +616,7 @@ body.three-col .archive_info {
   font-size: 75%;
   color: #bbbbbb;
 }
-/* line 107, ../src/screen.scss */
-body.three-col #dsq-content {
-  padding: 0px 20px 0px 0px;
-}
-/* line 109, ../src/screen.scss */
+/* line 108, ../src/screen.scss */
 body.three-col #dsq-content h1, body.three-col #dsq-content h2, body.three-col #dsq-content h3, body.three-col #dsq-content h4 {
   color: #424242;
   margin: 0px;
@@ -630,17 +626,17 @@ body.three-col #dsq-content h1, body.three-col #dsq-content h2, body.three-col #
   background: url("");
   text-indent: 0px;
 }
-/* line 118, ../src/screen.scss */
+/* line 117, ../src/screen.scss */
 body.three-col #dsq-content .comments_link {
   color: #bbbbbb;
   text-decoration: none;
 }
-/* line 122, ../src/screen.scss */
+/* line 121, ../src/screen.scss */
 body.three-col #dsq-content .comments_link:hover {
   color: #bbbbbb;
   text-decoration: underline;
 }
-/* line 130, ../src/screen.scss */
+/* line 129, ../src/screen.scss */
 body.three-col #left-side {
   display: inline;
   float: left;
@@ -651,7 +647,7 @@ body.three-col #left-side {
 * html body.three-col #left-side {
   overflow-x: hidden;
 }
-/* line 133, ../src/screen.scss */
+/* line 132, ../src/screen.scss */
 body.three-col #main-area {
   display: inline;
   float: left;
@@ -662,12 +658,12 @@ body.three-col #main-area {
 * html body.three-col #main-area {
   overflow-x: hidden;
 }
-/* line 136, ../src/screen.scss */
+/* line 135, ../src/screen.scss */
 body.three-col #content {
   padding: 90px 60px 10px 70px;
   position: relative;
 }
-/* line 141, ../src/screen.scss */
+/* line 140, ../src/screen.scss */
 body.three-col #license {
   text-align: left;
   font-style: italic;
@@ -675,7 +671,7 @@ body.three-col #license {
   color: #888;
   padding: 0px 0px 10px 0px;
 }
-/* line 149, ../src/screen.scss */
+/* line 148, ../src/screen.scss */
 body.three-col #right-side {
   display: inline;
   float: left;
@@ -687,23 +683,23 @@ body.three-col #right-side {
   overflow-x: hidden;
 }
 
-/* line 156, ../src/screen.scss */
+/* line 155, ../src/screen.scss */
 .nobullets ul {
   position: relative;
   list-style-type: none;
 }
-/* line 160, ../src/screen.scss */
+/* line 159, ../src/screen.scss */
 .nobullets ul, .nobullets ol {
   margin: 0;
   margin-bottom: 20px;
 }
-/* line 164, ../src/screen.scss */
+/* line 163, ../src/screen.scss */
 .nobullets li {
   list-style-image: none;
   list-style-type: none;
 }
 
-/* line 170, ../src/screen.scss */
+/* line 169, ../src/screen.scss */
 #profile-picture-1 {
   background-image: url("http://cre8ivethought.s3.amazonaws.com/images/layout/profile-picture.png");
   background-position: right bottom;
@@ -715,7 +711,7 @@ body.three-col #right-side {
   z-index: 600;
 }
 
-/* line 181, ../src/screen.scss */
+/* line 180, ../src/screen.scss */
 #profile-picture-about-1 {
   background-image: url("http://cre8ivethought.s3.amazonaws.com/images/layout/profile-picture-about.png");
   background-position: left bottom;
@@ -728,7 +724,7 @@ body.three-col #right-side {
   float: right;
 }
 
-/* line 193, ../src/screen.scss */
+/* line 192, ../src/screen.scss */
 #header {
   position: fixed;
   margin: 0 auto;
@@ -739,7 +735,7 @@ body.three-col #right-side {
   background-repeat: repeat;
 }
 
-/* line 203, ../src/screen.scss */
+/* line 202, ../src/screen.scss */
 #footer {
   position: fixed;
   width: 100%;
@@ -749,24 +745,24 @@ body.three-col #right-side {
   left: 0px;
   background: url("http://cre8ivethought.s3.amazonaws.com/images/layout/frame-bottom.png") repeat;
 }
-/* line 211, ../src/screen.scss */
+/* line 210, ../src/screen.scss */
 #footer #stats {
   color: gray;
   font-size: 0.8em;
   float: right;
   padding: 28px 0px 0px 0px;
 }
-/* line 216, ../src/screen.scss */
+/* line 215, ../src/screen.scss */
 #footer #stats ul {
   position: relative;
   list-style-type: disc;
 }
-/* line 220, ../src/screen.scss */
+/* line 219, ../src/screen.scss */
 #footer #stats ul, #footer #stats ol {
   margin: 0 1.5em 1.5em 0;
   padding-left: 3.333em;
 }
-/* line 224, ../src/screen.scss */
+/* line 223, ../src/screen.scss */
 #footer #stats li {
   display: inline;
   float: left;
@@ -779,7 +775,7 @@ body.three-col #right-side {
   white-space: nowrap;
 }
 
-/* line 238, ../src/screen.scss */
+/* line 237, ../src/screen.scss */
 #menu {
   border: 0 none;
   display: inline-block;
@@ -792,17 +788,17 @@ body.three-col #right-side {
   z-index: 500;
   height: 60px;
 }
-/* line 249, ../src/screen.scss */
+/* line 248, ../src/screen.scss */
 #menu ul {
   position: relative;
   list-style-type: disc;
 }
-/* line 253, ../src/screen.scss */
+/* line 252, ../src/screen.scss */
 #menu ul, #menu ol {
   margin: 0 1.5em 1.5em 0;
   padding-left: 3.333em;
 }
-/* line 257, ../src/screen.scss */
+/* line 256, ../src/screen.scss */
 #menu li {
   display: inline;
   float: left;
