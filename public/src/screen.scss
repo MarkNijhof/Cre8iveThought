@@ -14,7 +14,7 @@
 body.three-col {
   color: #424242;
   font-family: Verdana,"Georgia","Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
-  font-size: 1.1em;
+  font-size: 1.0em;
   line-height: 1.6;
   background: #FFFFFF;
   background-image: url('http://cre8ivethought.s3.amazonaws.com/images/layout/background.jpg');	
@@ -61,7 +61,7 @@ body.three-col {
   P {
     text-align: justify;
     font-size: 1.1em;
-    padding: 0px 30px 30px 0px;
+    padding: 0px 0px 30px 0px;
     }
   ul, ol {
 	margin-top: 0px;
@@ -70,10 +70,10 @@ body.three-col {
   sup {
     text-align: justify;
     font-size: 0.8em;
-    padding: 0px 30px 30px 0px;
+    padding: 0px 0px 30px 0px;
   }
   center {
-    padding: 0px 30px 30px 0px;
+    padding: 0px 0px 30px 0px;
   }
   .gist {
     line-height: 1.1em;	
@@ -84,7 +84,7 @@ body.three-col {
   .date_list {
     font-style: italic;
     float: right;
-    margin-right: 30px;
+    margin-right: 0px;
     color: #bbbbbb;  
     }
   .date_post {
@@ -105,7 +105,7 @@ body.three-col {
     color: #bbbbbb;
     }
   #dsq-content {
-    padding: 0px 50px 0px 0px;
+    padding: 0px 20px 0px 0px;
     h1, h2, h3, h4 {
       color: #424242;
       margin: 0px;
@@ -128,27 +128,26 @@ body.three-col {
     }
 
   #left-side {
-    @include column(1); }
+    @include column(2); }
 
   #main-area {
-  @include column(22); }
+  @include column(20); }
 
   #content {
-    padding: 90px 50px 10px 40px;
+    padding: 90px 60px 10px 70px;
     position: relative;
     }
   
   #license {
     text-align: left;
   	font-style: italic;
-    font-size: 18px;
+    font-size: 0.9em;
     color: #888;
-    padding: 0px 30px 10px 30px;
-    margin: 0px -30px 0px -20px;
+    padding: 0px 0px 10px 0px;
     }
 
   #right-side {
-    @include column(1, true); 
+    @include column(2, true); 
   }
   
 }
