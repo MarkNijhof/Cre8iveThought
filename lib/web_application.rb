@@ -42,7 +42,7 @@ class WebApplication < Sinatra::Base
   get '/blog/*.json/*/*/*' do
     articles = ($blog_dorsey.get_by_slug params[:splat][0])[params[:splat][1].to_i...params[:splat][2].to_i]
     
-    return articles.map { |post| post.reject! { |key, value| !params[:splat][3].split(',').include? key.to_s }}.to_json
+    return articles.map { |post| post.reject { |key, value| !params[:splat][3].split(',').include? key.to_s }}.to_json
   end
 
   get '/blog/*.json/*/*' do
@@ -53,7 +53,7 @@ class WebApplication < Sinatra::Base
   get '/blog/*.json/*' do
     articles = ($blog_dorsey.get_by_slug params[:splat][0])
     
-    return articles.map { |post| post.reject! { |key, value| !params[:splat][1].split(',').include? key.to_s }}.to_json
+    return articles.map { |post| post.reject { |key, value| !params[:splat][1].split(',').include? key.to_s }}.to_json
   end
 
   get '/blog/*.json' do
