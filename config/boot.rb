@@ -19,5 +19,6 @@ puts "=> Located Gemfile for #{SINATRA_ENV}"
 
 require 'rack-rewrite'
 require 'haml'
+require 'json'
 require './lib/dorsey'
 require './lib/web_application'
