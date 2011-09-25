@@ -58,6 +58,8 @@ class WebApplication < Sinatra::Base
 
   get '/blog/*.json' do
     articles = $blog_dorsey.get_by_slug params[:splat][0]
+    return articles.to_json if articles.count == 1
+
     return articles.select{ |item| item[:published] }.to_json
   end
 
