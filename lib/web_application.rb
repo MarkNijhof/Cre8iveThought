@@ -40,25 +40,25 @@ class WebApplication < Sinatra::Base
   end
 
   get '/blog/*.json/*/*/*' do
-    articles = ($blog_dorsey.get_by_slug params[:splat][0])[params[:splat][1].to_i...params[:splat][2].to_i]
+    articles = ($blog_dorsey.get_by_slug params[:splat][0]).select{ |item| item[:published] }[params[:splat][1].to_i...params[:splat][2].to_i]
     
     return articles.map { |post| post.reject { |key, value| !params[:splat][3].split(',').include? key.to_s }}.to_json
   end
 
   get '/blog/*.json/*/*' do
-    articles = ($blog_dorsey.get_by_slug params[:splat][0])[params[:splat][1].to_i...params[:splat][2].to_i]
+    articles = ($blog_dorsey.get_by_slug params[:splat][0]).select{ |item| item[:published] }[params[:splat][1].to_i...params[:splat][2].to_i]
     return articles.to_json
   end
 
   get '/blog/*.json/*' do
     articles = ($blog_dorsey.get_by_slug params[:splat][0])
     
-    return articles.map { |post| post.reject { |key, value| !params[:splat][1].split(',').include? key.to_s }}.to_json
+    return articles.select{ |item| item[:published] }.map { |post| post.reject { |key, value| !params[:splat][1].split(',').include? key.to_s }}.to_json
   end
 
   get '/blog/*.json' do
     articles = $blog_dorsey.get_by_slug params[:splat][0]
-    return articles.to_json
+    return articles.select{ |item| item[:published] }.to_json
   end
 
   get '/blog/*' do
