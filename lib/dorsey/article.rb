@@ -6,7 +6,7 @@ module Dorsey
   class Article < Hash
     Defaults = {
       :publish_date => "",
-      :body => "",
+      :content => "",
       :summary => "",
       :file => "",
       :url => "",
@@ -40,14 +40,14 @@ module Dorsey
       end
     end
 
-    def get_summary body
-      body =~ @config[:summary_delimiter] ? body.split(@config[:summary_delimiter]).first : body
+    def get_summary content
+      content =~ @config[:summary_delimiter] ? content.split(@config[:summary_delimiter]).first : content
     end
 
     def load_article article_file
-      raw_meta_data, body = File.read(article_file).split(/\n\n/, 2)
-      self[:body] = markdown body
-      self[:summary] = markdown(get_summary(body))
+      raw_meta_data, content = File.read(article_file).split(/\n\n/, 2)
+      self[:content] = markdown content
+      self[:summary] = markdown(get_summary(content))
       self.update abstract_meta_data(article_file, raw_meta_data)
       generate_url
       
