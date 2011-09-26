@@ -29,7 +29,7 @@ class WebApplication < Sinatra::Base
   get /^\/blog(\/.*?)?(\/start\:\d+)?(\/end\:\d+)?(\/filter_by\:.*)?$/ do |url, start_index, end_index, filter_by|
     
     start_index = start_index.nil? ? 0  : start_index.gsub!(/\/start\:/, "").to_i
-    end_index   = end_index.nil?   ? -1 : end_index.gsub!(/\/end\:/, "").to_i
+    end_index   = end_index.nil?   ? -1 : end_index.gsub!(/\/end\:/, "").to_i - 1
     filter_by   = filter_by.nil?   ? '' : filter_by.gsub!(/\/filter_by\:/, "")
 
     articles    = ($blog_dorsey.get_by_slug url)
@@ -38,7 +38,7 @@ class WebApplication < Sinatra::Base
     
     return [].to_json if articles.count < start_index
     
-    articles    = articles[start_index...end_index]
+    articles    = articles[start_index..end_index]
         
     articles    = articles.map { |post| post.reject { |key, value| !filter_by.split(',').include? key.to_s }} if not filter_by == ''
     
