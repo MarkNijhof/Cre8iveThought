@@ -18,19 +18,6 @@ class WebApplication < Sinatra::Base
     set :date, lambda {|now| now.strftime("%B #{now.day.ordinal} %Y") }
   end
   
-  get '/' do
-    $show_stats = false
-    File.read(File.join('public', 'index.html'))
-  end
- 
-  ["/blog/?", "/blog/index/?"].each do |route|
-    get route do
-      $show_stats = false
-      $header_for = 'blog'
-      haml(:'blog/index', :locals => { :title => "Cre8ive Thought", :articles => $blog_dorsey.articles})
-    end
-  end
-
   get "/blog/index.xml" do
     content_type :"application/atom+xml"
     $show_stats = false
@@ -39,42 +26,23 @@ class WebApplication < Sinatra::Base
     haml(:'rss', :layout=>false, :locals => { :blog_title => "Cre8ive Thought", :rss_updated => rss_updated, :blog_url => "#{$blog_dorsey.config[:host]}blog/index", :rss_url => "#{$blog_dorsey.config[:host]}blog/index.xml", :articles => $blog_dorsey.articles.select{ |item| item[:published] }})
   end
 
-  get '/blog/*.json/*/*/*' do
-    articles = ($blog_dorsey.get_by_slug params[:splat][0]).select{ |item| item[:published] }[params[:splat][1].to_i...params[:splat][2].to_i]
+  get /^\/blog(\/.*?)?(\/start\:\d+)?(\/end\:\d+)?(\/filter_by\:.*)?$/ do |url, start_index, end_index, filter_by|
     
-    return articles.map { |post| post.reject { |key, value| !params[:splat][3].split(',').include? key.to_s }}.to_json
-  end
+    start_index = start_index.nil? ? 0  : start_index.gsub!(/\/start\:/, "").to_i
+    end_index   = end_index.nil?   ? -1 : end_index.gsub!(/\/end\:/, "").to_i
+    filter_by   = filter_by.nil?   ? '' : filter_by.gsub!(/\/filter_by\:/, "")
 
-  get '/blog/*.json/*/*' do
-    articles = ($blog_dorsey.get_by_slug params[:splat][0]).select{ |item| item[:published] }[params[:splat][1].to_i...params[:splat][2].to_i]
+    articles    = ($blog_dorsey.get_by_slug url)
+    
+    articles    = articles.select{ |item| item[:published] }  if articles.count > 1
+    
+    return [].to_json if articles.count < start_index
+    
+    articles    = articles[start_index...end_index]
+        
+    articles    = articles.map { |post| post.reject { |key, value| !filter_by.split(',').include? key.to_s }} if not filter_by == ''
+    
     return articles.to_json
-  end
-
-  get '/blog/*.json/*' do
-    articles = ($blog_dorsey.get_by_slug params[:splat][0])
-    
-    return articles.select{ |item| item[:published] }.map { |post| post.reject { |key, value| !params[:splat][1].split(',').include? key.to_s }}.to_json
-  end
-
-  get '/blog/*.json' do
-    articles = $blog_dorsey.get_by_slug params[:splat][0]
-    return articles.to_json if articles.count == 1
-
-    return articles.select{ |item| item[:published] }.to_json
-  end
-
-  get '/blog/*' do
-    $header_for = 'blog'
-    $show_stats = false
-    articles = $blog_dorsey.get_by_slug params[:splat][0]
-
-    $show_stats = true
-    return haml(:'blog/article', :locals => { :title => "Cre8ive Thought - #{articles[0].title}", :post => articles[0]} ) if articles.count == 1
-
-    $show_stats = false
-    return haml(:'blog/archive', :locals => { :title => "Cre8ive Thought - #{params[:splat][0]}", :posts => articles, :slug => params[:splat][0] } ) if articles.count > 1
-
-    haml(:'404', :locals => { :title => "Cre8ive Thought - Not Found", :slug => params[:splat][0] } )
   end
   
 end
