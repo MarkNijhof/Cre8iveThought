@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+%feed{:xmlns=>"http://www.w3.org/2005/Atom"}
+  %title 
+    = blog_title
+  <id>#{blog_url}</id>
+  %author 
+    %name 
+      Mark Nijhof
+  <link href='#{rss_url}' rel='self' />
+  %updated #{rss_updated}
+  - for article in articles
+    %entry
+      %title 
+        =article.title
+      <link href='#{article.url}' rel='alternate' />
+      <id>#{article.url}</id>
+      <published>#{article.date_as_date}</published>
+      <updated>#{article.updated_as_date}</updated>
+      %author 
+        %name 
+          Mark Nijhof
+
+      %summary{:type=>"html"} 
+        &=article.summary
+        
+      %content{:type=>"html"} 
+        &= "<noscript><p style='margin-left: 10px; margin-right: 10px;'><i>The RSS reader you are using doesn't support JavaScript; because of this you will not see the embedded code gists. Consider opening the <a href='#{article.url}'>post</a> in your browser instead.</i></p></noscript>" if /gist.github.com/.match(article.content)
+        &=article.content
