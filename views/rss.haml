@@ -12,8 +12,8 @@
     %entry
       %title 
         =article.title
-      <link href='#{article.url}' rel='alternate' />
-      <id>#{article.url}</id>
+      <link href='#{$host}#{article.url}' rel='alternate' />
+      <id>#{$host}#{article.url}</id>
       <published>#{article.date_as_date}</published>
       <updated>#{article.updated_as_date}</updated>
       %author 

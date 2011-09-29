@@ -4,17 +4,13 @@ class WebApplication < Sinatra::Base
   configure do
     set :public, './public'
     set :haml, :format => :html5
+    $host = "http://cre8ivethought.com"
   end
 
   $blog_dorsey = Dorsey::Server.new do
     set :article_path, './blog/articles'
     set :article_prefix, "blog"
-    if ENV['RACK_ENV'] != 'production'
-      set :host, "http://local.cre8ivethought.com:3000/"
-    else
-      set :host, "http://cre8ivethought.com/"
-    end
-    # set :host, ""
+    set :host, ''
     set :disqus, "cre8ivethought"
     set :date, lambda {|now| now.strftime("%B #{now.day.ordinal} %Y") }
   end
@@ -24,7 +20,8 @@ class WebApplication < Sinatra::Base
     $show_stats = false
     $header_for = 'blog'
     rss_updated = $blog_dorsey.articles.first.updated_as_date 
-    haml(:'rss', :layout=>false, :locals => { :blog_title => "Cre8ive Thought", :rss_updated => rss_updated, :blog_url => "#{$blog_dorsey.config[:host]}blog/index", :rss_url => "#{$blog_dorsey.config[:host]}blog/index.xml", :articles => $blog_dorsey.articles.select{ |item| item[:published] }})
+    articles    = $blog_dorsey.articles.select{ |item| item[:published] }
+    haml(:'rss', :layout=>false, :locals => { :blog_title => "Cre8ive Thought", :rss_updated => rss_updated, :blog_url => "#{$host}blog/index", :rss_url => "#{$host}blog/index.xml", :articles => articles })
   end
 
   get /^\/blog(\/.*?)?(\/start\:\d+)?(\/end\:\d+)?(\/filter_by\:.*)?$/ do |url, start_index, end_index, filter_by|
@@ -42,7 +39,7 @@ class WebApplication < Sinatra::Base
     articles    = articles[start_index..end_index]
         
     articles    = articles.map { |post| post.reject { |key, value| !filter_by.split(',').include? key.to_s }} if not filter_by == ''
-    
+
     return articles.to_json
   end
   
