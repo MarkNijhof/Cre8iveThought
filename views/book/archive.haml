@@ -1,9 +1,0 @@
-%section.articles
-  %h1 Archive for: #{slug}
-  %hr
-  - for post in posts.select{|item| item[:published] }
-    = haml(:'book/_article_summary', :layout => false, :locals => { :post => post })
-
-%br
-%br
-= haml(:'book/_archives', :layout => false) 
