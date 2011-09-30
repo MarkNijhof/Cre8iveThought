@@ -40,7 +40,9 @@ class WebApplication < Sinatra::Base
         
     articles    = articles.map { |post| post.reject { |key, value| !filter_by.split(',').include? key.to_s }} if not filter_by == ''
 
-    return articles.to_json
+    return articles.to_json if params[:callback].nil? || params[:callback] == ''
+    
+    return "#{params[:callback]}(#{articles.to_json})"
   end
   
 end
