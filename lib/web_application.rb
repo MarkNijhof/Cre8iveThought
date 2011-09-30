@@ -31,7 +31,7 @@ class WebApplication < Sinatra::Base
     end_index   = end_index.nil?   ? -1 : end_index.gsub!(/,end\:/, "").to_i - 1
     filter_by   = filter_by.nil?   ? '' : filter_by.gsub!(/,filter_by\:/, "")
 
-    return "#{url} - #{start_index} - #{end_index} - #{filter_by}"
+    # return "#{url} - #{start_index} - #{end_index} - #{filter_by}"
 
     articles    = $blog_dorsey.get_by_slug url
     
