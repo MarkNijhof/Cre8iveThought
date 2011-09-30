@@ -10,7 +10,7 @@ class WebApplication < Sinatra::Base
   $blog_dorsey = Dorsey::Server.new do
     set :article_path, './blog/articles'
     set :article_prefix, "blog"
-    set :host, ''
+    set :host, $host
     set :disqus, "cre8ivethought"
     set :date, lambda {|now| now.strftime("%B #{now.day.ordinal} %Y") }
   end
