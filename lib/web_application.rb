@@ -24,12 +24,12 @@ class WebApplication < Sinatra::Base
     haml(:'rss', :layout=>false, :locals => { :blog_title => "Cre8ive Thought", :rss_updated => rss_updated, :blog_url => "#{$host}blog/index", :rss_url => "#{$host}blog/index.xml", :articles => articles })
   end
 
-  get /^\/blog(\/.*?)?(\/start\:\d+)?(\/end\:\d+)?(\/filter_by\:.*)?$/ do |url, start_index, end_index, filter_by|
+  get /^\/blog(\/.*?)(,start\:\d+)?(,end\:\d+)?(,filter_by\:.*)?$/ do |url, start_index, end_index, filter_by|
     
     url         = url == '/'       ? '' : url
-    start_index = start_index.nil? ? 0  : start_index.gsub!(/\/start\:/, "").to_i
-    end_index   = end_index.nil?   ? -1 : end_index.gsub!(/\/end\:/, "").to_i - 1
-    filter_by   = filter_by.nil?   ? '' : filter_by.gsub!(/\/filter_by\:/, "")
+    start_index = start_index.nil? ? 0  : start_index.gsub!(/,start\:/, "").to_i
+    end_index   = end_index.nil?   ? -1 : end_index.gsub!(/,end\:/, "").to_i - 1
+    filter_by   = filter_by.nil?   ? '' : filter_by.gsub!(/,filter_by\:/, "")
 
     return "#{url} - #{start_index} - #{end_index} - #{filter_by}"
 
