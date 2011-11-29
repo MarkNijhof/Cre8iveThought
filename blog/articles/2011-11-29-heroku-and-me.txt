@@ -10,16 +10,16 @@ After hearing you guys got a ton of applications for the different jobs in Europ
 
 # Because Heroku Rocks!
 
-Heroku went from a very convenient way of deploying Ruby code to a complete polyglot platform that provides pretty much everything a developer needs or wants to build and deploy an application with. Then also think of Heroku's great philosophy that small usage can be free of charge. Add these things together and you get the perfect platform to try out new ideas; and when successful have them grow as big as they can.
+Heroku went from a very convenient way of deploying Ruby code to a complete polyglot platform that provides pretty much everything a developer needs or wants to build and deploy an application with. Then also think of Heroku's great philosophy that small usage can be free of charge. Add these things together and you get the perfect platform to try out new ideas; and when successful have them grow as big as they can be.
 
 <img src="http://www.dasreviews.com/wp-content/uploads/2009/01/apple-in-the-sky.jpg" style="float:right; width:50%; margin: 10px 0px 10px 10px; border: solid 1px black;" />
-You guys have really set a new standard for how easy certain things can to be, from deploying an application to adding different add-ons like databases, monitoring applications and many more. And you're adding more and more languages and add-ons constantly, how amazing is that! 
+You guys have really set a new standard for how easy certain things can to be, from deploying an application to adding different add-ons like databases, monitoring applications and many many more. And you're adding more and more languages and add-ons constantly, how amazing is that! 
 
 I call this the Heroku experience, it's like you're the Apple of the cloud application platforms.
 
-I can go on, but you guys know all this stuff already, so long story short; I love what you guys do!
+I can go on and on, but you guys know all this stuff already, so long story short; I just love what you guys do!
 
-## Why would Heroku want me to work with them?
+## Why would Heroku want me to work with me?
 
 # Because I Rock!
 
@@ -31,21 +31,29 @@ As you can see I have a lot of love, but there are of-course also a few things t
 
 I rather not continue my life building the average web applications. I rather not continue working in one language. I rather not spend all my time working with the same people. And I rather not continue to live in a lesser climate (Holland).
 
-So when I sum up these points than I believe the job as [Developer Evangelist France](http://heroku.theresumator.com/apply/kK0kuI/Developer-Evangelist-France.html) is a perfect match for me. Diverse, people, cutting edge technologies, and just plain old fun!
+So when I sum up these points than I believe the job as [Developer Evangelist France](http://heroku.theresumator.com/apply/kK0kuI/Developer-Evangelist-France.html) is a perfect match for me. Diverse, people, cutting edge technologies, climate, and just plain old fun!
 
 I realize this is all still very much about why I would like to work for Heroku, but that is really also one big reason why you would want me to work for you guys.
 
-Anyway more
+Anyway more:
 
 <img src="http://cre8ivethought.com/images/twitter-map.png" style="float:right; width:60%; margin: 10px 0px 10px 10px; border: solid 1px black;" alt="generated using http://tweepsmap.com/" />
-I won't say I am famous because well I am not, but I have build up a pretty decent network of professionals in and around Europe of whom many I call my friends. They respect my opinion as much as I do respect theirs. As you can see a large portion is in Norway and that is because I lived there for about 5,5 years. Did you know Norway is a very rich country and has a very progressive developer community? I thought I'd just point that out as well.
+I won't say I am famous because well I am not, but I have build up a pretty decent network of professionals in and around Europe of whom many I call my friend. They respect my opinion as much as I do respect theirs. As you can see a large portion is in Norway and that is because I lived there for about 5,5 years. Did you know Norway is a very rich country and has a very progressive developer community? I thought I'd just throw that in there as well.
 
 <img src="http://cre8ivethought.com/images/feedburner-map.png" style="float:right; width:60%; margin: 10px 0px 10px 10px; border: solid 1px black;" alt="generated using http://tweepsmap.com/" />
-I also blog reasonably regularly and reach a fair amount of people that way, I have about 750 subscribers accordingly to FeedBurner, but knowing them that might as well be 7,5 as they sometimes have trouble counting. Anyway this is perhaps a bit too much like; hey look at me, especially since well the numbers are not that big. Important take-away is that community is important to me.
+I also blog reasonably regularly and reach a fair amount of people that way, I have about 750 subscribers accordingly to FeedBurner, but knowing them that might as well be 7,5 as they sometimes have trouble counting correctly. Anyway this is perhaps a bit too much like; hey look at me, especially since well the numbers are not that big. Important take-away is that community is important to me.
 
 Now talking about community, I have been a very active member in the Norwegian developer community. First in Bergen where I was a board member of [NNUG](http://www.nnug.no/Avdelinger/Bergen/). Later in Olso I was a board member of [XP Oslo](http://www.meetup.com/oslo-xp/) and helped starting [Node.js Oslo](http://www.meetup.com/NodeJSOslo/). Also I have been a core member of the community driven conference [ROOTS 2011](http://rootsconf.no/) and I have been helping with [GOTO Amsterdam](http://gotocon.com/amsterdam-2011/). And currently I am continuing to help with [ROOTS 2012](http://rootsconf.no/) which will be amazing again.
 
-The important take-away is that community is important to me, I just really like spending time doing community work. I have met and arranged to come and speak so many really interesting people doing this; Kent Beck, Dan North, Michael Feathers, Kevlin Henney, Greg Young, Christian Johansen and many more. (hmmm more of this blah blah stuff)
+The important take-away is that community is important to me (déjà vu?), I just really like spending time doing community work. I have met and arranged to come and speak so many really interesting people doing this; Kent Beck, Dan North, Michael Feathers, Kevlin Henney, Greg Young, Christian Johansen and many more. (hmmm more of this look at me stuff)
 
-And I believe strongly in Software Craftsmanship, which to me means mostly caring about what you do, never stop learning, never stop teaching and building what is needed. I take good care of the code that I write, I want my code to be clear, readable and understandable. I don't believe in over engineering, but I do believe most code is written way to quickly with way to little thought about the future. So my real code and example code (hey that is the same thing) is clear and follows certain practices. I think especially for example code you may want to put extra care into making it understandable and easily readable, something that unfortunately is often rushed instead.
+And I believe strongly in Software Craftsmanship, which to me means mostly caring about what you do, never stop learning, never stop teaching and building what is needed. I take good care of the code that I write. I want my code to be clear, readable and understandable. 
 
+I don't believe in over engineering, but I do believe most code is written way to quickly with way to little thought about the future. 
+
+So my real code and example code (hey that is the same thing) is clear and follows certain practices. I think especially example code is often rushed and not written well, while this is probably the first real learning experience for new people learning your stuff. So this code should be as good or perhaps even be better then production code with respect to the learnability features of the code.
+
+<img src="http://cre8ivethought.com/images/family-nijhof.jpg" style="float:right; width:60%; margin: 10px 0px 10px 10px; border: solid 1px black;" />
+And I like to close this letter by stating that I am certainly not a 9 to 5 person, looking at the clock it is 00:28 AM now so communicating with the home office is going to be no problem at all. I like my work and time really flies when I am doing it. But family is important as well of-course so a job where I can combine both (which this seems to be) would be the best of both worlds!
+
+I truly hope that you consider me 
