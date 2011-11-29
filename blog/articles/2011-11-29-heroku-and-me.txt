@@ -37,7 +37,7 @@ I realize this is all still very much about why I would like to work for Heroku,
 
 Anyway more
 
-<img src="http://cre8ivethought.com/images/general/twitter-map.png" style="float:right; width:50%; margin: 5px 0px 10px 10px; border: solid 1px black;" alt="generated using http://tweepsmap.com/" />
+<img src="http://cre8ivethought.com/images/twitter-map.png" style="float:right; width:50%; margin: 5px 0px 10px 10px; border: solid 1px black;" alt="generated using http://tweepsmap.com/" />
 I won't say I am famous because well I am not, but I have build up a pretty decent network of professionals in and around Europe of whom many I call my friends. They respect my opinion as much as I do respect theirs. As you can see a large portion is in Norway and that is because I lived there for about 5,5 years. Did you know Norway is a very rich country and has a very progressive developer community? I thought I'd just point that out.
 
 
