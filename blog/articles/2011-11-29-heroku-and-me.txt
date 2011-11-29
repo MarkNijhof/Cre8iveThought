@@ -4,7 +4,9 @@ published: false
 hide_comments: true
 css: "#license, #menu {visibility: hidden;} #information {visibility: hidden; height: 0px; display: block;}"
 
-After hearing you guys got a ton of applications for the different jobs in Europe I thought I would try making this difficult decision a little bit more difficult by adding more things to consider.
+After hearing you guys got a ton of applications for the different jobs in Europe I thought I would try making this difficult decision a little bit easier by presenting you with the perfect candidate!
+
+Me!
 
 ## Why do I want to work for Heroku?
 
