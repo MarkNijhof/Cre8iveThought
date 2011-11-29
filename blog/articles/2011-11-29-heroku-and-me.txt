@@ -12,7 +12,7 @@ After hearing you guys got a ton of applications for the different jobs in Europ
 
 Heroku went from a very convenient way of deploying Ruby code to a complete polyglot platform that provides pretty much everything a developer needs or wants to build and deploy an application with. Then also think of Heroku's great philosophy that small usage can be free of charge. Add these things together and you get the perfect platform to try out new ideas; and when successful have them grow as big as they can.
 
-<img src="http://www.dasreviews.com/wp-content/uploads/2009/01/apple-in-the-sky.jpg" style="float:right; width:50%; margin: 5px 0px 10px 10px; border: solid 1px black;" />
+<img src="http://www.dasreviews.com/wp-content/uploads/2009/01/apple-in-the-sky.jpg" style="float:right; width:50%; margin: 10px 0px 10px 10px; border: solid 1px black;" />
 You guys have really set a new standard for how easy certain things can to be, from deploying an application to adding different add-ons like databases, monitoring applications and many more. And you're adding more and more languages and add-ons constantly, how amazing is that! 
 
 I call this the Heroku experience, it's like you're the Apple of the cloud application platforms.
@@ -37,7 +37,12 @@ I realize this is all still very much about why I would like to work for Heroku,
 
 Anyway more
 
-<img src="http://cre8ivethought.com/images/twitter-map.png" style="float:right; width:50%; margin: 5px 0px 10px 10px; border: solid 1px black;" alt="generated using http://tweepsmap.com/" />
-I won't say I am famous because well I am not, but I have build up a pretty decent network of professionals in and around Europe of whom many I call my friends. They respect my opinion as much as I do respect theirs. As you can see a large portion is in Norway and that is because I lived there for about 5,5 years. Did you know Norway is a very rich country and has a very progressive developer community? I thought I'd just point that out.
+<img src="http://cre8ivethought.com/images/twitter-map.png" style="float:right; width:60%; margin: 10px 0px 10px 10px; border: solid 1px black;" alt="generated using http://tweepsmap.com/" />
+I won't say I am famous because well I am not, but I have build up a pretty decent network of professionals in and around Europe of whom many I call my friends. They respect my opinion as much as I do respect theirs. As you can see a large portion is in Norway and that is because I lived there for about 5,5 years. Did you know Norway is a very rich country and has a very progressive developer community? I thought I'd just point that out as well.
+
+<img src="http://cre8ivethought.com/images/feedburner-map.png" style="float:right; width:60%; margin: 10px 0px 10px 10px; border: solid 1px black;" alt="generated using http://tweepsmap.com/" />
+I also blog reasonably regularly and reach a fair amount of people that way, I have about 750 subscribers accordingly to FeedBurner, but knowing them that might as well be 7,5 as they sometimes have trouble counting. Anyway this is perhaps a bit too much like; hey look at me, especially since well the numbers are not that big. Important take-away is that community is important to me.
+
+Now talking about community, I have been a very active member in the Norwegian developer community. First in Bergen where I was a board member of NNUG. Later in Olso I was a board member of XP Oslo and Node.js Oslo. Also I have been a core member of the community driven conference ROOTS 2011 and I have been helping with GOTO Amsterdam. And currently I am continuing to help with ROOTS 2012 which will be amazing again.
 
 
