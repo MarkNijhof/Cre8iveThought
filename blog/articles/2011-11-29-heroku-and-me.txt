@@ -1,0 +1,20 @@
+title: Heroku and Me
+author: Mark Nijhof
+published: false
+hide_comments: true
+css: "#license, #menu {visibility: hidden;} #information {visibility: hidden; height: 0px; display: block;}"
+
+After hearing you guys got a ton of applications for the different jobs in Europe I thought I would try making this difficult decision a little bit more difficult by adding more things to consider.
+
+## Why do I want to work for Heroku?
+
+Because Heroku Rocks!
+
+<img src="http://www.dasreviews.com/wp-content/uploads/2009/01/apple-in-the-sky.jpg" style="float:right" />
+Heroku went from a very convenient way of deploying Ruby code to a complete polyglot platform that provides pretty much everything a developer needs or wants to build and deploy an application with. Then also think of Heroku's great philosophy that small usage can be free of charge. Add these things together and you get the perfect platform to try out new ideas, and when successful have them grow as big as they can.
+
+You guys have really set a new standard for how easy certain things can to be, from deploying an application to adding different add-ons like databases, monitoring applications and many more. And you're adding more and more languages and add-ons constantly, how amazing is that! I call this the Heroku experience, it's like you're the Apple of the cloud application platforms.
+
+
+
+
