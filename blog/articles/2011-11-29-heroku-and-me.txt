@@ -56,7 +56,9 @@ I don't believe in over engineering, but I do believe most code is written way t
 So my real code and example code (hey that is the same thing) is clear and follows certain practices. I think especially example code is often rushed and not written well, while this is probably the first real learning experience for new people learning your stuff. So this code should be as good or perhaps even be better then production code with respect to the learnability features of the code.
 
 <img src="http://cre8ivethought.com/images/family-nijhof.jpg" style="float:right; width:50%; margin: 10px 0px 10px 10px; border: solid 1px black;" />
-And I like to close this letter by stating that I am certainly not a 9 to 5 person, looking at the clock it is 00:50 AM, something that is not uncommon, so communicating with the home office is going to be no problem at all. I like my work and time really flies when I am doing it. But family is important as well of-course, so a job where I can combine both (which this seems to be) would be the best of both worlds!
+And I like to close this letter by stating that I am certainly not a 9 to 5 person, looking at the clock it is 00:50 AM, something that is not uncommon, so communicating with the home office is going to be no problem at all. 
+
+I like my work and time really flies when I am doing it. But family is important as well of-course, so a job where I can combine both (which this seems to be) would be the best of both worlds!
 
 I have already applied through the regular application process, but I felt I wanted to give some more details. I truly hope that you consider me to join the Heroku family!
 
