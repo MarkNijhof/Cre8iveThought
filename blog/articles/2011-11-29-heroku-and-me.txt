@@ -10,14 +10,16 @@ After hearing you guys got a ton of applications for the different jobs in Europ
 
 # Because Heroku Rocks!
 
-Heroku went from a very convenient way of deploying Ruby code to a complete polyglot platform that provides pretty much everything a developer needs or wants to build and deploy an application with. Then also think of Heroku's great philosophy that small usage can be free of charge. Add these things together and you get the perfect platform to try out new ideas, and when successful have them grow as big as they can.
+Heroku went from a very convenient way of deploying Ruby code to a complete polyglot platform that provides pretty much everything a developer needs or wants to build and deploy an application with. Then also think of Heroku's great philosophy that small usage can be free of charge. Add these things together and you get the perfect platform to try out new ideas; and when successful have them grow as big as they can.
 
 <img src="http://www.dasreviews.com/wp-content/uploads/2009/01/apple-in-the-sky.jpg" style="float:right; width:50%; margin: 5px 0px 10px 10px; border: solid 1px black;" />
-You guys have really set a new standard for how easy certain things can to be, from deploying an application to adding different add-ons like databases, monitoring applications and many more. And you're adding more and more languages and add-ons constantly, how amazing is that! I call this the Heroku experience, it's like you're the Apple of the cloud application platforms.
+You guys have really set a new standard for how easy certain things can to be, from deploying an application to adding different add-ons like databases, monitoring applications and many more. And you're adding more and more languages and add-ons constantly, how amazing is that! 
+
+I call this the Heroku experience, it's like you're the Apple of the cloud application platforms.
 
 I can go on, but you guys know all this stuff already, so long story short; I love what you guys do!
 
-## Why would Heroku want me to work for them?
+## Why would Heroku want me to work with them?
 
 # Because I Rock!
 
@@ -25,14 +27,17 @@ I am known to make a joke here and there, but most of the time I absolutely mean
 
 I love technology and programming. I love learning new things and I absolutely love teaching and helping others learn new things. I love going to conferences and user groups to speak and connect with people. I love being faced with challenges. And I love to work partly form home close to my family.
 
-As you can see I have a lot of love and there are of-course also a few things that I like less. 
+As you can see I have a lot of love, but there are of-course also a few things that I like less. 
 
-I rather not continue my life building the average web applications. I rather not continue working on one language. I rather not spend all my time working with the same people. And I rather not continue to live in lesser climate.
+I rather not continue my life building the average web applications. I rather not continue working in one language. I rather not spend all my time working with the same people. And I rather not continue to live in a lesser climate (Holland).
 
 So when I sum up these points than I believe the job as [Developer Evangelist France](http://heroku.theresumator.com/apply/kK0kuI/Developer-Evangelist-France.html) is a perfect match for me. Diverse, people, cutting edge technologies, and just plain old fun!
 
 I realize this is all still very much about why I would like to work for Heroku, but that is really also one big reason why you would want me to work for you guys.
 
 Anyway more
+
+<img src="http://cre8ivethought.com/images/general/twitter-map.png" style="float:right; width:50%; margin: 5px 0px 10px 10px; border: solid 1px black;" alt="generated using http://tweepsmap.com/" />
+I won't say I am famous because well I am not, but I have build up a pretty decent network of professionals in and around Europe of whom many I call my friends. They respect my opinion as much as I do respect theirs. As you can see a large portion is in Norway and that is because I lived there for about 5,5 years. Did you know Norway is a very rich country and has a very progressive developer community? I thought I'd just point that out.
 
 
