@@ -4,7 +4,7 @@ published: false
 hide_comments: true
 css: "#license, #menu {visibility: hidden;} #information {visibility: hidden; height: 0px; display: block;}"
 
-After hearing you guys got a ton of applications for the different jobs in Europe I thought I would try making this difficult decision a little bit easier by presenting you with the perfect candidate!
+After hearing you guys got a ton of applications for the different jobs in Europe I thought I would try making this difficult decision a little bit easier by presenting you with the perfect candidate:
 
 Me!
 
@@ -58,6 +58,6 @@ So my real code and example code (hey that is the same thing) is clear and follo
 <img src="http://cre8ivethought.com/images/family-nijhof.jpg" style="float:right; width:50%; margin: 10px 0px 10px 10px; border: solid 1px black;" />
 And I like to close this letter by stating that I am certainly not a 9 to 5 person, looking at the clock it is 00:28 AM now so communicating with the home office is going to be no problem at all. I like my work and time really flies when I am doing it. But family is important as well of-course, so a job where I can combine both (which this seems to be) would be the best of both worlds!
 
-I truly hope that you consider me to join the Heroku family!
+I have already applied through the regular application process, but I felt I wanted to give some more details. I truly hope that you consider me to join the Heroku family!
 
 -Mark
