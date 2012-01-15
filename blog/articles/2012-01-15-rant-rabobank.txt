@@ -1,6 +1,7 @@
 title: Rant: Rabobank
 author: Mark Nijhof
 published: false
+slug: rant-rabobank
 
 It is sad to comeback after New Years with a rant post, but this is something I need to get out of my system. So here we go:
 
