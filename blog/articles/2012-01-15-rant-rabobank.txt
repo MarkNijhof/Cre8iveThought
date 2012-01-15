@@ -1,0 +1,61 @@
+title: Rant: Rabobank
+author: Mark Nijhof
+published: false
+
+It is sad to comeback after New Years with a rant post, but this is something I need to get out of my system. So here we go:
+
+## tl;dr
+
+On December the 21st 2011 I transferred €400,- from my Dutch bank account at [Rabobank](http://www.rabobank.nl/) to my Norwegian bank account at [Skandiabanken](http://www.skandiabanken.no/). Now somewhere this transaction got lost. I have used the correct account information for the transaction that is proven by the SWIFT message I got from the Rabobank. But now the Rabobank needs €50,- in order to start an investigation to find-out what actually happened with the money. 
+
+## The transaction
+
+My wife has a tendency to buy Norwegian things most likely because she is Norwegian :) so I quite regularly transfer money from my Rabobank account to my Skandiabanken account. I have created an address book entry in the Rabobank online facilities so I don't have to write down all the account details each time I want to transfer some money to Norway. 
+
+I always use this address book facility when transferring money between my accounts and so did I this time when I transferred €400,- on December the 21st. I requested high priority to speed up the transfer as well. All looked well, within a minute or so the transaction was approved and the money was out of my account the day after.
+
+But it never seemed to arrive, I knew Christmas was in between but on December the 30th I called both banks to ask what was going on. Skandiabanken told me they hadn't received any payments yet and asked me to contact the sending bank. The Rabobank told me that the Norwegian bank indeed couldn't have seen the payment because the payment wasn't offered to them yet. He didn't know why this hadn't happened yet but he could see nothing wrong and asked me to be a bit more patience.
+
+On January the 2nd my patience ran out and I contacted both banks again. Also this time Skandiabanken could not find the payment and requested more information. But now the Rabobank told me the transfer was executed on December the 22nd 2011 and that from their end they could see nothing wrong. Interesting fact was that now the money was supposedly offered on the 22nd, which was not the case when I spoke to them on the 30th. I told them that my Norwegian bank couldn't find anything but if they needed to look again they needed more information. 
+
+At which the Rabobank told me that if they could investigate what happened with the money but if I wanted that to happen I had to pay €50,-. 
+
+## Excuse me!
+
+So if I wanted the Rabobank to investigate what they had done with my money transfer I had to pay them €50,-
+
+Sort of shocked I told them that instead I needed the exact details of the transfer so my Norwegian bank could take an other more detailed look first. I received a SWIFT message from the Rabobank which I forwarded to Skandiabanken. Skandiabanken was again unable to find any trace of the transaction the Rabobank supposedly had done. BTW The SWIFT message confirmed that the correct details where used.
+
+In my last call with the Rabobank I said; "So I guess I'll have to pay the €50,- or else it will cost me €400,-" on which she replied; "That is correct". So there we are, currently 25 days later I still have not received the money (on either account).
+
+One of the funny things was that the lady at the Rabobank was 100% convinced that it could absolutely not be a error at the Rabobank and that it has to be on the other side. This came up when I asked if I will get the money back when they discover that it was a fault at the Rabobank. I guess the Rabobank is the lucky one that has flawless software running, color me impressed.
+
+## Rabobank
+
+So lets take a quick look who the Rabobank is:
+
+Rabobank's roots lie in agriculture. In 1898 two separate cooperative banks - the Coöperatieve Centrale Raiffeisen-Bank in Utrecht and the Coöperatieve Centrale Boerenleenbank in Eindhoven - were founded by enterprising rural folk, who, with little access to the capital market, decided to help one another.
+
+<i>(source: [http://www.rabobank.com/content/about_us/history/](http://www.rabobank.com/content/about_us/history/))</i>
+
+### Mission statement
+
+In the Netherlands and beyond, our banking practices always take a responsible approach to the development of wealth and prosperity. We respect the environment and the differing cultures and customs of the countries we operate in and we understand that maintaining our solvency and liquidity is a prerequisite for continuity.
+
+Wherever we work, and whatever services we provide, we always prioritise the customer, helping them create value and realise their financial ambitions by providing individual financial solutions that are relevant, innovative, and reliable.
+
+<i>(Source: [http://www.rabobank.com/content/about_us/Profile_and_values/mission_statement/](http://www.rabobank.com/content/about_us/Profile_and_values/mission_statement/))</i>
+
+## we always prioritise the customer
+
+<i>we always prioritise the customer, helping them create value and realise their financial ambitions</i>
+
+## Customer Service
+
+I have been with the Rabobank since I was a little boy. There was a small gap when I went to Norway the first time, but on my return I readily opened a new account at the Rabobank again. And now that I am self employed I have also been talking to the Rabobank about a business account, life insurance, invalidity insurance and other things. I know that still makes me a very small fish, but I would have hoped for a better customer service experience.
+
+Because after all; <b>THIS IS NOT MY FAULT!</b>
+
+So I am looking for a new bank in Holland, I'll appreciate any suggestions.
+
+
