@@ -16,9 +16,9 @@ My wife has a tendency to buy things in Norway since well ... she is Norwegian :
 
 I always use this address book facility when transferring money between my accounts and this time when I transferred €400,- on December the 21st was no different. I requested high priority to speed up the transfer as well. All looked well, within a minute or so the transaction was approved and the money was out of my account the day after.
 
-<center><img src="http://cre8ivethought.com/images/general/rabobank-rant-1.jpg" alt="The transfer of €400,- is approved" /></center>
+<center><img src="http://cre8ivethought.com/images/general/rabobank-rant-1.jpg" alt="The transfer of €400,- is approved" style="border: 1px solid black;" /></center>
 
-<center><img src="http://cre8ivethought.com/images/general/rabobank-rant-2.jpg" alt="And gone is the €400,-" /></center>
+<center><img src="http://cre8ivethought.com/images/general/rabobank-rant-2.jpg" alt="And gone is the €400,-" style="border: 1px solid black;" /></center>
 
 But it never seemed to arrive, I knew Christmas was in between but on December the 30th I called both banks to ask what was going on. 
 
