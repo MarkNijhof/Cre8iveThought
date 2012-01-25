@@ -36,7 +36,7 @@ So if I wanted the Rabobank to investigate what <b>they</b> had done with my mon
 
 Shocked I told the Rabobank that instead I needed the exact details of the transfer so my Norwegian bank could take an other more detailed look first. I received a SWIFT message from the Rabobank which I forwarded to Skandiabanken. BTW The SWIFT message confirmed that the correct details where used in the transaction.
 
-<div style="border: 1px solid black; margin: 0px 20px;"><pre>
+<div style="border: 1px solid black; margin: 0px 20px; padding: 10px;"><pre>
   {1:F01RABONL2UUXXX8736994901} 
   {1:F21RABONL2UUXXX8736994901}
   {4:{177:1112221004}
@@ -72,7 +72,7 @@ But even with this detailed information Skandiabanken could not find any trace o
 
 So on the 12th of January I send the Rabobank an e-mail stating the results from Skandiabankens efforts as well as my point of view on the matter. That I believe the Rabobank is responsible for the execution of the transaction and that I find it very customer unfriendly and to be honest a slap in my face that I have to pay for having the Rabobank start an investigation to find-out what the Rabobank has done wrong. I said that I saw two options, either they still make sure the transfer is properly executed or they return the money back into my Dutch account.
 
-<div style="border: 1px solid black; margin: 0px 20px;"><i><pre>
+<div style="border: 1px solid black; margin: 0px 20px; padding: 10px;"><i><pre>
 Hallo,
 
 Ik had het SWIFT bericht al een tweede keer naar de Noorse bank
