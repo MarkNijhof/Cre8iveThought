@@ -26,7 +26,7 @@ I knew Christmas was in between but on December the 30th I called both banks to 
 
 On January the 2nd I figured that now it should have arrived and I contacted both banks again. Also this time Skandiabanken could not find the payment and requested more information, Skandiabanken was really helpful.
 
-The Rabobank however told me the transfer was executed on December the 22nd 2011 and that they could see nothing wrong. Interesting fact was that now the money was supposedly offered on the 22nd, which was not the case when I spoke to them on the 30th. But I guess to be human is to error and that even at the Rabobank things can go wrong.
+The Rabobank however told me the transfer was executed on December the 22nd 2011 and that they could see nothing wrong. Interesting fact was that now <b>the money was offered on December the 22nd</b>, which was not the case when I spoke to them on the 30th. But I guess to be human is to error and that even at the Rabobank things can go wrong.
 
 I told the Rabobank that my Norwegian bank couldn't find any trace of the transaction but that they could take an other look when they receive more detailed information. At which the Rabobank responded that they could start an investigation to figure out what had happened with the transaction, but if I wanted them to do that I would have to pay €50,-.
 
@@ -34,49 +34,101 @@ I told the Rabobank that my Norwegian bank couldn't find any trace of the transa
 
 So if I wanted the Rabobank to investigate what <b>they</b> had done with my money transfer <b>I</b> had to <b>pay them €50,-</b>.
 
-Shocked I told the Rabobank that instead I needed the exact details of the transfer so my Norwegian bank could take an other more detailed look first. I received a SWIFT message from the Rabobank which I forwarded to Skandiabanken. 
+Shocked I told the Rabobank that instead I needed the exact details of the transfer so my Norwegian bank could take an other more detailed look first. I received a SWIFT message from the Rabobank which I forwarded to Skandiabanken. BTW The SWIFT message confirmed that the correct details where used in the transaction.
 
 <pre>
-{1:F01RABONL2UUXXX8736994901} 
-{1:F21RABONL2UUXXX8736994901}
-{
-  4:{177:1112221004}
-  {451:0}{108:AB}
-}
-{2:I103CITIGB2LXXXXU1}
-{
-  3:{103:EBA}
-  {108:AB}
-  {119:STP}
-}
-{
-  4:
-  :20:PA0111222124822
-  :23B:CRED
-  :32A:111222EUR400,00
-  :33B:EUR400,00
-  :50K:/NL44RABO01309XXXXX
-  M.A. NIJHOF
-  BURGGRAAF 14
-  7371CW LOENEN GLD
-  :57A:SKIANOBBXXX
-  :59:/NO539713XXXXXXX
-  MARK A NIJHOF
-  BURGGRAAF 14
-  LOENEN GLD
-  :70:REPAYMENT CREDIT CARD
-  :71A:SHA-
-}
-{
-  5:{CHK:60F602DCB96C}
-}
+  {1:F01RABONL2UUXXX8736994901} 
+  {1:F21RABONL2UUXXX8736994901}
+  {4:{177:1112221004}
+     {451:0}
+     {108:AB}}
+  {2:I103CITIGB2LXXXXU1}
+  {3:{103:EBA}
+     {108:AB}
+     {119:STP}}
+  {4:
+    :20:PA0111222124822
+    :23B:CRED
+    :32A:111222EUR400,00
+    :33B:EUR400,00
+    :50K:/NL44RABO01309XXXXX
+    M.A. NIJHOF
+    BURGGRAAF 14
+    7371CW LOENEN GLD
+    :57A:SKIANOBBXXX
+    :59:/NO539713XXXXXXX
+    MARK A NIJHOF
+    BURGGRAAF 14
+    LOENEN GLD
+    :70:REPAYMENT CREDIT CARD
+    :71A:SHA-}
+  {5:{CHK:60F602DCB96C}}
 </pre>
 
-Skandiabanken was again unable to find any trace of the transaction the Rabobank supposedly had done. BTW The SWIFT message confirmed that the correct details where used.
+<i>Unrelated note: I really expected XML instead of something that looks like JSON.</i>
 
-In my last call with the Rabobank I said; "So I guess I'll have to pay the €50,- or else it will cost me €400,-" on which she replied; "That is correct". So there we are, currently 25 days later I still have not received the money (on either account).
+But even with this detailed information Skandiabanken could not find any trace of the transaction and they told me the correct approach is to have the sending bank start an investigation.
 
-One of the funny things was that the lady at the Rabobank was 100% convinced that it could absolutely not be a error at the Rabobank and that it has to be on the other side. This came up when I asked if I will get the money back when they discover that it was a fault at the Rabobank. I guess the Rabobank is the lucky one that has flawless software running, color me impressed.
+So on the 12th of January I send the Rabobank an e-mail stating the results from Skandiabankens efforts as well as my point of view on the matter. That I believe the Rabobank is responsible for the execution of the transaction and that I find it very customer unfriendly and to be honest a slap in my face that I have to pay for having the Rabobank start an investigation to find-out what the Rabobank has done wrong. I said that I saw two options, either they still make sure the transfer is properly executed or they return the money back into my Dutch account.
+
+<i>
+Hallo,
+
+Ik had het SWIFT bericht al een tweede keer naar de Noorse bank
+verstuurd met hetzelfde resultaat. Het advies van de Noorse bank is
+dat de versturende bank dit dient uit te zoeken.
+
+In mijn belevenis is het de Rabobank die verantwoordelijk is voor het
+overboeken van geld wanneer dit gebeurd via de online faciliteiten van
+de Rabobank zelf. Daarnaast heb ik voor de overboeking de adresboek
+faciliteiten van de Rabobank gebruikt, welke ik vele malen eerder en
+zelfs ook na deze transactie met succes heb gebruikt om de juiste
+gegevens van de Noorse ontvangende bank in te voeren. En dat dit ook
+in deze transactie juist was gebeurd blijkt wel uit julie eigen
+gegenereerde SWIFT bericht.
+
+Kort gezegd: Ik hou de Rabobank verantwoordelijk voor het juist
+uitvoeren van de overboeking, echter heeft de Rabobank dit verzuimd te
+doen, en daarnaast heeft de Rabobank wel het over te boeken bedrag van
+mijn rekening afgeschreven. Om mij dan Euro 50,- in rekening te
+brengen om dit op te lossen is hetzelfde als mij een klap in mijn
+gezicht te geven. Onbehoorlijk en zeker niet klantvriendelijk.
+
+Ik zie dus twee alternatieven die de Rabobank heeft:
+
+1) Zorg dragen dat de overboeking alsnog juist wordt uitgeverd.
+2) De orginele overboeking terug draaien door het geld terug te boeken
+op mijn Rabobank rekening
+
+Dan zijn er ook nog de kosten die ik heb moeten betalen voor de spoed
+overboeking, deze zullen ook terug geboekt moeten worden aangezien we
+momenteel op 22 dagen zitten voor de overboeking we in aller
+redelijkheid niet meer van een spoed transactie kunnen spreken.
+
+De gemiste rente op de Noorse bank rekening of de oplopende debit
+rente op de Rabobank rekening (afhankelijk van de optie die jullie
+zullen kiezen) zal ik maar gewoon vergeten.
+
+Mvg,
+
+-Mark
+</i>
+
+The next day I received a call from the Rabobank restating that if they have to start an investigation (Pega dossier) into the disappearance of my money that I will have to pay €50,-. I of-course said that I found that ridicules that I have to pay to find out what the Rabobank did wrong with my transaction. The Rabobank responded that I created the transaction and that they are not responsible for that. I reminded the Rabobank that the SWIFT message confirmed that the details of the transaction were correct. It didn't matter.
+
+I asked if I would receive my €50,- back when the investigation found that the fault was at the Rabobank, on which the Rabobank answered that the Rabobank wouldn't have made a fault. I mentioned that I work in software and yet have to see bug free software. Finally after asking 2 more time the Rabobank said that in case of a mistake at the Rabobank I would get the €50,- back, but that I still have to pay it to start the investigation.
+
+Finally I said; <b>"So I guess I'll have to pay the €50,- or else it will cost me €400,-"</b> on which she replied; <b>"That is correct"</b>. So I caved and told the Rabobank that I wanted an investigation to be started.
+
+So far I have not heard back from the Rabobank except that the investigation is now started, granted that only happened after I asked about it.
+
+## High Priority
+
+One other thing is that I still paid for the high priority option of the money transfer.
+
+<center><img src="http://cre8ivethought.com/images/general/rabobank-rant-3.jpg" alt="I paid for high priority" style="border: 1px solid black;" /></center>
+
+I hate to think how long a "normal" transaction would take, oh wait I know it takes one to four days (from experience) not the 36 and counting days this transaction takes.
 
 ## Rabobank
 
@@ -100,7 +152,7 @@ Wherever we work, and whatever services we provide, we always prioritise the cus
 
 ## Customer Service
 
-I have been with the Rabobank since I was a little boy. There was a small gap when I went to Norway the first time, but on my return I readily opened a new account at the Rabobank again. And now that I am self employed I have also been talking to the Rabobank about a business account, life insurance, invalidity insurance and other things. I know that still makes me a very small fish, but I would have hoped for a better customer service experience.
+I have been with the Rabobank since I was a little boy. There was a small gap of 3 years when I went to Norway the first time, but on my return I readily opened a new account at the Rabobank again. And now that I am self employed I have also been talking to the Rabobank about a business account, life insurance, invalidity insurance and other things. I know that this still makes me a very small fish, but I would have hoped for a better customer service experience.
 
 Because after all; <b>THIS IS NOT MY FAULT!</b>
 
