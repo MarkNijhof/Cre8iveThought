@@ -6,15 +6,25 @@ It is sad to comeback after New Years with a rant post, but this is something I 
 
 ## tl;dr
 
-On December the 21st 2011 I transferred €400,- from my Dutch bank account at [Rabobank](http://www.rabobank.nl/) to my Norwegian bank account at [Skandiabanken](http://www.skandiabanken.no/). Now somewhere this transaction got lost. I have used the correct account information for the transaction that is proven by the SWIFT message I got from the Rabobank. But now the Rabobank needs €50,- in order to start an investigation to find-out what actually happened with the money. 
+On December the 21st 2011 I transferred €400,- from my Dutch bank account at the [Rabobank](http://www.rabobank.nl/) to my Norwegian bank account at [Skandiabanken](http://www.skandiabanken.no/). Somewhere this transaction got lost. I have used the correct account information for the transaction which is confirmed by the SWIFT message I got from the Rabobank. But then the Rabobank suddenly needed €50,- in order to start an investigation to find-out what actually happened with my money. 
+
+And that is what makes me annoyed!
 
 ## The transaction
 
-My wife has a tendency to buy Norwegian things most likely because she is Norwegian :) so I quite regularly transfer money from my Rabobank account to my Skandiabanken account. I have created an address book entry in the Rabobank online facilities so I don't have to write down all the account details each time I want to transfer some money to Norway. 
+My wife has a tendency to buy things in Norway since well ... she is Norwegian :) So I quite regularly transfer money from my Rabobank account to my Skandiabanken account. I have created an address book entry in the Rabobank online facilities so I don't have to write down all the account details each time I want to transfer some money from my Dutch account to Norway. 
 
-I always use this address book facility when transferring money between my accounts and so did I this time when I transferred €400,- on December the 21st. I requested high priority to speed up the transfer as well. All looked well, within a minute or so the transaction was approved and the money was out of my account the day after.
+I always use this address book facility when transferring money between my accounts and this time when I transferred €400,- on December the 21st was no different. I requested high priority to speed up the transfer as well. All looked well, within a minute or so the transaction was approved and the money was out of my account the day after.
 
-But it never seemed to arrive, I knew Christmas was in between but on December the 30th I called both banks to ask what was going on. Skandiabanken told me they hadn't received any payments yet and asked me to contact the sending bank. The Rabobank told me that the Norwegian bank indeed couldn't have seen the payment because the payment wasn't offered to them yet. He didn't know why this hadn't happened yet but he could see nothing wrong and asked me to be a bit more patience.
+<center><img src="http://cre8ivethought.com/images/general/rabobank-rant-1.jpeg" alt="The transfer of €400,- is approved" /></center>
+
+<center><img src="http://cre8ivethought.com/images/general/rabobank-rant-2.jpeg" alt="And gone is the €400,-" /></center>
+
+But it never seemed to arrive, I knew Christmas was in between but on December the 30th I called both banks to ask what was going on. 
+
+Skandiabanken told me they hadn't received any payments yet and asked me to contact the sending bank. 
+
+The Rabobank told me that the Norwegian bank indeed couldn't have seen the payment because the payment wasn't offered to them yet. He didn't know why this hadn't happened yet but he said everything about the transfer was in order and asked me to be a bit more patience.
 
 On January the 2nd my patience ran out and I contacted both banks again. Also this time Skandiabanken could not find the payment and requested more information. But now the Rabobank told me the transfer was executed on December the 22nd 2011 and that from their end they could see nothing wrong. Interesting fact was that now the money was supposedly offered on the 22nd, which was not the case when I spoke to them on the 30th. I told them that my Norwegian bank couldn't find anything but if they needed to look again they needed more information. 
 
