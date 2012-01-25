@@ -114,6 +114,7 @@ Mvg,
 
 -Mark
 </pre></i></div>
+</br>
 
 The next day I received a call from the Rabobank restating that if they have to start an investigation (Pega dossier) into the disappearance of my money that I will have to pay €50,-. I of-course said that I found that ridicules that I have to pay to find out what the Rabobank did wrong with my transaction. The Rabobank responded that I created the transaction and that they are not responsible for that. I reminded the Rabobank that the SWIFT message confirmed that the details of the transaction were correct. It didn't matter.
 
