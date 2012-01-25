@@ -65,6 +65,7 @@ Shocked I told the Rabobank that instead I needed the exact details of the trans
   {5:{CHK:60F602DCB96C}}
 </pre>
 
+
 <i>Unrelated note: I really expected XML instead of something that looks like JSON.</i>
 
 But even with this detailed information Skandiabanken could not find any trace of the transaction and they told me the correct approach is to have the sending bank start an investigation.
