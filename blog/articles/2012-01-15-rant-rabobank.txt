@@ -20,21 +20,59 @@ I always use this address book facility when transferring money between my accou
 
 <center><img src="http://cre8ivethought.com/images/general/rabobank-rant-2.jpg" alt="And gone is the €400,-" style="border: 1px solid black;" /></center>
 
-But it never seemed to arrive, I knew Christmas was in between but on December the 30th I called both banks to ask what was going on. 
+## But it never arrived 
 
-Skandiabanken told me they hadn't received any payments yet and asked me to contact the sending bank. 
+I knew Christmas was in between but on December the 30th I called both banks to ask what was going on. Skandiabanken told me they hadn't received any payments yet and asked me to contact the sending bank. The Rabobank told me that the Norwegian bank indeed couldn't have seen the payment because <b>the payment wasn't offered to them yet</b>. He didn't know why this hadn't happened yet but he said everything about the transfer was in order and asked me to be a bit more patience.
 
-The Rabobank told me that the Norwegian bank indeed couldn't have seen the payment because the payment wasn't offered to them yet. He didn't know why this hadn't happened yet but he said everything about the transfer was in order and asked me to be a bit more patience.
+On January the 2nd I figured that now it should have arrived and I contacted both banks again. Also this time Skandiabanken could not find the payment and requested more information, Skandiabanken was really helpful.
 
-On January the 2nd my patience ran out and I contacted both banks again. Also this time Skandiabanken could not find the payment and requested more information. But now the Rabobank told me the transfer was executed on December the 22nd 2011 and that from their end they could see nothing wrong. Interesting fact was that now the money was supposedly offered on the 22nd, which was not the case when I spoke to them on the 30th. I told them that my Norwegian bank couldn't find anything but if they needed to look again they needed more information. 
+The Rabobank however told me the transfer was executed on December the 22nd 2011 and that they could see nothing wrong. Interesting fact was that now the money was supposedly offered on the 22nd, which was not the case when I spoke to them on the 30th. But I guess to be human is to error and that even at the Rabobank things can go wrong.
 
-At which the Rabobank told me that if they could investigate what happened with the money but if I wanted that to happen I had to pay €50,-. 
+I told the Rabobank that my Norwegian bank couldn't find any trace of the transaction but that they could take an other look when they receive more detailed information. At which the Rabobank responded that they could start an investigation to figure out what had happened with the transaction, but if I wanted them to do that I would have to pay €50,-.
 
-## Excuse me!
+## Excuse me! €50,-
 
-So if I wanted the Rabobank to investigate what they had done with my money transfer I had to pay them €50,-
+So if I wanted the Rabobank to investigate what <b>they</b> had done with my money transfer <b>I</b> had to <b>pay them €50,-</b>.
 
-Sort of shocked I told them that instead I needed the exact details of the transfer so my Norwegian bank could take an other more detailed look first. I received a SWIFT message from the Rabobank which I forwarded to Skandiabanken. Skandiabanken was again unable to find any trace of the transaction the Rabobank supposedly had done. BTW The SWIFT message confirmed that the correct details where used.
+Shocked I told the Rabobank that instead I needed the exact details of the transfer so my Norwegian bank could take an other more detailed look first. I received a SWIFT message from the Rabobank which I forwarded to Skandiabanken. 
+
+<pre>
+{1:F01RABONL2UUXXX8736994901} 
+{1:F21RABONL2UUXXX8736994901}
+{
+  4:{177:1112221004}
+  {451:0}{108:AB}
+}
+{2:I103CITIGB2LXXXXU1}
+{
+  3:{103:EBA}
+  {108:AB}
+  {119:STP}
+}
+{
+  4:
+  :20:PA0111222124822
+  :23B:CRED
+  :32A:111222EUR400,00
+  :33B:EUR400,00
+  :50K:/NL44RABO01309XXXXX
+  M.A. NIJHOF
+  BURGGRAAF 14
+  7371CW LOENEN GLD
+  :57A:SKIANOBBXXX
+  :59:/NO539713XXXXXXX
+  MARK A NIJHOF
+  BURGGRAAF 14
+  LOENEN GLD
+  :70:REPAYMENT CREDIT CARD
+  :71A:SHA-
+}
+{
+  5:{CHK:60F602DCB96C}
+}
+</pre>
+
+Skandiabanken was again unable to find any trace of the transaction the Rabobank supposedly had done. BTW The SWIFT message confirmed that the correct details where used.
 
 In my last call with the Rabobank I said; "So I guess I'll have to pay the €50,- or else it will cost me €400,-" on which she replied; "That is correct". So there we are, currently 25 days later I still have not received the money (on either account).
 
