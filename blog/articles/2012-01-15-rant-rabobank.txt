@@ -52,14 +52,14 @@ Shocked I told the Rabobank that instead I needed the exact details of the trans
     :32A:111222EUR400,00
     :33B:EUR400,00
     :50K:/NL44RABO01309XXXXX
-    M.A. NIJHOF
-    BURGGRAAF 14
-    7371CW LOENEN GLD
+     M.A. NIJHOF
+     BURGGRAAF 14
+     7371CW LOENEN GLD
     :57A:SKIANOBBXXX
     :59:/NO539713XXXXXXX
-    MARK A NIJHOF
-    BURGGRAAF 14
-    LOENEN GLD
+     MARK A NIJHOF
+     BURGGRAAF 14
+     LOENEN GLD
     :70:REPAYMENT CREDIT CARD
     :71A:SHA-}
   {5:{CHK:60F602DCB96C}}
@@ -155,7 +155,5 @@ Wherever we work, and whatever services we provide, we always prioritise the cus
 I have been with the Rabobank since I was a little boy. There was a small gap of 3 years when I went to Norway the first time, but on my return I readily opened a new account at the Rabobank again. And now that I am self employed I have also been talking to the Rabobank about a business account, life insurance, invalidity insurance and other things. I know that this still makes me a very small fish, but I would have hoped for a better customer service experience.
 
 Because after all; <b>THIS IS NOT MY FAULT!</b>
-
-So I am looking for a new bank in Holland, I'll appreciate any suggestions.
 
 
