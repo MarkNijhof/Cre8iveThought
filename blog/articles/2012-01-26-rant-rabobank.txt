@@ -24,17 +24,17 @@ I always use this address book facility when transferring money between my accou
 
 I knew Christmas was in between but on December the 30th I called both banks to ask what was going on. Skandiabanken told me they hadn't received any payments yet and asked me to contact the sending bank. The Rabobank told me that the Norwegian bank indeed couldn't have seen the payment because <b>the payment wasn't offered to them yet</b>. He didn't know why this hadn't happened yet but he said everything about the transfer was in order and asked me to be a bit more patience.
 
-On January the 2nd I figured that now it should have arrived and I contacted both banks again. Also this time Skandiabanken could not find the payment and requested more information, Skandiabanken was really helpful.
+On January the 2nd I figured that now it should have arrived by now and I contacted both banks again. Also this time Skandiabanken could not find the payment and requested more information, Skandiabanken was really helpful.
 
-The Rabobank however told me the transfer was executed on December the 22nd 2011 and that they could see nothing wrong. Interesting fact was that now <b>the money was offered on December the 22nd</b>, which was not the case when I spoke to them on the 30th. But I guess to be human is to error and that even at the Rabobank things can go wrong.
+The Rabobank however told me the transfer was executed on December the 22nd 2011 and that they could not see anything wrong. Interesting fact was that now <b>the money was offered on December the 22nd</b>, which was not the case when I spoke to them on the 30th. But I guess to be human is to error and that even at the Rabobank things can go wrong.
 
 I told the Rabobank that my Norwegian bank couldn't find any trace of the transaction but that they could take an other look when they receive more detailed information. At which the Rabobank responded that they could start an investigation to figure out what had happened with the transaction, but if I wanted them to do that I would have to pay €50,-.
 
 ## Excuse me! €50,-
 
-So if I wanted the Rabobank to investigate what <b>they</b> had done with my money transfer <b>I</b> had to <b>pay them €50,-</b>.
+So if I wanted the Rabobank to investigate what <b>they</b> had done with the money transfer <b>I</b> had to <b>pay them €50,-</b>.
 
-Shocked I told the Rabobank that instead I needed the exact details of the transfer so my Norwegian bank could take an other more detailed look first. I received a SWIFT message from the Rabobank which I forwarded to Skandiabanken. BTW The SWIFT message confirmed that the correct details where used in the transaction.
+Shocked I told the Rabobank that instead I needed the exact details of the transfer so that my Norwegian bank could take an other more detailed look first. I received a SWIFT message from the Rabobank which I forwarded to Skandiabanken. BTW The SWIFT message confirmed that the correct details where used in the transaction.
 
 <div style="border: 1px solid black; margin: 0px 20px; padding: 10px;"><pre>
   {1:F01RABONL2UUXXX8736994901} 
@@ -70,7 +70,7 @@ Shocked I told the Rabobank that instead I needed the exact details of the trans
 
 But even with this detailed information Skandiabanken could not find any trace of the transaction and they told me the correct approach is to have the sending bank start an investigation.
 
-So on the 12th of January I send the Rabobank an e-mail stating the results from Skandiabankens efforts as well as my point of view on the matter. That I believe the Rabobank is responsible for the execution of the transaction and that I find it very customer unfriendly and to be honest a slap in my face that I have to pay for having the Rabobank start an investigation to find-out what the Rabobank has done wrong. I said that I saw two options, either they still make sure the transfer is properly executed or they return the money back into my Dutch account.
+So on the 12th of January I send the Rabobank an e-mail stating the results from Skandiabankens efforts as well as my point of view on the matter. That I believe the Rabobank is responsible for the execution of the transaction and that I find it very customer unfriendly and in all honestly a slap in my face that I have to pay for having the Rabobank start an investigation to find-out what the Rabobank has done wrong. I wrote that I figure there are two options; either the Rabobank still make sure the transfer is properly executed or the Rabobank return the money back into my Dutch account.
 
 <div style="border: 1px solid black; margin: 0px 20px; padding: 10px;"><i><pre>
 Hallo,
@@ -116,9 +116,9 @@ Mvg,
 </pre></i></div>
 </br>
 
-The next day I received a call from the Rabobank restating that if they have to start an investigation (Pega dossier) into the disappearance of my money that I will have to pay €50,-. I of-course said that I found that ridicules that I have to pay to find out what the Rabobank did wrong with my transaction. The Rabobank responded that I created the transaction and that they are not responsible for that. I reminded the Rabobank that the SWIFT message confirmed that the details of the transaction were correct. It didn't matter.
+The next day I received a phone call from the Rabobank restating that if they have to start an investigation (Pega dossier) into the disappearance of my money that I will have to pay €50,-. I of-course said that I found that ridicules that I have to pay to find out what the Rabobank did wrong with my transaction. The Rabobank responded that I created the transaction and that they are not responsible for that. I reminded the Rabobank that the SWIFT message confirmed that the details of the transaction were correct. It didn't matter.
 
-I asked if I would receive my €50,- back when the investigation found that the fault was at the Rabobank, on which the Rabobank answered that the Rabobank wouldn't have made a fault. I mentioned that I work in software and yet have to see bug free software. Finally after asking 2 more time the Rabobank said that in case of a mistake at the Rabobank I would get the €50,- back, but that I still have to pay it to start the investigation.
+I asked if I would receive my €50,- back when the investigation found that the fault was at the Rabobank, on which the Rabobank answered that the Rabobank wouldn't have made a mistake. I mentioned that I work in software and have yet to see bug free software. Finally after asking two more times the Rabobank said that in case of a mistake at the Rabobank I would get the €50,- back, but that I still have to pay it to start the investigation.
 
 Finally I said; <b>"So I guess I'll have to pay the €50,- or else it will cost me €400,-"</b> on which she replied; <b>"That is correct"</b>. So I caved and told the Rabobank that I wanted an investigation to be started.
 
@@ -130,7 +130,7 @@ One other thing is that I still paid for the high priority option of the money t
 
 <center><img src="http://cre8ivethought.com/images/general/rabobank-rant-3.jpg" alt="I paid for high priority" style="border: 1px solid black;" /></center>
 
-I hate to think how long a "normal" transaction would take, oh wait I know it takes one to four days (from experience) not the 36 and counting days this transaction takes.
+I hate to think how long a "normal" transaction would take, oh wait I know it takes one to four days (from experience) not the 36 and counting days this transaction takes. At-least those €4,- are spend really well.
 
 ## Rabobank
 
@@ -138,7 +138,7 @@ So lets take a quick look who the Rabobank is:
 
 Rabobank's roots lie in agriculture. In 1898 two separate cooperative banks - the Coöperatieve Centrale Raiffeisen-Bank in Utrecht and the Coöperatieve Centrale Boerenleenbank in Eindhoven - were founded by enterprising rural folk, who, with little access to the capital market, decided to help one another.
 
-<i>(source: [http://www.rabobank.com/content/about_us/history/](http://www.rabobank.com/content/about_us/history/))</i>
+<i>(source: [link](http://www.rabobank.com/content/about_us/history/))</i>
 
 ### Mission statement
 
@@ -146,7 +146,7 @@ In the Netherlands and beyond, our banking practices always take a responsible a
 
 Wherever we work, and whatever services we provide, we always prioritise the customer, helping them create value and realise their financial ambitions by providing individual financial solutions that are relevant, innovative, and reliable.
 
-<i>(Source: [http://www.rabobank.com/content/about_us/Profile_and_values/mission_statement/](http://www.rabobank.com/content/about_us/Profile_and_values/mission_statement/))</i>
+<i>(Source: [link](http://www.rabobank.com/content/about_us/Profile_and_values/mission_statement/))</i>
 
 ## we always prioritise the customer
 
@@ -154,7 +154,7 @@ Wherever we work, and whatever services we provide, we always prioritise the cus
 
 ## Customer Service
 
-I have been with the Rabobank since I was a little boy. There was a small gap of 3 years when I went to Norway the first time, but on my return I readily opened a new account at the Rabobank again. And now that I am self employed I have also been talking to the Rabobank about a business account, life insurance, invalidity insurance and other things. I know that this still makes me a very small fish, but I would have hoped for a better customer service experience.
+I have been a customer of the Rabobank since I was a little boy. There was a small gap of about 3 years when I went to Norway for the first time, but on my return I readily opened a new account at the Rabobank. And now that I am self employed I have also been talking to the Rabobank about a business account, life insurance, invalidity insurance and other things. I know that this still makes me a very small fish, but I would have hoped for a better customer service experience.
 
 Because after all; <b>THIS IS NOT MY FAULT!</b>
 
