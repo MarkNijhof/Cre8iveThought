@@ -2,7 +2,7 @@ title: CV - Mark A. Nijhof
 slug: cv
 author: Mark Nijhof
 published: false
-updated: 28/06/2011 16:19:00
+updated: 27/01/2012 17:00:00
 hide_comments: true
 add_trailing_slash_for_disqus: true
 css: "#license, #menu {visibility: hidden;} #information {visibility: hidden; height: 0px; display: block;}"
