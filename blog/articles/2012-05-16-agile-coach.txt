@@ -11,20 +11,20 @@ I have long been dreaming for such a job where I can really focus on helping oth
 
 Some of the tasks I expect are: 
 
-Help developers with the transition to Agile
-- by pair programming
-- by implementing different processes like proper CI
-- by helping write good tests
+Help developers with the transition to Agile<br/>
+- by pair programming<br/>
+- by implementing different processes like proper CI<br/>
+- by helping write good tests<br/>
 - by doing (nearly) anything that helps them improve
 
-Help with creating an internal community
-- to make people enthusiastic 
-- to make daily work fun
-- to facilitate knowledge sharing 
+Help with creating an internal community<br/>
+- to make people enthusiastic <br/>
+- to make daily work fun<br/>
+- to facilitate knowledge sharing <br/>
 - to enable outside of the box thinking
 
-Help non-developers with the transition to Agile
-- the whole organization needs to change, this will be strange for all of them, this is also a new area for me 
+Help non-developers with the transition to Agile<br/>
+- the whole organization needs to change, this will be strange for all of them, this is also a new area for me
 
 I also expect that I'll be blogging more again.   
 
