@@ -1,4 +1,4 @@
-title: New Job: Agile Coach
+title: New Job, Agile Coach
 author: Mark Nijhof
 published: false
 slug: agile-coach
