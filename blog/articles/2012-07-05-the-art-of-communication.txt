@@ -1,0 +1,73 @@
+title: The art of communication
+author: Mark Nijhof
+published: false
+
+Communication is vital for anyone to feel included, functional and from my perspective alive. It is one of the very first skills you learn as a human being. As a little child you quickly learn how to communicate certain needs or wants. I am still amazed how our youngest boy was able to let us know exactly what he wanted without having to say a single word. It also depends on the child, he was certainly better at it then his brother and sister, or perhaps we became better at it as parents. Anyway after the basic instinct of crying/screaming children learn to communicate before much else.
+
+And for a skill learned so early in life it stays one of the hardest things to master, perhaps it is something we forget as we grow up when it seems to become less important. 
+
+Personally I have found a new interest in the art of communication. A few year back while working for [Bekk](http://www.bekk.nl) we received a course about communication, public speaking and body language. This was extremely interesting, we practiced conversations in the form of small presentations, after which we received feedback from the other course attendees. It should be something that you know and preferable are passioned about. We then look at the body posture/language and how you come across. Are you making eye contact with the people in the room or only focussed on one person. How does that reflect on the others. Do you actually see and respond to signals from the audience. We also learned about "reading" people, what is their body language telling us about their engagement in the conversation. I think it is admirable for a consulting company to provide such courses, it clearly indicates they know most problems are due to misunderstandings. 
+
+##Misunderstandings##
+
+For example when during a code review I say: "this code could have been extracted into different functions". What does that mean? Depending on who the other person is there are different interpretations of what I just said. I.e.; I think you are an idiot because only idiots write code this way. Or am I trying to be helpful by suggesting improvements to the code.
+
+Now how am I going to know how the other person in the conversation understood my intend with the comment? It can be very hard to extract this. In my experience the more negative the message was received the harder it becomes to understand that it was received in that manner. People, at least in most cultures that I have worked in, don't like to confront other people. So the other person is probably not going to say; "So you think I am an idiot for writing the code this way?" or "I don't appreciate you calling me an idiot". Or for the lesser extreme; feeling dumb (but very common); "I am sorry for being so silly by not thinking about that". 
+
+But everybody is telling you how he/she took the comment by their body language. This language has different nuances depending on the person, learn to pay attention to these things. For example; someone hanging back in their chair could be less interested in the topic then someone sitting up straight or even leaning towards you. Is the body in a defensive position or vulnerable position. Once you learn and start to pick-up these signals also try to think about your own body language, it does make a difference.
+
+It is important how your message is received because if it was received wrongly then you probably get the wrong results. i.e. if my intend was to help the person improve the code, but he/she thinks I just called him/her an idiot, how big is the chance he/she will be open for suggestions from me. Then and later. 
+
+So it is important that you can deduce how the message was received, but it is even more important that you think about how the message could be received. For example instead of saying: "this code could have been extracted into different functions" I could say something like: "I think we can improve the readability of the code by extracting it into different functions, what do you think?" or "I find it difficult to understand the code, could we extract some functionality into different functions to make it show more intent?". We arrive at the same destination but the way towards it was completely different. 
+
+##Interpretation##
+
+Think about the person you are talking to and try to understand where they come from, what their values are, what makes them tick. But also think about how they might see you, are you a threat to them, just annoying or interesting, pleasant to be around with. This all influences how your message is received. 
+
+Someone who is naturally defensive will need an other approach then someone who is open to being wrong, but it also depends on how they think you think about things. What if I am talking to a person in favor of a technology and they think I am not in favor of it while we are discussing that technology. It then is nearly irrelevant of how I actually feel or how I express my ideas, they will most likely be seen negatively. I don't know how to solve this, but it is good to at-least understand this.
+
+##The next steps##
+
+I now got an other boost in this topic, last week at Avira we received a course from [Ben Fuchs}(http://www.ashridge.org.uk/Website/Content.nsf/WebContent?ReadForm&Zone=CONBIO&SpecialTemplate=LongConsultingBioNote&Name=Ben%20Fuchs) about Non Violent Communication and it was awesome. Ben has a degree in Psychology and has even done couples counseling, but now he focusses on Management Consulting. During the course we learned about the different ways we can influence people and divert conflicts.
+
+##Influencing##
+
+Many discussions have the purpose of influencing the other party in the discussion, and this usually goes both ways. Think about it, have you ever been in a situation that goes like this: "You should use tool XYZ", "Yeah it is awesome". Once you agree the discussion is pretty much over. 
+
+You might as well have talked about the weather; "It is nice and sunny today", "Yeah it is great". The discussion quickly dies and then what. Now on the other hand we could have; "It is nice and sunny today", "Nah I like rain", "You do what? Don't you like the sun?", "No I prefer the rain it is much nicer". What happened here is two people not agreeing with each other and trying to convince the other party of their point of view. A discussion like this can take forever. 
+
+So if it is about influencing other people then there are two main differences of how you may achieve this; you have Pull and you have Push. 
+
+Pull is the least confronting approach, it is about listening and asking questions. Trying to understand the other persons position and empathizing with it. 
+
+"Why do you like the rain?"
+"I like the sound it makes"
+"You like to sound of falling water drops?"<br />
+"Yeah"<br />
+"Do you like walking in the rain as well, getting all wet?"<br />
+"No that not so much"<br />
+"What do you feel about the temperature drop whenever it rains?"<br />
+"I'll take it for granted, it is part of the rain"<br />
+"So you like the sound rain makes, not so much the cold feeling? Why do you feel that way?"<br />
+"Yeah, It always relaxes me when it rains"<br />
+"Could it be that you feel more relaxed by the sound of rain because it takes your mind of the daily stress?"<br />
+"Maybe"<br />
+"Do you like listening to ambient music as well?"<br />
+"Yeah I like that as well"<br />
+
+Maybe here I have not yet persuaded the other person that is it not so much the rain he likes as it is the calming sounds of falling water drops. I ran a bit into a dead end with this conversation as I find it hard to imagine why someone might like the rain. But at least now I understand the other person much better. Maybe if I wanted to I could use a little bit of push to convince him about my stance. 
+
+Push is about actively advocating and speaking about your point of view, trying to persuade the other person en engaging him in the conversation. I could continue the conversation in the following way:
+
+"Have you tried sitting in the sun with some relaxing ambient music playing in the background? This could give you the same relaxed feeling without the temperature drop that rain brings"<br />
+"Hmm that might work"<br />
+"An other benefit is that if that works then you can get the relaxed feeling whether it rains or shines"<br />
+"I guess you are right about that"<br />
+"I like that it is nice and sunny today!"<br />
+"Yeah"<br />
+
+This was of-course an extremely silly example, but I wanted to highlight the difference between Pull and Push. Pull will increase my understanding of the problem much better, instead of thinking that this person is a bit crazy for liking rain over sun I now understand the reasoning behind it. And that is valuable whether or not I managed to convince him/her about my point of view. Because now I can use this information in following conversations. I now may know to not bother him/her when it rains as this is a moment of relaxation/reflection for him/her.
+
+Asking about the other persons feelings, their needs and values is a good way to understand the real reasoning behind an opinion. Next time you are in a discussion with someone, just try to understand where the other person is coming from, this understanding may be all that is needed to come to a neutral understanding and perhaps even agreement. 
+
+Now I am only a beginner at this, so next time you see or hear me discussing something without understanding the other side then feel free to point this out to me. 
