@@ -1,4 +1,4 @@
-title: For sale: 17" MBP
+title: For sale: 17inch MacBook Pro
 author: Mark Nijhof
 published: false
 slug: for-sale-17-mbp
