@@ -1,7 +1,7 @@
-title: For sale: 17inch MacBook Pro
+title: For sale - 17inch MacBook Pro
 author: Mark Nijhof
 published: false
-slug: for-sale-17-mbp
+slug: for-sale-17-macbook-pro
 
 I have for sale: a very nice 17" (1920x1200 resolution) MacBook Pro bought early 2009. The processor is a 2.93GHz Duo 2 Core and it has 8GB of memory. I replaced the original HHD with a 160GB SSD which has made it a lot faster. Furher it basically has all options available at that time.
 
