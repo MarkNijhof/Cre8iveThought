@@ -1,6 +1,6 @@
 title: Tweak the System
 author: Mark Nijhof
-published: false
+published: true
 
 <i>"Tweaking refers to fine-tuning or adjusting a complex system, usually an electronic device. Tweaks are any small modifications intended to improve a system."</i><br/>
 -Wikipedia
