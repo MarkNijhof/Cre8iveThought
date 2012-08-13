@@ -37,7 +37,7 @@ The number of stories per iteration: <br />
 When this team selects their stories they mostly use the 6 story baseline ignoring that the test automator cannot finish all his work.
 
 ## Visualization
-<img src="/images/general/flow-1.jpg" alt="The System as it is" style="border: solid 1px black; float:right;"/>Of-course when looking at it like this it is quit easy to pinpoint a bottle neck, but what I am looking at achieving is a way to make this process even quicker.
+<img src="/images/general/flow-1.jpg" alt="The System as it is" style="border: solid 1px black; float:right; padding: 10px;"/>Of-course when looking at it like this it is quit easy to pinpoint a bottle neck, but what I am looking at achieving is a way to make this process even quicker.
 
 So I want to draw a picture of the system as we see it (of-course this is still only a small part of the whole system in which we work).
 
@@ -48,13 +48,19 @@ Now depending on how many stories get selected we can easily calculate and show 
 In the case where the team takes 6 stories we can see that the Developers are waiting 25 percent of the time and that there will be a queue of 3 stories that Test Automation was unable to finish.
 
 ## Variables
-<img src="/images/general/flow-2.jpg" alt="The System as it might be" style="border: solid 1px black; float:right;" />What if we could change some variables from the above setup? 
+What if we could change some variables from the above setup? 
 
 Having the Developers wait for 25 percent of the iteration is of-course not good. We could have them do 8 stories instead, but that would only increase the queues for the others.
 
 What if instead of waiting we ask the Developers to spend the 25 percent on writing Automated tests that normally would be defined by the Manual Testers and then automated by the Test Automation person?
 
-Let's say that the Developers are able to create about half of the tests the Manual Testers would define. That would mean that potentially the velocity of the Manual Testers gets increased by 50 percent i.e. they would be able to do 9 stories per iteration.
+<img src="/images/general/flow-2.jpg" alt="The System as it might be" style="border: solid 1px black; float:right; padding: 10px;" />Let's say that the Developers are able to create about half of the tests the Manual Testers would define. That would mean that potentially the velocity of the Manual Testers gets increased by 50 percent i.e. they would be able to do 9 stories per iteration.
 
 But since the Developers have automated these tests also the Test Automation person has less tests to automate, in this case only has to automate 50 percent of the tests for each story which would increase the number of stories he/she can finish to 6 per iteration.
 
+When we now take a look at the second picture we can clearly see a big difference in through-put. Suddenly the whole team would be able to finish 6 stories per iteration instead of 3. It may be true that the developers are not producing the optimum output they could achieve which would be 8 stories per iteration, but the system as a whole benefits greatly from this by having the output doubled.
+
+## The question
+My thought is; being able to show with visualizations what the impact of certain changes would be, like having the developers write automated tests, will make it easier to understand for most people.
+
+What other visualizations would you use to tell the story?
