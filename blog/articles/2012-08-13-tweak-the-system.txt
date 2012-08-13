@@ -37,7 +37,7 @@ The number of stories per iteration: <br />
 When this team selects their stories they mostly use the 6 story baseline ignoring that the test automator cannot finish all his work.
 
 ## Visualization
-<img src="/images/general/flow-1.jpg" alt="The System as it is" style="border: solid 1px black; float:right; padding: 10px;"/>Of-course when looking at it like this it is quit easy to pinpoint a bottle neck, but what I am looking at achieving is a way to make this process even quicker.
+<img src="/images/general/flow-1.jpg" alt="The System as it is" style="border: solid 1px black; float:right; margin: 0px 0px 10px 10px;"/>Of-course when looking at it like this it is quit easy to pinpoint a bottle neck, but what I am looking at achieving is a way to make this process even quicker.
 
 So I want to draw a picture of the system as we see it (of-course this is still only a small part of the whole system in which we work).
 
@@ -54,7 +54,7 @@ Having the Developers wait for 25 percent of the iteration is of-course not good
 
 What if instead of waiting we ask the Developers to spend the 25 percent on writing Automated tests that normally would be defined by the Manual Testers and then automated by the Test Automation person?
 
-<img src="/images/general/flow-2.jpg" alt="The System as it might be" style="border: solid 1px black; float:right; padding: 10px;" />Let's say that the Developers are able to create about half of the tests the Manual Testers would define. That would mean that potentially the velocity of the Manual Testers gets increased by 50 percent i.e. they would be able to do 9 stories per iteration.
+<img src="/images/general/flow-2.jpg" alt="The System as it might be" style="border: solid 1px black; float:right; margin: 0px 0px 10px 10px;" />Let's say that the Developers are able to create about half of the tests the Manual Testers would define. That would mean that potentially the velocity of the Manual Testers gets increased by 50 percent i.e. they would be able to do 9 stories per iteration.
 
 But since the Developers have automated these tests also the Test Automation person has less tests to automate, in this case only has to automate 50 percent of the tests for each story which would increase the number of stories he/she can finish to 6 per iteration.
 
