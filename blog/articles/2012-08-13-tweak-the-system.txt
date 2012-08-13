@@ -1,0 +1,63 @@
+title: Tweak the System
+author: Mark Nijhof
+published: false
+
+"Tweaking refers to fine-tuning or adjusting a complex system, usually an electronic device. Tweaks are any small modifications intended to improve a system."
+-Wikipedia
+
+I work as an Agile Coach currently at Avira, our goal is to faster deliver valuable software to our customers. So as an Agile Coach I try to tweak the system in which we work. 
+
+In the past I have been more focussed on optimizing the parts that I saw and could optimize; but I have never really tried to understand what the effect of these optimizations would have on the whole system. Thankfully I am also being coached here by (Vasco Duarte)[https://twitter.com/duarte_vasco] who has already enlightened me (a bit) with his Meta Coaching exercises (more on that in a next post). 
+
+So now instead of optimizing parts of the system I now try to see what effect such optimizations would have on the whole system, not just to part being optimized. 
+
+Personally I am a big fan of visualizing things using graphics, so together with my college (Luis Consalves)[https://twitter.com/lgoncalves1979] I thought of a small example of how I would like to visualize the throughput (velocity if you will) of a development team. 
+
+## The team ##
+The composition of the team is rather complex, we came from an environment where different expertise's (like development and testing) where setup in different departments and they formed the well known silo's. In an effort to minimize communication overhead and many other problems we now have feature teams which are composed out of people from the different departments. A team as such is cross-functional but the team members are not. 
+
+So one team is composed out of:
+- 1 Project Owner
+- 1 Project Manager (comparable with a Scrum Master role)
+- 5 Developers
+- 0.5 Localization (shared between teams)
+- 0.5 Documentation (shared between teams)
+- 2 Manual testers
+- 0.5 Test Automation (shared between teams)
+
+Then when we look at what each mini silo can do within a 2 week iteration. I am not tracking the PO here as there should be a significant backlog and the PM is a facilitator and as such he/she does not produce output. The developers can finish about 8 stories during an iteration and the same applies for the documentation people. However the manual testers and he localization people can finish about 6 stories per iteration. And finally the Test Automation person can automate the manual tests for about 3 iterations.
+
+The number of stories per iteration:
+- 8 Developers
+- 6 Localization (shared between teams)
+- 8 Documentation (shared between teams)
+- 6 Manual testers
+- 3 Test Automation
+
+When this team selects their stories they mostly use the 6 story baseline ignoring that the test automator cannot finish all his work.
+
+## Visualization ##
+Of-course when looking at it like this it is quit easy to pinpoint a bottle neck, but what I am looking at achieving is a way to make this process even quicker.
+
+So I want to draw a picture of the system as we see it (of-course this is still only a small part of the whole system in which we work).
+
+<img src="/images/general/flow-1.jpg" alt="The System as it is" border="1"/>
+
+What you see here is a quick draft of the throughput of this team, now you can see in one quick look that the biggest bottleneck lies with Test Automation. They are only able to do 3 stories per iteration. 
+
+Now depending on how many stories get selected we can easily calculate and show where people are waiting and where a queue with unfinished work is formed. 
+
+In the case where the team takes 6 stories we can see that the Developers are waiting 25 percent of the time and that there will be a queue of 3 stories that Test Automation was unable to finish.
+
+## Variables ##
+What if we could change some variables from the above setup? 
+
+Having the Developers wait for 25 percent of the iteration is of-course not good. We could have them do 8 stories instead, but that would only increase the queues for the others.
+
+What if instead of waiting we ask the Developers to spend the 25 percent on writing Automated tests that normally would be defined by the Manual Testers and then automated by the Test Automation person?
+
+Let's say that the Developers are able to create about half of the tests the Manual Testers would define. That would mean that potentially the velocity of the Manual Testers gets increased by 50 percent i.e. they would be able to do 9 stories per iteration.
+
+But since the Developers have automated these tests also the Test Automation person has less tests to automate, in this case only has to automate 50 percent of the tests for each story which would increase the number of stories he/she can finish to 6 per iteration.
+
+<img src="/images/general/flow-2.jpg" alt="The System as it might be" border="1"/>
