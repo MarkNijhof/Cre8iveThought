@@ -63,4 +63,6 @@ But since the Developers have automated these tests also the Test Automation per
 ## The question
 My thought is; being able to show with visualizations what the impact of certain changes would be, like having the developers write automated tests, will make it easier to understand for most people.
 
+You may have noticed that I ignored the order in which the work happens, but this could also greatly impact how a team works.
+
 What other visualizations would you use to tell the story?
