@@ -37,7 +37,7 @@ class WebApplication < Sinatra::Base
     
     articles    = articles.select{ |item| item[:published] }  if articles.count > 1
     
-    articles    = articles.map { |post| post[:keywords] = post[:keywords].nil? ? {} : post[:keywords].split(',').to_json }
+    articles    = articles.each { |post| post[:keywords] = post[:keywords].nil? ? {} : post[:keywords].split(',').to_json }
     
     return [].to_json if articles.count < start_index
     
