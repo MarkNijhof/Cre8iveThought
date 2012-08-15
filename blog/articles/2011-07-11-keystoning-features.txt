@@ -4,6 +4,7 @@ published: true
 words: 661
 characters: 3.826
 readingTime: '00:03:18'
+keywords: agile,design
 
 Today I wanted to explain someone what I learned a while back on a course "Software G Forces" with Kent Beck in Bergen Norway about deploying software. Going from yearly to monthly to weekly to daily and finally to hourly and perhaps even continuous deployment of software takes a lot of discipline and good techniques to get right. One of the difficulties is that when you deploy your software very often you will possibly have features that are not yet completed in each deployment. 
 

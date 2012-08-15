@@ -1,6 +1,10 @@
 title: Pair Programming Session
 author: Mark Nijhof
 published: true
+words: 347
+characters: 1,928
+readingTime: '00:01:44'
+keywords: agile,coaching,pair programming
 add_trailing_slash_for_disqus: true
 
 Today I had a really enjoyable pair programming session with my college [Øyvind](http://twitter.com/oyvindfanebust). It was quite some time ago since our last session, which was when we were both working at a customer together.

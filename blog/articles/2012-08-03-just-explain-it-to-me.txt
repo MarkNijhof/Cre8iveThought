@@ -1,6 +1,10 @@
 title: Just explain it to me
 author: Mark Nijhof
 published: true
+words: 262
+characters: 1,332
+readingTime: '00:01:18'
+keywords: agile
 
 Today I was sitting in the office enjoying the view from the window; there were some ducks playing in the pond outside when suddenly the door opened and a guy came walking in. 
 

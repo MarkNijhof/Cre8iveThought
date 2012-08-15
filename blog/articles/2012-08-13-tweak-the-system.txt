@@ -1,6 +1,10 @@
 title: Tweak the System
 author: Mark Nijhof
 published: true
+words: 1,033
+characters: 5,881
+readingTime: '00:05:09'
+keywords: systems thinking,agile
 
 <i>"Tweaking refers to fine-tuning or adjusting a complex system, usually an electronic device. Tweaks are any small modifications intended to improve a system."</i><br/>
 -Wikipedia

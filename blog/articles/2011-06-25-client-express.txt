@@ -4,6 +4,7 @@ published: true
 words: 747
 characters: 4.227
 readingTime: '00:03:44'
+keywords: technology,javascript
 
 I have been very intrigued by [Node.js](http://nodejs.org/) since I heard about; just think about it, using JavaScript on the client and on the server as well. How cool is that. But I have never really done anything with it, that is until [Heroku](http://www.heroku.com/) announced their Node.js support. I know it is a weak excuse but I just can't see myself maintain an other server. I have had my own server from about 2000 till about 2009 which is when I got into Ruby and Heroku. Since then I just don't see the benefit of doing it myself for my own projects (different for big production systems). It means less freedom but also less headaches.
 
