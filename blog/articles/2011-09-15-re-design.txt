@@ -4,6 +4,7 @@ published: true
 words: 104
 characters: 536
 readingTime: '00:00:31'
+keywords: design,communication
 
 <img src="http://cre8ivethought.com/images/general/re-design.jpg" alt="Re-design" style="border: 1px solid black; margin: 8px 0px 10px 10px; float: right;" />I re-designed my blog again; the last time I wanted better readability and more focus on content. And this time it is no different, again I wanted the experience on my blog to be about the content. It should be easy to read and no distractions.
 

@@ -2,6 +2,10 @@ title: New Job, Agile Coach
 author: Mark Nijhof
 published: true
 slug: agile-coach
+words: 390
+characters: 2,134
+readingTime: '00:01:57'
+keywords: agile,coaching
 
 On the 1st of June I will start with a new job in the south of Germany to help transform the company into a more Agile way of working, the title I got there is Agile Coach and I am the second one they have employed. The company is Avira the free anti-virus company also one of the top web-companies in the world with 100+ Million customers. 
 

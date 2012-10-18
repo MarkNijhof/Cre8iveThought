@@ -1,6 +1,10 @@
 title: CQRS Domain State
 author: Mark Nijhof
 published: true
+words: 360
+characters: 2,089
+readingTime: '00:01:48'
+keywords: cqrs,design
 add_trailing_slash_for_disqus: true
 
 This morning [Aaron Jensen](http://codebetter.com/blogs/aaron.jensen/default.aspx) asked a really interesting [question](http://twitter.com/aaronjensen/status/6454974718) on Twitter “Should Aggregate Roots en Entities always keep their state if it is not needed for business decisions? Is firing events and relying on the reporting store enough?”. He really made me think, Aaron thanks for that!

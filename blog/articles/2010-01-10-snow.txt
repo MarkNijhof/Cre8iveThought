@@ -1,6 +1,10 @@
 title: Snow
 author: Mark Nijhof
 published: true
+words: 306
+characters: 1,572
+readingTime: '00:01:31'
+keywords: agile
 add_trailing_slash_for_disqus: true
 
 You wake-up in the morning open the curtains and look outside, and there it is; everything you see is covered in a nice layer of fresh snow. Beautiful if I may say.

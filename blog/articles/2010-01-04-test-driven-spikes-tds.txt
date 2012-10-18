@@ -1,6 +1,10 @@
 title: Test Driven Spikes (TDS)
 author: Mark Nijhof
 published: true
+words: 1,218
+characters: 6,366
+readingTime: '00:06:05'
+keywords: design,testing
 add_trailing_slash_for_disqus: true
 
 I have had a discussion with a college of mine about spike code and how to bring the chosen solution into production code and quality. Jeremy [wrote about it a while back](http://codebetter.com/blogs/jeremy.miller/archive/2008/11/11/don-t-check-in-spike-code.aspx) stating to never check-in spiked code, and I was wondering if I could challenge that a little bit.
