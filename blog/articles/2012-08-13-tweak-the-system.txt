@@ -45,7 +45,7 @@ Of-course when looking at it like this it is quit easy to pinpoint a bottle neck
 
 So I want to draw a picture of the system as we see it (of-course this is still only a small part of the whole system in which we work).
 
-<img src="cre8ivethought.com/images/general/flow-1.jpg" alt="The System as it is" style="border: solid 1px black; float:right; margin: 0px 0px 10px 10px;"/>What you see here is a quick draft of the throughput of this team, now you can see in one quick look that the biggest bottleneck lies with Test Automation. They are only able to do 3 stories per iteration. 
+<img src="http://cre8ivethought.com/images/general/flow-1.jpg" alt="The System as it is" style="border: solid 1px black; float:right; margin: 0px 0px 10px 10px;"/>What you see here is a quick draft of the throughput of this team, now you can see in one quick look that the biggest bottleneck lies with Test Automation. They are only able to do 3 stories per iteration. 
 
 Now depending on how many stories get selected we can easily calculate and show where people are waiting and where a queue with unfinished work is formed. 
 
@@ -62,7 +62,7 @@ Let's say that the Developers are able to create about half of the tests the Man
 
 But since the Developers have automated these tests also the Test Automation person has less tests to automate, in this case he or she only has to automate the remaining 50 percent of the tests (the manual tests) for each story which would increase the number of stories he or she can finish to 6 per iteration.
 
-<img src="cre8ivethought.com/images/general/flow-2.jpg" alt="The System as it might be" style="border: solid 1px black; float:right; margin: 0px 0px 10px 10px;" />When we now take a look at the second picture we can clearly see a big difference in through-put. Suddenly the whole team would be able to finish 6 stories per iteration instead of 3. It may be true that the developers are not producing the optimum output they could achieve which would be 8 stories per iteration, but the system as a whole benefits greatly from this by having the output doubled.
+<img src="http://cre8ivethought.com/images/general/flow-2.jpg" alt="The System as it might be" style="border: solid 1px black; float:right; margin: 0px 0px 10px 10px;" />When we now take a look at the second picture we can clearly see a big difference in through-put. Suddenly the whole team would be able to finish 6 stories per iteration instead of 3. It may be true that the developers are not producing the optimum output they could achieve which would be 8 stories per iteration, but the system as a whole benefits greatly from this by having the output doubled.
 
 ## The question
 My thought is; being able to show with visualizations what the impact of certain changes would be, like having the developers write automated tests, will make it easier to understand for most people.
