@@ -1,0 +1,45 @@
+title: My crazy adventures in the world of Lean Startup
+author: Mark Nijhof
+published: false
+
+# Who you are, who am I ? 
+
+I’ve been working on a personal project (more on that later), and one of the things I’ve noticed through this experience is that finding a working business model for my project is not easy. 
+
+# Point A
+
+The technical idea came to me one night when I could not sleep because I obviously had drunk too much coke (yeah, tell me about it). As I lay there, looking at my blank canvas (my MacBook Air) it struck me! The idea was simple, maybe too simple. So I looked around if someone had implemented the same solution. I could not find anyone. 
+
+# Point B
+
+The basic goal for me was to start a business, something that could support my hope to once travel the world, see as many countries as possible (and taste their chili ;) and give my kids an opportunity to know the world in a way I could not when I was growing up.
+
+# Gap
+
+So, I had the idea. The simple idea was to create a platform that would allow anyone to advertise their cool jobs and get awesome people to find those jobs. I don’t like “job farms” (some people call them job boards), I think they are massive, dumbed down and have an inane process to apply to the jobs. I mean filling-in information that is already in my CV?!??! give me a break!
+So the main idea was to make cool jobs available to people that deserved them and may not even known they were looking for one. Without any crappy job farm in the middle!
+The technical solution is simple... Maybe too simple. I got my first version of the solution in 2 months, but then it lay still on GitHub. You know the feeling. Great idea: done! Implementation: done! Why isn’t the money flowing in??!?!?! 
+
+So I presented the idea to a friend of mine. He liked the idea, we had a few conversations and decided to work together. Working with someone else on the idea made a huge difference. I had worked on many ideas before, but they all withered and died. Now it was different! I could have a conversation about my idea, it was no longer just me. I felt hope, this idea may make it! 
+
+We started talking to potential customers and to bloggers. The idea we have is to make ultra targeted job ads, meaning that we would only show you careers that matter to you. Instead of having you search a crazy amount of crappy job posting with a crap search engine we show jobs that you care about! How do we know that? Because we only put those career opportunities in the sites you want to visit and care about. And only a few -- here we are taking one from Google’s playbook. Show relevant ads in a non-intrusive way. 
+
+We actually tested this idea and saw that it works! But we have a lot of trouble (need to improve?) recruiting bloggers and site owners to work with us. We’ve tried twitter, email, direct contact. Many don’t want any other content on their site (which is understandable), others don’t want to go through the trouble of adding one small script to their blogs (yeah, even in 2013). What we’ve learned is that targeting specific bloggers is not easy, some even think we are spammers :( 
+
+# Turning point
+
+So we are now taking a completely different approach. Here’s our pitch: we can help you monetize your blog/site and at the same time help your friends (and ours) get awesome jobs. The clueless companies are not going to use our service anyway. Only cool ones do!
+We can make sure that only the relevant careers are shown on your site and even then only a few (1-5). The goal is to blend with the blog, low visual impact and show only relevant careers. Voilá: Ultra Targeted Job Ads!
+
+# Problem
+
+Our next challenge is to find people that want to work with us. If you are interested we ask you only to drop us a line (below or at [mailto:mark.nijhof@cre8ivethought.com](mark.nijhof@cre8ivethought.com)) and we will pick up the conversation. If you are not interested, but have some ideas for us in how we could get bloggers to work with us let us know. Leave a comment or drop us a line.
+
+# Solution
+
+If we can get this thing going, we will be able to focus on what we really want: Get amazing jobs for awesome people :)
+
+# Climax
+
+So, why don’t you join us? Just drop us a line :) Help us improve the world a little bit.
+I wonder how this story will end...
