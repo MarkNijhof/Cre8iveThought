@@ -2,6 +2,10 @@ title: My crazy adventures in the world of Lean Startup
 author: Mark Nijhof
 published: false
 
+<center>
+  <img src="http://fc00.deviantart.net/fs10/i/2006/085/7/9/A_day_at_a_Sydney_Zoo_10_by_TheFlyingDutchman.jpg" />
+</center>
+
 I’ve been working on a personal project (more on that later), and one of the things I’ve noticed through this experience is that finding a working business model for my project is not easy. 
 
 ## Point A
