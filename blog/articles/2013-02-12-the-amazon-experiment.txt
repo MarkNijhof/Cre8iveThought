@@ -1,6 +1,6 @@
 title: The Amazon Experiment
 author: Mark Nijhof
-published: false
+published: true
 
 This is a post about an Amazon Experiment I executed on the 24th of January. It was mostly for fun, and to see how long it would take Amazon to stop it. My hypothesis was that it would at least take a few days (~3 days) for Amazon to take action.
 
