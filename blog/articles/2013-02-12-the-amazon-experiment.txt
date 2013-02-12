@@ -7,55 +7,58 @@ This is a post about an Amazon Experiment I executed on the 24th of January. It 
 I was only partly wrong :-)
 
 # How it all started
+<br/>
 <center>
-  <a href="http://cre8ivethought.com/images/the-amazon-experiment-started.png"><img src="http://cre8ivethought.com/images/the-amazon-experiment-started.jpg" width="600px" /></a>
+  <a href="http://cre8ivethought.com/images/the-amazon-experiment-started.png"><img src="http://cre8ivethought.com/images/the-amazon-experiment-started.jpg" width="600px" border="1" /></a>
 </center>
 
 # Opening an Amazon seller account
 This was easy, actually the whole process was really easy.
 <center>
-  <a href="http://cre8ivethought.com/images/the-amazon-experiment-amazon-open-account.png"><img src="http://cre8ivethought.com/images/the-amazon-experiment-amazon-open-account.png" width="600px" /></a>
+  <a href="http://cre8ivethought.com/images/the-amazon-experiment-amazon-open-account.png"><img src="http://cre8ivethought.com/images/the-amazon-experiment-amazon-open-account.png" width="600px" border="1" /></a>
 </center>
 
-# Creating the "Remote Freelance Developer" product on Amazon
+# Creating the "Remote Freelance Developer" product
+I hope you can appreciate the price ;-)
 <center>
-  <a href="http://cre8ivethought.com/images/the-amazon-experiment.png"><img src="http://cre8ivethought.com/images/the-amazon-experiment.jpg" width="600px" /></a>
+  <a href="http://cre8ivethought.com/images/the-amazon-experiment.png"><img src="http://cre8ivethought.com/images/the-amazon-experiment.jpg" width="600px" border="1" /></a>
 </center>
 
 # Promotion via Twitter
+<br/>
 <center>
-  <a href="http://cre8ivethought.com/images/the-amazon-experiment-twitter.png"><img src="http://cre8ivethought.com/images/the-amazon-experiment-twitter.jpg" width="600px" /></a>
+  <a href="http://cre8ivethought.com/images/the-amazon-experiment-twitter.png"><img src="http://cre8ivethought.com/images/the-amazon-experiment-twitter.jpg" width="600px" border="1" /></a>
 </center>
 
 # Detected!
 As you can see it took Amazon only 5 hours and 19 minutes to figure out that I was doing something they didn't like.
 <center>
-  <a href="http://cre8ivethought.com/images/the-amazon-experiment-amazon-close-account.png"><img src="http://cre8ivethought.com/images/the-amazon-experiment-amazon-close-account.png" width="600px" /></a>
+  <a href="http://cre8ivethought.com/images/the-amazon-experiment-amazon-close-account.png"><img src="http://cre8ivethought.com/images/the-amazon-experiment-amazon-close-account.png" width="600px" border="1" /></a>
 </center>
 Actually I looked at their guidelines and couldn't actually find which rule I broke, so I asked:
 
-__"Thank you for writing. We took this action because we restrict the listing or sale of these products to pre-approved sellers. According to our records, you have not been authorized to offer these products on Amazon.com."__
+<i>"Thank you for writing. We took this action because we restrict the listing or sale of these products to pre-approved sellers. According to our records, you have not been authorized to offer these products on Amazon.com."</i>
 
-Hmm so someone else can sell me but I can't :-)
+Further asking about how to become such a pre-approved seller didn't get me anywhere.
 
 # Google search
 Funnily enough if you would now search on Google for "Remote Freelance Developer" you would still find my Amazon product (in my case last result on the first page).
 <center>
-  <a href="http://cre8ivethought.com/images/the-amazon-experiment-google-result.png"><img src="http://cre8ivethought.com/images/the-amazon-experiment-google-result.png" /></a>
+  <a href="http://cre8ivethought.com/images/the-amazon-experiment-google-result.png"><img src="http://cre8ivethought.com/images/the-amazon-experiment-google-result.png" border="1" /></a>
 </center>
 
 Unfortunately when you click on the link:
 <center>
-  <a href="http://cre8ivethought.com/images/the-amazon-experiment-404.png"><img src="http://cre8ivethought.com/images/the-amazon-experiment-404.png" /></a>
+  <a href="http://cre8ivethought.com/images/the-amazon-experiment-404.png"><img src="http://cre8ivethought.com/images/the-amazon-experiment-404.png" width="600px" border="1" /></a>
 </center>
 
 # The reviews
-An other curious thing is that the reviews given to the "Remote Freelance Developer" product are still accessible 
+An other curious thing is that the reviews given to the "Remote Freelance Developer" product are still accessible.
 
 <center>
-  <a href="http://cre8ivethought.com/images/the-amazon-experiment-review.png"><img src="http://cre8ivethought.com/images/the-amazon-experiment-review.jpg" /></a>
+  <a href="http://cre8ivethought.com/images/the-amazon-experiment-review.png"><img src="http://cre8ivethought.com/images/the-amazon-experiment-review.jpg" width="600px" border="1" /></a>
 </center>
 
 # The outcome
 
-So I was absolutely right in the assumption that this would be fun to do. I was however wrong in my assumption that it would take Amazon about 3 days to detect my experiment, they did it in only 5 hours and 19 minutes. And that is impressive. 
+So I was absolutely right in the assumption that this would be fun to do. I was however wrong in my assumption that it would take Amazon about 3 days to detect my experiment, they did it in only 5 hours and 19 minutes. And that is impressive actually. As a side effect my Amazon seller account it locked for 90 days, but that is ok as I don't have much else to sell anyway.
