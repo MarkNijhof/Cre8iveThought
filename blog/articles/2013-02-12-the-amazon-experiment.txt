@@ -9,33 +9,33 @@ I was only partly wrong :-)
 # How it all started
 <br/>
 <center>
-  <a href="http://cre8ivethought.com/images/the-amazon-experiment-started.png"><img src="http://cre8ivethought.com/images/the-amazon-experiment-started.jpg" width="600px" border="1" /></a>
+  <a href="http://cre8ivethought.com/images/the-amazon-experiment-started.png"><img src="http://cre8ivethought.com/images/the-amazon-experiment-started.jpg" width="600px" style="border:1px solid black;" /></a>
 </center>
 
 # Opening an Amazon seller account
 This was easy, actually the whole process was really easy.
 <center>
-  <a href="http://cre8ivethought.com/images/the-amazon-experiment-amazon-open-account.png"><img src="http://cre8ivethought.com/images/the-amazon-experiment-amazon-open-account.png" width="600px" border="1" /></a>
+  <a href="http://cre8ivethought.com/images/the-amazon-experiment-amazon-open-account.png"><img src="http://cre8ivethought.com/images/the-amazon-experiment-amazon-open-account.png" width="600px" style="border:1px solid black;" /></a>
 </center>
 
 # Creating the "Remote Freelance Developer" product
-I hope you can appreciate the price ;-)
+<br/>
 <center>
-  <a href="http://cre8ivethought.com/images/the-amazon-experiment.png"><img src="http://cre8ivethought.com/images/the-amazon-experiment.jpg" width="600px" border="1" /></a>
+  <a href="http://cre8ivethought.com/images/the-amazon-experiment.png"><img src="http://cre8ivethought.com/images/the-amazon-experiment.jpg" width="600px" style="border:1px solid black;" /></a>
 </center>
 
 # Promotion via Twitter
 <br/>
 <center>
-  <a href="http://cre8ivethought.com/images/the-amazon-experiment-twitter.png"><img src="http://cre8ivethought.com/images/the-amazon-experiment-twitter.jpg" width="600px" border="1" /></a>
+  <a href="http://cre8ivethought.com/images/the-amazon-experiment-twitter.png"><img src="http://cre8ivethought.com/images/the-amazon-experiment-twitter.jpg" width="600px" style="border:1px solid black;" /></a>
 </center>
 
 # Detected!
 As you can see it took Amazon only 5 hours and 19 minutes to figure out that I was doing something they didn't like.
 <center>
-  <a href="http://cre8ivethought.com/images/the-amazon-experiment-amazon-close-account.png"><img src="http://cre8ivethought.com/images/the-amazon-experiment-amazon-close-account.png" width="600px" border="1" /></a>
+  <a href="http://cre8ivethought.com/images/the-amazon-experiment-amazon-close-account.png"><img src="http://cre8ivethought.com/images/the-amazon-experiment-amazon-close-account.png" width="600px" style="border:1px solid black;" /></a>
 </center>
-Actually I looked at their guidelines and couldn't actually find which rule I broke, so I asked:
+Actually I looked at their guidelines and couldn't actually find which rule I broke. So, I asked, their response:
 
 <i>"Thank you for writing. We took this action because we restrict the listing or sale of these products to pre-approved sellers. According to our records, you have not been authorized to offer these products on Amazon.com."</i>
 
@@ -44,19 +44,19 @@ Further asking about how to become such a pre-approved seller didn't get me anyw
 # Google search
 Funnily enough if you would now search on Google for "Remote Freelance Developer" you would still find my Amazon product (in my case last result on the first page).
 <center>
-  <a href="http://cre8ivethought.com/images/the-amazon-experiment-google-result.png"><img src="http://cre8ivethought.com/images/the-amazon-experiment-google-result.png" border="1" /></a>
+  <a href="http://cre8ivethought.com/images/the-amazon-experiment-google-result.png"><img src="http://cre8ivethought.com/images/the-amazon-experiment-google-result.png" style="border:1px solid black;" /></a>
 </center>
 
 Unfortunately when you click on the link:
 <center>
-  <a href="http://cre8ivethought.com/images/the-amazon-experiment-404.png"><img src="http://cre8ivethought.com/images/the-amazon-experiment-404.png" width="600px" border="1" /></a>
+  <a href="http://cre8ivethought.com/images/the-amazon-experiment-404.png"><img src="http://cre8ivethought.com/images/the-amazon-experiment-404.png" width="600px" style="border:1px solid black;" /></a>
 </center>
 
 # The reviews
 An other curious thing is that the reviews given to the "Remote Freelance Developer" product are still accessible.
 
 <center>
-  <a href="http://cre8ivethought.com/images/the-amazon-experiment-review.png"><img src="http://cre8ivethought.com/images/the-amazon-experiment-review.jpg" width="600px" border="1" /></a>
+  <a href="http://cre8ivethought.com/images/the-amazon-experiment-review.png"><img src="http://cre8ivethought.com/images/the-amazon-experiment-review.jpg" width="600px" style="border:1px solid black;" /></a>
 </center>
 
 # The outcome
