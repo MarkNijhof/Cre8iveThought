@@ -7,5 +7,5 @@ add_trailing_slash_for_disqus: true
 css: "#license, #menu {visibility: hidden;} #information {visibility: hidden; height: 0px; display: block;}"
 
 <center>
-  <img src="http://cre8ivethought.com/images/dont-panic-we-will-be-back-soon.png" />
+  <img src="http://cre8ivethought.com/images/dont-panic-we-will-be-back-soon.jpeg" />
 </center>
