@@ -6,7 +6,7 @@ hide_comments: true
 add_trailing_slash_for_disqus: true
 css: "#license, #menu {visibility: hidden;} #information {visibility: hidden; height: 0px; display: block;} .date_post {visibility:hidden;} #keywords {visibility:hidden;} #inqob_job_postings {visibility:hidden;} #about{visibility:hidden;}"
 
-We are really sorry about this, but we are working hard to get the website back up. If you would like to get kept up-to-date then please follow us on Twitter: <a href="https://twitter.com/Random_Manager">@Random_Manager</a>, <a href="https://twitter.com/duarte_vasco">@duarte_vasco</a>, or <a href="https://twitter.com/MarkNijhof">@MarkNijhof</a>
+We are really sorry about this, but we are working hard to get the website back up. If you would like to be get kept up-to-date then please follow us on Twitter: <a href="https://twitter.com/Random_Manager">@Random_Manager</a>, <a href="https://twitter.com/duarte_vasco">@duarte_vasco</a>, or <a href="https://twitter.com/MarkNijhof">@MarkNijhof</a>
 <center>
   <img src="http://cre8ivethought.com/images/dont-panic-we-will-be-back-soon.jpeg" />
 </center>
