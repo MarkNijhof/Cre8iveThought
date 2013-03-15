@@ -23,6 +23,15 @@ class WebApplication < Sinatra::Base
     articles    = $blog_dorsey.articles.select{ |item| item[:published] }
     haml(:'rss', :layout=>false, :locals => { :blog_title => "Cre8ive Thought", :rss_updated => rss_updated, :blog_url => "#{$host}blog/index", :rss_url => "#{$host}blog/index.xml", :articles => articles })
   end
+  
+  get "/" do
+    content_type :"application/atom+xml"
+    $show_stats = false
+    $header_for = 'blog'
+    rss_updated = $blog_dorsey.articles.first.updated_as_date 
+    articles    = $blog_dorsey.articles.select{ |item| item[:published] }
+    haml(:'rss', :layout=>false, :locals => { :blog_title => "Cre8ive Thought", :rss_updated => rss_updated, :blog_url => "#{$host}blog/index", :rss_url => "#{$host}blog/index.xml", :articles => articles })
+  end
 
   get /^\/blog(\/.*?)(,start\:\d+)?(,end\:\d+)?(,filter_by\:.*)?$/ do |url, start_index, end_index, filter_by|
     
