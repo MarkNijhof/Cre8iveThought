@@ -26,3 +26,4 @@
       %content{:type=>"html"} 
         &= "<noscript><p style='margin-left: 10px; margin-right: 10px;'><i>The RSS reader you are using doesn't support JavaScript; because of this you will not see the embedded code gists. Consider opening the <a href='#{article.url}'>post</a> in your browser instead.</i></p></noscript>" if /gist.github.com/.match(article.content)
         &=article.content
+        &="<br/><br/><center><iframe height='400' src='http://cre8ivethought.com/blog/ls4d-embeded' frameborder='0' allowtransparency='true'></iframe></center>"
