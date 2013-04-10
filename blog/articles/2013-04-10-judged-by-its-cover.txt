@@ -1,0 +1,10 @@
+title: Judged by its Cover
+author: Mark Nijhof
+published: true
+
+A book is, as they say, judged by its cover, and therefore I am very happy to have published this new release of the [CQRS book](http://fohj.in). Because now it has a professional cover created by Sebastian from [Leanpubcovers](http://leanpubcovers.com), who also created the covers for the [Lean Startup for Developers](http://ls4d.com/leanpub) books. 
+
+But there is more awesomeness; for those who own a Kindle device, I am also happy to tell you that you can now directly [buy the book from Amazon](http://www.amazon.com/CQRS-The-example-ebook/dp/B00CA9P9VY/) and benefit from all the Whisper Sync happiness.
+
+But to be honest I would rather you go to the [Leanpub page](http://fohj.in) as they have a sane royalty arrangement ;)
+
