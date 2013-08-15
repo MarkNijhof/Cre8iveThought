@@ -1,0 +1,49 @@
+title: About Programming
+author: Mark Nijhof
+published: false
+
+A few weeks ago I started an other Twitter account [About Programming](https://twitter.com/abt_programming) and the accompanying [Facebook Page](https://www.facebook.com/abt.programming) with the main purpose to bring short programmer insights from influencial people (mostly programmers themselves). I hope that the short 140 charecter sound bites form a source of inspiration and joy.
+
+> "The best way to get a project done faster is to start sooner" - Jim Highsmith
+
+But this is only the start, I also want to promote continious learning and therefore I will try to talk to people writing books, doing screencasts and other sources of learning materials and I'll try to get you special deals. Because I know from my own experiences that sometimes it only takes a little nudge to get you going and start learning something new.
+
+If you want to be kept up to date regarding these efforts then please signup for the About Programming mailing list right now!
+
+<!-- Begin MailChimp Signup Form -->
+<div id="mc_embed_signup">
+<form action="http://about-programming.us6.list-manage.com/subscribe/post?u=7b28b17c5074ed398a1abf135&amp;id=2f9863f6f9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+	
+<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+<div class="mc-field-group">
+	<label for="mce-FNAME">First Name </label>
+	<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+</div>
+<div class="mc-field-group">
+	<label for="mce-LNAME">Last Name </label>
+	<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+</div>
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>	<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+</form>
+</div>
+
+<!--End mc_embed_signup--> 
+
+You will not only get any special offers that I may get, but also get the most popular posts to give you some extra inspiration.
+
+# Action points:
+
+1. Signup for the mailing list above or via [This signup form](http://eepurl.com/DrdOT)
+2. Follow About Programming on [Twitter @abt_programming](https://twitter.com/abt_programming)
+3. Like the [Facebook Page](https://www.facebook.com/abt.programming) if that is more your thing
+
+> Language Specification page count<br/>C++ 865<br/>Java 644<br/>C 540<br/>C# 511<br/>Ruby 311<br/>Smalltalk 303<br/>Erlang 31<br/><br/>Well played Erlang. Well played<br/>- @jonelf
+
