@@ -1,6 +1,6 @@
 title: About Programming
 author: Mark Nijhof
-published: false
+published: true
 keywords: "about programming"
 
 A few weeks ago I started an other Twitter account [About Programming](https://twitter.com/abt_programming) and the accompanying [Facebook Page](https://www.facebook.com/abt.programming) to bring you programmer insights from influential people (mostly programmers themselves). 
@@ -38,7 +38,7 @@ Signup now!
 	Signup for the mailing list via [this signup form](http://eepurl.com/DrdOT)
 </iframe>
 
-You can leave anytime you want! I am not selling your data here, I am the only one who will send you stuff.
+You can leave anytime you want! I am not selling your data! I am the only one who will send you stuff!
 
 # Action points:
 
