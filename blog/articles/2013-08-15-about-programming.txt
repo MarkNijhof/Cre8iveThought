@@ -7,15 +7,11 @@ A few weeks ago I started an other Twitter account [About Programming](https://t
 
 Short 140 character sound bites, a source of inspiration and joy.
 
-<a href="https://twitter.com/abt_programming/status/367943505479757824">
-> "If debugging is the process of removing bugs, then programming must be the process of putting them in" <br/> - *Edsger Dijkstra*
-</a>
+> <a href="https://twitter.com/abt_programming/status/367943505479757824">"If debugging is the process of removing bugs, then programming must be the process of putting them in" <br/> - *Edsger Dijkstra* </a>
 
 <br/>
 
-<a href="https://twitter.com/abt_programming/status/360567413244301313">
-> "The best way to get a project done faster is to start sooner" <br/> - *Jim Highsmith*
-</a>
+> <a href="https://twitter.com/abt_programming/status/360567413244301313">"The best way to get a project done faster is to start sooner" <br/> - *Jim Highsmith* </a>
 
 # The goal
 I want to inspire you to be better! After reading these types of sound bites I have often found myself thinking about how they apply to my current situation, often I think they are funny. 
@@ -24,9 +20,7 @@ I want to inspire you to be better! After reading these types of sound bites I h
 
 I am Dutch, so this account will have its share of sarcasm.
 
-<a href="https://twitter.com/abt_programming/status/367998621486419968">
-> "Real programmers don't document. If it was hard to write, it should be hard to understand"
-</a>
+> <a href="https://twitter.com/abt_programming/status/367998621486419968">"Real programmers don't document. If it was hard to write, it should be hard to understand"</a>
 
 # The About Programming mailing list
 This is where the nicest nuggets will be shared with you, the most popular posts. But also any special offers that I can tear from the hands of programmers that have writen books, created screen casts or have anything else of value for you.
@@ -52,9 +46,7 @@ You can leave anytime you want! I am not selling your data here, I am the only o
 
 <br/>
 
-<a href="https://twitter.com/abt_programming/status/366855375330349056">
-> Language Specification page count<br/>C++ 865<br/>Java 644<br/>C 540<br/>C# 511<br/>Ruby 311<br/>Smalltalk 303<br/>Erlang 31<br/><br/>Well played Erlang. Well played <br/>- *@jonelf*
-</a>
+> <a href="https://twitter.com/abt_programming/status/366855375330349056">Language Specification page count<br/>C++ 865<br/>Java 644<br/>C 540<br/>C# 511<br/>Ruby 311<br/>Smalltalk 303<br/>Erlang 31<br/><br/>Well played Erlang. Well played <br/>- *@jonelf* </a>
 <br/>
 
 > "Beware of bugs in the above code; I have only proved it correct, not tried it" <br/>- *Donald E. Knuth*
