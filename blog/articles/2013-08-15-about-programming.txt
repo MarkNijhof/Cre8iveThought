@@ -3,38 +3,37 @@ author: Mark Nijhof
 published: false
 keywords: "about programming"
 
-A few weeks ago I started an other Twitter account [About Programming](https://twitter.com/abt_programming) and the accompanying [Facebook Page](https://www.facebook.com/abt.programming) with the main purpose to bring you programmer insights from influencial people (mostly programmers themselves). 
+A few weeks ago I started an other Twitter account [About Programming](https://twitter.com/abt_programming) and the accompanying [Facebook Page](https://www.facebook.com/abt.programming) to bring you programmer insights from influential people (mostly programmers themselves). 
 
 Short 140 character sound bites, a source of inspiration and joy.
 
-> "If debugging is the process of removing bugs, then programming must be the process of putting them in" 
-> - *Edsger Dijkstra*
+> "If debugging is the process of removing bugs, then programming must be the process of putting them in" <br/> - *Edsger Dijkstra*
 
 <br/>
 
-> "The best way to get a project done faster is to start sooner" 
-> - *Jim Highsmith*
+> "The best way to get a project done faster is to start sooner" <br/> - *Jim Highsmith*
 
 # The goal
 I want to inspire you to be better! After reading these types of sound bites I have often found myself thinking about how they apply to my current situation, often I think they are funny. 
 
-> It is funny because it is true
+> It is funny because it is true!
 
-I am Dutch so I like sarcasm a lot, this account will also have its share of sarcasm.
+I am Dutch, so I like sarcasm a lot, this account will also have its share of sarcasm.
 
 > "Real programmers don't document. If it was hard to write, it should be hard to understand"
 
-# Continuous Learning
-What I really hope to achieve is a way that we as a group can benefit and I'll try to get special offers from other programmers who are writing books or doing screencasts. I know that sometimes I only need a small nudge into the right direction to start learning something new. I hope that this can be that nudge for you.
-
 # The About Programming mailing list
-This is where the nicest nuggests will be shared with you, the posts that where most popular. But also any special offers that I can tear out of the hands of those famous programmers.
+This is where the nicest nuggets will be shared with you, the posts that where most popular. But also any special offers that I can tear from the hands of programmers that have writen books or created screen casts.
+
+I believe that sometimes all you need is a small push into the right direction, a special deal to pickup that special book that teaches you something completely new. An amazing screen cast that shows you you should change the way you work!
+
+These special offers will only be given in the mailing list as I will need to provide some predictability around the numbers. A tweet can suddenly be seen my millions, with a personal e-mail this is much less likely.
 
 <iframe src="http://about-programming.us6.list-manage.com/subscribe?u=7b28b17c5074ed398a1abf135&id=2f9863f6f9" width="600" height="600" style="border: 0px solid white;">
-	Signup for the mailing list via [This signup form](http://eepurl.com/DrdOT)
+	Signup for the mailing list via [this signup form](http://eepurl.com/DrdOT)
 </iframe>
 
-Not only will you get any special offers that I may get, but also get the most popular posts to give you some extra inspiration.
+You can leave anytime you want! No selling your data here, I am the only one who will send you stuff. 
 
 # Action points:
 
@@ -45,11 +44,8 @@ Not only will you get any special offers that I may get, but also get the most p
 
 <br/>
 
-You can leave anytime you want! For the mailing list I use Mailchimp and they are very good at this kind of stuff, also I am the only one who will send you stuff. 
+> Language Specification page count<br/>C++ 865<br/>Java 644<br/>C 540<br/>C# 511<br/>Ruby 311<br/>Smalltalk 303<br/>Erlang 31<br/><br/>Well played Erlang. Well played <br/>- *@jonelf*
 
-> Language Specification page count<br/>C++ 865<br/>Java 644<br/>C 540<br/>C# 511<br/>Ruby 311<br/>Smalltalk 303<br/>Erlang 31<br/><br/>Well played Erlang. Well played>
-- *@jonelf*
+<br/>
 
-
-> "Beware of bugs in the above code; I have only proved it correct, not tried it" 
-> - *Donald E. Knuth*
+> "Beware of bugs in the above code; I have only proved it correct, not tried it" <br/>- *Donald E. Knuth*
