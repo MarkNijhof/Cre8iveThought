@@ -9,6 +9,7 @@ Short 140 character sound bites, a source of inspiration and joy.
 
 > "If debugging is the process of removing bugs, then programming must be the process of putting them in" - Edsger Dijkstra
 
+
 > "The best way to get a project done faster is to start sooner" - Jim Highsmith
 
 # The goal
@@ -44,5 +45,6 @@ Not only will you get any special offers that I may get, but also get the most p
 You can leave anytime you want! For the mailing list I use Mailchimp and they are very good at this kind of stuff, also I am the only one who will send you stuff. 
 
 > Language Specification page count<br/>C++ 865<br/>Java 644<br/>C 540<br/>C# 511<br/>Ruby 311<br/>Smalltalk 303<br/>Erlang 31<br/><br/>Well played Erlang. Well played<br/>- @jonelf
+
 
 > "Beware of bugs in the above code; I have only proved it correct, not tried it" - Donald E. Knuth
