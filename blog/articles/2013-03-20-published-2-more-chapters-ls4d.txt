@@ -1,7 +1,0 @@
-title: Published 2 more chapters LS4D
-author: Mark Nijhof
-published: true
-
-Today I published 2 more chapters for my [Lean Startup for Developers](http://ls4d.com) books, go ahead and take a look! I am looking forward to any feedback you may have. Also you may want to suggest a technical topic you would like me to start on for the technical part of the series.
-
-On a side note, I changed my RSS feed link one more time (honestly the last time, I promise) because as Rob Ashton put it nicely, who can trust Google to keep FeedBurner alive after they killed Google Reader. So please subscribe here now: [http://feed.cre8ivethought.com/cre8ivethought](http://feed.cre8ivethought.com/cre8ivethought)

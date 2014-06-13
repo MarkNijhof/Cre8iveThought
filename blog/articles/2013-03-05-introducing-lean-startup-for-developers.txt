@@ -1,5 +1,0 @@
-title: Introducing Lean Startup For Developers
-author: Mark Nijhof
-published: true
-
-Today I introduce to the world, my writing project; Lean Startup for Developers, it is a bit of a crazy idea. Go read the full post here: [http://ls4d.com/blog/introducing-lean-startup-for-developers](http://ls4d.com/blog/introducing-lean-startup-for-developers)
