@@ -10,7 +10,7 @@ But if you have some interesting work to be done that would fit my profile then 
 
 ##What##
 
-I love working with Erlang, so my preference would be to continue doing that. But I realise that there are still many cool project done in other languages as well, so this is completely open for debate. I am also quite happy to work with javascript (client/node), ruby, c# or something completely different.
+I love working with Erlang, so my preference would be to continue doing that. But I realise that there are still many cool projects done in other languages as well, so this is completely open for debate. I am also quite happy to work with javascript (client/node), ruby, c# or something completely different.
 
 ##Where##
 
