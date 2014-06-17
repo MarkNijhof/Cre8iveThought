@@ -9,11 +9,11 @@ css: "#license, #menu {visibility: hidden;} #information {visibility: hidden; he
 
 Mark is an experienced software developer and agile coach who has developed a diverse range of Object-Oriented software solutions, having either the role of an external consultant or working as an in-house employee. Independently of his role Mark has always been working together with developers helping them improve their skills and the software they write. During his career Mark has been working with different technologies including: C#, PHP, Perl, Delphi, Ruby, Nodejs and the last 14 months he has been developing in Erlang. Throughout this whole time he has always had a very strong focus on web-based applications making JavaScript an important language for him as well.
 
-Mark is always learning new technologies en theories to improve his programming and design skills. While learning he also loves teaching.  In his free time he has contributed to some OSS projects and he created a complete [CQRS example](https://github.com/MarkNijhof/Fohjin/tree/master/Fohjin.DDD.Example) in C# ([checkout the CQRS book](https://leanpub.com/cqrs)) which is now a reference project for this type of architecture.
+Mark is always learning new technologies en theories to improve his programming and design skills. While learning he also loves teaching.  In his free time he has contributed to some OSS projects and he created a complete [CQRS example](https://github.com/MarkNijhof/Fohjin/tree/master/Fohjin.DDD.Example) in C# ([checkout the CQRS book](https://leanpub.com/cqrs)) which is now a reference project for this type of architecture. Currently he is writing [Getting functional with Erlang](http://gettingfunctionalwitherlang.com), a book that targets people wanting to learn Erlang in a very pragmatic way.
 
 Mark is also very active in the developer community, having been a board member of [Oslo XP](http://www.meetup.com/oslo-xp/), [Node.js Oslo](http://www.meetup.com/NodeJSOslo/) and [NNUG Bergen & Oslo](http://www.nnug.no/). And he has helped organizing the [ROOTS 2011 conference](http://rootsconf.no/). Mark has also given several technical presentations; [Smidig 2010](http://www.smidig2010.no), [NDC 2010](http://www.ndc2010.no) and several at NNUG.
 
-He started his career with [CSC Computer Sciences BV](http://www.csc.nl/) working on different web based applications. In April 2004 he moved to Norway and started working for [Vizrt](http://www.vizrt.com/) joining an existing development team in product development of one of Vizrt’s product groups. Mark moved on March 2006 to Sydney Australia to start working for Vizrt as a Solution Architect and support person. In July 2007 Mark started working for his first employer again joining the software factory in Agile SOA development at CSC. Then in June 2008 he moved back to Bergen and started working for [Reaktor Consulting](http://www.reaktor.no/) as an Architect. And in August 2010 he started working for [BEKK Consulting AS](http://www.bekk.no/) in Olso as a Manager (seniority level) where he started working with Ruby on a professional basis. Mark also lived in Holland working as a freelancer helping [McKinsey Solutions](http://www.mckinsey.com) become better at software development. From June 2012 till April 2013 Mark used to live in Germany, working at [Avira](http://www.avira.com/) as an Agile Coach helping the company with their Agile Transformation. Here Mark is mainly focussed on helping the development community become more effective and happy in the work they do. After that he went back to working as a full-time developer coding in Erlang and Javascript for a small startup called [id3as](http://id3as.co.uk).
+He started his career with [CSC Computer Sciences BV](http://www.csc.nl/) working on different web based applications. In April 2004 he moved to Norway and started working for [Vizrt](http://www.vizrt.com/) joining an existing development team in product development of one of Vizrt’s product groups. Then on March 2006 Mark moved to Sydney Australia to start working for Vizrt as a Solution Architect and support person. In July 2007 Mark started working for his first employer again joining the software factory in Agile SOA development at CSC. Then in June 2008 he moved back to Bergen and started working for [Reaktor Consulting](http://www.reaktor.no/) as an Architect. And in August 2010 he started working for [BEKK Consulting AS](http://www.bekk.no/) in Olso as a Manager (seniority level) where he started working with Ruby on a professional basis. Mark also lived in Holland working as a freelancer helping [McKinsey Solutions](http://www.mckinsey.com) become better at software development. From June 2012 till April 2013 Mark used to live in Germany, working at [Avira](http://www.avira.com/) as an Agile Coach helping the company with their Agile Transformation. Here Mark is mainly focussed on helping the development community become more effective and happy in the work they do. After that he went back to working as a full-time developer coding in Erlang and Javascript for a small startup called [id3as](http://id3as.co.uk).
 
 ##Presentations##
 <hr />
@@ -41,25 +41,10 @@ He started his career with [CSC Computer Sciences BV](http://www.csc.nl/) workin
 **Description:**<br />
 Mark is creating a service that enables anybody to include the ability to accept and display job advertisements on their blog or other kind of websites by just including a few lines of JavaScript code. He is writing this service in Node.js and uses cloud services like; GitHub, Heroku, MongoHQ, RedisToGo, Mandrill, TravisCI and HireFire. Which basically means that the only thing still on his local machine is his text editor.
 
-###OSS Client Express JS###
-**Link:** [http://clientexpressjs.com/](http://clientexpressjs.com/)<br />
-**Description:**<br />
-Mark is duplicating the API that Node.js Express.js offers but for use on the client (read browser) this library will be using PushState and PopState to enhance the browsing experience by handling certain requests on the client instead of placing these on the server. And because the API is the same as that of Express.js you will be able to copy/re-use most of the functionality from the server to the client. This is inspired by Davis.js and Express.js.
-
-###OSS blog (all code and content of my blog)###
-**Link:** [http://github.com/MarkNijhof/Cre8iveThought](http://github.com/MarkNijhof/Cre8iveThought)<br />
-**Description:**<br />
-Mark has created his own blog engine in Ruby after facing some limits with Toto (a Ruby based blog engine) where I basically used the same principles but made it independent of a web framework. Read more about it here: [http://cre8ivethought.com/blog/2010/12/06/good-bye-toto-hello-dorsey/](http://cre8ivethought.com/blog/2010/12/06/good-bye-toto-hello-dorsey/)
-
 ###OSS CQRS project###
 **Link:** [http://github.com/MarkNijhof/Fohjin](http://github.com/MarkNijhof/Fohjin)<br />
 **Description:**<br />
 Mark has created a complete working example in C# accordingly to a new architecture patterns thought of by Greg Young. He is now also working on making this into a sort of framework so that reuse of this pattern will be simplified. And even though this example is several years old he still get e-mails and tweets from people saying it has helped them understand the different principles and patterns being used.
-
-###Contributing to OSS FubuMVC project###
-**Link:** [http://www.fubumvc.com/](http://www.fubumvc.com/)<br />
-**Description:**<br />
-Mark was actively contributing to the Open Source project FubuMVC, which is an alternative to ASP.Net MVC. This is a project written in C# using all the possible features of the .Net 3.5 SP1 framework.
 
 ###Create trading strategies using C# and Quant Developer###
 **Link:** [http://www.smartquant.com/](http://www.smartquant.com/)<br />
@@ -139,13 +124,10 @@ Institute: Katholiek Gelders Lyceum<br />
 Duration: September 1991 - July 1995<br />
 Address: Warnsbornlaan 12, Arnhem Holland<br />
 
-##References##
-<hr />
-References are available upon request
-
 ##Links##
 <hr />
 [Blog](http://cre8ivethought.com/blog/index)<br />
+[Leanpub](https://leanpub.com/u/MarkNijhof/)<br />
 [Website](http://creivethought.com/)<br />
 [GitHub](https://github.com/MarkNijhof)<br />
 [CQRS example](https://github.com/MarkNijhof/Fohjin/tree/master/Fohjin.DDD.Example)<br />
