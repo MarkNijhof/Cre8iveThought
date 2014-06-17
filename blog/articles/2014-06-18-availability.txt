@@ -1,0 +1,27 @@
+title: Availability
+author: Mark Nijhof
+published: false
+add_trailing_slash_for_disqus: true
+
+I am looking to for some interesting opportunities starting from about September or October. Which I know is still about a million years away. By then we’ll have at least 10 more javascript MVC frameworks and Erlang will still rock.
+
+But if you have some interesting work to be done that would fit my profile then please contact me at either email: mark.nijhof@cre8ivethought.com, twitter: @MarkNijhof or on Skype: marknijhof.
+
+##What##
+
+I love working with Erlang, so my preference would be to continue doing that. I realise that there are still many cool project done in other languages as well, so this is completely open for discussion. I am also happy to work in javascript (client/node), ruby, c# or something completely new.
+
+##Where##
+
+I have not been known for being stuck in one place. Having said that; now after having worked more then a year remotely from home, it does make much more sense then any other arrangement.
+
+So remote when possible, for shorter engagements we can make different arrangements though. And if the job is awesome and the location as well, well then we could definitely move. Nice weather, good food and good schools is almost all I am asking for.
+
+##Form##
+
+Initially I am thinking about doing some short term freelance work, but if the right opportunity comes straight away then I am very happy to commit for a long term period as well (employed or freelance).
+
+ ##Contact me##
+email: mark.nijhof@cre8ivethought.com
+twitter: @MarkNijhof
+skype: marknijhof
