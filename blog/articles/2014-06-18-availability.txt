@@ -4,7 +4,7 @@ published: false
 add_trailing_slash_for_disqus: true
 keywords: work,availability,erlang
 
-I am looking to for some interesting opportunities starting from about September or October (right after summer). Which I know is still about a million years away from here. By then I am sure we will have at least 10 more javascript MVC frameworks and Erlang will still rock.
+I am looking to for some interesting opportunities starting from about September or October (right after summer). Which I know is still about a million years away from now. By then I am sure we will have at least 10 more javascript MVC frameworks and Erlang will still rock.
 
 But if you have some interesting work to be done that would fit my profile then please contact me either at: email: <a href="mailto:mark.nijhof@cre8ivethought.com">mark.nijhof@cre8ivethought.com</a>, twitter: <a href="https://twitter.com/MarkNijhof">@MarkNijhof</a> or on skype: <a href="skpye:marknijhof?chat">marknijhof</a>.
 
@@ -14,13 +14,13 @@ I love working with Erlang, so my preference would be to continue doing that. Bu
 
 ##Where##
 
-I have not been known for being stuck in one place. Having said that; now after working more then a year remotely from home, it preferred over any other arrangement.
+I have not been known for being stuck in one place. Having said that; now after working more then a year remotely from home, it is preferred over any other arrangement.
 
-So remote when possible, for shorter engagements we can make different arrangements though. And if the job is awesome and the location as well, well then we could definitely move. Nice weather, good food and good schools is almost all I am asking for, oh and we also love good snow ;)
+So remote when possible, for shorter engagements we can make different arrangements of course. And if the job is awesome and the location as well, well then we could definitely move. Nice weather, good food and good schools is almost all I am asking for, oh and we also love good snow ;)
 
 ##Form##
 
-Initially I am thinking about doing some short term freelance work, but if the right opportunity comes straight away then I am very happy to commit for a long term period as well (employed or freelance).
+Initially I am thinking about doing some short term freelance work, but when the right opportunity comes along then I am very happy to commit for a long term period as well (employed or freelance).
 
 ##Contact me##
 email: <a href="mailto:mark.nijhof@cre8ivethought.com">mark.nijhof@cre8ivethought.com</a><br/>
