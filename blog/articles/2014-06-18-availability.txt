@@ -1,6 +1,6 @@
 title: Availability
 author: Mark Nijhof
-published: false
+published: true
 add_trailing_slash_for_disqus: true
 keywords: work,availability,erlang
 
