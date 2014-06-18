@@ -8,6 +8,12 @@ I am looking to for some interesting opportunities starting from about September
 
 But if you have some interesting work to be done that would fit my profile then please contact me either at: email: <a href="mailto:mark.nijhof@cre8ivethought.com">mark.nijhof@cre8ivethought.com</a>, twitter: <a href="https://twitter.com/MarkNijhof">@MarkNijhof</a> or on skype: <a href="skpye:marknijhof?chat">marknijhof</a>.
 
+##Last year##
+
+I spend the last 14 months writing exciting code in Erlang and Javascript (React.js), building media encoding/decoding servers, an RTSP server and an online video editing application. All to help our customers provide real-time streaming and VOD services to their customers.
+
+cv: <a href="http://cre8ivethought.com/blog/2000/08/01/cv">link</a>
+
 ##What##
 
 I love working with Erlang, so my preference would be to continue doing that. But I realise that there are still many cool projects done in other languages as well, so this is completely open for debate. I am also quite happy to work with javascript (client/node), ruby, c# or something completely different.
@@ -26,6 +32,3 @@ Initially I am thinking about doing some short term freelance work, but when the
 email: <a href="mailto:mark.nijhof@cre8ivethought.com">mark.nijhof@cre8ivethought.com</a><br/>
 twitter: <a href="https://twitter.com/MarkNijhof">@MarkNijhof</a><br/>
 skype: <a href="skpye:marknijhof?chat">marknijhof</a>
-
-##CV##
-cv: <a href="http://cre8ivethought.com/blog/2000/08/01/cv">link</a>
