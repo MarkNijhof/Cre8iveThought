@@ -26,3 +26,6 @@ Initially I am thinking about doing some short term freelance work, but when the
 email: <a href="mailto:mark.nijhof@cre8ivethought.com">mark.nijhof@cre8ivethought.com</a><br/>
 twitter: <a href="https://twitter.com/MarkNijhof">@MarkNijhof</a><br/>
 skype: <a href="skpye:marknijhof?chat">marknijhof</a>
+
+##CV##
+cv: <a href="http://cre8ivethought.com/blog/2000/08/01/cv">link</a>
