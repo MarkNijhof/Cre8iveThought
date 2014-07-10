@@ -59,9 +59,9 @@ This Content Management System (CMS) is completely written in C# 2.0 (this is al
 <hr />
 ###id3as###
 **Position:** Developer<br />
-**Duration:** May 2014<br />
+**Duration:** May 2013 - September 2014<br />
 **Work description:**<br />
-Mark has been developing applications to support companies in the streaming media business. All server side code is written in Erlang, that interrupts in with C for actual encoding and decoding, any needed UI is written in Javascript. 
+Mark has been developing applications to support companies in the streaming media business. All server side code is written in Erlang, that interrupts in with C for actual encoding and decoding, any needed UI is written in Javascript.
 
 <hr />
 ###Avira###
@@ -92,7 +92,7 @@ Mark was an Architect and self proclaimed Technology Evangelist at Reaktor Consu
 **Position:** Application Developer<br />
 **Duration:** July 2007 - June 2008<br />
 **Work description:**<br />
-Mark was an Application Developer at CSC in the Microsoft IBM Competence Center (MICC); he was working towards becoming a .Net Architect. Besides developing software and managing client wishes one of Mark’s tasks was coaching junior developers. MICC is specialized in SOA style software development and has her own OO software factory. MICC uses the well known Object-Oriented design principles when developing software and uses RUP as the preferred project management methodology. 
+Mark was an Application Developer at CSC in the Microsoft IBM Competence Center (MICC); he was working towards becoming a .Net Architect. Besides developing software and managing client wishes one of Mark’s tasks was coaching junior developers. MICC is specialized in SOA style software development and has her own OO software factory. MICC uses the well known Object-Oriented design principles when developing software and uses RUP as the preferred project management methodology.
 
 ###Vizrt Oceania###
 **Position:** Solution Architect / Pre and Post Sales Support<br />
