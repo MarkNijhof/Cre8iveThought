@@ -7,7 +7,24 @@ hide_comments: true
 add_trailing_slash_for_disqus: true
 css: "#license, #menu {visibility: hidden;} #information {visibility: hidden; height: 0px; display: block;} #keywords {visibility: hidden; height: 0px;} #about {visibility: hidden; height: 0px;}"
 
+Mark has been delivering software based solutions since 2000. Throughout this time there is a constant trend of learning new things, be it technical things, like a different programming language or more things like different software development methodologies. Mark is always eager to learn something new. Mark is also a great fan of sharing knowledge; for example his CQRS OSS example framework, or his latest project, the book "Getting functional with Erlang". But overall, Mark likes to code!
 
+##Contact information##
+<hr />
+E-mail: [Mark.Nijhof@Cre8iveThought.com](mailto:Mark.Nijhof@Cre8iveThought.com)<br />
+Skype: marknijhof
+
+##Books written##
+<hr/>
+[Getting functional with Erlang](http://gettingfunctionalwitherlang.com/) (in progress)<br />
+[CQRS, the example](https://leanpub.com/cqrs)<br />
+
+##Links##
+<hr />
+[Website/Blog](http://creivethought.com/)<br />
+[GitHub](https://github.com/MarkNijhof)<br />
+[CQRS example](https://github.com/MarkNijhof/Fohjin/tree/master/Fohjin.DDD.Example)<br />
+[Twitter](http://twitter.com/#!/MarkNijhof)<br />
 
 ##Work history##
 <hr />
@@ -73,11 +90,6 @@ Mark worked as a developer at Vizrt Norway working on one of Vizrt’s main prod
 **Work description:**<br />
 Mark worked as a consultant at CSC Computer Sciences BV. He has been working in different industry sectors creating different custom solutions.
 
-##Books written##
-<hr/>
-[Getting functional with Erlang](http://gettingfunctionalwitherlang.com/) (in progress)<br />
-[CQRS, the example](https://leanpub.com/cqrs)<br />
-
 ##Education##
 <hr />
 ###Technische Informatica ( IT ) - Software Developer###
@@ -89,15 +101,3 @@ Address: Bovenbuurtweg 7, Ede Holland<br />
 Institute: Katholiek Gelders Lyceum<br />
 Duration: September 1991 - July 1995<br />
 Address: Warnsbornlaan 12, Arnhem Holland<br />
-
-##Links##
-<hr />
-[Website/Blog](http://creivethought.com/)<br />
-[GitHub](https://github.com/MarkNijhof)<br />
-[CQRS example](https://github.com/MarkNijhof/Fohjin/tree/master/Fohjin.DDD.Example)<br />
-[Twitter](http://twitter.com/#!/MarkNijhof)<br />
-
-##Contact information##
-<hr />
-E-mail: [Mark.Nijhof@Cre8iveThought.com](mailto:Mark.Nijhof@Cre8iveThought.com)<br />
-Skype: marknijhof
