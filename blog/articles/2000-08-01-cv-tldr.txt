@@ -5,7 +5,7 @@ published: false
 updated: 10/07/2014 15:00:00
 hide_comments: true
 add_trailing_slash_for_disqus: true
-css: "#license, #menu {visibility: hidden;} #information {visibility: hidden; height: 0px; display: block;} #keywords {visibility: hidden; height: 0px;}"
+css: "#license, #menu {visibility: hidden;} #information {visibility: hidden; height: 0px; display: block;} #keywords {visibility: hidden; height: 0px;} #about {visibility: hidden; height: 0px;}"
 
 ##Work history##
 <hr />

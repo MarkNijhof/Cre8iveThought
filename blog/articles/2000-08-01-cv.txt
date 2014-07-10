@@ -5,7 +5,7 @@ published: false
 updated: 13/06/2014 18:25:00
 hide_comments: true
 add_trailing_slash_for_disqus: true
-css: "#license, #menu {visibility: hidden;} #information {visibility: hidden; height: 0px; display: block;} #keywords {visibility: hidden; height: 0px;}"
+css: "#license, #menu {visibility: hidden;} #information {visibility: hidden; height: 0px; display: block;} #keywords {visibility: hidden; height: 0px;} #about {visibility: hidden; height: 0px;}"
 
 Mark is an experienced software developer and agile coach who has developed a diverse range of Object-Oriented software solutions, having either the role of an external consultant or working as an in-house employee. Independently of his role Mark has always been working together with developers helping them improve their skills and the software they write. During his career Mark has been working with different technologies including: C#, PHP, Perl, Delphi, Ruby, Nodejs and the last 14 months he has been developing in Erlang. Throughout this whole time he has always had a very strong focus on web-based applications making JavaScript an important language for him as well.
 
