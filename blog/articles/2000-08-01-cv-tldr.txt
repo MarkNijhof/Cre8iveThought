@@ -5,14 +5,14 @@ published: false
 updated: 10/07/2014 15:00:00
 hide_comments: true
 add_trailing_slash_for_disqus: true
-css: "#license, #menu {visibility: hidden;} #information {visibility: hidden; height: 0px; display: block;}"
+css: "#license, #menu {visibility: hidden;} #information {visibility: hidden; height: 0px; display: block;} #keywords {visibility: hidden; height: 0px;}"
 
 ##Work history##
 <hr />
 ###id3as###
 **Position:** Developer<br />
 **Duration:** May 2013 - September 2014<br />
-**Languages:** Erlang, Javascript
+**Languages:** Erlang, Javascript<br />
 **Work description:**<br />
 Mark has been developing applications to support companies in the streaming media business. All server side code is written in Erlang, which interrupts in with components written in C for frame by frame encoding and decoding. The UIs are all written in Javascript using React.
 
@@ -26,28 +26,28 @@ Mark worked as an internal fulltime Agile Coach where he is responsible for help
 ###Cre8ive Thought###
 **Position:** Independent Contractor<br />
 **Duration:** April 2011<br />
-**Languages:** C#, Javascript
+**Languages:** C#, Javascript<br />
 **Work description:**<br />
 Mark worked as a freelancer, helping companies build quality software by helping them improve their processes and development practices.
 
 ###BEKK Consulting AS###
 **Position:** Senior Developer<br />
 **Duration:** August 2010 - April 2011<br />
-**Languages:** Ruby, Nodejs
+**Languages:** Ruby, Nodejs<br />
 **Work description:**<br />
 Mark worked as a Senior Developer, delivering Ruby projects, creating something exactly what the customers needed.
 
 ###Reaktor Consulting AS###
 **Position:** Senior Developer<br />
 **Duration:** June 2008 - May 2010<br />
-**Languages:** C#, Javascript
+**Languages:** C#, Javascript<br />
 **Work description:**<br />
 Mark worked as a Senior Developer, leading teams and coaching Junior Developers. One of the many tasks Mark fullfilled was to manage the work that Reaktor had outsourced to a partner in Poland.
 
 ###CSC Computer Sciences BV Holland###
 **Position:** Application Developer<br />
 **Duration:** July 2007 - June 2008<br />
-**Languages:** C#, Javascript
+**Languages:** C#, Javascript<br />
 **Work description:**<br />
 Mark worked as an Application Developer at CSC in the Microsoft IBM Competence Center (MICC); he was working towards becoming a .Net Architect. Besides developing software and managing client wishes one of Mark’s tasks was coaching junior developers.
 
@@ -60,14 +60,14 @@ Mark worked together with the local sales person to find solutions for potential
 ###Vizrt Norway###
 **Position:** System Developer<br />
 **Duration:** June 2004 - February 2006<br />
-**Languages:** Deplhi, C#
+**Languages:** Deplhi, C#<br />
 **Work description:**<br />
 Mark worked as a developer at Vizrt Norway working on one of Vizrt’s main product groups.
 
 ###CSC Computer Sciences BV Holland###
 **Position:** Consultant<br />
 **Duration:** August 2000 - March 2004<br />
-**Languages:** C#
+**Languages:** C#<br />
 **Work description:**<br />
 Mark worked as a consultant at CSC Computer Sciences BV. He has been working in different industry sectors creating different custom solutions.
 
