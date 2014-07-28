@@ -29,8 +29,8 @@ Skype: marknijhof
 ##Work history##
 <hr />
 ###id3as###
-**Position:** Developer<br />
-**Duration:** May 2013 - September 2014<br />
+**Position:** Developer (100% remote job)<br />
+**Duration:** May 2013 - August 2014<br />
 **Languages:** Erlang, Javascript<br />
 **Work description:**<br />
 Mark has been developing applications to support companies in the streaming media business. All server side code is written in Erlang, which interrupts in with components written in C for frame by frame encoding and decoding. The UIs are all written in Javascript using React.
