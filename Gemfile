@@ -1,7 +1,7 @@
 source :gemcutter
 
 gem "sinatra", "1.1.0"
-gem "haml", "3.0.24"
+gem "haml", "5.0.0"
 gem "compass", "0.10.6"
 gem "rdiscount", "1.6.5"
 gem "rack-rewrite", "1.0.2"

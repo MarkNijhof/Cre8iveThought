@@ -7,7 +7,9 @@ GEM
     daemons (1.1.0)
     diff-lcs (1.1.2)
     eventmachine (0.12.10)
-    haml (3.0.24)
+    haml (5.0.0)
+      temple (>= 0.8.0)
+      tilt
     json (1.6.1)
     rack (1.2.1)
     rack-rewrite (1.0.2)
@@ -28,6 +30,7 @@ GEM
     sinatra (1.1.0)
       rack (~> 1.1)
       tilt (~> 1.1)
+    temple (0.8.2)
     thin (1.2.7)
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
@@ -40,7 +43,7 @@ PLATFORMS
 DEPENDENCIES
   autotest (= 4.4.5)
   compass (= 0.10.6)
-  haml (= 3.0.24)
+  haml (= 5.0.0)
   json (= 1.6.1)
   rack-rewrite (= 1.0.2)
   rack-test (= 0.5.6)
