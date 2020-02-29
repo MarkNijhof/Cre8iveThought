@@ -12,6 +12,6 @@ group :test do
   gem "rspec", "2.1.0", :require => "spec"
   gem "autotest", "4.4.5"
   gem "rack-test", "0.5.6", :require => "rack/test"
-  gem "rake", "0.8.7"
+  gem "rake", "12.3.3"
   gem "thin"
 end
