@@ -9,7 +9,11 @@ GEM
     eventmachine (0.12.10)
     haml (3.0.24)
     json (1.6.1)
-    rack (1.2.1)
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
+    rack (2.2.3)
+    rack-protection (2.2.0)
+      rack
     rack-rewrite (1.0.2)
     rack-test (0.5.6)
       rack (>= 1.0)
@@ -23,16 +27,19 @@ GEM
     rspec-expectations (2.1.0)
       diff-lcs (~> 1.1.2)
     rspec-mocks (2.1.0)
+    ruby2_keywords (0.0.5)
     shotgun (0.8)
       rack (>= 1.0)
-    sinatra (1.1.0)
-      rack (~> 1.1)
-      tilt (~> 1.1)
+    sinatra (2.2.0)
+      mustermann (~> 1.0)
+      rack (~> 2.2)
+      rack-protection (= 2.2.0)
+      tilt (~> 2.0)
     thin (1.2.7)
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
       rack (>= 1.0.0)
-    tilt (1.1)
+    tilt (2.0.10)
 
 PLATFORMS
   ruby
@@ -48,5 +55,5 @@ DEPENDENCIES
   rdiscount (= 1.6.5)
   rspec (= 2.1.0)
   shotgun (= 0.8)
-  sinatra (= 1.1.0)
+  sinatra (= 2.2.0)
   thin

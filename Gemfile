@@ -1,6 +1,6 @@
 source :gemcutter
 
-gem "sinatra", "1.1.0"
+gem "sinatra", "2.2.0"
 gem "haml", "3.0.24"
 gem "compass", "0.10.6"
 gem "rdiscount", "1.6.5"
